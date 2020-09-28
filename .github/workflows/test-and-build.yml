@@ -42,17 +42,17 @@ jobs:
       - run: git add .
       - run: git commit -m "update build" --allow-empty
       - run: git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY"
-  chromatic:
-    needs: build
-    runs-on: ubuntu-latest
-    # the list of steps that the action will go through
-    steps:
-      - uses: actions/checkout@v1
-      - run: npm ci
-      - uses: chromaui/action@v1
-        # options required to the GitHub chromatic action
-        with:
-          # our project token, to see how to obtain it
-          # refer to https://www.learnstorybook.com/intro-to-storybook/react/en/deploy/
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+#  chromatic:
+#    needs: build
+#    runs-on: ubuntu-latest
+#    # the list of steps that the action will go through
+#    steps:
+#      - uses: actions/checkout@v1
+#      - run: npm ci
+#      - uses: chromaui/action@v1
+#        # options required to the GitHub chromatic action
+#        with:
+#          # our project token, to see how to obtain it
+#          # refer to https://www.learnstorybook.com/intro-to-storybook/react/en/deploy/
+#          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+#          token: ${{ secrets.GITHUB_TOKEN }}
