@@ -1,4 +1,4 @@
-![Release and publish](https://github.com/contentmunch/muncher/workflows/Release%20and%20publish/badge.svg)  ![Tests](https://github.com/contentmunch/muncher/workflows/Test/badge.svg)
+![Release and publish](https://github.com/contentmunch/muncher-ui/workflows/Release%20and%20publish/badge.svg)  ![Tests](https://github.com/contentmunch/muncher-ui/workflows/Test/badge.svg)
 # Muncher-UI
 Muncher-ui is a UI component library. 
 
