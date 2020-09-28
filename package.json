@@ -4,6 +4,8 @@
   "description": "Muncher UI components",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "private": false,
+  "files": [ "dist", "README.md" ],
   "author": "asikpradhan",
   "license": "MIT",
   "publishConfig": {
