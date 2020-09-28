@@ -33,20 +33,6 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-  chromatic:
-    needs: release
-    runs-on: ubuntu-latest
-    # the list of steps that the action will go through
-    steps:
-      - uses: actions/checkout@v1
-      - run: npm install
-      - uses: chromaui/action@v1
-        # options required to the GitHub chromatic action
-        with:
-          # our project token, to see how to obtain it
-          # refer to https://www.learnstorybook.com/intro-to-storybook/react/en/deploy/
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          token: ${{ secrets.GITHUB_TOKEN }}
   bump-revision:
     needs: publish
     runs-on: ubuntu-latest

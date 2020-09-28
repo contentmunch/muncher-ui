@@ -27,6 +27,20 @@ jobs:
           description: 'Passed'
           state: '${{ job.status }}'
           sha: ${{github.event.pull_request.head.sha || github.sha}}
+  chromatic:
+    needs: test
+    runs-on: ubuntu-latest
+    # the list of steps that the action will go through
+    steps:
+      - uses: actions/checkout@v1
+      - run: npm install
+      - uses: chromaui/action@v1
+        # options required to the GitHub chromatic action
+        with:
+          # our project token, to see how to obtain it
+          # refer to https://www.learnstorybook.com/intro-to-storybook/react/en/deploy/
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
   build:
     needs: test
     runs-on: ubuntu-latest
