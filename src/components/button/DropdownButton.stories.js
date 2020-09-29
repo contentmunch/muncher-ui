@@ -1,6 +1,6 @@
 import React from 'react';
 import DropdownButton from "./DropdownButton";
-import {ReactComponent as Icon} from "../icon/assets/muncher.svg";
+import MuncherSvg from "../icon/assets/MuncherSvg";
 
 export default {
     title: 'Buttons/Dropdown Button',
@@ -12,7 +12,7 @@ const Template = (args) => <DropdownButton {...args} ><p>Drop down content</p></
 export const Default = Template.bind({});
 Default.args = {
     title: 'Default Dropdown',
-    icon: <Icon/>,
+    icon: <MuncherSvg/>,
     showContent: false,
     setShowContent: () => {
     }

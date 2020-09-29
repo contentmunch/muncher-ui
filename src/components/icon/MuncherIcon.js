@@ -1,7 +1,7 @@
 import React from "react";
 import "./assets/MuncherIcon.scss";
-import {ReactComponent as Icon} from "./assets/muncher.svg";
 import PropTypes from "prop-types";
+import MuncherSvg from "./assets/MuncherSvg";
 
 export default function MuncherIcon({variant, onClick, ...props}) {
     const className = variant ? 'span-muncher--icon muncher-icon--' + variant : 'span-muncher--icon';
@@ -12,7 +12,7 @@ export default function MuncherIcon({variant, onClick, ...props}) {
             onClick={onClick}
             {...props}
         >
-            <Icon/>
+            <MuncherSvg/>
         </span>
     );
 }

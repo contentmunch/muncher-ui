@@ -8,6 +8,7 @@ export default function TextInput({name, placeHolder, onChange}) {
             className="muncher-text-input"
             name={name}
             type="text"
+            autoComplete="off"
             placeholder={placeHolder}
             onChange={onChange}/>
     );
