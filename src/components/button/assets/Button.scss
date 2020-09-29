@@ -1,0 +1,56 @@
+@import "src/components/assets/variables";
+
+$button-color: $primary-color !default;
+$button-background-color: $primary-background-color !default;
+$button-secondary-background-color: $secondary-background-color !default;
+
+.muncher-button {
+  padding: .4rem;
+  font-family: $button-font;
+  font-size: .8rem;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-flex;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  white-space: nowrap;
+}
+
+.muncher-button--primary {
+  color: $button-color;
+  background:  $button-background-color;
+}
+
+.muncher-button--secondary {
+  background: $button-secondary-background-color;
+}
+
+.muncher-button--active {
+  background: $button-secondary-background-color;
+}
+
+.muncher-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+.muncher-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+
+.muncher-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.muncher-button:disabled {
+  color: $disabled-color;
+}
+.muncher-button:hover {
+  opacity: .7;
+}

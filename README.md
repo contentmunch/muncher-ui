@@ -1,6 +1,6 @@
 ![Release and publish](https://github.com/contentmunch/muncher-ui/workflows/Release%20and%20publish/badge.svg)  ![Tests](https://github.com/contentmunch/muncher-ui/workflows/Test/badge.svg)
 # Muncher-UI
-Muncher-ui is a UI component library. 
+Muncher-ui is a [UI component library](https://www.chromatic.com/library?appId=5f715bd96ec1620022e8e2d9) for contentmunch.com
 
 ## Using Muncher-UI
 To use this component library:
@@ -12,15 +12,16 @@ To use this component library:
     export PACKAGES_AUTH_TOKEN=<personal access token>
     
     ``` 
-* create a `.npmrc` file at the root level of your project
+* Create a `.npmrc` file at the root level of your project
     ```
     @contentmunch:registry=https://npm.pkg.github.com/
     //npm.pkg.github.com/:_authToken=${PACKAGES_AUTH_TOKEN}
     ```
-* add the npm package to your project
+* Add the npm package to your project
     ```
     $ npm install @contentmunch/muncher-ui
     ```
+* Story book url: https://www.chromatic.com/library?appId=5f715bd96ec1620022e8e2d9
   
 
 ## Coding rules

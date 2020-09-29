@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import './components/assets/default.scss';
+import MuncherIcon from "./components/icon/MuncherIcon";
+import DropdownButton from "./components/button/DropdownButton";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [showContent, setShowContent] = useState(false);
+    const onClick = () => {
+        setShowContent(false);
+    };
+    return (
+        <div className="main--content">
+            <div className="div__align--center">
+                <MuncherIcon onClick={onClick} variant="large"/>
+                <DropdownButton icon={<p>Test</p>} showContent={showContent} setShowContent={setShowContent}>
+                    <div>
+                        <p onClick={onClick}>First</p>
+                        <p onClick={onClick}>Second</p>
+                    </div>
+                </DropdownButton>
+            </div>
+        </div>
+    );
 }
 
 export default App;
