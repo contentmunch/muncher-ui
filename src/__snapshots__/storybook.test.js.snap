@@ -142,416 +142,479 @@ exports[`Storyshots Buttons/Button Submit 1`] = `
 
 exports[`Storyshots Buttons/Dropdown Button Active 1`] = `
 <div
-  className="muncher-dropdown"
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
 >
-  <button
-    className="muncher-button muncher-button--primary muncher-button--medium muncher-button--active"
-    data-title="Active DropDown"
-    disabled={false}
-    onMouseDown={[Function]}
-    type="button"
+  <div
+    className="muncher-dropdown"
   >
-    <svg
-      fill="none"
-      height="18"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="1"
-      viewBox="0 0 24 24"
-      width="18"
-      xmlns="http://www.w3.org/2000/svg"
+    <button
+      className="muncher-button muncher-button--primary muncher-button--medium muncher-button--active"
+      data-title="Active DropDown"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
     >
-      <rect
+      <svg
+        fill="none"
         height="18"
-        rx="2"
-        ry="2"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1"
+        viewBox="0 0 24 24"
         width="18"
-        x="3"
-        y="4"
-      />
-      <line
-        x1="16"
-        x2="16"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="8"
-        x2="8"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="10"
-        y2="10"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="14"
-        y2="14"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="18"
-        y2="18"
-      />
-    </svg>
-  </button>
-  
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="18"
+          rx="2"
+          ry="2"
+          width="18"
+          x="3"
+          y="4"
+        />
+        <line
+          x1="16"
+          x2="16"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="8"
+          x2="8"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="10"
+          y2="10"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="14"
+          y2="14"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+    </button>
+    
+  </div>
 </div>
 `;
 
 exports[`Storyshots Buttons/Dropdown Button Default 1`] = `
 <div
-  className="muncher-dropdown"
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
 >
-  <button
-    className="muncher-button muncher-button--primary muncher-button--medium"
-    data-title="Default Dropdown"
-    disabled={false}
-    onMouseDown={[Function]}
-    type="button"
+  <div
+    className="muncher-dropdown"
   >
-    <svg
-      fill="none"
-      height="18"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="1"
-      viewBox="0 0 24 24"
-      width="18"
-      xmlns="http://www.w3.org/2000/svg"
+    <button
+      className="muncher-button muncher-button--primary muncher-button--medium"
+      data-title="Default Dropdown"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
     >
-      <rect
+      <svg
+        fill="none"
         height="18"
-        rx="2"
-        ry="2"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1"
+        viewBox="0 0 24 24"
         width="18"
-        x="3"
-        y="4"
-      />
-      <line
-        x1="16"
-        x2="16"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="8"
-        x2="8"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="10"
-        y2="10"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="14"
-        y2="14"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="18"
-        y2="18"
-      />
-    </svg>
-  </button>
-  
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="18"
+          rx="2"
+          ry="2"
+          width="18"
+          x="3"
+          y="4"
+        />
+        <line
+          x1="16"
+          x2="16"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="8"
+          x2="8"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="10"
+          y2="10"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="14"
+          y2="14"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+    </button>
+    
+  </div>
 </div>
 `;
 
 exports[`Storyshots Buttons/Dropdown Button Disabled 1`] = `
 <div
-  className="muncher-dropdown"
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
 >
-  <button
-    className="muncher-button muncher-button--primary muncher-button--medium"
-    data-title="Disabled DropDown"
-    disabled={true}
-    onMouseDown={[Function]}
-    type="button"
+  <div
+    className="muncher-dropdown"
   >
-    <svg
-      fill="none"
-      height="18"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="1"
-      viewBox="0 0 24 24"
-      width="18"
-      xmlns="http://www.w3.org/2000/svg"
+    <button
+      className="muncher-button muncher-button--primary muncher-button--medium"
+      data-title="Disabled DropDown"
+      disabled={true}
+      onMouseDown={[Function]}
+      type="button"
     >
-      <rect
+      <svg
+        fill="none"
         height="18"
-        rx="2"
-        ry="2"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1"
+        viewBox="0 0 24 24"
         width="18"
-        x="3"
-        y="4"
-      />
-      <line
-        x1="16"
-        x2="16"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="8"
-        x2="8"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="10"
-        y2="10"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="14"
-        y2="14"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="18"
-        y2="18"
-      />
-    </svg>
-  </button>
-  
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="18"
+          rx="2"
+          ry="2"
+          width="18"
+          x="3"
+          y="4"
+        />
+        <line
+          x1="16"
+          x2="16"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="8"
+          x2="8"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="10"
+          y2="10"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="14"
+          y2="14"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+    </button>
+    
+  </div>
 </div>
 `;
 
 exports[`Storyshots Buttons/Dropdown Button Large 1`] = `
 <div
-  className="muncher-dropdown"
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
 >
-  <button
-    className="muncher-button muncher-button--primary muncher-button--large"
-    data-title="Large DropDown"
-    disabled={false}
-    onMouseDown={[Function]}
-    type="button"
+  <div
+    className="muncher-dropdown"
   >
-    <svg
-      fill="none"
-      height="18"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="1"
-      viewBox="0 0 24 24"
-      width="18"
-      xmlns="http://www.w3.org/2000/svg"
+    <button
+      className="muncher-button muncher-button--primary muncher-button--large"
+      data-title="Large DropDown"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
     >
-      <rect
+      <svg
+        fill="none"
         height="18"
-        rx="2"
-        ry="2"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1"
+        viewBox="0 0 24 24"
         width="18"
-        x="3"
-        y="4"
-      />
-      <line
-        x1="16"
-        x2="16"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="8"
-        x2="8"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="10"
-        y2="10"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="14"
-        y2="14"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="18"
-        y2="18"
-      />
-    </svg>
-  </button>
-  
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="18"
+          rx="2"
+          ry="2"
+          width="18"
+          x="3"
+          y="4"
+        />
+        <line
+          x1="16"
+          x2="16"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="8"
+          x2="8"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="10"
+          y2="10"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="14"
+          y2="14"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+    </button>
+    
+  </div>
 </div>
 `;
 
 exports[`Storyshots Buttons/Dropdown Button Secondary 1`] = `
 <div
-  className="muncher-dropdown"
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
 >
-  <button
-    className="muncher-button muncher-button--secondary muncher-button--medium"
-    data-title="Secondary DropDown"
-    disabled={false}
-    onMouseDown={[Function]}
-    type="button"
+  <div
+    className="muncher-dropdown"
   >
-    <svg
-      fill="none"
-      height="18"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="1"
-      viewBox="0 0 24 24"
-      width="18"
-      xmlns="http://www.w3.org/2000/svg"
+    <button
+      className="muncher-button muncher-button--secondary muncher-button--medium"
+      data-title="Secondary DropDown"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
     >
-      <rect
+      <svg
+        fill="none"
         height="18"
-        rx="2"
-        ry="2"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1"
+        viewBox="0 0 24 24"
         width="18"
-        x="3"
-        y="4"
-      />
-      <line
-        x1="16"
-        x2="16"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="8"
-        x2="8"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="10"
-        y2="10"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="14"
-        y2="14"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="18"
-        y2="18"
-      />
-    </svg>
-  </button>
-  
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="18"
+          rx="2"
+          ry="2"
+          width="18"
+          x="3"
+          y="4"
+        />
+        <line
+          x1="16"
+          x2="16"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="8"
+          x2="8"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="10"
+          y2="10"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="14"
+          y2="14"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+    </button>
+    
+  </div>
 </div>
 `;
 
 exports[`Storyshots Buttons/Dropdown Button Small 1`] = `
 <div
-  className="muncher-dropdown"
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
 >
-  <button
-    className="muncher-button muncher-button--primary muncher-button--small"
-    data-title="Small DropDown"
-    disabled={false}
-    onMouseDown={[Function]}
-    type="button"
+  <div
+    className="muncher-dropdown"
   >
-    <svg
-      fill="none"
-      height="18"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="1"
-      viewBox="0 0 24 24"
-      width="18"
-      xmlns="http://www.w3.org/2000/svg"
+    <button
+      className="muncher-button muncher-button--primary muncher-button--small"
+      data-title="Small DropDown"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
     >
-      <rect
+      <svg
+        fill="none"
         height="18"
-        rx="2"
-        ry="2"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1"
+        viewBox="0 0 24 24"
         width="18"
-        x="3"
-        y="4"
-      />
-      <line
-        x1="16"
-        x2="16"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="8"
-        x2="8"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="10"
-        y2="10"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="14"
-        y2="14"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="18"
-        y2="18"
-      />
-    </svg>
-  </button>
-  
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="18"
+          rx="2"
+          ry="2"
+          width="18"
+          x="3"
+          y="4"
+        />
+        <line
+          x1="16"
+          x2="16"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="8"
+          x2="8"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="10"
+          y2="10"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="14"
+          y2="14"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+    </button>
+    
+  </div>
 </div>
 `;
 
 exports[`Storyshots Buttons/Dropdown Button With Text 1`] = `
 <div
-  className="muncher-dropdown"
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
 >
-  <button
-    className="muncher-button muncher-button--primary muncher-button--medium"
-    data-title="DropDown with text"
-    disabled={false}
-    onMouseDown={[Function]}
-    type="button"
+  <div
+    className="muncher-dropdown"
   >
-    <p>
-      Text drop down
-    </p>
-  </button>
-  
+    <button
+      className="muncher-button muncher-button--primary muncher-button--medium"
+      data-title="DropDown with text"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
+    >
+      <p>
+        Text drop down
+      </p>
+    </button>
+    
+  </div>
 </div>
 `;
 
@@ -732,6 +795,34 @@ exports[`Storyshots Icons/Muncher Icon Small 1`] = `
 exports[`Storyshots Input/Text Input Default 1`] = `
 <input
   autoComplete="off"
+  className="muncher-text-input"
+  name="query"
+  placeholder="Type your query"
+  type="text"
+/>
+`;
+
+exports[`Storyshots Input/Text Input Dropdown Default 1`] = `
+<div
+  className="muncher-input-drop-down"
+>
+  <input
+    autoComplete="off"
+    autoFocus={true}
+    className="muncher-text-input"
+    name="query"
+    onChange={[Function]}
+    placeholder="Start typing.."
+    type="text"
+  />
+  
+</div>
+`;
+
+exports[`Storyshots Input/Text Input With Focus 1`] = `
+<input
+  autoComplete="off"
+  autoFocus={true}
   className="muncher-text-input"
   name="query"
   placeholder="Type your query"

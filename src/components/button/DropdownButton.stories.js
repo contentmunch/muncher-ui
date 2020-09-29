@@ -5,6 +5,7 @@ import MuncherSvg from "../icon/assets/MuncherSvg";
 export default {
     title: 'Buttons/Dropdown Button',
     component: DropdownButton,
+    decorators: [story => <div style={{padding: '2rem', background: '#f5f5f5'}}>{story()}</div>],
 };
 
 const Template = (args) => <DropdownButton {...args} ><p>Drop down content</p></DropdownButton>;

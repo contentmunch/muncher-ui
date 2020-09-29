@@ -14,3 +14,8 @@ Default.args = {
     placeHolder: "Type your query"
 
 };
+export const WithFocus = Template.bind({});
+WithFocus.args = {
+    ...Default.args,
+    focus: true
+};
