@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import DropdownButton from "./DropdownButton";
 import {ReactComponent as Icon} from "../icon/assets/muncher.svg";
 
