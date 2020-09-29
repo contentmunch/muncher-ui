@@ -1,14 +1,10 @@
 @import "src/components/assets/variables";
 
-$text-input-focus-color: $tertiary-background-color !default;
+$text-input-focus-color: $primary-color !default;
 .muncher-text-input {
   height: 2rem;
   font-size: .9rem;
-  @media (min-width: $medium-size) {
-    width: 40rem;
-  }
-}
-
-.muncher-text-input:focus {
-  outline-color: $text-input-focus-color;
+  padding-left: .5rem;
+  border: 1px solid $secondary-background-color;
+  width: 100%;
 }

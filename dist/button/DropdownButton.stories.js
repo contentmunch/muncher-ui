@@ -21,7 +21,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var _default = {
   title: 'Buttons/Dropdown Button',
-  component: _DropdownButton.default
+  component: _DropdownButton.default,
+  decorators: [function (story) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      style: {
+        padding: '2rem',
+        background: '#f5f5f5'
+      }
+    }, story());
+  }]
 };
 exports.default = _default;
 

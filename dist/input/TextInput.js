@@ -15,11 +15,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function TextInput(_ref) {
   var name = _ref.name,
+      focus = _ref.focus,
       placeHolder = _ref.placeHolder,
       onChange = _ref.onChange;
   return /*#__PURE__*/_react.default.createElement("input", {
     className: "muncher-text-input",
     name: name,
+    autoFocus: focus,
     type: "text",
     autoComplete: "off",
     placeholder: placeHolder,
@@ -29,6 +31,7 @@ function TextInput(_ref) {
 
 TextInput.propTypes = {
   name: _propTypes.default.string,
+  focus: _propTypes.default.bool,
   placeHolder: _propTypes.default.string,
   onChange: _propTypes.default.func
 };
