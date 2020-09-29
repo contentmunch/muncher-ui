@@ -1,0 +1,46 @@
+@import "src/components/assets/variables";
+
+.span-muncher--icon {
+  align-items: center;
+  background-color: $secondary-background-color;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.span-muncher--icon:hover {
+  opacity: .7;
+}
+
+.muncher-icon--small {
+  width: 2rem;
+  height: 2rem;
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+    margin: .5rem;
+  }
+}
+
+.muncher-icon--medium {
+  width: 4rem;
+  height: 4rem;
+  svg {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+  }
+}
+
+.muncher-icon--large {
+  width: 6rem;
+  height: 6rem;
+  svg {
+    width: 3rem;
+    height: 3rem;
+    margin: 1.2rem;
+  }
+}

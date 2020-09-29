@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-require("./button.scss");
+require("./assets/Button.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19,56 +19,44 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-/**
- * Primary UI component for user interaction
- */
 var Button = function Button(_ref) {
-  var primary = _ref.primary,
-      backgroundColor = _ref.backgroundColor,
+  var type = _ref.type,
+      variant = _ref.variant,
       size = _ref.size,
-      label = _ref.label,
-      props = _objectWithoutProperties(_ref, ["primary", "backgroundColor", "size", "label"]);
+      title = _ref.title,
+      active = _ref.active,
+      disabled = _ref.disabled,
+      onClick = _ref.onClick,
+      onMouseDown = _ref.onMouseDown,
+      children = _ref.children,
+      props = _objectWithoutProperties(_ref, ["type", "variant", "size", "title", "active", "disabled", "onClick", "onMouseDown", "children"]);
 
-  var mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  var className = 'muncher-button' + (variant ? ' muncher-button--' + variant : '') + (size ? ' muncher-button--' + size : '') + (active ? ' muncher-button--active' : '');
   return /*#__PURE__*/_react.default.createElement("button", _extends({
-    type: "button",
-    className: ['storybook-button', "storybook-button--".concat(size), mode].join(' '),
-    style: backgroundColor && {
-      backgroundColor: backgroundColor
-    }
-  }, props), label);
+    type: type ? type : 'button',
+    className: className,
+    disabled: !!disabled,
+    "data-title": title,
+    onClick: onClick,
+    onMouseDown: onMouseDown
+  }, props), children);
 };
 
 Button.propTypes = {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary: _propTypes.default.bool,
-
-  /**
-   * What background color to use
-   */
-  backgroundColor: _propTypes.default.string,
-
-  /**
-   * How large should the button be?
-   */
+  type: _propTypes.default.oneOf(['button', 'submit', 'reset']),
+  variant: _propTypes.default.oneOf(['primary', 'secondary']),
   size: _propTypes.default.oneOf(['small', 'medium', 'large']),
-
-  /**
-   * Button contents
-   */
-  label: _propTypes.default.string.isRequired,
-
-  /**
-   * Optional click handler
-   */
-  onClick: _propTypes.default.func
+  title: _propTypes.default.string,
+  active: _propTypes.default.bool,
+  disabled: _propTypes.default.bool,
+  onClick: _propTypes.default.func,
+  onMouseDown: _propTypes.default.func,
+  children: _propTypes.default.oneOfType([_propTypes.default.element, _propTypes.default.string])
 };
 Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
+  type: 'button',
   size: 'medium',
+  variant: 'primary',
   onClick: undefined
 };
 var _default = Button;
