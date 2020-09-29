@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _DropdownButton = _interopRequireDefault(require("./DropdownButton"));
 
-var _muncher = require("../icon/assets/muncher.svg");
+var _MuncherSvg = _interopRequireDefault(require("../icon/assets/MuncherSvg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33,7 +33,7 @@ var Default = Template.bind({});
 exports.Default = Default;
 Default.args = {
   title: 'Default Dropdown',
-  icon: /*#__PURE__*/_react.default.createElement(_muncher.ReactComponent, null),
+  icon: /*#__PURE__*/_react.default.createElement(_MuncherSvg.default, null),
   showContent: false,
   setShowContent: function setShowContent() {}
 };

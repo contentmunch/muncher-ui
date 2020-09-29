@@ -9,9 +9,9 @@ var _react = _interopRequireDefault(require("react"));
 
 require("./assets/MuncherIcon.scss");
 
-var _muncher = require("./assets/muncher.svg");
-
 var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _MuncherSvg = _interopRequireDefault(require("./assets/MuncherSvg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31,7 +31,7 @@ function MuncherIcon(_ref) {
     className: className,
     "data-title": "Muncher Home",
     onClick: onClick
-  }, props), /*#__PURE__*/_react.default.createElement(_muncher.ReactComponent, null));
+  }, props), /*#__PURE__*/_react.default.createElement(_MuncherSvg.default, null));
 }
 
 MuncherIcon.propTypes = {

@@ -21,6 +21,7 @@ function TextInput(_ref) {
     className: "muncher-text-input",
     name: name,
     type: "text",
+    autoComplete: "off",
     placeholder: placeHolder,
     onChange: onChange
   });
