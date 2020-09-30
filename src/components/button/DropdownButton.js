@@ -5,8 +5,8 @@ import Button from "./Button";
 
 export default function DropdownButton(
     {
-        variant, size, title, active, disabled, icon, drop, onClick, onClose,
-        showContent, setShowContent, children, ...props
+        variant, size, title, active, disabled, element, drop, onClick, onClose,
+        showContent, setShowContent, children
     }) {
 
     const ref = useRef(null);
@@ -50,16 +50,18 @@ export default function DropdownButton(
         switch (drop) {
             case "left":
                 return "muncher-dropdown--content drop-left";
-
+            case "nav":
+                return "muncher-dropdown--nav"
             default:
                 return "muncher-dropdown--content";
         }
     };
     return (
         <div className="muncher-dropdown" ref={ref}>
-            <Button onMouseDown={buttonOnClick} title={title} disabled={disabled}
+            <Button type={'nav' === drop ? 'nav' : 'button'} onMouseDown={buttonOnClick} title={title}
+                    disabled={disabled}
                     active={active} variant={variant} size={size}
-            >{icon}</Button>
+            >{element}</Button>
             {
                 showContent ? <div className={dropdownClass()}>
                     {children}
@@ -75,8 +77,8 @@ DropdownButton.propTypes = {
     title: PropTypes.string,
     active: PropTypes.bool,
     disabled: PropTypes.bool,
-    icon: PropTypes.element,
-    drop: PropTypes.oneOf(['left', 'right']),
+    element: PropTypes.element.isRequired,
+    drop: PropTypes.oneOf(['left', 'right', 'nav']),
     onClick: PropTypes.func,
     onClose: PropTypes.func,
     showContent: PropTypes.bool.isRequired,

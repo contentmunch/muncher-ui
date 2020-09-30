@@ -1,21 +1,30 @@
 import React from 'react';
 
 import Button from './Button';
+import Icon from "../icon/Icon";
 
 export default {
     title: 'Buttons/Button',
     component: Button,
     decorators: [story => <div style={{padding: '2rem', background: '#f5f5f5'}}>{story()}</div>],
-
 };
 
 const Template = (args) => <Button {...args} >Button</Button>;
-
+const IconTemplate = (args) => <Button {...args}><Icon name='muncher'/></Button>
 export const Default = Template.bind({});
 Default.args = {
     title: 'Default Button',
 };
-
+export const IconButton = IconTemplate.bind({});
+IconButton.args = {
+    title: 'Icon Button',
+    size: 'small'
+};
+export const NavButton = Template.bind({});
+NavButton.args = {
+    title: 'Nav Button',
+    type: 'nav',
+};
 export const Secondary = Template.bind({});
 Secondary.args = {
     title: 'Secondary Button',

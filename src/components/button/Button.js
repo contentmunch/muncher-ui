@@ -4,12 +4,13 @@ import './assets/Button.scss';
 
 const Button = ({type, variant, size, title, active, disabled, onClick, onMouseDown, children, ...props}) => {
     const className = 'muncher-button' +
+        (type && type === 'nav' ? ' muncher-button--nav' : '') +
         (variant ? ' muncher-button--' + variant : '') +
         (size ? ' muncher-button--' + size : '') +
         (active ? ' muncher-button--active' : '');
     return (
         <button
-            type={type ? type : 'button'}
+            type={type ? type !== 'nav' ? type : 'button' : 'button'}
             className={className}
             disabled={!!disabled}
             data-title={title}
@@ -22,7 +23,7 @@ const Button = ({type, variant, size, title, active, disabled, onClick, onMouseD
     );
 };
 Button.propTypes = {
-    type: PropTypes.oneOf(['button', 'submit', 'reset']),
+    type: PropTypes.oneOf(['button', 'submit', 'reset', 'nav']),
     variant: PropTypes.oneOf(['primary', 'secondary']),
     size: PropTypes.oneOf(['small', 'medium', 'large']),
     title: PropTypes.string,

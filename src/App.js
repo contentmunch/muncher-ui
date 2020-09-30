@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import './components/assets/default.scss';
-import MuncherIcon from "./components/icon/MuncherIcon";
 import DropdownButton from "./components/button/DropdownButton";
-import {TextInput} from "./components";
+import {Button, TextInput} from "./components";
 import TextInputDropdown from "./components/input/TextInputDropdown";
+import Icon from "./components/icon/Icon";
 
 function App() {
     const [showContent, setShowContent] = useState(false);
@@ -19,9 +19,12 @@ function App() {
         <div className="main--content">
             <div className="container">
                 <div className="div__align--center">
-                    <MuncherIcon onClick={onClick} variant="large"/>
+                    <Button onClick={onClick} size="large">
+                        <Icon name="muncher" size="large"/>
+                    </Button>
                     <TextInput/>
-                    <DropdownButton icon={<p>Test</p>} showContent={showContent} setShowContent={setShowContent}>
+                    <DropdownButton drop="nav" element={<p>Test</p>} showContent={showContent}
+                                    setShowContent={setShowContent}>
                         <div>
                             <p onClick={onClick}>First</p>
                             <p onClick={onClick}>Second</p>
@@ -39,6 +42,10 @@ function App() {
                         <p onClick={onClick}>Second</p>
                     </div>
                 </TextInputDropdown>
+            </div>
+
+            <div className="container">
+
             </div>
         </div>
     );

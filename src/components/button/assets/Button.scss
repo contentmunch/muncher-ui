@@ -5,9 +5,7 @@ $button-background-color: $primary-background-color !default;
 $button-secondary-background-color: $secondary-background-color !default;
 
 .muncher-button {
-  padding: .4rem;
   font-family: $button-font;
-  font-size: .8rem;
   text-decoration: none;
   font-weight: 500;
   text-transform: uppercase;
@@ -22,7 +20,7 @@ $button-secondary-background-color: $secondary-background-color !default;
 
 .muncher-button--primary {
   color: $button-color;
-  background:  $button-background-color;
+  background: $button-background-color;
 }
 
 .muncher-button--secondary {
@@ -34,23 +32,43 @@ $button-secondary-background-color: $secondary-background-color !default;
 }
 
 .muncher-button--small {
-  font-size: 12px;
-  padding: 10px 16px;
+  font-size: .8rem;
+  padding: .4rem;
 }
 
 .muncher-button--medium {
-  font-size: 14px;
-  padding: 11px 20px;
+  font-size: .9rem;
+  padding: .5rem .8rem;
 }
 
 .muncher-button--large {
-  font-size: 16px;
-  padding: 12px 24px;
+  font-size: 1rem;
+  padding: .5rem .8rem;
 }
 
 .muncher-button:disabled {
   color: $disabled-color;
 }
+
 .muncher-button:hover {
   opacity: .7;
+}
+
+.muncher-button--nav {
+  color: $nav-color;
+  background: $nav-background-color;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+
+  a {
+    color: $nav-color;
+
+  }
+
+  @media (min-width: $large-size) {
+    padding: 0 .5rem;
+    display: inline-block;
+
+  }
 }

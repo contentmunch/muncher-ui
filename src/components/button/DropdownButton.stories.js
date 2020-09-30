@@ -1,6 +1,6 @@
 import React from 'react';
 import DropdownButton from "./DropdownButton";
-import MuncherSvg from "../icon/assets/MuncherSvg";
+import Icon from "../icon/Icon";
 
 export default {
     title: 'Buttons/Dropdown Button',
@@ -13,16 +13,32 @@ const Template = (args) => <DropdownButton {...args} ><p>Drop down content</p></
 export const Default = Template.bind({});
 Default.args = {
     title: 'Default Dropdown',
-    icon: <MuncherSvg/>,
+    element: <p>drop down</p>,
     showContent: false,
     setShowContent: () => {
     }
+};
+
+export const IconDropdown = Template.bind({});
+IconDropdown.args = {
+    ...Default.args,
+    size: 'small',
+    title: 'DropDown with text',
+    element: <Icon name='muncher'/>
 };
 export const WithText = Template.bind({});
 WithText.args = {
     ...Default.args,
     title: 'DropDown with text',
-    icon: <p>Text drop down</p>
+    element: <p>Text drop down</p>
+};
+
+export const NavDropDown = Template.bind({});
+NavDropDown.args = {
+    ...Default.args,
+    title: 'Nav drop down',
+    drop: 'nav',
+    element: <h4>Nav Item</h4>
 };
 export const Secondary = Template.bind({});
 Secondary.args = {
