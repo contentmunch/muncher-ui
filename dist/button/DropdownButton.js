@@ -21,25 +21,19 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
 function DropdownButton(_ref) {
   var variant = _ref.variant,
       size = _ref.size,
       title = _ref.title,
       active = _ref.active,
       disabled = _ref.disabled,
-      icon = _ref.icon,
+      element = _ref.element,
       drop = _ref.drop,
       onClick = _ref.onClick,
       onClose = _ref.onClose,
       showContent = _ref.showContent,
       setShowContent = _ref.setShowContent,
-      children = _ref.children,
-      props = _objectWithoutProperties(_ref, ["variant", "size", "title", "active", "disabled", "icon", "drop", "onClick", "onClose", "showContent", "setShowContent", "children"]);
-
+      children = _ref.children;
   var ref = (0, _react.useRef)(null);
 
   var buttonOnClick = function buttonOnClick(e) {
@@ -87,6 +81,9 @@ function DropdownButton(_ref) {
       case "left":
         return "muncher-dropdown--content drop-left";
 
+      case "nav":
+        return "muncher-dropdown--nav";
+
       default:
         return "muncher-dropdown--content";
     }
@@ -96,13 +93,14 @@ function DropdownButton(_ref) {
     className: "muncher-dropdown",
     ref: ref
   }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+    type: 'nav' === drop ? 'nav' : 'button',
     onMouseDown: buttonOnClick,
     title: title,
     disabled: disabled,
     active: active,
     variant: variant,
     size: size
-  }, icon), showContent ? /*#__PURE__*/_react.default.createElement("div", {
+  }, element), showContent ? /*#__PURE__*/_react.default.createElement("div", {
     className: dropdownClass()
   }, children) : "");
 }
@@ -113,8 +111,8 @@ DropdownButton.propTypes = {
   title: _propTypes.default.string,
   active: _propTypes.default.bool,
   disabled: _propTypes.default.bool,
-  icon: _propTypes.default.element,
-  drop: _propTypes.default.oneOf(['left', 'right']),
+  element: _propTypes.default.element.isRequired,
+  drop: _propTypes.default.oneOf(['left', 'right', 'nav']),
   onClick: _propTypes.default.func,
   onClose: _propTypes.default.func,
   showContent: _propTypes.default.bool.isRequired,

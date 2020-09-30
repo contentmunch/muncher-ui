@@ -6,7 +6,7 @@ $dropdown-content-background-color: $secondary-background-color !default;
   position: relative;
   display: inline-block;
 
-  .muncher-dropdown--content {
+  .muncher-dropdown--content, .muncher-dropdown--nav {
     display: block;
     position: absolute;
     white-space: nowrap;
@@ -26,6 +26,7 @@ $dropdown-content-background-color: $secondary-background-color !default;
     .muncher-dropdown--close:hover {
       opacity: .8;
     }
+
     div {
       padding: .1rem;
     }
@@ -35,6 +36,7 @@ $dropdown-content-background-color: $secondary-background-color !default;
   .drop-left {
     right: 0;
   }
+
   .drop-right {
     left: 0;
   }

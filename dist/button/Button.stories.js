@@ -3,11 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Submit = exports.Active = exports.Disabled = exports.Small = exports.Large = exports.Secondary = exports.Default = exports.default = void 0;
+exports.Submit = exports.Active = exports.Disabled = exports.Small = exports.Large = exports.Secondary = exports.NavButton = exports.IconButton = exports.Default = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
 var _Button = _interopRequireDefault(require("./Button"));
+
+var _Icon = _interopRequireDefault(require("../icon/Icon"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29,10 +31,28 @@ var Template = function Template(args) {
   return /*#__PURE__*/_react.default.createElement(_Button.default, args, "Button");
 };
 
+var IconTemplate = function IconTemplate(args) {
+  return /*#__PURE__*/_react.default.createElement(_Button.default, args, /*#__PURE__*/_react.default.createElement(_Icon.default, {
+    name: "muncher"
+  }));
+};
+
 var Default = Template.bind({});
 exports.Default = Default;
 Default.args = {
   title: 'Default Button'
+};
+var IconButton = IconTemplate.bind({});
+exports.IconButton = IconButton;
+IconButton.args = {
+  title: 'Icon Button',
+  size: 'small'
+};
+var NavButton = Template.bind({});
+exports.NavButton = NavButton;
+NavButton.args = {
+  title: 'Nav Button',
+  type: 'nav'
 };
 var Secondary = Template.bind({});
 exports.Secondary = Secondary;

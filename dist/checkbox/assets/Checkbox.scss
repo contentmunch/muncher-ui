@@ -1,0 +1,8 @@
+@import "src/components/assets/variables";
+
+.muncher-checkbox {
+  color: $primary-color;
+  white-space: nowrap;
+  display: inline-block;
+  padding-right: .5rem;
+}

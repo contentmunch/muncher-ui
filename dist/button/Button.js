@@ -31,9 +31,9 @@ var Button = function Button(_ref) {
       children = _ref.children,
       props = _objectWithoutProperties(_ref, ["type", "variant", "size", "title", "active", "disabled", "onClick", "onMouseDown", "children"]);
 
-  var className = 'muncher-button' + (variant ? ' muncher-button--' + variant : '') + (size ? ' muncher-button--' + size : '') + (active ? ' muncher-button--active' : '');
+  var className = 'muncher-button' + (type && type === 'nav' ? ' muncher-button--nav' : '') + (variant ? ' muncher-button--' + variant : '') + (size ? ' muncher-button--' + size : '') + (active ? ' muncher-button--active' : '');
   return /*#__PURE__*/_react.default.createElement("button", _extends({
-    type: type ? type : 'button',
+    type: type ? type !== 'nav' ? type : 'button' : 'button',
     className: className,
     disabled: !!disabled,
     "data-title": title,
@@ -43,7 +43,7 @@ var Button = function Button(_ref) {
 };
 
 Button.propTypes = {
-  type: _propTypes.default.oneOf(['button', 'submit', 'reset']),
+  type: _propTypes.default.oneOf(['button', 'submit', 'reset', 'nav']),
   variant: _propTypes.default.oneOf(['primary', 'secondary']),
   size: _propTypes.default.oneOf(['small', 'medium', 'large']),
   title: _propTypes.default.string,

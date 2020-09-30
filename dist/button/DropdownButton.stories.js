@@ -3,13 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Active = exports.Disabled = exports.Small = exports.Large = exports.Secondary = exports.WithText = exports.Default = exports.default = void 0;
+exports.Active = exports.Disabled = exports.Small = exports.Large = exports.Secondary = exports.NavDropDown = exports.WithText = exports.IconDropdown = exports.Default = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
 var _DropdownButton = _interopRequireDefault(require("./DropdownButton"));
 
-var _MuncherSvg = _interopRequireDefault(require("../icon/assets/MuncherSvg"));
+var _Icon = _interopRequireDefault(require("../icon/Icon"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -41,15 +41,31 @@ var Default = Template.bind({});
 exports.Default = Default;
 Default.args = {
   title: 'Default Dropdown',
-  icon: /*#__PURE__*/_react.default.createElement(_MuncherSvg.default, null),
+  element: /*#__PURE__*/_react.default.createElement("p", null, "drop down"),
   showContent: false,
   setShowContent: function setShowContent() {}
 };
+var IconDropdown = Template.bind({});
+exports.IconDropdown = IconDropdown;
+IconDropdown.args = _objectSpread(_objectSpread({}, Default.args), {}, {
+  size: 'small',
+  title: 'DropDown with text',
+  element: /*#__PURE__*/_react.default.createElement(_Icon.default, {
+    name: "muncher"
+  })
+});
 var WithText = Template.bind({});
 exports.WithText = WithText;
 WithText.args = _objectSpread(_objectSpread({}, Default.args), {}, {
   title: 'DropDown with text',
-  icon: /*#__PURE__*/_react.default.createElement("p", null, "Text drop down")
+  element: /*#__PURE__*/_react.default.createElement("p", null, "Text drop down")
+});
+var NavDropDown = Template.bind({});
+exports.NavDropDown = NavDropDown;
+NavDropDown.args = _objectSpread(_objectSpread({}, Default.args), {}, {
+  title: 'Nav drop down',
+  drop: 'nav',
+  element: /*#__PURE__*/_react.default.createElement("h4", null, "Nav Item")
 });
 var Secondary = Template.bind({});
 exports.Secondary = Secondary;
