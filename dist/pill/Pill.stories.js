@@ -12,7 +12,7 @@ var _Pill = _interopRequireDefault(require("./Pill"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Pill',
+  title: 'Data Display/Pill',
   component: _Pill.default
 };
 exports.default = _default;

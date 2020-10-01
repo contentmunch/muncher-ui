@@ -12,7 +12,7 @@ var _Modal = _interopRequireDefault(require("./Modal"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Modal',
+  title: 'Feedback/Modal',
   component: _Modal.default
 };
 exports.default = _default;

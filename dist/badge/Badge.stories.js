@@ -14,7 +14,7 @@ var _Icon = _interopRequireDefault(require("../icon/Icon"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Badge',
+  title: 'Data Display/Badge',
   component: _Badge.default,
   decorators: [function (story) {
     return /*#__PURE__*/_react.default.createElement("div", {

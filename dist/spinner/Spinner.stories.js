@@ -12,7 +12,7 @@ var _Spinner = _interopRequireDefault(require("./Spinner"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Spinner',
+  title: 'Utils/Spinner',
   component: _Spinner.default
 };
 exports.default = _default;

@@ -12,7 +12,7 @@ var _Backdrop = _interopRequireDefault(require("./Backdrop"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: "Backdrop",
+  title: "Feedback/Backdrop",
   component: _Backdrop.default
 };
 exports.default = _default;

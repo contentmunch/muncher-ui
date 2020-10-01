@@ -12,7 +12,7 @@ var _Star = _interopRequireDefault(require("./Star"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Star',
+  title: 'Utils/Star',
   component: _Star.default
 };
 exports.default = _default;

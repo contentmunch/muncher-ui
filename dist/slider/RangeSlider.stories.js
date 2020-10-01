@@ -12,7 +12,7 @@ var _RangeSlider = _interopRequireDefault(require("./RangeSlider"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Range Slider',
+  title: 'Input/Range Slider',
   component: _RangeSlider.default
 };
 exports.default = _default;
