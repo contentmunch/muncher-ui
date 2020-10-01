@@ -32,8 +32,10 @@ var Radio = function Radio(_ref) {
 
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "muncher-input--div"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "muncher-radio"
   }, /*#__PURE__*/_react.default.createElement("input", _extends({
-    className: "muncher-radio",
+    className: "muncher-input",
     type: "radio",
     name: name,
     value: value,
@@ -43,7 +45,7 @@ var Radio = function Radio(_ref) {
     label: label,
     required: required,
     name: name
-  }) : '');
+  }) : ''));
 };
 
 Radio.propTypes = {

@@ -18,11 +18,12 @@ var _default = {
 exports.default = _default;
 
 var Template = function Template(args) {
-  return /*#__PURE__*/_react.default.createElement(_Checkbox.default, args, " Item 1");
+  return /*#__PURE__*/_react.default.createElement(_Checkbox.default, args);
 };
 
 var Default = Template.bind({});
 exports.Default = Default;
 Default.args = {
-  name: 'muncher-checkbox'
+  name: 'muncher-checkbox',
+  label: 'Item 1'
 };

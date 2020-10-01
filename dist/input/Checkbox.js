@@ -32,9 +32,10 @@ var Checkbox = function Checkbox(_ref) {
 
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "muncher-input--div"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "muncher-checkbox"
   }, /*#__PURE__*/_react.default.createElement("input", _extends({
     type: "checkbox",
-    className: "muncher-checkbox",
     name: name,
     value: value,
     onChange: onChange,
@@ -44,7 +45,7 @@ var Checkbox = function Checkbox(_ref) {
     label: label,
     required: required,
     name: name
-  }) : '');
+  }) : ''));
 };
 
 Checkbox.propTypes = {
