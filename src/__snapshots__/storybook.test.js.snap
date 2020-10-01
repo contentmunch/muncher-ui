@@ -26,7 +26,7 @@ exports[`Storyshots Badge Default 1`] = `
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth="1"
+      strokeWidth={2}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -154,7 +154,7 @@ exports[`Storyshots Buttons/Button Icon Button 1`] = `
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth="1"
+      strokeWidth={2}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -410,7 +410,7 @@ exports[`Storyshots Buttons/Dropdown Button Icon Dropdown 1`] = `
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth="1"
+        strokeWidth={2}
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -616,6 +616,58 @@ exports[`Storyshots Checkbox Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Icons Dark 1`] = `
+<svg
+  className="muncher-icon muncher-icon--medium"
+  fill="none"
+  stroke="currentColor"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  strokeWidth={2}
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    height="18"
+    rx="2"
+    ry="2"
+    width="18"
+    x="3"
+    y="4"
+  />
+  <line
+    x1="16"
+    x2="16"
+    y1="2"
+    y2="6"
+  />
+  <line
+    x1="8"
+    x2="8"
+    y1="2"
+    y2="6"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="10"
+    y2="10"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="14"
+    y2="14"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="18"
+    y2="18"
+  />
+</svg>
+`;
+
 exports[`Storyshots Icons Default 1`] = `
 <svg
   className="muncher-icon muncher-icon--small"
@@ -623,7 +675,7 @@ exports[`Storyshots Icons Default 1`] = `
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
-  strokeWidth="1"
+  strokeWidth={2}
   viewBox="0 0 24 24"
   xmlns="http://www.w3.org/2000/svg"
 >
@@ -675,7 +727,7 @@ exports[`Storyshots Icons Large 1`] = `
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
-  strokeWidth="1"
+  strokeWidth={2}
   viewBox="0 0 24 24"
   xmlns="http://www.w3.org/2000/svg"
 >
@@ -727,7 +779,7 @@ exports[`Storyshots Icons Medium 1`] = `
   stroke="currentColor"
   strokeLinecap="round"
   strokeLinejoin="round"
-  strokeWidth="1"
+  strokeWidth={2}
   viewBox="0 0 24 24"
   xmlns="http://www.w3.org/2000/svg"
 >
@@ -848,7 +900,7 @@ exports[`Storyshots Pill Default 1`] = `
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth="1"
+      strokeWidth={2}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

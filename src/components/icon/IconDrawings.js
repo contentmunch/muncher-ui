@@ -107,6 +107,12 @@ export const iconDrawings = (name) => {
                 <line x1="7" y1="14" x2="17" y2="14"></line>
                 <line x1="7" y1="18" x2="17" y2="18"></line>
             </Fragment>
+        case 'mute':
+            return <Fragment>
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                <line x1="23" y1="9" x2="17" y2="15"/>
+                <line x1="17" y1="9" x2="23" y2="15"/>
+            </Fragment>
         case 'ordered-list':
             return <Fragment>
                 <line x1="9" y1="5" x2="21" y2="5"/>
@@ -180,6 +186,7 @@ export const iconDrawings = (name) => {
                 <line x1="16" y1="19" x2="16" y2="22"/>
                 <line x1="19" y1="16" x2="22" y2="16"/>
             </Fragment>
+
         case 'unordered-list':
             return <Fragment>
                 <line x1="9" y1="5" x2="21" y2="5"/>
@@ -194,6 +201,10 @@ export const iconDrawings = (name) => {
                 <path
                     d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
                 <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+            </Fragment>
+        case 'volume':
+            return <Fragment>
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
             </Fragment>
         default:
             return null;

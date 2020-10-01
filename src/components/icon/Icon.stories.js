@@ -16,6 +16,12 @@ Default.args = {
     name: 'muncher',
     size: 'small'
 };
+export const Dark = Template.bind({});
+Dark.args = {
+    ...Default.args,
+    size: 'medium',
+    weight: 2
+};
 export const Medium = Template.bind({});
 Medium.args = {
     ...Default.args,
