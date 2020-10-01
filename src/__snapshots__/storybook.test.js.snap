@@ -674,14 +674,20 @@ exports[`Storyshots Input/Checkbox Default 1`] = `
 <div
   className="muncher-input--div"
 >
-  <input
+  <div
     className="muncher-checkbox"
-    name="muncher-checkbox"
-    type="checkbox"
   >
-     Item 1
-  </input>
-  
+    <input
+      name="muncher-checkbox"
+      type="checkbox"
+    />
+    <label
+      htmlFor="muncher-checkbox"
+    >
+      Item 1
+      
+    </label>
+  </div>
 </div>
 `;
 
@@ -938,14 +944,21 @@ exports[`Storyshots Input/Radio Default 1`] = `
 <div
   className="muncher-input--div"
 >
-  <input
+  <div
     className="muncher-radio"
-    name="muncher-radio"
-    type="radio"
   >
-     Item 1
-  </input>
-  
+    <input
+      className="muncher-input"
+      name="muncher-radio"
+      type="radio"
+    />
+    <label
+      htmlFor="muncher-radio"
+    >
+      radio
+      
+    </label>
+  </div>
 </div>
 `;
 

@@ -5,10 +5,11 @@ export default {
     title: "Input/Radio",
     component: Radio
 }
-const Template = (args) => <Radio {...args}> Item 1</Radio>
+const Template = (args) => <Radio {...args}/>
 
 export const Default = Template.bind({});
 Default.args = {
     name: 'muncher-radio',
+    label: 'radio',
 
 }

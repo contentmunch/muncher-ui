@@ -7,15 +7,17 @@ const Radio = ({name, value, required, onChange, checked, label, ...props}) => {
 
     return (
         <div className="muncher-input--div">
-            <input className="muncher-radio"
-                   type="radio"
-                   name={name}
-                   value={value}
-                   onChange={onChange}
-                   checked={checked}
-                   {...props}
-            />
-            {label ? <Label label={label} required={required} name={name}/> : ''}
+            <div className="muncher-radio">
+                <input className="muncher-input"
+                    type="radio"
+                    name={name}
+                    value={value}
+                    onChange={onChange}
+                    checked={checked}
+                    {...props}
+                />
+                {label ? <Label label={label} required={required} name={name}/> : ''}
+            </div>
         </div>
     )
 };

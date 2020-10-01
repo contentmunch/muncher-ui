@@ -7,16 +7,17 @@ const Checkbox = ({name, value, required, onChange, checked, label, ...props}) =
 
     return (
         <div className="muncher-input--div">
-            <input type="checkbox"
-                   className="muncher-checkbox"
-                   name={name}
-                   value={value}
-                   onChange={onChange}
-                   checked={checked}
-                   required={required}
-                   {...props}
-            />
-            {label ? <Label label={label} required={required} name={name}/> : ''}
+            <div className="muncher-checkbox">
+                <input type="checkbox"
+                       name={name}
+                       value={value}
+                       onChange={onChange}
+                       checked={checked}
+                       required={required}
+                       {...props}
+                />
+                {label ? <Label label={label} required={required} name={name}/> : ''}
+            </div>
         </div>
     )
 };

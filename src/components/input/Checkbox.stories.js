@@ -5,10 +5,10 @@ export default {
     title: "Input/Checkbox",
     component: Checkbox
 }
-const Template = (args) => <Checkbox {...args}> Item 1</Checkbox>
+const Template = (args) => <Checkbox {...args}/>
 
 export const Default = Template.bind({});
 Default.args = {
     name: 'muncher-checkbox',
-
+    label: 'Item 1',
 }

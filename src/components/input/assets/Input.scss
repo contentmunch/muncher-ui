@@ -23,18 +23,20 @@ $input-placeholder-color: $primary-color !default;
     color: $input-placeholder-color;
   }
 
-
   .muncher-input:focus {
     outline-color: $tertiary-background-color;
   }
 
-  .muncher-checkbox .muncher-radio {
+  .muncher-checkbox, .muncher-radio {
     color: $primary-color;
     white-space: nowrap;
-    display: inline-block;
-    padding-right: .5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    input {
+      margin-right: .1rem;
+    }
   }
-
 }
 
 label {
