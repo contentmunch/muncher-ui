@@ -1,6 +1,6 @@
 {
   "name": "muncher-ui",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Muncher UI components",
   "main": "dist/index.js",
   "module": "dist/index.js",
