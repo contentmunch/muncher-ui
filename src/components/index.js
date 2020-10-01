@@ -2,6 +2,7 @@ import Backdrop from "./backdrop/Backdrop";
 import Badge from "./badge/Badge";
 import Button from "./button/Button";
 import Checkbox from "./input/Checkbox";
+import Radio from "./input/Radio";
 import DropdownButton from "./button/DropdownButton";
 import Icon from "./icon/Icon";
 import Input from "./input/Input";
@@ -15,11 +16,12 @@ import Star from "./star/Star";
 export {Backdrop};
 export {Badge};
 export {Button};
-export {Checkbox}
 export {DropdownButton};
-export {Input};
-export {TextInputDropdown};
 export {Icon};
+export {Checkbox}
+export {Input};
+export {Radio};
+export {TextInputDropdown};
 export {Modal};
 export {Pill};
 export {RangeSlider};
