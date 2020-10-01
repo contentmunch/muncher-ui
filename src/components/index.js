@@ -4,7 +4,7 @@ import Button from "./button/Button";
 import Checkbox from "./checkbox/Checkbox";
 import DropdownButton from "./button/DropdownButton";
 import Icon from "./icon/Icon";
-import TextInput from "./input/TextInput";
+import Input from "./input/Input";
 import TextInputDropdown from "./input/TextInputDropdown";
 import Modal from "./modal/Modal";
 import Pill from "./pill/Pill";
@@ -17,7 +17,7 @@ export {Badge};
 export {Button};
 export {Checkbox}
 export {DropdownButton};
-export {TextInput};
+export {Input};
 export {TextInputDropdown};
 export {Icon};
 export {Modal};

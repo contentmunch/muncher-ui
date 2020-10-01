@@ -6,7 +6,7 @@ import Button from "./Button";
 export default function DropdownButton(
     {
         variant, size, title, active, disabled, element, drop, onClick, onClose,
-        showContent, setShowContent, children
+        showContent, setShowContent, children,...props
     }) {
 
     const ref = useRef(null);
@@ -60,7 +60,7 @@ export default function DropdownButton(
         <div className="muncher-dropdown" ref={ref}>
             <Button type={'nav' === drop ? 'nav' : 'button'} onMouseDown={buttonOnClick} title={title}
                     disabled={disabled}
-                    active={active} variant={variant} size={size}
+                    active={active} variant={variant} size={size} {...props}
             >{element}</Button>
             {
                 showContent ? <div className={dropdownClass()}>

@@ -1,7 +1,7 @@
 import React, {useCallback, useEffect, useRef} from 'react';
 import "./assets/TextInputDropdown.scss";
 import PropTypes from "prop-types";
-import TextInput from "./TextInput";
+import Input from "./Input";
 
 export default function TextInputDropdown({focus, inputPlaceHolder, handleInputChange, showContent, setShowContent, children}) {
     const ref = useRef(null);
@@ -39,7 +39,7 @@ export default function TextInputDropdown({focus, inputPlaceHolder, handleInputC
     }, [escFunction, onContentClose]);
     return (
         <div className="muncher-input-drop-down" ref={ref}>
-            <TextInput focus={focus} placeHolder={inputPlaceHolder} name="query" onChange={e => handleQueryChange(e)}/>
+            <Input focus={focus} placeHolder={inputPlaceHolder} name="query" onChange={e => handleQueryChange(e)}/>
 
             {
                 showContent ?

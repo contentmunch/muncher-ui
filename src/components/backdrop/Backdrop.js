@@ -2,11 +2,11 @@ import React from 'react';
 import './assets/Backdrop.scss';
 import PropTypes from "prop-types";
 
-const Backdrop = ({show, backdropClickHandler}) => {
+const Backdrop = ({show, backdropClickHandler, ...props}) => {
 
     return (
         show ?
-            <div className="muncher-backdrop" onClick={backdropClickHandler}>
+            <div className="muncher-backdrop" onClick={backdropClickHandler} {...props}>
 
             </div> : null
     )

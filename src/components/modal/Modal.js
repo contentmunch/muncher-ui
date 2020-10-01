@@ -3,7 +3,7 @@ import './assets/Modal.scss';
 import Backdrop from "../backdrop/Backdrop";
 import PropTypes from "prop-types";
 
-const Modal = ({show, modalCloseHandler, children}) => {
+const Modal = ({show, modalCloseHandler, children,...props}) => {
     const escFunction = useCallback((event) => {
         if (event.keyCode === 27) {
             modalCloseHandler();
@@ -23,7 +23,9 @@ const Modal = ({show, modalCloseHandler, children}) => {
                  style={{
                      transform: show ? 'translateY(0)' : 'translateY(-100vh)',
                      opacity: show ? '1' : '0'
-                 }}>
+                 }}
+                 {...props}
+            >
 
                 {children}
             </div>

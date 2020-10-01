@@ -686,6 +686,182 @@ exports[`Storyshots Input/Checkbox Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Input/Input Color 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="Type your query"
+  type="color"
+/>
+`;
+
+exports[`Storyshots Input/Input Date 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="Type your query"
+  type="date"
+/>
+`;
+
+exports[`Storyshots Input/Input Date Time 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="Type your query"
+  type="datetime-local"
+/>
+`;
+
+exports[`Storyshots Input/Input Default 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="Type your query"
+  type="text"
+/>
+`;
+
+exports[`Storyshots Input/Input Email 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="Type your query"
+  type="email"
+/>
+`;
+
+exports[`Storyshots Input/Input File 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="File"
+  type="file"
+/>
+`;
+
+exports[`Storyshots Input/Input Month 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="Type your query"
+  type="month"
+/>
+`;
+
+exports[`Storyshots Input/Input Number 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="Number"
+  type="number"
+/>
+`;
+
+exports[`Storyshots Input/Input Password 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="Type password"
+  type="password"
+/>
+`;
+
+exports[`Storyshots Input/Input Range 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="Type password"
+  type="range"
+/>
+`;
+
+exports[`Storyshots Input/Input Search 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  type="text"
+/>
+`;
+
+exports[`Storyshots Input/Input Tel 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="Type your query"
+  type="tel"
+/>
+`;
+
+exports[`Storyshots Input/Input Time 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="Type your query"
+  type="time"
+/>
+`;
+
+exports[`Storyshots Input/Input Url 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="Type your query"
+  type="url"
+/>
+`;
+
+exports[`Storyshots Input/Input Week 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-input"
+  name="query"
+  placeholder="Type your query"
+  type="week"
+/>
+`;
+
+exports[`Storyshots Input/Input With Focus 1`] = `
+<input
+  autoComplete="off"
+  autoFocus={true}
+  className="muncher-input"
+  name="query"
+  placeholder="Type your query"
+  type="text"
+/>
+`;
+
+exports[`Storyshots Input/Radio Default 1`] = `
+<div
+  className="muncher--checkbox"
+>
+  <input
+    name="muncher-radio"
+    type="checkbox"
+  />
+  <label
+    htmlFor="muncher-radio"
+  >
+     
+     Item 1
+  </label>
+</div>
+`;
+
 exports[`Storyshots Input/Range Slider Default 1`] = `
 <div
   className="muncher-slider"

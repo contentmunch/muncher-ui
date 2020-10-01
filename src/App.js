@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './components/assets/default.scss';
 import DropdownButton from "./components/button/DropdownButton";
-import {Button, TextInput} from "./components";
+import {Button, Input} from "./components";
 import TextInputDropdown from "./components/input/TextInputDropdown";
 import Icon from "./components/icon/Icon";
 
@@ -22,7 +22,7 @@ function App() {
                     <Button onClick={onClick} size="large">
                         <Icon name="muncher" size="large"/>
                     </Button>
-                    <TextInput/>
+                    <Input/>
                     <DropdownButton drop="nav" element={<p>Test</p>} showContent={showContent}
                                     setShowContent={setShowContent}>
                         <div>

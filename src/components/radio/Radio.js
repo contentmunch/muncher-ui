@@ -1,12 +1,12 @@
 import React from 'react';
-import './assets/Checkbox.scss';
+import './assets/Radio.scss';
 import PropTypes from "prop-types";
 
-const Checkbox = ({name, value, onChange, checked, children, ...props}) => {
+const Radio = ({name, value, onChange, checked, children, ...props}) => {
 
     return (
         <div className="muncher--checkbox">
-            <input type="checkbox"
+            <input type="radio"
                    name={name}
                    value={value}
                    onChange={onChange}
@@ -17,11 +17,11 @@ const Checkbox = ({name, value, onChange, checked, children, ...props}) => {
         </div>
     )
 };
-Checkbox.propTypes = {
+Radio.propTypes = {
     name: PropTypes.string,
-    onChange: PropTypes.func,
     value: PropTypes.any,
+    onChange: PropTypes.func,
     checked: PropTypes.bool,
     children: PropTypes.oneOfType([PropTypes.element, PropTypes.string])
 }
-export default Checkbox;
+export default Radio;

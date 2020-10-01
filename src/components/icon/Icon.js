@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import {iconDrawings} from "./IconDrawings";
 import './assets/Icon.scss';
 
-export default function Icon({color, name, size, weight}) {
+export default function Icon({color, name, size, weight, ...props}) {
     const iconClass = size ? 'muncher-icon muncher-icon--' + size : 'muncher-icon muncher-icon--small';
 
     return (
@@ -17,7 +17,7 @@ export default function Icon({color, name, size, weight}) {
             strokeWidth={weight ? weight : 2}
             strokeLinecap="round"
             strokeLinejoin="round"
-
+            {...props}
         >
             {iconDrawings(name)}
         </svg>
