@@ -1,78 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Backdrop Default 1`] = `
-<div
-  className="muncher-backdrop"
-  onClick={[Function]}
-/>
-`;
-
-exports[`Storyshots Badge Default 1`] = `
-<div
-  style={
-    Object {
-      "maxWidth": "7rem",
-      "padding": "2rem",
-    }
-  }
->
-  <div
-    className="muncher-badge"
-  >
-    Muncher  
-    <svg
-      className="muncher-icon muncher-icon--small"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        height="18"
-        rx="2"
-        ry="2"
-        width="18"
-        x="3"
-        y="4"
-      />
-      <line
-        x1="16"
-        x2="16"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="8"
-        x2="8"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="10"
-        y2="10"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="14"
-        y2="14"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="18"
-        y2="18"
-      />
-    </svg>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Buttons/Button Active 1`] = `
 <div
   style={
@@ -599,294 +526,73 @@ exports[`Storyshots Buttons/Dropdown Button With Text 1`] = `
 </div>
 `;
 
-exports[`Storyshots Checkbox Default 1`] = `
+exports[`Storyshots Data Display/Badge Default 1`] = `
 <div
-  className="muncher--checkbox"
->
-  <input
-    name="muncher-checkbox"
-    type="checkbox"
-  />
-  <label
-    htmlFor="muncher-checkbox"
-  >
-     
-     Item 1
-  </label>
-</div>
-`;
-
-exports[`Storyshots Icons Dark 1`] = `
-<svg
-  className="muncher-icon muncher-icon--medium"
-  fill="none"
-  stroke="currentColor"
-  strokeLinecap="round"
-  strokeLinejoin="round"
-  strokeWidth={2}
-  viewBox="0 0 24 24"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <rect
-    height="18"
-    rx="2"
-    ry="2"
-    width="18"
-    x="3"
-    y="4"
-  />
-  <line
-    x1="16"
-    x2="16"
-    y1="2"
-    y2="6"
-  />
-  <line
-    x1="8"
-    x2="8"
-    y1="2"
-    y2="6"
-  />
-  <line
-    x1="7"
-    x2="17"
-    y1="10"
-    y2="10"
-  />
-  <line
-    x1="7"
-    x2="17"
-    y1="14"
-    y2="14"
-  />
-  <line
-    x1="7"
-    x2="17"
-    y1="18"
-    y2="18"
-  />
-</svg>
-`;
-
-exports[`Storyshots Icons Default 1`] = `
-<svg
-  className="muncher-icon muncher-icon--small"
-  fill="none"
-  stroke="currentColor"
-  strokeLinecap="round"
-  strokeLinejoin="round"
-  strokeWidth={2}
-  viewBox="0 0 24 24"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <rect
-    height="18"
-    rx="2"
-    ry="2"
-    width="18"
-    x="3"
-    y="4"
-  />
-  <line
-    x1="16"
-    x2="16"
-    y1="2"
-    y2="6"
-  />
-  <line
-    x1="8"
-    x2="8"
-    y1="2"
-    y2="6"
-  />
-  <line
-    x1="7"
-    x2="17"
-    y1="10"
-    y2="10"
-  />
-  <line
-    x1="7"
-    x2="17"
-    y1="14"
-    y2="14"
-  />
-  <line
-    x1="7"
-    x2="17"
-    y1="18"
-    y2="18"
-  />
-</svg>
-`;
-
-exports[`Storyshots Icons Large 1`] = `
-<svg
-  className="muncher-icon muncher-icon--large"
-  fill="none"
-  stroke="currentColor"
-  strokeLinecap="round"
-  strokeLinejoin="round"
-  strokeWidth={2}
-  viewBox="0 0 24 24"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <rect
-    height="18"
-    rx="2"
-    ry="2"
-    width="18"
-    x="3"
-    y="4"
-  />
-  <line
-    x1="16"
-    x2="16"
-    y1="2"
-    y2="6"
-  />
-  <line
-    x1="8"
-    x2="8"
-    y1="2"
-    y2="6"
-  />
-  <line
-    x1="7"
-    x2="17"
-    y1="10"
-    y2="10"
-  />
-  <line
-    x1="7"
-    x2="17"
-    y1="14"
-    y2="14"
-  />
-  <line
-    x1="7"
-    x2="17"
-    y1="18"
-    y2="18"
-  />
-</svg>
-`;
-
-exports[`Storyshots Icons Medium 1`] = `
-<svg
-  className="muncher-icon muncher-icon--medium"
-  fill="none"
-  stroke="currentColor"
-  strokeLinecap="round"
-  strokeLinejoin="round"
-  strokeWidth={2}
-  viewBox="0 0 24 24"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <rect
-    height="18"
-    rx="2"
-    ry="2"
-    width="18"
-    x="3"
-    y="4"
-  />
-  <line
-    x1="16"
-    x2="16"
-    y1="2"
-    y2="6"
-  />
-  <line
-    x1="8"
-    x2="8"
-    y1="2"
-    y2="6"
-  />
-  <line
-    x1="7"
-    x2="17"
-    y1="10"
-    y2="10"
-  />
-  <line
-    x1="7"
-    x2="17"
-    y1="14"
-    y2="14"
-  />
-  <line
-    x1="7"
-    x2="17"
-    y1="18"
-    y2="18"
-  />
-</svg>
-`;
-
-exports[`Storyshots Input/Text Input Default 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-text-input"
-  name="query"
-  placeholder="Type your query"
-  type="text"
-/>
-`;
-
-exports[`Storyshots Input/Text Input Dropdown Default 1`] = `
-<div
-  className="muncher-input-drop-down"
->
-  <input
-    autoComplete="off"
-    autoFocus={true}
-    className="muncher-text-input"
-    name="query"
-    onChange={[Function]}
-    placeholder="Start typing.."
-    type="text"
-  />
-  
-</div>
-`;
-
-exports[`Storyshots Input/Text Input With Focus 1`] = `
-<input
-  autoComplete="off"
-  autoFocus={true}
-  className="muncher-text-input"
-  name="query"
-  placeholder="Type your query"
-  type="text"
-/>
-`;
-
-exports[`Storyshots Modal Default 1`] = `
-Array [
-  <div
-    className="muncher-backdrop"
-  />,
-  <div
-    className="muncher-modal"
-    style={
-      Object {
-        "opacity": "1",
-        "transform": "translateY(0)",
-      }
+  style={
+    Object {
+      "maxWidth": "7rem",
+      "padding": "2rem",
     }
+  }
+>
+  <div
+    className="muncher-badge"
   >
-    <h2>
-      Modal title
-    </h2>
-    <section>
-      Modal Mody
-    </section>
-  </div>,
-]
+    Muncher  
+    <svg
+      className="muncher-icon muncher-icon--small"
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        height="18"
+        rx="2"
+        ry="2"
+        width="18"
+        x="3"
+        y="4"
+      />
+      <line
+        x1="16"
+        x2="16"
+        y1="2"
+        y2="6"
+      />
+      <line
+        x1="8"
+        x2="8"
+        y1="2"
+        y2="6"
+      />
+      <line
+        x1="7"
+        x2="17"
+        y1="10"
+        y2="10"
+      />
+      <line
+        x1="7"
+        x2="17"
+        y1="14"
+        y2="14"
+      />
+      <line
+        x1="7"
+        x2="17"
+        y1="18"
+        y2="18"
+      />
+    </svg>
+  </div>
+</div>
 `;
 
-exports[`Storyshots Pill Default 1`] = `
+exports[`Storyshots Data Display/Pill Default 1`] = `
 <div
   className="muncher-pill"
 >
@@ -932,7 +638,55 @@ exports[`Storyshots Pill Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Range Slider Default 1`] = `
+exports[`Storyshots Feedback/Backdrop Default 1`] = `
+<div
+  className="muncher-backdrop"
+  onClick={[Function]}
+/>
+`;
+
+exports[`Storyshots Feedback/Modal Default 1`] = `
+Array [
+  <div
+    className="muncher-backdrop"
+  />,
+  <div
+    className="muncher-modal"
+    style={
+      Object {
+        "opacity": "1",
+        "transform": "translateY(0)",
+      }
+    }
+  >
+    <h2>
+      Modal title
+    </h2>
+    <section>
+      Modal Mody
+    </section>
+  </div>,
+]
+`;
+
+exports[`Storyshots Input/Checkbox Default 1`] = `
+<div
+  className="muncher--checkbox"
+>
+  <input
+    name="muncher-checkbox"
+    type="checkbox"
+  />
+  <label
+    htmlFor="muncher-checkbox"
+  >
+     
+     Item 1
+  </label>
+</div>
+`;
+
+exports[`Storyshots Input/Range Slider Default 1`] = `
 <div
   className="muncher-slider"
 >
@@ -1012,13 +766,51 @@ exports[`Storyshots Range Slider Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Spinner Default 1`] = `
+exports[`Storyshots Input/Text Input Default 1`] = `
+<input
+  autoComplete="off"
+  className="muncher-text-input"
+  name="query"
+  placeholder="Type your query"
+  type="text"
+/>
+`;
+
+exports[`Storyshots Input/Text Input Dropdown Default 1`] = `
+<div
+  className="muncher-input-drop-down"
+>
+  <input
+    autoComplete="off"
+    autoFocus={true}
+    className="muncher-text-input"
+    name="query"
+    onChange={[Function]}
+    placeholder="Start typing.."
+    type="text"
+  />
+  
+</div>
+`;
+
+exports[`Storyshots Input/Text Input With Focus 1`] = `
+<input
+  autoComplete="off"
+  autoFocus={true}
+  className="muncher-text-input"
+  name="query"
+  placeholder="Type your query"
+  type="text"
+/>
+`;
+
+exports[`Storyshots Utils/Spinner Default 1`] = `
 <div
   className="muncher-spinner"
 />
 `;
 
-exports[`Storyshots Star Default 1`] = `
+exports[`Storyshots Utils/Star Default 1`] = `
 <span
   className="muncher-star "
   style={
@@ -1027,4 +819,212 @@ exports[`Storyshots Star Default 1`] = `
     }
   }
 />
+`;
+
+exports[`Storyshots Visual/Icons Dark 1`] = `
+<svg
+  className="muncher-icon muncher-icon--medium"
+  fill="none"
+  stroke="currentColor"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  strokeWidth={2}
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    height="18"
+    rx="2"
+    ry="2"
+    width="18"
+    x="3"
+    y="4"
+  />
+  <line
+    x1="16"
+    x2="16"
+    y1="2"
+    y2="6"
+  />
+  <line
+    x1="8"
+    x2="8"
+    y1="2"
+    y2="6"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="10"
+    y2="10"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="14"
+    y2="14"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="18"
+    y2="18"
+  />
+</svg>
+`;
+
+exports[`Storyshots Visual/Icons Default 1`] = `
+<svg
+  className="muncher-icon muncher-icon--small"
+  fill="none"
+  stroke="currentColor"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  strokeWidth={2}
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    height="18"
+    rx="2"
+    ry="2"
+    width="18"
+    x="3"
+    y="4"
+  />
+  <line
+    x1="16"
+    x2="16"
+    y1="2"
+    y2="6"
+  />
+  <line
+    x1="8"
+    x2="8"
+    y1="2"
+    y2="6"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="10"
+    y2="10"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="14"
+    y2="14"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="18"
+    y2="18"
+  />
+</svg>
+`;
+
+exports[`Storyshots Visual/Icons Large 1`] = `
+<svg
+  className="muncher-icon muncher-icon--large"
+  fill="none"
+  stroke="currentColor"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  strokeWidth={2}
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    height="18"
+    rx="2"
+    ry="2"
+    width="18"
+    x="3"
+    y="4"
+  />
+  <line
+    x1="16"
+    x2="16"
+    y1="2"
+    y2="6"
+  />
+  <line
+    x1="8"
+    x2="8"
+    y1="2"
+    y2="6"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="10"
+    y2="10"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="14"
+    y2="14"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="18"
+    y2="18"
+  />
+</svg>
+`;
+
+exports[`Storyshots Visual/Icons Medium 1`] = `
+<svg
+  className="muncher-icon muncher-icon--medium"
+  fill="none"
+  stroke="currentColor"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  strokeWidth={2}
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    height="18"
+    rx="2"
+    ry="2"
+    width="18"
+    x="3"
+    y="4"
+  />
+  <line
+    x1="16"
+    x2="16"
+    y1="2"
+    y2="6"
+  />
+  <line
+    x1="8"
+    x2="8"
+    y1="2"
+    y2="6"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="10"
+    y2="10"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="14"
+    y2="14"
+  />
+  <line
+    x1="7"
+    x2="17"
+    y1="18"
+    y2="18"
+  />
+</svg>
 `;

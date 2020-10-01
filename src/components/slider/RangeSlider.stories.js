@@ -2,7 +2,7 @@ import React from "react";
 import RangeSlider from "./RangeSlider";
 
 export default {
-    title: 'Range Slider',
+    title: 'Input/Range Slider',
     component: RangeSlider,
 }
 

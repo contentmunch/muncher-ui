@@ -2,7 +2,7 @@ import React from "react";
 import Backdrop from "./Backdrop";
 
 export default {
-    title: "Backdrop",
+    title: "Feedback/Backdrop",
     component: Backdrop,
 }
 const Template = (args) => <Backdrop {...args}/>;

@@ -2,7 +2,7 @@ import React from "react";
 import Pill from "./Pill";
 
 export default {
-    title: 'Pill',
+    title: 'Data Display/Pill',
     component: Pill
 }
 const Template = (args) => <Pill {...args}> Item 1</Pill>

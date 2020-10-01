@@ -3,7 +3,7 @@ import Badge from "./Badge";
 import Icon from "../icon/Icon";
 
 export default {
-    title: 'Badge',
+    title: 'Data Display/Badge',
     component: Badge,
     decorators: [story => <div style={{padding: '2rem', maxWidth: '7rem'}}>{story()}</div>]
 }

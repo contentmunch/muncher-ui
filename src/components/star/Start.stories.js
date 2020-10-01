@@ -2,7 +2,7 @@ import React from "react";
 import Star from "./Star";
 
 export default {
-    title: 'Star',
+    title: 'Utils/Star',
     component: Star
 }
 

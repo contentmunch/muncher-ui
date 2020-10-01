@@ -2,7 +2,7 @@ import React from 'react';
 import Icon from "./Icon";
 
 export default {
-    title: 'Icons',
+    title: 'Visual/Icons',
     component: Icon,
     argTypes: {
         color: {control: 'color'},

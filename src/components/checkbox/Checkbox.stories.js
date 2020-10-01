@@ -2,7 +2,7 @@ import React from "react";
 import Checkbox from "./Checkbox";
 
 export default {
-    title: "Checkbox",
+    title: "Input/Checkbox",
     component: Checkbox
 }
 const Template = (args) => <Checkbox {...args}> Item 1</Checkbox>
