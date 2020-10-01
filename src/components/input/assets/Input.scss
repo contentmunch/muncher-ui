@@ -1,7 +1,7 @@
 @import "src/components/assets/variables";
 
 $input-focus-color: $primary-color !default;
-$input-placeholder-color: $primary-color !default;
+$input-placeholder-color: $disabled-color !default;
 .muncher-input--div {
   .muncher-input {
     height: 2rem;
