@@ -13,7 +13,7 @@ require("./assets/TextInputDropdown.scss");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _TextInput = _interopRequireDefault(require("./TextInput"));
+var _Input = _interopRequireDefault(require("./Input"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -63,7 +63,7 @@ function TextInputDropdown(_ref) {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "muncher-input-drop-down",
     ref: ref
-  }, /*#__PURE__*/_react.default.createElement(_TextInput.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Input.default, {
     focus: focus,
     placeHolder: inputPlaceHolder,
     name: "query",

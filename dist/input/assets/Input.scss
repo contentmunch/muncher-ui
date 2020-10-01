@@ -1,0 +1,48 @@
+@import "src/components/assets/variables";
+
+$input-focus-color: $primary-color !default;
+$input-placeholder-color: $primary-color !default;
+.muncher-input--div {
+  .muncher-input {
+    height: 2rem;
+    font-size: .9rem;
+    padding-left: .5rem;
+    border: 1px solid $secondary-background-color;
+    width: 100%;
+  }
+
+  ::-webkit-input-placeholder { /* Edge */
+    color: $input-placeholder-color;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: $input-placeholder-color;
+  }
+
+  ::placeholder {
+    color: $input-placeholder-color;
+  }
+
+
+  .muncher-input:focus {
+    outline-color: $tertiary-background-color;
+  }
+
+  .muncher-checkbox .muncher-radio {
+    color: $primary-color;
+    white-space: nowrap;
+    display: inline-block;
+    padding-right: .5rem;
+  }
+
+}
+
+label {
+  display: inline-block;
+  padding: .2rem;
+
+  .required {
+    padding-left: .1rem;
+    color: $danger-color;
+  }
+}

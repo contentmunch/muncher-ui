@@ -7,9 +7,11 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-require("./assets/Backdrop.scss");
+require("./assets/Input.scss");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _Label = _interopRequireDefault(require("./Label"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19,20 +21,39 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-var Backdrop = function Backdrop(_ref) {
-  var show = _ref.show,
-      backdropClickHandler = _ref.backdropClickHandler,
-      props = _objectWithoutProperties(_ref, ["show", "backdropClickHandler"]);
+var Checkbox = function Checkbox(_ref) {
+  var name = _ref.name,
+      value = _ref.value,
+      required = _ref.required,
+      onChange = _ref.onChange,
+      checked = _ref.checked,
+      label = _ref.label,
+      props = _objectWithoutProperties(_ref, ["name", "value", "required", "onChange", "checked", "label"]);
 
-  return show ? /*#__PURE__*/_react.default.createElement("div", _extends({
-    className: "muncher-backdrop",
-    onClick: backdropClickHandler
-  }, props)) : null;
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "muncher-input--div"
+  }, /*#__PURE__*/_react.default.createElement("input", _extends({
+    type: "checkbox",
+    className: "muncher-checkbox",
+    name: name,
+    value: value,
+    onChange: onChange,
+    checked: checked,
+    required: required
+  }, props)), label ? /*#__PURE__*/_react.default.createElement(_Label.default, {
+    label: label,
+    required: required,
+    name: name
+  }) : '');
 };
 
-Backdrop.propTypes = {
-  show: _propTypes.default.bool,
-  backdropClickHandler: _propTypes.default.func
+Checkbox.propTypes = {
+  name: _propTypes.default.string,
+  onChange: _propTypes.default.func,
+  required: _propTypes.default.bool,
+  value: _propTypes.default.any,
+  checked: _propTypes.default.bool,
+  label: _propTypes.default.string
 };
-var _default = Backdrop;
+var _default = Checkbox;
 exports.default = _default;

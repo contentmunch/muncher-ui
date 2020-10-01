@@ -27,6 +27,12 @@ Object.defineProperty(exports, "Checkbox", {
     return _Checkbox.default;
   }
 });
+Object.defineProperty(exports, "Radio", {
+  enumerable: true,
+  get: function get() {
+    return _Radio.default;
+  }
+});
 Object.defineProperty(exports, "DropdownButton", {
   enumerable: true,
   get: function get() {
@@ -39,10 +45,10 @@ Object.defineProperty(exports, "Icon", {
     return _Icon.default;
   }
 });
-Object.defineProperty(exports, "TextInput", {
+Object.defineProperty(exports, "Input", {
   enumerable: true,
   get: function get() {
-    return _TextInput.default;
+    return _Input.default;
   }
 });
 Object.defineProperty(exports, "TextInputDropdown", {
@@ -88,13 +94,15 @@ var _Badge = _interopRequireDefault(require("./badge/Badge"));
 
 var _Button = _interopRequireDefault(require("./button/Button"));
 
-var _Checkbox = _interopRequireDefault(require("./checkbox/Checkbox"));
+var _Checkbox = _interopRequireDefault(require("./input/Checkbox"));
+
+var _Radio = _interopRequireDefault(require("./input/Radio"));
 
 var _DropdownButton = _interopRequireDefault(require("./button/DropdownButton"));
 
 var _Icon = _interopRequireDefault(require("./icon/Icon"));
 
-var _TextInput = _interopRequireDefault(require("./input/TextInput"));
+var _Input = _interopRequireDefault(require("./input/Input"));
 
 var _TextInputDropdown = _interopRequireDefault(require("./input/TextInputDropdown"));
 

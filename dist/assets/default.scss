@@ -82,16 +82,6 @@ a:hover {
 
 }
 
-input[type=text] {
-  height: 2rem;
-  font-size: .9rem;
-  margin-right: 1rem;
-}
-
-input[type=text]:focus {
-  outline-color: $tertiary-background-color;
-}
-
 [data-title] {
   position: relative;
 }
