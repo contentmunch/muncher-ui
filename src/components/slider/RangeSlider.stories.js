@@ -15,6 +15,7 @@ Default.args = {
     to: 1000,
     min: 10,
     max: 1100,
+    sign: '$',
     onSliderChange: (values) => {
         console.log("lowerValue : " + values[0] + " upperValue : " + values[1]);
     }
