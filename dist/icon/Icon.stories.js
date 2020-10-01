@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Large = exports.Medium = exports.Default = exports.default = void 0;
+exports.Large = exports.Medium = exports.Dark = exports.Default = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -38,6 +38,12 @@ Default.args = {
   name: 'muncher',
   size: 'small'
 };
+var Dark = Template.bind({});
+exports.Dark = Dark;
+Dark.args = _objectSpread(_objectSpread({}, Default.args), {}, {
+  size: 'medium',
+  weight: 2
+});
 var Medium = Template.bind({});
 exports.Medium = Medium;
 Medium.args = _objectSpread(_objectSpread({}, Default.args), {}, {

@@ -322,6 +322,21 @@ var iconDrawings = function iconDrawings(name) {
         y2: "18"
       }));
 
+    case 'mute':
+      return /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polygon", {
+        points: "11 5 6 9 2 9 2 15 6 15 11 19 11 5"
+      }), /*#__PURE__*/_react.default.createElement("line", {
+        x1: "23",
+        y1: "9",
+        x2: "17",
+        y2: "15"
+      }), /*#__PURE__*/_react.default.createElement("line", {
+        x1: "17",
+        y1: "9",
+        x2: "23",
+        y2: "15"
+      }));
+
     case 'ordered-list':
       return /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("line", {
         x1: "9",
@@ -537,6 +552,11 @@ var iconDrawings = function iconDrawings(name) {
         d: "M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
       }), /*#__PURE__*/_react.default.createElement("polygon", {
         points: "9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+      }));
+
+    case 'volume':
+      return /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polygon", {
+        points: "11 5 6 9 2 9 2 15 6 15 11 19 11 5"
       }));
 
     default:

@@ -1,12 +1,15 @@
 @import "src/components/assets/variables";
-
+//need to escape hash to work with svg
+$star-color: '%23e9eeeb' !default;
+$star-background: 'white' !default;
 .muncher-star {
   width: calc(45px * 5);
   height: 45px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="white" stroke="rgb(233, 238, 235)" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="#{$star-background}" stroke="#{$star-color}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
   position: relative;
   display: inline-block;
 }
+
 .muncher-star:before {
   content: "";
   position: absolute;
@@ -14,5 +17,5 @@
   bottom: 0;
   left: 0;
   width: calc(45px * var(--r, 1));
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="rgb(233, 238, 235)" stroke="rgb(233, 238, 235)" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="#{$star-color}" stroke="#{$star-color}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
 }
