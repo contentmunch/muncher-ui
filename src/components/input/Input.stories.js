@@ -15,6 +15,12 @@ Default.args = {
     placeHolder: "Type your query"
 
 };
+export const TextWithLabel = Template.bind({});
+TextWithLabel.args = {
+    ...Default.args,
+    label: 'Search',
+    required: true,
+};
 export const Color = Template.bind({});
 Color.args = {
     ...Default.args,

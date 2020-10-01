@@ -649,6 +649,7 @@ exports[`Storyshots Feedback/Modal Default 1`] = `
 Array [
   <div
     className="muncher-backdrop"
+    close={[Function]}
   />,
   <div
     className="muncher-modal"
@@ -671,194 +672,280 @@ Array [
 
 exports[`Storyshots Input/Checkbox Default 1`] = `
 <div
-  className="muncher--checkbox"
+  className="muncher-input--div"
 >
   <input
+    className="muncher-checkbox"
     name="muncher-checkbox"
     type="checkbox"
-  />
-  <label
-    htmlFor="muncher-checkbox"
   >
-     
      Item 1
-  </label>
+  </input>
+  
 </div>
 `;
 
 exports[`Storyshots Input/Input Color 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="Type your query"
-  type="color"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Type your query"
+    type="color"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input Date 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="Type your query"
-  type="date"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Type your query"
+    type="date"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input Date Time 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="Type your query"
-  type="datetime-local"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Type your query"
+    type="datetime-local"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input Default 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="Type your query"
-  type="text"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Type your query"
+    type="text"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input Email 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="Type your query"
-  type="email"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Email"
+    type="email"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input File 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="File"
-  type="file"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Type your query"
+    type="file"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input Month 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="Type your query"
-  type="month"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Type your query"
+    type="month"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input Number 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="Number"
-  type="number"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Number"
+    type="number"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input Password 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="Type password"
-  type="password"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Type password"
+    type="password"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input Range 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="Type password"
-  type="range"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Type your query"
+    type="range"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input Search 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  type="text"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Type your query"
+    type="search"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input Tel 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="Type your query"
-  type="tel"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Type your query"
+    type="tel"
+  />
+</div>
+`;
+
+exports[`Storyshots Input/Input Text With Label 1`] = `
+<div
+  className="muncher-input--div"
+>
+  <label
+    htmlFor="query"
+  >
+    Search
+    <span
+      className="required"
+    >
+      *
+    </span>
+  </label>
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Type your query"
+    type="text"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input Time 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="Type your query"
-  type="time"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Type your query"
+    type="time"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input Url 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="Type your query"
-  type="url"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="type url"
+    type="url"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Input Week 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-input"
-  name="query"
-  placeholder="Type your query"
-  type="week"
-/>
-`;
-
-exports[`Storyshots Input/Input With Focus 1`] = `
-<input
-  autoComplete="off"
-  autoFocus={true}
-  className="muncher-input"
-  name="query"
-  placeholder="Type your query"
-  type="text"
-/>
+<div
+  className="muncher-input--div"
+>
+  
+  <input
+    autoComplete="off"
+    className="muncher-input"
+    name="query"
+    placeholder="Type your query"
+    type="week"
+  />
+</div>
 `;
 
 exports[`Storyshots Input/Radio Default 1`] = `
 <div
-  className="muncher--checkbox"
+  className="muncher-input--div"
 >
   <input
+    className="muncher-radio"
     name="muncher-radio"
-    type="checkbox"
-  />
-  <label
-    htmlFor="muncher-radio"
+    type="radio"
   >
-     
      Item 1
-  </label>
+  </input>
+  
 </div>
 `;
 
@@ -942,42 +1029,26 @@ exports[`Storyshots Input/Range Slider Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Input/Text Input Default 1`] = `
-<input
-  autoComplete="off"
-  className="muncher-text-input"
-  name="query"
-  placeholder="Type your query"
-  type="text"
-/>
-`;
-
 exports[`Storyshots Input/Text Input Dropdown Default 1`] = `
 <div
   className="muncher-input-drop-down"
 >
-  <input
-    autoComplete="off"
-    autoFocus={true}
-    className="muncher-text-input"
-    name="query"
-    onChange={[Function]}
-    placeholder="Start typing.."
-    type="text"
-  />
+  <div
+    className="muncher-input--div"
+  >
+    
+    <input
+      autoComplete="off"
+      autoFocus={true}
+      className="muncher-input"
+      name="query"
+      onChange={[Function]}
+      placeholder="Start typing.."
+      type="text"
+    />
+  </div>
   
 </div>
-`;
-
-exports[`Storyshots Input/Text Input With Focus 1`] = `
-<input
-  autoComplete="off"
-  autoFocus={true}
-  className="muncher-text-input"
-  name="query"
-  placeholder="Type your query"
-  type="text"
-/>
 `;
 
 exports[`Storyshots Utils/Spinner Default 1`] = `

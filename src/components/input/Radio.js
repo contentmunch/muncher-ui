@@ -1,27 +1,30 @@
 import React from 'react';
-import './assets/Radio.scss';
+import './assets/Input.scss';
 import PropTypes from "prop-types";
+import Label from "./Label";
 
-const Radio = ({name, value, onChange, checked, children, ...props}) => {
+const Radio = ({name, value, required, onChange, checked, label, ...props}) => {
 
     return (
-        <div className="muncher--checkbox">
-            <input type="radio"
+        <div className="muncher-input--div">
+            <input className="muncher-radio"
+                   type="radio"
                    name={name}
                    value={value}
                    onChange={onChange}
                    checked={checked}
                    {...props}
             />
-            <label htmlFor={name}> {children}</label>
+            {label ? <Label label={label} required={required} name={name}/> : ''}
         </div>
     )
 };
 Radio.propTypes = {
     name: PropTypes.string,
     value: PropTypes.any,
+    label: PropTypes.string,
+    required: PropTypes.bool,
     onChange: PropTypes.func,
     checked: PropTypes.bool,
-    children: PropTypes.oneOfType([PropTypes.element, PropTypes.string])
 }
 export default Radio;

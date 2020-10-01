@@ -1,27 +1,31 @@
 import React from 'react';
-import './assets/Checkbox.scss';
+import './assets/Input.scss';
 import PropTypes from "prop-types";
+import Label from "./Label";
 
-const Checkbox = ({name, value, onChange, checked, children, ...props}) => {
+const Checkbox = ({name, value, required, onChange, checked, label, ...props}) => {
 
     return (
-        <div className="muncher--checkbox">
+        <div className="muncher-input--div">
             <input type="checkbox"
+                   className="muncher-checkbox"
                    name={name}
                    value={value}
                    onChange={onChange}
                    checked={checked}
+                   required={required}
                    {...props}
             />
-            <label htmlFor={name}> {children}</label>
+            {label ? <Label label={label} required={required} name={name}/> : ''}
         </div>
     )
 };
 Checkbox.propTypes = {
     name: PropTypes.string,
     onChange: PropTypes.func,
+    required: PropTypes.bool,
     value: PropTypes.any,
     checked: PropTypes.bool,
-    children: PropTypes.oneOfType([PropTypes.element, PropTypes.string])
+    label: PropTypes.string,
 }
 export default Checkbox;
