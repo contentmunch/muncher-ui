@@ -18,7 +18,7 @@ exports.default = _default;
 
 var Template = function Template(args) {
   return /*#__PURE__*/_react.default.createElement("a", _extends({
-    href: "#"
+    href: "#home"
   }, args), "Hover here");
 };
 

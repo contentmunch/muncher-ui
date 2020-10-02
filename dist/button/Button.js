@@ -26,12 +26,13 @@ var Button = function Button(_ref) {
       title = _ref.title,
       active = _ref.active,
       disabled = _ref.disabled,
+      rounded = _ref.rounded,
       onClick = _ref.onClick,
       onMouseDown = _ref.onMouseDown,
       children = _ref.children,
-      props = _objectWithoutProperties(_ref, ["type", "variant", "size", "title", "active", "disabled", "onClick", "onMouseDown", "children"]);
+      props = _objectWithoutProperties(_ref, ["type", "variant", "size", "title", "active", "disabled", "rounded", "onClick", "onMouseDown", "children"]);
 
-  var className = 'muncher-button' + (type && type === 'nav' ? ' muncher-button--nav' : '') + (variant ? ' muncher-button--' + variant : '') + (size ? ' muncher-button--' + size : '') + (active ? ' muncher-button--active' : '');
+  var className = 'muncher-button' + (type && type === 'nav' ? ' muncher-button--nav' : '') + (variant ? ' muncher-button--' + variant : '') + (size ? ' muncher-button--' + size : '') + (active ? ' muncher-button--active' : '') + (rounded ? ' muncher-button--rounded' : '');
   return /*#__PURE__*/_react.default.createElement("button", _extends({
     type: type ? type !== 'nav' ? type : 'button' : 'button',
     className: className,
@@ -49,6 +50,7 @@ Button.propTypes = {
   title: _propTypes.default.string,
   active: _propTypes.default.bool,
   disabled: _propTypes.default.bool,
+  rounded: _propTypes.default.bool,
   onClick: _propTypes.default.func,
   onMouseDown: _propTypes.default.func,
   children: _propTypes.default.oneOfType([_propTypes.default.element, _propTypes.default.string])
