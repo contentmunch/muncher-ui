@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Active = exports.Disabled = exports.Small = exports.Large = exports.Secondary = exports.NavDropDown = exports.WithText = exports.IconDropdown = exports.Default = exports.default = void 0;
+exports.Active = exports.Disabled = exports.Small = exports.Large = exports.Secondary = exports.NavDropDown = exports.WithText = exports.RoundedDropdown = exports.IconDropdown = exports.Default = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -49,9 +49,22 @@ var IconDropdown = Template.bind({});
 exports.IconDropdown = IconDropdown;
 IconDropdown.args = _objectSpread(_objectSpread({}, Default.args), {}, {
   size: 'small',
-  title: 'DropDown with text',
+  title: 'Icon dropdown text',
   element: /*#__PURE__*/_react.default.createElement(_Icon.default, {
     name: "muncher"
+  })
+});
+var RoundedDropdown = Template.bind({});
+exports.RoundedDropdown = RoundedDropdown;
+RoundedDropdown.args = _objectSpread(_objectSpread({}, IconDropdown.args), {}, {
+  title: 'Rounded dropdown',
+  size: 'large',
+  rounded: true,
+  variant: 'secondary',
+  element: /*#__PURE__*/_react.default.createElement(_Icon.default, {
+    name: "muncher",
+    size: "large",
+    weight: 1
   })
 });
 var WithText = Template.bind({});

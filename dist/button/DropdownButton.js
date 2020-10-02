@@ -34,13 +34,14 @@ function DropdownButton(_ref) {
       active = _ref.active,
       disabled = _ref.disabled,
       element = _ref.element,
+      rounded = _ref.rounded,
       drop = _ref.drop,
       onClick = _ref.onClick,
       onClose = _ref.onClose,
       showContent = _ref.showContent,
       setShowContent = _ref.setShowContent,
       children = _ref.children,
-      props = _objectWithoutProperties(_ref, ["variant", "size", "title", "active", "disabled", "element", "drop", "onClick", "onClose", "showContent", "setShowContent", "children"]);
+      props = _objectWithoutProperties(_ref, ["variant", "size", "title", "active", "disabled", "element", "rounded", "drop", "onClick", "onClose", "showContent", "setShowContent", "children"]);
 
   var ref = (0, _react.useRef)(null);
 
@@ -105,6 +106,7 @@ function DropdownButton(_ref) {
     onMouseDown: buttonOnClick,
     title: title,
     disabled: disabled,
+    rounded: rounded,
     active: active,
     variant: variant,
     size: size
@@ -119,6 +121,7 @@ DropdownButton.propTypes = {
   title: _propTypes.default.string,
   active: _propTypes.default.bool,
   disabled: _propTypes.default.bool,
+  rounded: _propTypes.default.bool,
   element: _propTypes.default.element.isRequired,
   drop: _propTypes.default.oneOf(['left', 'right', 'nav']),
   onClick: _propTypes.default.func,
