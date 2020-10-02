@@ -404,6 +404,117 @@ var iconDrawings = {
     x2: "16",
     y2: "12"
   })),
+  'archive': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "21 8 21 21 3 21 3 8"
+  }), /*#__PURE__*/_react.default.createElement("rect", {
+    x: "1",
+    y: "3",
+    width: "22",
+    height: "5"
+  }), /*#__PURE__*/_react.default.createElement("line", {
+    x1: "10",
+    y1: "12",
+    x2: "14",
+    y2: "12"
+  })),
+  'external-link': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+  }), /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "15 3 21 3 21 9"
+  }), /*#__PURE__*/_react.default.createElement("line", {
+    x1: "10",
+    y1: "14",
+    x2: "21",
+    y2: "3"
+  })),
+  'filter': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polygon", {
+    points: "22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"
+  })),
+  'github': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+  })),
+  'grid': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("rect", {
+    x: "3",
+    y: "3",
+    width: "7",
+    height: "7"
+  }), /*#__PURE__*/_react.default.createElement("rect", {
+    x: "14",
+    y: "3",
+    width: "7",
+    height: "7"
+  }), /*#__PURE__*/_react.default.createElement("rect", {
+    x: "14",
+    y: "14",
+    width: "7",
+    height: "7"
+  }), /*#__PURE__*/_react.default.createElement("rect", {
+    x: "3",
+    y: "14",
+    width: "7",
+    height: "7"
+  })),
+  'log-in': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"
+  }), /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "10 17 15 12 10 7"
+  }), /*#__PURE__*/_react.default.createElement("line", {
+    x1: "15",
+    y1: "12",
+    x2: "3",
+    y2: "12"
+  })),
+  'log-out': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"
+  }), /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "16 17 21 12 16 7"
+  }), /*#__PURE__*/_react.default.createElement("line", {
+    x1: "21",
+    y1: "12",
+    x2: "9",
+    y2: "12"
+  })),
+  'more': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("circle", {
+    cx: "12",
+    cy: "12",
+    r: "1"
+  }), /*#__PURE__*/_react.default.createElement("circle", {
+    cx: "12",
+    cy: "5",
+    r: "1"
+  }), /*#__PURE__*/_react.default.createElement("circle", {
+    cx: "12",
+    cy: "19",
+    r: "1"
+  })),
+  'share': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"
+  }), /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "16 6 12 2 8 6"
+  }), /*#__PURE__*/_react.default.createElement("line", {
+    x1: "12",
+    y1: "2",
+    x2: "12",
+    y2: "15"
+  })),
+  'thumbs-down': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"
+  })),
+  'thumbs-up': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"
+  })),
+  'trash': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "3 6 5 6 21 6"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+  })),
+  'user': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+  }), /*#__PURE__*/_react.default.createElement("circle", {
+    cx: "12",
+    cy: "7",
+    r: "4"
+  })),
   'muncher': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("rect", {
     x: "3",
     y: "4",
