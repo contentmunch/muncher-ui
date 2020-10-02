@@ -38,12 +38,12 @@ function Icon(_ref) {
     strokeWidth: weight ? weight : 2,
     strokeLinecap: "round",
     strokeLinejoin: "round"
-  }, props), (0, _IconDrawings.iconDrawings)(name));
+  }, props), _IconDrawings.iconDrawings[name]);
 }
 
 Icon.propTypes = {
   color: _propTypes.default.string,
   weight: _propTypes.default.oneOf([1, 2, 3]),
   size: _propTypes.default.oneOf(['small', 'medium', 'large']),
-  name: _propTypes.default.oneOf(['align-center', 'align-justify', 'align-left', 'align-right', 'arrow-left', 'arrow-right', 'calendar', 'close', 'code', 'edit', 'hamburger', 'image', 'link', 'loading', 'minus', 'muncher', 'mute', 'ordered-list', 'phone', 'plus', 'redo', 'search', 'settings', 'smile', 'toggle-left', 'toggle-right', 'type', 'undo', 'unlink', 'unordered-list', 'youtube', 'volume']).isRequired
+  name: _propTypes.default.oneOf(['align-center', 'align-justify', 'align-left', 'align-right', 'arrow-left', 'arrow-right', 'calendar', 'close', 'code', 'edit', 'hamburger', 'image', 'link', 'loading', 'minus', 'muncher', 'mute', 'ordered-list', 'phone', 'plus', 'redo', 'search', 'settings', 'smile', 'toggle-left', 'toggle-right', 'type', 'undo', 'unlink', 'unordered-list', 'youtube', 'volume', 'fast-forward', 'pause', 'play', 'power', 'repeat', 'rewind', 'shuffle', 'skip-back', 'skip-forward', 'alert', 'arrow-down', 'arrow-up', 'check', 'help', 'info']).isRequired
 };
