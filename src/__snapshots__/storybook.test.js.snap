@@ -394,7 +394,7 @@ exports[`Storyshots Buttons/Dropdown Button Icon Dropdown 1`] = `
   >
     <button
       className="muncher-button muncher-button--primary muncher-button--small"
-      data-title="DropDown with text"
+      data-title="Icon dropdown text"
       disabled={false}
       onMouseDown={[Function]}
       type="button"
@@ -504,6 +504,80 @@ exports[`Storyshots Buttons/Dropdown Button Nav Drop Down 1`] = `
       <h4>
         Nav Item
       </h4>
+    </button>
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Buttons/Dropdown Button Rounded Dropdown 1`] = `
+<div
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="muncher-dropdown"
+  >
+    <button
+      className="muncher-button muncher-button--secondary muncher-button--large muncher-button--rounded"
+      data-title="Rounded dropdown"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
+    >
+      <svg
+        className="muncher-icon muncher-icon--large"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="18"
+          rx="2"
+          ry="2"
+          width="18"
+          x="3"
+          y="4"
+        />
+        <line
+          x1="16"
+          x2="16"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="8"
+          x2="8"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="10"
+          y2="10"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="14"
+          y2="14"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="18"
+          y2="18"
+        />
+      </svg>
     </button>
     
   </div>

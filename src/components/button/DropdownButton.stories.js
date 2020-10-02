@@ -23,8 +23,17 @@ export const IconDropdown = Template.bind({});
 IconDropdown.args = {
     ...Default.args,
     size: 'small',
-    title: 'DropDown with text',
+    title: 'Icon dropdown text',
     element: <Icon name='muncher'/>
+};
+export const RoundedDropdown = Template.bind({});
+RoundedDropdown.args = {
+    ...IconDropdown.args,
+    title: 'Rounded dropdown',
+    size: 'large',
+    rounded: true,
+    variant: 'secondary',
+    element: <Icon name='muncher' size='large' weight={1}/>
 };
 export const WithText = Template.bind({});
 WithText.args = {
