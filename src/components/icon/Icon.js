@@ -19,7 +19,7 @@ export default function Icon({color, name, size, weight, ...props}) {
             strokeLinejoin="round"
             {...props}
         >
-            {iconDrawings(name)}
+            {iconDrawings[name]}
         </svg>
     );
 }
@@ -30,5 +30,6 @@ Icon.propTypes = {
     name: PropTypes.oneOf(['align-center', 'align-justify', 'align-left', 'align-right', 'arrow-left',
         'arrow-right', 'calendar', 'close', 'code', 'edit', 'hamburger', 'image', 'link', 'loading', 'minus', 'muncher',
         'mute', 'ordered-list', 'phone', 'plus', 'redo', 'search', 'settings', 'smile', 'toggle-left', 'toggle-right',
-        'type', 'undo', 'unlink', 'unordered-list', 'youtube', 'volume']).isRequired
+        'type', 'undo', 'unlink', 'unordered-list', 'youtube', 'volume','fast-forward','pause','play','power',
+        'repeat','rewind','shuffle','skip-back','skip-forward','alert','arrow-down','arrow-up','check','help','info']).isRequired
 };
