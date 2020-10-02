@@ -948,7 +948,6 @@ exports[`Storyshots Input/Radio Default 1`] = `
     className="muncher-radio"
   >
     <input
-      className="muncher-input"
       name="muncher-radio"
       type="radio"
     />
@@ -1062,6 +1061,15 @@ exports[`Storyshots Input/Text Input Dropdown Default 1`] = `
   </div>
   
 </div>
+`;
+
+exports[`Storyshots Utils/DataTitle Default 1`] = `
+<a
+  data-title="This will show up on hover"
+  href="#"
+>
+  Hover here
+</a>
 `;
 
 exports[`Storyshots Utils/Spinner Default 1`] = `

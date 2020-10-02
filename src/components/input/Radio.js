@@ -8,7 +8,7 @@ const Radio = ({name, value, required, onChange, checked, label, ...props}) => {
     return (
         <div className="muncher-input--div">
             <div className="muncher-radio">
-                <input className="muncher-input"
+                <input
                     type="radio"
                     name={name}
                     value={value}
