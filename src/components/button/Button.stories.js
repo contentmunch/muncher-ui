@@ -20,6 +20,13 @@ IconButton.args = {
     title: 'Icon Button',
     size: 'small'
 };
+export const RoundedButton = IconTemplate.bind({});
+RoundedButton.args = {
+    ...IconButton.args,
+    title: 'Rounded Button',
+    variant: 'secondary',
+    rounded: true,
+};
 export const NavButton = Template.bind({});
 NavButton.args = {
     title: 'Nav Button',

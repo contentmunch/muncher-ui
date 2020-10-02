@@ -168,6 +168,74 @@ exports[`Storyshots Buttons/Button Nav Button 1`] = `
 </div>
 `;
 
+exports[`Storyshots Buttons/Button Rounded Button 1`] = `
+<div
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
+>
+  <button
+    className="muncher-button muncher-button--secondary muncher-button--small muncher-button--rounded"
+    data-title="Rounded Button"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      className="muncher-icon muncher-icon--small"
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        height="18"
+        rx="2"
+        ry="2"
+        width="18"
+        x="3"
+        y="4"
+      />
+      <line
+        x1="16"
+        x2="16"
+        y1="2"
+        y2="6"
+      />
+      <line
+        x1="8"
+        x2="8"
+        y1="2"
+        y2="6"
+      />
+      <line
+        x1="7"
+        x2="17"
+        y1="10"
+        y2="10"
+      />
+      <line
+        x1="7"
+        x2="17"
+        y1="14"
+        y2="14"
+      />
+      <line
+        x1="7"
+        x2="17"
+        y1="18"
+        y2="18"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
 exports[`Storyshots Buttons/Button Secondary 1`] = `
 <div
   style={
@@ -1066,7 +1134,7 @@ exports[`Storyshots Input/Text Input Dropdown Default 1`] = `
 exports[`Storyshots Utils/DataTitle Default 1`] = `
 <a
   data-title="This will show up on hover"
-  href="#"
+  href="#home"
 >
   Hover here
 </a>

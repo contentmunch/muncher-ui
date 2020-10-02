@@ -2,12 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './assets/Button.scss';
 
-const Button = ({type, variant, size, title, active, disabled, onClick, onMouseDown, children, ...props}) => {
+const Button = ({type, variant, size, title, active, disabled, rounded, onClick, onMouseDown, children, ...props}) => {
     const className = 'muncher-button' +
         (type && type === 'nav' ? ' muncher-button--nav' : '') +
         (variant ? ' muncher-button--' + variant : '') +
         (size ? ' muncher-button--' + size : '') +
-        (active ? ' muncher-button--active' : '');
+        (active ? ' muncher-button--active' : '') +
+        (rounded ? ' muncher-button--rounded' : '');
     return (
         <button
             type={type ? type !== 'nav' ? type : 'button' : 'button'}
@@ -29,6 +30,7 @@ Button.propTypes = {
     title: PropTypes.string,
     active: PropTypes.bool,
     disabled: PropTypes.bool,
+    rounded: PropTypes.bool,
     onClick: PropTypes.func,
     onMouseDown: PropTypes.func,
     children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),

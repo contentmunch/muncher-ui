@@ -4,7 +4,7 @@ export default {
     title: 'Utils/DataTitle',
 }
 
-const Template = (args) => <a href='#' {...args}>Hover here</a>
+const Template = (args) => <a href='#home' {...args}>Hover here</a>
 export const Default = Template.bind({});
 Default.args = {
     'data-title': 'This will show up on hover'
