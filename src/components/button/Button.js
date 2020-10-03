@@ -25,7 +25,7 @@ const Button = ({type, variant, size, title, active, disabled, rounded, onClick,
 };
 Button.propTypes = {
     type: PropTypes.oneOf(['button', 'submit', 'reset', 'nav']),
-    variant: PropTypes.oneOf(['primary', 'secondary']),
+    variant: PropTypes.oneOf(['primary', 'secondary','tertiary']),
     size: PropTypes.oneOf(['small', 'medium', 'large']),
     title: PropTypes.string,
     active: PropTypes.bool,

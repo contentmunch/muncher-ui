@@ -296,6 +296,26 @@ exports[`Storyshots Buttons/Button Submit 1`] = `
 </div>
 `;
 
+exports[`Storyshots Buttons/Button Tertiary 1`] = `
+<div
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
+>
+  <button
+    className="muncher-button muncher-button--tertiary muncher-button--medium"
+    data-title="Tertiary Button"
+    disabled={false}
+    type="button"
+  >
+    Button
+  </button>
+</div>
+`;
+
 exports[`Storyshots Buttons/Dropdown Button Active 1`] = `
 <div
   style={

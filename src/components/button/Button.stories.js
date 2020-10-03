@@ -37,6 +37,11 @@ Secondary.args = {
     title: 'Secondary Button',
     variant: 'secondary'
 };
+export const Tertiary = Template.bind({});
+Tertiary.args = {
+    title: 'Tertiary Button',
+    variant: 'tertiary'
+};
 
 export const Large = Template.bind({});
 Large.args = {
