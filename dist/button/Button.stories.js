@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Submit = exports.Active = exports.Disabled = exports.Small = exports.Large = exports.Secondary = exports.NavButton = exports.RoundedButton = exports.IconButton = exports.Default = exports.default = void 0;
+exports.Submit = exports.Active = exports.Disabled = exports.Small = exports.Large = exports.Tertiary = exports.Secondary = exports.NavButton = exports.RoundedButton = exports.IconButton = exports.Default = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -72,6 +72,12 @@ exports.Secondary = Secondary;
 Secondary.args = {
   title: 'Secondary Button',
   variant: 'secondary'
+};
+var Tertiary = Template.bind({});
+exports.Tertiary = Tertiary;
+Tertiary.args = {
+  title: 'Tertiary Button',
+  variant: 'tertiary'
 };
 var Large = Template.bind({});
 exports.Large = Large;
