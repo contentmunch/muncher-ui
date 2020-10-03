@@ -17,9 +17,12 @@ $button-secondary-background-color: $secondary-background-color !default;
   position: relative;
   white-space: nowrap;
 }
+
 .muncher-button--rounded {
   border-radius: 50%;
+  padding: .5rem;
 }
+
 .muncher-button--primary {
   color: $button-color;
   background: $button-background-color;
