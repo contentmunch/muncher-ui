@@ -116,7 +116,7 @@ function DropdownButton(_ref) {
 }
 
 DropdownButton.propTypes = {
-  variant: _propTypes.default.oneOf(['primary', 'secondary']),
+  variant: _propTypes.default.oneOf(['primary', 'secondary', 'tertiary']),
   size: _propTypes.default.oneOf(['small', 'medium', 'large']),
   title: _propTypes.default.string,
   active: _propTypes.default.bool,
