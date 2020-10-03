@@ -33,7 +33,7 @@ Button.propTypes = {
     rounded: PropTypes.bool,
     onClick: PropTypes.func,
     onMouseDown: PropTypes.func,
-    children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
+    children: PropTypes.any,
 };
 
 Button.defaultProps = {
