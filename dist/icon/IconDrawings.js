@@ -616,6 +616,52 @@ var iconDrawings = {
   }), /*#__PURE__*/_react.default.createElement("path", {
     d: "m1.9935 16c1.8136-6.5424 9.5593-9.4823 15.36-4.36l4.64 4.36"
   })),
+  'save': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"
+  }), /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "17 21 17 13 7 13 7 21"
+  }), /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "7 3 7 8 15 8"
+  })),
+  'rss': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M4 11a9 9 0 0 1 9 9"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M4 4a16 16 0 0 1 16 16"
+  }), /*#__PURE__*/_react.default.createElement("circle", {
+    cx: "5",
+    cy: "19",
+    r: "1"
+  })),
+  'unlock': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("rect", {
+    x: "3",
+    y: "11",
+    width: "18",
+    height: "11",
+    rx: "2",
+    ry: "2"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M7 11V7a5 5 0 0 1 9.9-1"
+  })),
+  'upload': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+  }), /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "17 8 12 3 7 8"
+  }), /*#__PURE__*/_react.default.createElement("line", {
+    x1: "12",
+    y1: "3",
+    x2: "12",
+    y2: "15"
+  })),
+  'lock': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("rect", {
+    x: "3",
+    y: "11",
+    width: "18",
+    height: "11",
+    rx: "2",
+    ry: "2"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M7 11V7a5 5 0 0 1 10 0v4"
+  })),
   'search': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("circle", {
     cx: "11",
     cy: "11",
