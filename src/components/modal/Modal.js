@@ -18,7 +18,7 @@ const Modal = ({show, setShow, children, ...props}) => {
     }, [escFunction]);
     return (
         <React.Fragment>
-            <Backdrop show={show} close={() => setShow(false)}/>
+            <Backdrop show={show} backdropClickHandler={() => setShow(false)}/>
             <div className="muncher-modal"
                  style={{
                      transform: show ? 'translateY(0)' : 'translateY(-100vh)',

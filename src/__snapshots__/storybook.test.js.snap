@@ -818,7 +818,7 @@ exports[`Storyshots Feedback/Modal Default 1`] = `
 >
   <div
     className="muncher-backdrop"
-    close={[Function]}
+    onClick={[Function]}
   />
   <div
     className="muncher-modal"
