@@ -9,6 +9,8 @@ $button-tertiary-background-color: $tertiary-background-color !default;
   text-decoration: none;
   font-weight: normal;
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   border: none;
   cursor: pointer;
