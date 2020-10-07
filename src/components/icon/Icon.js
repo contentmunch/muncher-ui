@@ -30,9 +30,9 @@ Icon.propTypes = {
     name: PropTypes.oneOf(['align-center', 'align-justify', 'align-left', 'align-right', 'arrow-left',
         'arrow-right', 'calendar', 'close', 'code', 'edit', 'hamburger', 'image', 'link', 'loading', 'minus', 'muncher',
         'mute', 'ordered-list', 'phone', 'plus', 'redo', 'search', 'settings', 'smile', 'toggle-left', 'toggle-right',
-        'type', 'undo', 'unlink', 'unordered-list', 'youtube', 'volume','fast-forward','pause','play','power',
-        'repeat','rewind','shuffle','skip-back','skip-forward','alert','arrow-down','arrow-up','check','help','info',
-        'archive','external-link','filter','github','grid','log-in','log-out','more','share','thumbs-down','thumbs-up',
-        'trash','user'
+        'type', 'undo', 'unlink', 'unordered-list', 'youtube', 'volume', 'fast-forward', 'pause', 'play', 'power',
+        'repeat', 'rewind', 'shuffle', 'skip-back', 'skip-forward', 'alert', 'arrow-down', 'arrow-up', 'check', 'help', 'info',
+        'archive', 'external-link', 'filter', 'github', 'grid', 'log-in', 'log-out', 'more', 'share', 'thumbs-down', 'thumbs-up',
+        'trash', 'user', 'lock', 'unlock', 'rss', 'save', 'upload'
     ]).isRequired
 };

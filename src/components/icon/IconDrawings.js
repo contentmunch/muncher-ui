@@ -293,6 +293,34 @@ export const iconDrawings = {
                 <polyline points="22 10 22 16 16 16"/>
                 <path d="m1.9935 16c1.8136-6.5424 9.5593-9.4823 15.36-4.36l4.64 4.36"/>
             </Fragment>,
+        'save':
+            <Fragment>
+                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                <polyline points="17 21 17 13 7 13 7 21"/>
+                <polyline points="7 3 7 8 15 8"/>
+            </Fragment>,
+        'rss':
+            <Fragment>
+                <path d="M4 11a9 9 0 0 1 9 9"/>
+                <path d="M4 4a16 16 0 0 1 16 16"/>
+                <circle cx="5" cy="19" r="1"/>
+            </Fragment>,
+        'unlock':
+            <Fragment>
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
+            </Fragment>,
+        'upload':
+            <Fragment>
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/>
+                <line x1="12" y1="3" x2="12" y2="15"/>
+            </Fragment>,
+        'lock':
+            <Fragment>
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </Fragment>,
         'search':
             <Fragment>
                 <circle cx="11" cy="11" r="8"/>
