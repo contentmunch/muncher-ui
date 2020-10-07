@@ -46,7 +46,7 @@ var Modal = function Modal(_ref) {
   }, [escFunction]);
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Backdrop.default, {
     show: show,
-    close: function close() {
+    backdropClickHandler: function backdropClickHandler() {
       return setShow(false);
     }
   }), /*#__PURE__*/_react.default.createElement("div", _extends({
