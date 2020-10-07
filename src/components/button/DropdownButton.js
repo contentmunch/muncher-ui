@@ -84,7 +84,7 @@ DropdownButton.propTypes = {
     onClose: PropTypes.func,
     showContent: PropTypes.bool.isRequired,
     setShowContent: PropTypes.func.isRequired,
-    children: PropTypes.oneOfType([PropTypes.array, PropTypes.oneOfType([PropTypes.element, PropTypes.string])])
+    children: PropTypes.any
 }
 DropdownButton.defaultProps = {
     size: 'medium',
