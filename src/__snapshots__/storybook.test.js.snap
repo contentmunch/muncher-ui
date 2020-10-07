@@ -808,13 +808,21 @@ exports[`Storyshots Feedback/Backdrop Default 1`] = `
 `;
 
 exports[`Storyshots Feedback/Modal Default 1`] = `
-Array [
+<div
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
+>
   <div
     className="muncher-backdrop"
     close={[Function]}
-  />,
+  />
   <div
     className="muncher-modal"
+    setshow={[Function]}
     style={
       Object {
         "opacity": "1",
@@ -828,8 +836,8 @@ Array [
     <section>
       Modal Mody
     </section>
-  </div>,
-]
+  </div>
+</div>
 `;
 
 exports[`Storyshots Input/Checkbox Default 1`] = `

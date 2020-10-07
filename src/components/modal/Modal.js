@@ -3,12 +3,12 @@ import './assets/Modal.scss';
 import Backdrop from "../backdrop/Backdrop";
 import PropTypes from "prop-types";
 
-const Modal = ({show, modalCloseHandler, children,...props}) => {
+const Modal = ({show, setShow, children, ...props}) => {
     const escFunction = useCallback((event) => {
         if (event.keyCode === 27) {
-            modalCloseHandler();
+            setShow(false);
         }
-    }, [modalCloseHandler]);
+    }, [setShow]);
     useEffect(() => {
         document.addEventListener("keydown", escFunction, false);
 
@@ -18,7 +18,7 @@ const Modal = ({show, modalCloseHandler, children,...props}) => {
     }, [escFunction]);
     return (
         <React.Fragment>
-            <Backdrop show={show} close={modalCloseHandler}/>
+            <Backdrop show={show} close={() => setShow(false)}/>
             <div className="muncher-modal"
                  style={{
                      transform: show ? 'translateY(0)' : 'translateY(-100vh)',
@@ -34,7 +34,7 @@ const Modal = ({show, modalCloseHandler, children,...props}) => {
 };
 Modal.propTypes = {
     show: PropTypes.bool,
-    modalCloseHandler: PropTypes.func,
+    setShow: PropTypes.func,
     children: PropTypes.any,
 }
 export default Modal;
