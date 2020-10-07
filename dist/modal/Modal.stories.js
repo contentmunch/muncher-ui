@@ -13,7 +13,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _default = {
   title: 'Feedback/Modal',
-  component: _Modal.default
+  component: _Modal.default,
+  decorators: [function (story) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      style: {
+        padding: '2rem',
+        background: '#f5f5f5'
+      }
+    }, story());
+  }]
 };
 exports.default = _default;
 
@@ -25,5 +33,5 @@ var Default = Template.bind({});
 exports.Default = Default;
 Default.args = {
   show: true,
-  modalCloseHandler: function modalCloseHandler() {}
+  setshow: function setshow() {}
 };

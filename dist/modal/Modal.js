@@ -29,15 +29,15 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 var Modal = function Modal(_ref) {
   var show = _ref.show,
-      modalCloseHandler = _ref.modalCloseHandler,
+      setShow = _ref.setShow,
       children = _ref.children,
-      props = _objectWithoutProperties(_ref, ["show", "modalCloseHandler", "children"]);
+      props = _objectWithoutProperties(_ref, ["show", "setShow", "children"]);
 
   var escFunction = (0, _react.useCallback)(function (event) {
     if (event.keyCode === 27) {
-      modalCloseHandler();
+      setShow(false);
     }
-  }, [modalCloseHandler]);
+  }, [setShow]);
   (0, _react.useEffect)(function () {
     document.addEventListener("keydown", escFunction, false);
     return function () {
@@ -46,7 +46,9 @@ var Modal = function Modal(_ref) {
   }, [escFunction]);
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Backdrop.default, {
     show: show,
-    close: modalCloseHandler
+    close: function close() {
+      return setShow(false);
+    }
   }), /*#__PURE__*/_react.default.createElement("div", _extends({
     className: "muncher-modal",
     style: {
@@ -58,7 +60,7 @@ var Modal = function Modal(_ref) {
 
 Modal.propTypes = {
   show: _propTypes.default.bool,
-  modalCloseHandler: _propTypes.default.func,
+  setShow: _propTypes.default.func,
   children: _propTypes.default.any
 };
 var _default = Modal;
