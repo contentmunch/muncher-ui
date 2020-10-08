@@ -1,13 +1,13 @@
 {
-  "name": "muncher-ui",
-  "version": "0.2.2",
+  "name": "@contentmunch/muncher-ui",
+  "version": "0.2.3",
   "description": "Muncher UI components",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "author": "asikpradhan",
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@contentmunch"
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "start": "react-scripts start",
