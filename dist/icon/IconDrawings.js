@@ -706,7 +706,8 @@ var iconDrawings = {
   }), /*#__PURE__*/_react.default.createElement("circle", {
     cx: "8",
     cy: "12",
-    r: "3"
+    r: "3",
+    color: "grey"
   })),
   'toggle-right': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("rect", {
     x: "1",
@@ -718,7 +719,8 @@ var iconDrawings = {
   }), /*#__PURE__*/_react.default.createElement("circle", {
     cx: "16",
     cy: "12",
-    r: "3"
+    r: "3",
+    color: "green"
   })),
   'type': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polyline", {
     points: "4 7 4 4 20 4 20 7"
