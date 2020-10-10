@@ -32,7 +32,7 @@ function RangeSlider(_ref) {
   }, /*#__PURE__*/_react.default.createElement(Range, {
     min: min,
     max: max,
-    defaultValue: [from, to],
+    defaultValue: [min, max],
     tipFormatter: function tipFormatter(value) {
       return "".concat(sign ? sign + value : '$' + value);
     },
