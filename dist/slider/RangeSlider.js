@@ -18,9 +18,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function RangeSlider(_ref) {
-  var from = _ref.from,
-      to = _ref.to,
-      min = _ref.min,
+  var min = _ref.min,
       max = _ref.max,
       sign = _ref.sign,
       sliderChangeHandler = _ref.onSliderChange,
@@ -42,8 +40,6 @@ function RangeSlider(_ref) {
 
 ;
 RangeSlider.propTypes = {
-  from: _propTypes.default.number.isRequired,
-  to: _propTypes.default.number.isRequired,
   min: _propTypes.default.number.isRequired,
   max: _propTypes.default.number.isRequired,
   sign: _propTypes.default.string,

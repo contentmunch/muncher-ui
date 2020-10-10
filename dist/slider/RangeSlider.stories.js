@@ -24,8 +24,6 @@ var Template = function Template(args) {
 var Default = Template.bind({});
 exports.Default = Default;
 Default.args = {
-  from: 100,
-  to: 1000,
   min: 10,
   max: 1100,
   sign: '$',
