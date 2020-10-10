@@ -6,6 +6,10 @@
   "module": "dist/index.js",
   "author": "asikpradhan",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/contentmunch/muncher-ui.git",
+    "type": "git"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
