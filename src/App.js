@@ -4,16 +4,24 @@ import DropdownButton from "./components/button/DropdownButton";
 import {Button, Input} from "./components";
 import TextInputDropdown from "./components/input/TextInputDropdown";
 import Icon from "./components/icon/Icon";
+import RangeSlider from "./components/slider/RangeSlider";
 
 function App() {
     const [showContent, setShowContent] = useState(false);
     const [showInputContent, setShowInputContent] = useState(false);
+    const [min, setMin] = useState(0);
+    const [max, setMax] = useState(1000);
     const onClick = () => {
         setShowContent(false);
         setShowInputContent(false);
     };
     const handleInputChange = (input) => {
         console.log(input);
+    }
+    const handleSliderChange = (values) => {
+        setMin(values[0]);
+        setMax(values[1]);
+
     }
     return (
         <div className="main--content">
@@ -45,7 +53,9 @@ function App() {
             </div>
 
             <div className="container">
-
+                <RangeSlider min={10} max={1000} handleChange={handleSliderChange}>
+                    Current min: {min} Current max: {max}
+                </RangeSlider>
             </div>
         </div>
     );
