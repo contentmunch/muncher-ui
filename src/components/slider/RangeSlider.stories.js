@@ -11,8 +11,6 @@ const Template = (args) => <RangeSlider {...args}>This is a range slider</RangeS
 export const Default = Template.bind({});
 
 Default.args = {
-    from: 100,
-    to: 1000,
     min: 10,
     max: 1100,
     sign: '$',
