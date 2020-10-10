@@ -18,7 +18,7 @@ var _default = {
 exports.default = _default;
 
 var Template = function Template(args) {
-  return /*#__PURE__*/_react.default.createElement(_TextInputDropdown.default, args, /*#__PURE__*/_react.default.createElement("p", null, "Drop down content"));
+  return /*#__PURE__*/_react.default.createElement(_TextInputDropdown.default, args, /*#__PURE__*/_react.default.createElement("p", null, "Drop down content"), /*#__PURE__*/_react.default.createElement("p", null, "Drop down content"), /*#__PURE__*/_react.default.createElement("p", null, "Drop down content"), /*#__PURE__*/_react.default.createElement("p", null, "Drop down content"), /*#__PURE__*/_react.default.createElement("p", null, "Drop down content"), /*#__PURE__*/_react.default.createElement("p", null, "Drop down content"), /*#__PURE__*/_react.default.createElement("p", null, "Drop down content"), /*#__PURE__*/_react.default.createElement("p", null, "Drop down content"), /*#__PURE__*/_react.default.createElement("p", null, "Drop down content"), /*#__PURE__*/_react.default.createElement("p", null, "Drop down content"), /*#__PURE__*/_react.default.createElement("p", null, "Drop down content"), /*#__PURE__*/_react.default.createElement("p", null, "Drop down content"));
 };
 
 var Default = Template.bind({});
