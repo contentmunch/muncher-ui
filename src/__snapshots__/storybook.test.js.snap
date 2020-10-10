@@ -1152,9 +1152,9 @@ exports[`Storyshots Input/Range Slider Default 1`] = `
       className="rc-slider-track rc-slider-track-1"
       style={
         Object {
-          "left": "8.256880733944955%",
+          "left": "0%",
           "right": "auto",
-          "width": "82.56880733944953%",
+          "width": "100%",
         }
       }
     />
@@ -1165,7 +1165,7 @@ exports[`Storyshots Input/Range Slider Default 1`] = `
       aria-disabled={false}
       aria-valuemax={1100}
       aria-valuemin={10}
-      aria-valuenow={100}
+      aria-valuenow={10}
       className="rc-slider-handle rc-slider-handle-1"
       onBlur={[Function]}
       onKeyDown={[Function]}
@@ -1175,7 +1175,7 @@ exports[`Storyshots Input/Range Slider Default 1`] = `
       role="slider"
       style={
         Object {
-          "left": "8.256880733944955%",
+          "left": "0%",
           "right": "auto",
           "transform": "translateX(-50%)",
         }
@@ -1186,7 +1186,7 @@ exports[`Storyshots Input/Range Slider Default 1`] = `
       aria-disabled={false}
       aria-valuemax={1100}
       aria-valuemin={10}
-      aria-valuenow={1000}
+      aria-valuenow={1100}
       className="rc-slider-handle rc-slider-handle-2"
       onBlur={[Function]}
       onKeyDown={[Function]}
@@ -1196,7 +1196,7 @@ exports[`Storyshots Input/Range Slider Default 1`] = `
       role="slider"
       style={
         Object {
-          "left": "90.82568807339449%",
+          "left": "100%",
           "right": "auto",
           "transform": "translateX(-50%)",
         }

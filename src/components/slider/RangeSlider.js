@@ -9,7 +9,7 @@ export default function RangeSlider({from, to, min, max ,sign, onSliderChange: s
     const Range = createSliderWithTooltip(Slider.Range);
     return (
         <div className="muncher-slider">
-            <Range min={min} max={max} defaultValue={[from, to]}
+            <Range min={min} max={max} defaultValue={[min, max]}
                    tipFormatter={value => `${sign ? sign + value : '$' + value}`} onAfterChange={sliderChangeHandler}/>
             {children}
         </div>
