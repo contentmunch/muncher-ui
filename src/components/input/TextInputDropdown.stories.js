@@ -6,7 +6,20 @@ export default {
     component: TextInputDropdown,
 };
 
-const Template = (args) => <TextInputDropdown {...args} ><p>Drop down content</p></TextInputDropdown>;
+const Template = (args) => <TextInputDropdown {...args} >
+    <p>Drop down content</p>
+    <p>Drop down content</p>
+    <p>Drop down content</p>
+    <p>Drop down content</p>
+    <p>Drop down content</p>
+    <p>Drop down content</p>
+    <p>Drop down content</p><p>Drop down content</p>
+    <p>Drop down content</p>
+    <p>Drop down content</p>
+    <p>Drop down content</p>
+    <p>Drop down content</p>
+
+</TextInputDropdown>;
 
 export const Default = Template.bind({});
 Default.args = {

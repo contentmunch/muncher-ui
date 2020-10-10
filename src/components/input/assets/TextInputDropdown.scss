@@ -4,6 +4,9 @@ $muncher-input-dropdown-content-color: $primary-color !default;
 $muncher-input-dropdown-content-background-color: $secondary-background-color !default;
 .muncher-input-drop-down {
   position: relative;
+  max-height: 10rem;
+  overflow: scroll;
+
   .muncher-input-drop-down--content {
     width: 100%;
     display: block;
@@ -16,5 +19,6 @@ $muncher-input-dropdown-content-background-color: $secondary-background-color !d
     color: $muncher-input-dropdown-content-color;
     font-size: .8rem;
   }
+
 
 }
