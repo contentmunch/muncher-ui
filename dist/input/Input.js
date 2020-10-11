@@ -63,5 +63,6 @@ Input.propTypes = {
   value: _propTypes.default.any
 };
 Input.defaultProps = {
-  type: 'text'
+  type: 'text',
+  focus: false
 };

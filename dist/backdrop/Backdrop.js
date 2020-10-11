@@ -34,5 +34,8 @@ Backdrop.propTypes = {
   show: _propTypes.default.bool,
   backdropClickHandler: _propTypes.default.func
 };
+Backdrop.defaultProps = {
+  show: false
+};
 var _default = Backdrop;
 exports.default = _default;

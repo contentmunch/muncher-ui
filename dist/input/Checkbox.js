@@ -56,5 +56,9 @@ Checkbox.propTypes = {
   checked: _propTypes.default.bool,
   label: _propTypes.default.string
 };
+Checkbox.defaultProps = {
+  required: false,
+  checked: false
+};
 var _default = Checkbox;
 exports.default = _default;

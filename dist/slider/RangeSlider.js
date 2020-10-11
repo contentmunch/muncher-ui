@@ -82,3 +82,6 @@ RangeSlider.propTypes = {
   handleChange: _propTypes.default.func,
   children: _propTypes.default.any
 };
+RangeSlider.defaultProps = {
+  sign: "$"
+};

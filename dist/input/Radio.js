@@ -55,5 +55,9 @@ Radio.propTypes = {
   onChange: _propTypes.default.func,
   checked: _propTypes.default.bool
 };
+Radio.defaultProps = {
+  required: false,
+  checked: false
+};
 var _default = Radio;
 exports.default = _default;

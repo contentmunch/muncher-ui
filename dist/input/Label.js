@@ -7,6 +7,8 @@ exports.default = Label;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Label(_ref) {
@@ -19,3 +21,12 @@ function Label(_ref) {
     className: "required"
   }, "*") : '');
 }
+
+Label.propTypes = {
+  name: _propTypes.default.string.isRequired,
+  required: _propTypes.default.bool,
+  label: _propTypes.default.string
+};
+Label.defaultProps = {
+  required: false
+};

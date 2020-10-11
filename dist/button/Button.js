@@ -57,9 +57,7 @@ Button.propTypes = {
 };
 Button.defaultProps = {
   type: 'button',
-  size: 'medium',
-  variant: 'primary',
-  onClick: undefined
+  size: 'medium'
 };
 var _default = Button;
 exports.default = _default;
