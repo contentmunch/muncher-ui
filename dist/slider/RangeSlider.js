@@ -71,7 +71,9 @@ function RangeSlider(_ref) {
       return "".concat(sign ? sign + value : '$' + value);
     },
     onAfterChange: onSliderChange
-  }), children);
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "muncher-slider-content"
+  }, children));
 }
 
 ;
