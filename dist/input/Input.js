@@ -48,7 +48,8 @@ function Input(_ref) {
     autoComplete: "off",
     placeholder: placeHolder,
     onChange: onChange,
-    required: required
+    required: required,
+    readOnly: readOnly
   }, props)));
 }
 

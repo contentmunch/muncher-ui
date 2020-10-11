@@ -23,9 +23,20 @@ $input-placeholder-color: $disabled-color !default;
     color: $input-placeholder-color;
   }
 
-  .muncher-input:focus {
-    outline-color: $tertiary-background-color;
+  .muncher-textarea {
+    border: 1px solid $secondary-background-color;
+    width: 100%;
+    + p {
+      margin: 0;
+      font-size: .8rem;
+      padding-left: .2rem;
+    }
   }
+
+  .muncher-input:focus, .muncher-textarea:focus {
+    outline-color: $secondary-color;
+  }
+
 
   .muncher-checkbox, .muncher-radio {
     color: $primary-color;
@@ -33,6 +44,7 @@ $input-placeholder-color: $disabled-color !default;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     input {
       margin-right: .1rem;
     }
