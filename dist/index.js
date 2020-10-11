@@ -87,7 +87,7 @@ Object.defineProperty(exports, "Star", {
     return _Star.default;
   }
 });
-Object.defineProperty(exports, "TextArea", {
+Object.defineProperty(exports, "Textarea", {
   enumerable: true,
   get: function get() {
     return _Textarea.default;
