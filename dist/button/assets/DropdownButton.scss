@@ -6,6 +6,10 @@ $dropdown-content-background-color: $secondary-background-color !default;
   position: relative;
   display: inline-block;
 
+  a {
+    text-decoration: none;
+  }
+
   .muncher-dropdown--content, .muncher-dropdown--nav {
     display: block;
     position: absolute;
