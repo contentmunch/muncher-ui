@@ -20,6 +20,10 @@ $button-tertiary-background-color: $tertiary-background-color !default;
   outline: none;
   position: relative;
   white-space: nowrap;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 
@@ -77,7 +81,7 @@ $button-tertiary-background-color: $tertiary-background-color !default;
 
   a {
     color: $nav-color;
-
+    text-decoration: none;
   }
 
   @media (min-width: $large-size) {
