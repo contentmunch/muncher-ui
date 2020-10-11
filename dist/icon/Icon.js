@@ -26,7 +26,8 @@ function Icon(_ref) {
       name = _ref.name,
       size = _ref.size,
       weight = _ref.weight,
-      props = _objectWithoutProperties(_ref, ["color", "name", "size", "weight"]);
+      onClick = _ref.onClick,
+      props = _objectWithoutProperties(_ref, ["color", "name", "size", "weight", "onClick"]);
 
   var iconClass = size ? 'muncher-icon muncher-icon--' + size : 'muncher-icon muncher-icon--small';
   return /*#__PURE__*/_react.default.createElement("svg", _extends({
@@ -37,7 +38,8 @@ function Icon(_ref) {
     fill: "none",
     strokeWidth: weight ? weight : 2,
     strokeLinecap: "round",
-    strokeLinejoin: "round"
+    strokeLinejoin: "round",
+    onClick: onClick
   }, props), _IconDrawings.iconDrawings[name]);
 }
 
@@ -45,6 +47,7 @@ Icon.propTypes = {
   color: _propTypes.default.string,
   weight: _propTypes.default.oneOf([1, 2, 3]),
   size: _propTypes.default.oneOf(['small', 'medium', 'large']),
+  onClick: _propTypes.default.func,
   name: _propTypes.default.oneOf(['align-center', 'align-justify', 'align-left', 'align-right', 'arrow-left', 'arrow-right', 'calendar', 'close', 'code', 'edit', 'hamburger', 'image', 'link', 'loading', 'minus', 'muncher', 'mute', 'ordered-list', 'phone', 'plus', 'redo', 'search', 'settings', 'smile', 'toggle-left', 'toggle-right', 'type', 'undo', 'unlink', 'unordered-list', 'youtube', 'volume', 'fast-forward', 'pause', 'play', 'power', 'repeat', 'rewind', 'shuffle', 'skip-back', 'skip-forward', 'alert', 'arrow-down', 'arrow-up', 'check', 'help', 'info', 'archive', 'external-link', 'filter', 'github', 'grid', 'log-in', 'log-out', 'more', 'share', 'thumbs-down', 'thumbs-up', 'trash', 'user', 'lock', 'unlock', 'rss', 'save', 'upload']).isRequired
 };
 Icon.defaultProps = {
