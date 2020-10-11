@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 import Label from "./Label";
 
 export default function Textarea({name, label, required, readOnly, rows, maxLength, focus, placeHolder, onChange, value, ...props}) {
-    const [textAreaValue, setTextAreaValue] = useState(value);
-    const handleTextAreaChange = (event) => {
-        setTextAreaValue(event.target.value);
+    const [textareaValue, setTextareaValue] = useState(value);
+    const handleTextareaChange = (event) => {
+        setTextareaValue(event.target.value);
         onChange(event);
     }
     return (
@@ -20,12 +20,12 @@ export default function Textarea({name, label, required, readOnly, rows, maxLeng
                 autoFocus={focus}
                 value={value}
                 placeholder={placeHolder}
-                onChange={handleTextAreaChange}
+                onChange={handleTextareaChange}
                 required={required}
                 readOnly={readOnly}
                 {...props}
             />
-            <p>{textAreaValue ? maxLength - textAreaValue.length : maxLength} characters left</p>
+            <p>{textareaValue ? maxLength - textareaValue.length : maxLength} characters left</p>
         </div>
 
     );
