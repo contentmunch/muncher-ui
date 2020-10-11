@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './components/assets/default.scss';
+import './components/assets/App.scss';
 import DropdownButton from "./components/button/DropdownButton";
 import {Button, Input} from "./components";
 import TextInputDropdown from "./components/input/TextInputDropdown";
