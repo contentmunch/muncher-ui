@@ -2,12 +2,14 @@
 
 $spinner-color: $disabled-color !default;
 .muncher-spinner {
-  border: .2rem solid #f3f3f3;
-  border-radius: 50%;
+  border: solid #f3f3f3;
   border-top: solid $spinner-color;
+  border-width: .2rem;
+  border-radius: 50%;
   width: 2rem;
   height: 2rem;
   animation: spin 2s linear infinite;
+
 
   @keyframes spin {
     0% {
@@ -17,8 +19,16 @@ $spinner-color: $disabled-color !default;
       transform: rotate(360deg);
     }
   }
-
 }
+
+@media (min-width: $medium-size) {
+  .muncher-spinner {
+    width: 4rem;
+    height: 4rem;
+    border-width: .5rem;
+  }
+}
+
 
 
 
