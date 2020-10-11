@@ -12,9 +12,9 @@ import Pill from "./pill/Pill";
 import RangeSlider from "./slider/RangeSlider";
 import Spinner from "./spinner/Spinner";
 import Star from "./star/Star";
-import TextArea from "./input/Textarea";
+import Textarea from "./input/Textarea";
 
-export {TextArea};
+export {Textarea};
 export {Backdrop};
 export {Badge};
 export {Button};
