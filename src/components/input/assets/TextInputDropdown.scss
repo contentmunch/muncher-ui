@@ -16,6 +16,8 @@ $muncher-input-dropdown-content-background-color: $secondary-background-color !d
     padding: .25rem;
     color: $muncher-input-dropdown-content-color;
     font-size: .8rem;
+    overflow: scroll;
+    max-height: 10rem;
   }
 
 
