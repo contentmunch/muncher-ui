@@ -21,13 +21,14 @@ $button-tertiary-background-color: $tertiary-background-color !default;
 
 
 .muncher-button--primary {
-  color: $button-color;
-  background: $button-background-color;
+  color: $button-background-color;
+  background: $button-color;
 }
 
 .muncher-button--secondary {
   background: $button-secondary-background-color;
 }
+
 .muncher-button--tertiary {
   background: $button-tertiary-background-color;
 }
@@ -55,6 +56,7 @@ $button-tertiary-background-color: $tertiary-background-color !default;
   border-radius: 50%;
   padding: .5rem;
 }
+
 .muncher-button:disabled {
   color: $disabled-color;
 }
