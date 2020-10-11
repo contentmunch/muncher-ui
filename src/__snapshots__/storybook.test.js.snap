@@ -1277,6 +1277,28 @@ exports[`Storyshots Input/Text Input Dropdown Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Input/Text area Default 1`] = `
+<div
+  className="muncher-input--div"
+>
+  
+  <textarea
+    autoFocus={false}
+    className="muncher-textarea"
+    maxLength={1000}
+    name="question"
+    onChange={[Function]}
+    placeholder="Type your question"
+    readOnly={false}
+    rows={6}
+  />
+  <p>
+    1000
+     characters left
+  </p>
+</div>
+`;
+
 exports[`Storyshots Utils/DataTitle Default 1`] = `
 <a
   data-title="This will show up on hover"
