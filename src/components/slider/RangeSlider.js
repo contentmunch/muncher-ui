@@ -18,7 +18,9 @@ export default function RangeSlider({min, max, sign, handleChange, children}) {
         <div className="muncher-slider">
             <Range min={min} max={max} defaultValue={[to, from]}
                    tipFormatter={value => `${sign ? sign + value : '$' + value}`} onAfterChange={onSliderChange}/>
-            {children}
+            <div className="muncher-slider-content">
+                {children}
+            </div>
         </div>
 
     );
