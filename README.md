@@ -1,6 +1,6 @@
 ![Release and publish](https://github.com/contentmunch/muncher-ui/workflows/Release%20and%20publish/badge.svg)  ![Tests](https://github.com/contentmunch/muncher-ui/workflows/Test/badge.svg)
 # Muncher-UI
-Muncher-ui is a [UI component library](https://www.chromatic.com/library?appId=5f715bd96ec1620022e8e2d9) for contentmunch.com
+An html5 and scss based [UI component library](https://www.chromatic.com/library?appId=5f715bd96ec1620022e8e2d9).
 
 ## Using Muncher-UI
 To use this component library:
