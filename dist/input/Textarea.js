@@ -54,11 +54,11 @@ function Textarea(_ref) {
 
   var _useState = (0, _react.useState)(value),
       _useState2 = _slicedToArray(_useState, 2),
-      textAreaValue = _useState2[0],
-      setTextAreaValue = _useState2[1];
+      textareaValue = _useState2[0],
+      setTextareaValue = _useState2[1];
 
-  var handleTextAreaChange = function handleTextAreaChange(event) {
-    setTextAreaValue(event.target.value);
+  var handleTextareaChange = function handleTextareaChange(event) {
+    setTextareaValue(event.target.value);
     onChange(event);
   };
 
@@ -76,10 +76,10 @@ function Textarea(_ref) {
     autoFocus: focus,
     value: value,
     placeholder: placeHolder,
-    onChange: handleTextAreaChange,
+    onChange: handleTextareaChange,
     required: required,
     readOnly: readOnly
-  }, props)), /*#__PURE__*/_react.default.createElement("p", null, textAreaValue ? maxLength - textAreaValue.length : maxLength, " characters left"));
+  }, props)), /*#__PURE__*/_react.default.createElement("p", null, textareaValue ? maxLength - textareaValue.length : maxLength, " characters left"));
 }
 
 Textarea.propTypes = {

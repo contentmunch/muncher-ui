@@ -87,6 +87,12 @@ Object.defineProperty(exports, "Star", {
     return _Star.default;
   }
 });
+Object.defineProperty(exports, "TextArea", {
+  enumerable: true,
+  get: function get() {
+    return _Textarea.default;
+  }
+});
 
 var _Backdrop = _interopRequireDefault(require("./backdrop/Backdrop"));
 
@@ -115,5 +121,7 @@ var _RangeSlider = _interopRequireDefault(require("./slider/RangeSlider"));
 var _Spinner = _interopRequireDefault(require("./spinner/Spinner"));
 
 var _Star = _interopRequireDefault(require("./star/Star"));
+
+var _Textarea = _interopRequireDefault(require("./input/Textarea"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
