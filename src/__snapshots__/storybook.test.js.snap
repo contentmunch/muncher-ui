@@ -1226,7 +1226,11 @@ exports[`Storyshots Input/Range Slider Default 1`] = `
       className="rc-slider-mark"
     />
   </div>
-  This is a range slider
+  <div
+    className="muncher-slider-content"
+  >
+    This is a range slider
+  </div>
 </div>
 `;
 
