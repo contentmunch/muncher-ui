@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import {iconDrawings} from "./IconDrawings";
 import './assets/Icon.scss';
 
-export default function Icon({color, name, size, weight, ...props}) {
+export default function Icon({color, name, size, weight, onClick, ...props}) {
     const iconClass = size ? 'muncher-icon muncher-icon--' + size : 'muncher-icon muncher-icon--small';
 
     return (
@@ -17,6 +17,7 @@ export default function Icon({color, name, size, weight, ...props}) {
             strokeWidth={weight ? weight : 2}
             strokeLinecap="round"
             strokeLinejoin="round"
+            onClick={onClick}
             {...props}
         >
             {iconDrawings[name]}
@@ -27,6 +28,7 @@ Icon.propTypes = {
     color: PropTypes.string,
     weight: PropTypes.oneOf([1, 2, 3]),
     size: PropTypes.oneOf(['small', 'medium', 'large']),
+    onClick: PropTypes.func,
     name: PropTypes.oneOf(['align-center', 'align-justify', 'align-left', 'align-right', 'arrow-left',
         'arrow-right', 'calendar', 'close', 'code', 'edit', 'hamburger', 'image', 'link', 'loading', 'minus', 'muncher',
         'mute', 'ordered-list', 'phone', 'plus', 'redo', 'search', 'settings', 'smile', 'toggle-left', 'toggle-right',
