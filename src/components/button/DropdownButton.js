@@ -56,8 +56,19 @@ export default function DropdownButton(
                 return "muncher-dropdown--content";
         }
     };
+    const handleMouseEnter = () => {
+        console.log("enter");
+        if ("nav" === drop) {
+            setShowContent(true);
+        }
+    };
+    const handleMouseLeave = () => {
+        if ("nav" === drop) {
+            setShowContent(false);
+        }
+    };
     return (
-        <div className="muncher-dropdown" ref={ref}>
+        <div className="muncher-dropdown" ref={ref} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <Button type={'nav' === drop ? 'nav' : 'button'} onMouseDown={buttonOnClick} title={title}
                     disabled={disabled} rounded={rounded}
                     active={active} variant={variant} size={size} {...props}
@@ -72,7 +83,7 @@ export default function DropdownButton(
     );
 }
 DropdownButton.propTypes = {
-    variant: PropTypes.oneOf(['primary', 'secondary','tertiary']),
+    variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
     size: PropTypes.oneOf(['small', 'medium', 'large']),
     title: PropTypes.string,
     active: PropTypes.bool,
