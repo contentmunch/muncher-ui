@@ -55,7 +55,6 @@
     "@testing-library/user-event": "^7.2.1",
     "babel-loader": "^8.1.0",
     "chromatic": "^5.2.0",
-    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
@@ -66,9 +65,7 @@
   "dependencies": {
     "normalize.css": "^8.0.1",
     "rc-slider": "^9.5.2",
-    "prop-types": "^15.7.2"
-  },
-  "peerDependencies": {
+    "prop-types": "^15.7.2",
     "node-sass": "^4.14.1"
   }
 }
