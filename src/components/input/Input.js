@@ -16,6 +16,7 @@ export default function Input({name, label, required, readOnly, type, focus, pla
                 autoComplete="off"
                 placeholder={placeHolder}
                 onChange={onChange}
+                required={required}
                 {...props}
             />
         </div>
