@@ -36,5 +36,8 @@ Modal.propTypes = {
     show: PropTypes.bool,
     setShow: PropTypes.func,
     children: PropTypes.any,
-}
+};
+Modal.defaultProps = {
+    show: false
+};
 export default Modal;

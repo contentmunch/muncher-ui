@@ -10,7 +10,7 @@ exports[`Storyshots Buttons/Button Active 1`] = `
   }
 >
   <button
-    className="muncher-button muncher-button--primary muncher-button--medium muncher-button--active"
+    className="muncher-button muncher-button--medium muncher-button--active"
     data-title="Active Button"
     disabled={false}
     type="button"
@@ -30,7 +30,7 @@ exports[`Storyshots Buttons/Button Default 1`] = `
   }
 >
   <button
-    className="muncher-button muncher-button--primary muncher-button--medium"
+    className="muncher-button muncher-button--medium"
     data-title="Default Button"
     disabled={false}
     type="button"
@@ -50,7 +50,7 @@ exports[`Storyshots Buttons/Button Disabled 1`] = `
   }
 >
   <button
-    className="muncher-button muncher-button--primary muncher-button--medium"
+    className="muncher-button muncher-button--medium"
     data-title="Disabled Button"
     disabled={true}
     type="button"
@@ -70,7 +70,7 @@ exports[`Storyshots Buttons/Button Icon Button 1`] = `
   }
 >
   <button
-    className="muncher-button muncher-button--primary muncher-button--small"
+    className="muncher-button muncher-button--small"
     data-title="Icon Button"
     disabled={false}
     type="button"
@@ -138,7 +138,7 @@ exports[`Storyshots Buttons/Button Large 1`] = `
   }
 >
   <button
-    className="muncher-button muncher-button--primary muncher-button--large"
+    className="muncher-button muncher-button--large"
     data-title="Large Button"
     disabled={false}
     type="button"
@@ -158,7 +158,7 @@ exports[`Storyshots Buttons/Button Nav Button 1`] = `
   }
 >
   <button
-    className="muncher-button muncher-button--nav muncher-button--primary muncher-button--medium"
+    className="muncher-button muncher-button--nav muncher-button--medium"
     data-title="Nav Button"
     disabled={false}
     type="button"
@@ -266,7 +266,7 @@ exports[`Storyshots Buttons/Button Small 1`] = `
   }
 >
   <button
-    className="muncher-button muncher-button--primary muncher-button--small"
+    className="muncher-button muncher-button--small"
     data-title="Small Button"
     disabled={false}
     type="button"
@@ -286,7 +286,7 @@ exports[`Storyshots Buttons/Button Submit 1`] = `
   }
 >
   <button
-    className="muncher-button muncher-button--primary muncher-button--medium"
+    className="muncher-button muncher-button--medium"
     data-title="Submit Button"
     disabled={false}
     type="submit"
@@ -329,7 +329,7 @@ exports[`Storyshots Buttons/Dropdown Button Active 1`] = `
     className="muncher-dropdown"
   >
     <button
-      className="muncher-button muncher-button--primary muncher-button--medium muncher-button--active"
+      className="muncher-button muncher-button--medium muncher-button--active"
       data-title="Active DropDown"
       disabled={false}
       onMouseDown={[Function]}
@@ -357,7 +357,7 @@ exports[`Storyshots Buttons/Dropdown Button Default 1`] = `
     className="muncher-dropdown"
   >
     <button
-      className="muncher-button muncher-button--primary muncher-button--medium"
+      className="muncher-button muncher-button--medium"
       data-title="Default Dropdown"
       disabled={false}
       onMouseDown={[Function]}
@@ -385,7 +385,7 @@ exports[`Storyshots Buttons/Dropdown Button Disabled 1`] = `
     className="muncher-dropdown"
   >
     <button
-      className="muncher-button muncher-button--primary muncher-button--medium"
+      className="muncher-button muncher-button--medium"
       data-title="Disabled DropDown"
       disabled={true}
       onMouseDown={[Function]}
@@ -413,7 +413,7 @@ exports[`Storyshots Buttons/Dropdown Button Icon Dropdown 1`] = `
     className="muncher-dropdown"
   >
     <button
-      className="muncher-button muncher-button--primary muncher-button--small"
+      className="muncher-button muncher-button--small"
       data-title="Icon dropdown text"
       disabled={false}
       onMouseDown={[Function]}
@@ -487,7 +487,7 @@ exports[`Storyshots Buttons/Dropdown Button Large 1`] = `
     className="muncher-dropdown"
   >
     <button
-      className="muncher-button muncher-button--primary muncher-button--large"
+      className="muncher-button muncher-button--large"
       data-title="Large DropDown"
       disabled={false}
       onMouseDown={[Function]}
@@ -515,7 +515,7 @@ exports[`Storyshots Buttons/Dropdown Button Nav Drop Down 1`] = `
     className="muncher-dropdown"
   >
     <button
-      className="muncher-button muncher-button--nav muncher-button--primary muncher-button--medium"
+      className="muncher-button muncher-button--nav muncher-button--medium"
       data-title="Nav drop down"
       disabled={false}
       onMouseDown={[Function]}
@@ -645,7 +645,7 @@ exports[`Storyshots Buttons/Dropdown Button Small 1`] = `
     className="muncher-dropdown"
   >
     <button
-      className="muncher-button muncher-button--primary muncher-button--small"
+      className="muncher-button muncher-button--small"
       data-title="Small DropDown"
       disabled={false}
       onMouseDown={[Function]}
@@ -673,7 +673,7 @@ exports[`Storyshots Buttons/Dropdown Button With Text 1`] = `
     className="muncher-dropdown"
   >
     <button
-      className="muncher-button muncher-button--primary muncher-button--medium"
+      className="muncher-button muncher-button--medium"
       data-title="DropDown with text"
       disabled={false}
       onMouseDown={[Function]}
@@ -848,7 +848,9 @@ exports[`Storyshots Input/Checkbox Default 1`] = `
     className="muncher-checkbox"
   >
     <input
+      checked={false}
       name="muncher-checkbox"
+      required={false}
       type="checkbox"
     />
     <label
@@ -868,6 +870,7 @@ exports[`Storyshots Input/Input Color 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Type your query"
@@ -883,6 +886,7 @@ exports[`Storyshots Input/Input Date 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Type your query"
@@ -898,6 +902,7 @@ exports[`Storyshots Input/Input Date Time 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Type your query"
@@ -913,6 +918,7 @@ exports[`Storyshots Input/Input Default 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Type your query"
@@ -928,6 +934,7 @@ exports[`Storyshots Input/Input Email 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Email"
@@ -943,6 +950,7 @@ exports[`Storyshots Input/Input File 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Type your query"
@@ -958,6 +966,7 @@ exports[`Storyshots Input/Input Month 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Type your query"
@@ -973,6 +982,7 @@ exports[`Storyshots Input/Input Number 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Number"
@@ -988,6 +998,7 @@ exports[`Storyshots Input/Input Password 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Type password"
@@ -1003,6 +1014,7 @@ exports[`Storyshots Input/Input Range 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Type your query"
@@ -1018,6 +1030,7 @@ exports[`Storyshots Input/Input Search 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Type your query"
@@ -1033,6 +1046,7 @@ exports[`Storyshots Input/Input Tel 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Type your query"
@@ -1057,6 +1071,7 @@ exports[`Storyshots Input/Input Text With Label 1`] = `
   </label>
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Type your query"
@@ -1072,6 +1087,7 @@ exports[`Storyshots Input/Input Time 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Type your query"
@@ -1087,6 +1103,7 @@ exports[`Storyshots Input/Input Url 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="type url"
@@ -1102,6 +1119,7 @@ exports[`Storyshots Input/Input Week 1`] = `
   
   <input
     autoComplete="off"
+    autoFocus={false}
     className="muncher-input"
     name="query"
     placeholder="Type your query"
@@ -1118,6 +1136,7 @@ exports[`Storyshots Input/Radio Default 1`] = `
     className="muncher-radio"
   >
     <input
+      checked={false}
       name="muncher-radio"
       type="radio"
     />

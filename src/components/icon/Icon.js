@@ -36,3 +36,8 @@ Icon.propTypes = {
         'trash', 'user', 'lock', 'unlock', 'rss', 'save', 'upload'
     ]).isRequired
 };
+Icon.defaultProps = {
+    name: "muncher",
+    weight: 2,
+    size: "small"
+};

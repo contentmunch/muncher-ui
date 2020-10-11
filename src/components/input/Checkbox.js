@@ -28,5 +28,9 @@ Checkbox.propTypes = {
     value: PropTypes.any,
     checked: PropTypes.bool,
     label: PropTypes.string,
-}
+};
+Checkbox.defaultProps = {
+    required: false,
+    checked: false,
+};
 export default Checkbox;

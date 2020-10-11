@@ -88,6 +88,4 @@ DropdownButton.propTypes = {
 }
 DropdownButton.defaultProps = {
     size: 'medium',
-    variant: 'primary',
-    onClick: undefined,
 };

@@ -14,5 +14,8 @@ const Backdrop = ({show, backdropClickHandler, ...props}) => {
 Backdrop.propTypes = {
     show: PropTypes.bool,
     backdropClickHandler: PropTypes.func
-}
+};
+Backdrop.defaultProps = {
+    show: false
+};
 export default Backdrop;

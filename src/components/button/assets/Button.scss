@@ -2,10 +2,13 @@
 
 $button-color: $primary-color !default;
 $button-background-color: $primary-background-color !default;
+$button-primary-background-color: $primary-color !default;
 $button-secondary-background-color: $secondary-background-color !default;
 $button-tertiary-background-color: $tertiary-background-color !default;
 .muncher-button {
   font-family: $button-font;
+  color: $button-color;
+  background: $button-background-color;
   text-decoration: none;
   font-weight: normal;
   display: inline-flex;
@@ -22,7 +25,7 @@ $button-tertiary-background-color: $tertiary-background-color !default;
 
 .muncher-button--primary {
   color: $button-background-color;
-  background: $button-color;
+  background: $button-primary-background-color;
 }
 
 .muncher-button--secondary {

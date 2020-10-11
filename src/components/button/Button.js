@@ -39,7 +39,5 @@ Button.propTypes = {
 Button.defaultProps = {
     type: 'button',
     size: 'medium',
-    variant: 'primary',
-    onClick: undefined,
 };
 export default Button;

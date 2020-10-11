@@ -59,4 +59,8 @@ TextInputDropdown.propTypes = {
     showContent: PropTypes.bool.isRequired,
     setShowContent: PropTypes.func.isRequired,
     children: PropTypes.oneOfType([PropTypes.array, PropTypes.oneOfType([PropTypes.element, PropTypes.string])])
-}
+};
+TextInputDropdown.defaultProps = {
+    focus: false,
+    showContent: false
+};
