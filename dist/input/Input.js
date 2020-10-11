@@ -47,7 +47,8 @@ function Input(_ref) {
     type: type ? type : 'text',
     autoComplete: "off",
     placeholder: placeHolder,
-    onChange: onChange
+    onChange: onChange,
+    required: required
   }, props)));
 }
 
