@@ -1095,6 +1095,7 @@ exports[`Storyshots Input/Input Text With Label 1`] = `
     className="muncher-input"
     name="query"
     placeholder="Type your query"
+    required={true}
     type="text"
   />
 </div>
