@@ -42,13 +42,6 @@ WithText.args = {
     element: <p>Text drop down</p>
 };
 
-export const NavDropDown = Template.bind({});
-NavDropDown.args = {
-    ...Default.args,
-    title: 'Nav drop down',
-    drop: 'nav',
-    element: <h4>Nav Item</h4>
-};
 export const Secondary = Template.bind({});
 Secondary.args = {
     ...Default.args,

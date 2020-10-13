@@ -327,8 +327,6 @@ exports[`Storyshots Buttons/Dropdown Button Active 1`] = `
 >
   <div
     className="muncher-dropdown"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <button
       className="muncher-button muncher-button--medium muncher-button--active"
@@ -357,8 +355,6 @@ exports[`Storyshots Buttons/Dropdown Button Default 1`] = `
 >
   <div
     className="muncher-dropdown"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <button
       className="muncher-button muncher-button--medium"
@@ -387,8 +383,6 @@ exports[`Storyshots Buttons/Dropdown Button Disabled 1`] = `
 >
   <div
     className="muncher-dropdown"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <button
       className="muncher-button muncher-button--medium"
@@ -417,8 +411,6 @@ exports[`Storyshots Buttons/Dropdown Button Icon Dropdown 1`] = `
 >
   <div
     className="muncher-dropdown"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <button
       className="muncher-button muncher-button--small"
@@ -493,8 +485,6 @@ exports[`Storyshots Buttons/Dropdown Button Large 1`] = `
 >
   <div
     className="muncher-dropdown"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <button
       className="muncher-button muncher-button--large"
@@ -512,36 +502,6 @@ exports[`Storyshots Buttons/Dropdown Button Large 1`] = `
 </div>
 `;
 
-exports[`Storyshots Buttons/Dropdown Button Nav Drop Down 1`] = `
-<div
-  style={
-    Object {
-      "background": "#f5f5f5",
-      "padding": "2rem",
-    }
-  }
->
-  <div
-    className="muncher-dropdown"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
-  >
-    <button
-      className="muncher-button muncher-button--nav muncher-button--medium"
-      data-title="Nav drop down"
-      disabled={false}
-      onMouseDown={[Function]}
-      type="button"
-    >
-      <h4>
-        Nav Item
-      </h4>
-    </button>
-    
-  </div>
-</div>
-`;
-
 exports[`Storyshots Buttons/Dropdown Button Rounded Dropdown 1`] = `
 <div
   style={
@@ -553,8 +513,6 @@ exports[`Storyshots Buttons/Dropdown Button Rounded Dropdown 1`] = `
 >
   <div
     className="muncher-dropdown"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <button
       className="muncher-button muncher-button--secondary muncher-button--large muncher-button--rounded"
@@ -629,8 +587,6 @@ exports[`Storyshots Buttons/Dropdown Button Secondary 1`] = `
 >
   <div
     className="muncher-dropdown"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <button
       className="muncher-button muncher-button--secondary muncher-button--medium"
@@ -659,8 +615,6 @@ exports[`Storyshots Buttons/Dropdown Button Small 1`] = `
 >
   <div
     className="muncher-dropdown"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <button
       className="muncher-button muncher-button--small"
@@ -689,8 +643,6 @@ exports[`Storyshots Buttons/Dropdown Button With Text 1`] = `
 >
   <div
     className="muncher-dropdown"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <button
       className="muncher-button muncher-button--medium"
@@ -704,6 +656,44 @@ exports[`Storyshots Buttons/Dropdown Button With Text 1`] = `
       </p>
     </button>
     
+  </div>
+</div>
+`;
+
+exports[`Storyshots Buttons/Dropdown Nav Button Default 1`] = `
+<div
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="muncher-dropdown-nav"
+  >
+    <button
+      className="muncher-button muncher-button--nav muncher-button--medium"
+      data-title="Default Nav Dropdown"
+      disabled={false}
+      type="button"
+    >
+      <p>
+        drop down 
+        <span
+          className="small"
+        >
+          ▼
+        </span>
+      </p>
+    </button>
+    <div
+      className="muncher-dropdown-nav--content"
+    >
+      <p>
+        Drop down content
+      </p>
+    </div>
   </div>
 </div>
 `;

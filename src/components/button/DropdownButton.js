@@ -15,7 +15,9 @@ export default function DropdownButton(
         if (onClick) {
             onClick(e);
         }
-        setShowContent(true);
+        if (setShowContent) {
+            setShowContent(true);
+        }
     }
 
     const onContentClose = useCallback(() => {
@@ -56,20 +58,10 @@ export default function DropdownButton(
                 return "muncher-dropdown--content";
         }
     };
-    const handleMouseEnter = () => {
-        console.log("enter");
-        if ("nav" === drop) {
-            setShowContent(true);
-        }
-    };
-    const handleMouseLeave = () => {
-        if ("nav" === drop) {
-            setShowContent(false);
-        }
-    };
+
     return (
-        <div className="muncher-dropdown" ref={ref} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <Button type={'nav' === drop ? 'nav' : 'button'} onMouseDown={buttonOnClick} title={title}
+        <div className="muncher-dropdown" ref={ref}>
+            <Button  onMouseDown={buttonOnClick} title={title}
                     disabled={disabled} rounded={rounded}
                     active={active} variant={variant} size={size} {...props}
             >{element}</Button>

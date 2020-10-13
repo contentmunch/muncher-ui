@@ -5,6 +5,7 @@ import {Button, Input} from "./components";
 import TextInputDropdown from "./components/input/TextInputDropdown";
 import Icon from "./components/icon/Icon";
 import RangeSlider from "./components/slider/RangeSlider";
+import DropdownNavButton from "./components/button/DropdownNavButton";
 
 function App() {
     const [showContent, setShowContent] = useState(false);
@@ -31,14 +32,12 @@ function App() {
                         <Icon name="muncher" size="large"/>
                     </Button>
                     <Input/>
-                    <DropdownButton drop="nav" element={<p>Test</p>} showContent={showContent}
-                                    setShowContent={setShowContent}>
+                    <DropdownNavButton element={<p>Test</p>} >
                         <div>
                             <p onClick={onClick}>First</p>
                             <p onClick={onClick}>Second</p>
-
                         </div>
-                    </DropdownButton>
+                    </DropdownNavButton>
                 </div>
             </div>
             <div className="container">
