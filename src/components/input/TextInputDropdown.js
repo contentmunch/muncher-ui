@@ -3,7 +3,7 @@ import "./assets/TextInputDropdown.scss";
 import PropTypes from "prop-types";
 import Input from "./Input";
 
-export default function TextInputDropdown({focus, inputPlaceHolder, handleInputChange, showContent, setShowContent, children}) {
+export default function TextInputDropdown({focus, inputPlaceHolder, handleInputChange, showContent, setShowContent, readOnly,children}) {
     const ref = useRef(null);
 
     const handleQueryChange = (e) => {
@@ -39,7 +39,7 @@ export default function TextInputDropdown({focus, inputPlaceHolder, handleInputC
     }, [escFunction, onContentClose]);
     return (
         <div className="muncher-input-drop-down" ref={ref}>
-            <Input focus={focus} placeHolder={inputPlaceHolder} name="query" onChange={e => handleQueryChange(e)}/>
+            <Input focus={focus} placeHolder={inputPlaceHolder} name="query" onChange={e => handleQueryChange(e)} readOnly={readOnly}/>
 
             {
                 showContent ?
@@ -58,6 +58,7 @@ TextInputDropdown.propTypes = {
     handleInputChange: PropTypes.func.isRequired,
     showContent: PropTypes.bool.isRequired,
     setShowContent: PropTypes.func.isRequired,
+    readOnly: PropTypes.bool,
     children: PropTypes.oneOfType([PropTypes.array, PropTypes.oneOfType([PropTypes.element, PropTypes.string])])
 };
 TextInputDropdown.defaultProps = {
