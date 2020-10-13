@@ -2,40 +2,46 @@
 
 $dropdown-nav-content-color: $primary-color !default;
 $dropdown-nav-content-background-color: $secondary-background-color !default;
-.muncher-dropdown-nav {
+.muncher-nav {
   position: relative;
-  display: inline-block;
+
+  h5 {
+    text-align: left;
+    margin: .3rem;
+  }
 
   a {
     text-decoration: none;
   }
-
   .small {
     font-size: .5rem;
   }
 
-  .muncher-dropdown-nav--content {
+  .muncher-nav--content {
     display: block;
-    padding: .5rem;
     white-space: nowrap;
-    font-size: .8rem;
     background: $dropdown-nav-content-background-color;
     color: $dropdown-nav-content-color;
-    z-index: 10;
     min-width: 5rem;
-    position: absolute;
+    padding-left: 1.5rem;
+    z-index: 10;
   }
 }
 
 @media (min-width: $large-size) {
-  .muncher-dropdown-nav {
-    .muncher-dropdown-nav--content {
+  .muncher-nav {
+    .muncher-nav--content {
       box-shadow: .5rem .5rem .6rem rgba(0, 0, 0, 0.2);
       display: none;
+      position: absolute;
+    }
+    h5 {
+      text-align: left;
+      margin: .7rem 1rem .7rem .3rem;
     }
   }
 
-  .muncher-dropdown-nav:hover .muncher-dropdown-nav--content {
+  .muncher-nav:hover .muncher-nav--content {
     display: block;
   }
 }
