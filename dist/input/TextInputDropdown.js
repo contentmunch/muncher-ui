@@ -27,6 +27,7 @@ function TextInputDropdown(_ref) {
       handleInputChange = _ref.handleInputChange,
       showContent = _ref.showContent,
       setShowContent = _ref.setShowContent,
+      readOnly = _ref.readOnly,
       children = _ref.children;
   var ref = (0, _react.useRef)(null);
 
@@ -69,7 +70,8 @@ function TextInputDropdown(_ref) {
     name: "query",
     onChange: function onChange(e) {
       return handleQueryChange(e);
-    }
+    },
+    readOnly: readOnly
   }), showContent ? /*#__PURE__*/_react.default.createElement("div", {
     className: "muncher-input-drop-down--content"
   }, children) : "");
@@ -81,6 +83,7 @@ TextInputDropdown.propTypes = {
   handleInputChange: _propTypes.default.func.isRequired,
   showContent: _propTypes.default.bool.isRequired,
   setShowContent: _propTypes.default.func.isRequired,
+  readOnly: _propTypes.default.bool,
   children: _propTypes.default.oneOfType([_propTypes.default.array, _propTypes.default.oneOfType([_propTypes.default.element, _propTypes.default.string])])
 };
 TextInputDropdown.defaultProps = {
