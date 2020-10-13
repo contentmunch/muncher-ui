@@ -4,6 +4,7 @@ import Button from "./button/Button";
 import Checkbox from "./input/Checkbox";
 import Radio from "./input/Radio";
 import DropdownButton from "./button/DropdownButton";
+import DropdownNavButton from "./button/DropdownNavButton";
 import Icon from "./icon/Icon";
 import Input from "./input/Input";
 import TextInputDropdown from "./input/TextInputDropdown";
@@ -19,6 +20,7 @@ export {Backdrop};
 export {Badge};
 export {Button};
 export {DropdownButton};
+export {DropdownNavButton};
 export {Icon};
 export {Checkbox}
 export {Input};
