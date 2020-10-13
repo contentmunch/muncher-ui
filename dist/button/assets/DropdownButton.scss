@@ -10,8 +10,11 @@ $dropdown-content-background-color: $secondary-background-color !default;
     text-decoration: none;
   }
 
+  .small {
+    font-size: .5rem;
+  }
+
   .muncher-dropdown--content, .muncher-dropdown--nav {
-    display: block;
     position: absolute;
     white-space: nowrap;
     background: $dropdown-content-background-color;
@@ -39,5 +42,16 @@ $dropdown-content-background-color: $secondary-background-color !default;
 
   .drop-right {
     left: 0;
+  }
+
+}
+
+@media (min-width: $large-size) {
+  .muncher-dropdown--nav {
+    display: none;
+  }
+
+  .muncher-dropdown:hover .muncher-dropdown--nav {
+    display: block;
   }
 }

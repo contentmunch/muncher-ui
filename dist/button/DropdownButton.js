@@ -52,7 +52,9 @@ function DropdownButton(_ref) {
       onClick(e);
     }
 
-    setShowContent(true);
+    if (setShowContent) {
+      setShowContent(true);
+    }
   };
 
   var onContentClose = (0, _react.useCallback)(function () {
@@ -98,27 +100,10 @@ function DropdownButton(_ref) {
     }
   };
 
-  var handleMouseEnter = function handleMouseEnter() {
-    console.log("enter");
-
-    if ("nav" === drop) {
-      setShowContent(true);
-    }
-  };
-
-  var handleMouseLeave = function handleMouseLeave() {
-    if ("nav" === drop) {
-      setShowContent(false);
-    }
-  };
-
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "muncher-dropdown",
-    ref: ref,
-    onMouseEnter: handleMouseEnter,
-    onMouseLeave: handleMouseLeave
+    ref: ref
   }, /*#__PURE__*/_react.default.createElement(_Button.default, _extends({
-    type: 'nav' === drop ? 'nav' : 'button',
     onMouseDown: buttonOnClick,
     title: title,
     disabled: disabled,

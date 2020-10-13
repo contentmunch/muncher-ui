@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Active = exports.Disabled = exports.Small = exports.Large = exports.Secondary = exports.NavDropDown = exports.WithText = exports.RoundedDropdown = exports.IconDropdown = exports.Default = exports.default = void 0;
+exports.Active = exports.Disabled = exports.Small = exports.Large = exports.Secondary = exports.WithText = exports.RoundedDropdown = exports.IconDropdown = exports.Default = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -72,13 +72,6 @@ exports.WithText = WithText;
 WithText.args = _objectSpread(_objectSpread({}, Default.args), {}, {
   title: 'DropDown with text',
   element: /*#__PURE__*/_react.default.createElement("p", null, "Text drop down")
-});
-var NavDropDown = Template.bind({});
-exports.NavDropDown = NavDropDown;
-NavDropDown.args = _objectSpread(_objectSpread({}, Default.args), {}, {
-  title: 'Nav drop down',
-  drop: 'nav',
-  element: /*#__PURE__*/_react.default.createElement("h4", null, "Nav Item")
 });
 var Secondary = Template.bind({});
 exports.Secondary = Secondary;
