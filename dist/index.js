@@ -39,6 +39,12 @@ Object.defineProperty(exports, "DropdownButton", {
     return _DropdownButton.default;
   }
 });
+Object.defineProperty(exports, "DropdownNavButton", {
+  enumerable: true,
+  get: function get() {
+    return _DropdownNavButton.default;
+  }
+});
 Object.defineProperty(exports, "Icon", {
   enumerable: true,
   get: function get() {
@@ -105,6 +111,8 @@ var _Checkbox = _interopRequireDefault(require("./input/Checkbox"));
 var _Radio = _interopRequireDefault(require("./input/Radio"));
 
 var _DropdownButton = _interopRequireDefault(require("./button/DropdownButton"));
+
+var _DropdownNavButton = _interopRequireDefault(require("./button/DropdownNavButton"));
 
 var _Icon = _interopRequireDefault(require("./icon/Icon"));
 
