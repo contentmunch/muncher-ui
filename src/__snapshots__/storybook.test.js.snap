@@ -860,6 +860,7 @@ exports[`Storyshots Input/Checkbox Default 1`] = `
     <input
       checked={false}
       name="muncher-checkbox"
+      onChange={[Function]}
       required={false}
       type="checkbox"
     />
@@ -1149,6 +1150,7 @@ exports[`Storyshots Input/Radio Default 1`] = `
     <input
       checked={false}
       name="muncher-radio"
+      onChange={[Function]}
       type="radio"
     />
     <label

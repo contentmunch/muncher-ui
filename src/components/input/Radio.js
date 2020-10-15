@@ -1,19 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './assets/Input.scss';
 import PropTypes from "prop-types";
 import Label from "./Label";
 
-const Radio = ({name, value, required, onChange, checked, label, ...props}) => {
-
+const Radio = ({name, required, onChange, checked, label, ...props}) => {
+    const [radioChecked, setRadioChecked] = useState(checked ? checked : false);
     return (
         <div className="muncher-input--div">
             <div className="muncher-radio">
                 <input
                     type="radio"
                     name={name}
-                    value={value}
-                    onChange={onChange}
-                    checked={checked}
+                    onChange={event => {
+                        setRadioChecked(event.target.checked);
+                        onChange(event);
+                    }}
+                    checked={radioChecked}
                     {...props}
                 />
                 {label ? <Label label={label} required={required} name={name}/> : ''}
@@ -23,7 +25,6 @@ const Radio = ({name, value, required, onChange, checked, label, ...props}) => {
 };
 Radio.propTypes = {
     name: PropTypes.string,
-    value: PropTypes.any,
     label: PropTypes.string,
     required: PropTypes.bool,
     onChange: PropTypes.func,

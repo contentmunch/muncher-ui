@@ -1,18 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './assets/Input.scss';
 import PropTypes from "prop-types";
 import Label from "./Label";
 
-const Checkbox = ({name, value, required, onChange, checked, label, ...props}) => {
+const Checkbox = ({name, required, onChange, checked, label, ...props}) => {
+
+    const [checkboxChecked, setCheckboxChecked] = useState(checked ? checked : false);
 
     return (
         <div className="muncher-input--div">
             <div className="muncher-checkbox">
                 <input type="checkbox"
                        name={name}
-                       value={value}
-                       onChange={onChange}
-                       checked={checked}
+                       onChange={event => {
+                           setCheckboxChecked(event.target.checked);
+                           onChange(event);
+                       }}
+                       checked={checkboxChecked}
                        required={required}
                        {...props}
                 />
@@ -25,7 +29,6 @@ Checkbox.propTypes = {
     name: PropTypes.string,
     onChange: PropTypes.func,
     required: PropTypes.bool,
-    value: PropTypes.any,
     checked: PropTypes.bool,
     label: PropTypes.string,
 };
