@@ -1,6 +1,6 @@
 @import "src/components/assets/variables";
 
-$input-focus-color: $primary-color !default;
+$input-focus-color: $secondary-color; !default;
 $input-placeholder-color: $disabled-color !default;
 .muncher-input--div {
   .muncher-input {
@@ -34,7 +34,7 @@ $input-placeholder-color: $disabled-color !default;
   }
 
   .muncher-input:focus, .muncher-textarea:focus {
-    outline-color: $secondary-color;
+    outline-color: $input-focus-color;
   }
 
 
