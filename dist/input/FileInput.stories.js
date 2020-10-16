@@ -26,5 +26,6 @@ exports.Default = Default;
 Default.args = {
   name: "file",
   label: "upload file",
-  required: true
+  required: true,
+  setFiles: function setFiles() {}
 };

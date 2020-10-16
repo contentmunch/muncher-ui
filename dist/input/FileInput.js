@@ -46,31 +46,47 @@ function FileInput(_ref) {
       size = _ref.size,
       required = _ref.required,
       active = _ref.active,
-      onChange = _ref.onChange,
+      setFiles = _ref.setFiles,
       multiple = _ref.multiple,
-      props = _objectWithoutProperties(_ref, ["name", "label", "variant", "size", "required", "active", "onChange", "multiple"]);
+      maxFiles = _ref.maxFiles,
+      props = _objectWithoutProperties(_ref, ["name", "label", "variant", "size", "required", "active", "setFiles", "multiple", "maxFiles"]);
 
-  var _useState = (0, _react.useState)(),
+  var _useState = (0, _react.useState)(""),
       _useState2 = _slicedToArray(_useState, 2),
-      fileName = _useState2[0],
-      setFileName = _useState2[1];
+      fileNames = _useState2[0],
+      setFileNames = _useState2[1];
 
+  var _useState3 = (0, _react.useState)(""),
+      _useState4 = _slicedToArray(_useState3, 2),
+      fileInputWarning = _useState4[0],
+      setFileInputWaring = _useState4[1];
+
+  var max = maxFiles ? maxFiles : 3;
   var labelClass = 'muncher-button' + (variant ? ' muncher-button--' + variant : '') + (size ? ' muncher-button--' + size : '') + (active ? ' muncher-button--active' : '');
 
   var handleOnChange = function handleOnChange(event) {
     if (multiple) {
-      setFileName(Array.from(event.currentTarget.files).map(function (file) {
+      var files = Array.from(event.currentTarget.files);
+
+      if (files.length > max) {
+        files = files.slice(0, max);
+        setFileInputWaring("Only first " + max + " files included");
+      }
+
+      setFiles(files);
+      setFileNames(files.map(function (file) {
         return file.name;
       }).join(", "));
     } else {
-      setFileName(event.currentTarget.files[0].name);
+      setFiles(Array.from(event.currentTarget.files[0]));
+      setFileNames(event.currentTarget.files[0].name);
     }
-
-    if (onChange) onChange(event);
   };
 
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "muncher-file-input--div"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "file-input-element"
   }, /*#__PURE__*/_react.default.createElement("label", {
     htmlFor: name,
     className: labelClass
@@ -80,14 +96,17 @@ function FileInput(_ref) {
     className: "required"
   }, "\xA0*") : ''), /*#__PURE__*/_react.default.createElement("span", {
     className: "span-file-name"
-  }, fileName), /*#__PURE__*/_react.default.createElement("input", _extends({
+  }, fileNames), /*#__PURE__*/_react.default.createElement("input", _extends({
     id: name,
     type: "file",
     className: "muncher-file-input",
     required: required,
     onChange: handleOnChange,
-    multiple: multiple
-  }, props)));
+    multiple: multiple,
+    accept: "image/*"
+  }, props))), fileInputWarning !== "" ? /*#__PURE__*/_react.default.createElement("p", {
+    className: "text-danger"
+  }, fileInputWarning) : "");
 }
 
 ;
@@ -99,7 +118,9 @@ FileInput.propTypes = {
   required: _propTypes.default.bool,
   active: _propTypes.default.bool,
   onChange: _propTypes.default.func,
-  multiple: _propTypes.default.bool
+  multiple: _propTypes.default.bool,
+  maxFiles: _propTypes.default.number,
+  setFiles: _propTypes.default.func.isRequired
 };
 FileInput.defaultProps = {
   size: "large",

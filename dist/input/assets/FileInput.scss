@@ -5,8 +5,11 @@ $input-focus-color: $secondary-color !default;
 $input-border-color: $secondary-background-color !default;
 $input-placeholder-color: $disabled-color !default;
 .muncher-file-input--div {
-  display: inline-flex;
-  align-items: center;
+  .file-input-element{
+    display: inline-flex;
+    align-items: center;
+  }
+
 
   .muncher-file-input {
     display: none;
