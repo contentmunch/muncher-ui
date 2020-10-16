@@ -122,6 +122,23 @@ var iconDrawings = {
     x2: "16",
     y2: "12"
   })),
+  'at': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("circle", {
+    cx: "12",
+    cy: "12",
+    r: "4"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"
+  })),
+  'award': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("circle", {
+    cx: "12",
+    cy: "8",
+    r: "7"
+  }), /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "8.21 13.89 7 23 12 20 17 23 15.79 13.88"
+  })),
+  'bookmark': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"
+  })),
   'fast-forward': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polygon", {
     points: "13 19 22 12 13 5 13 19"
   }), /*#__PURE__*/_react.default.createElement("polygon", {
@@ -676,6 +693,13 @@ var iconDrawings = {
     y1: "21",
     x2: "16.65",
     y2: "16.65"
+  })),
+  'map': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+  }), /*#__PURE__*/_react.default.createElement("circle", {
+    cx: "12",
+    cy: "10",
+    r: "3"
   })),
   'settings': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("circle", {
     cx: "12",

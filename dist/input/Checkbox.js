@@ -62,7 +62,9 @@ var Checkbox = function Checkbox(_ref) {
     onChange: function onChange(event) {
       setCheckboxChecked(event.target.checked);
 
-      _onChange(event);
+      if (_onChange) {
+        _onChange(event);
+      }
     },
     checked: checkboxChecked,
     required: required

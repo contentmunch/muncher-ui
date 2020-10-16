@@ -68,7 +68,7 @@ function FileInput(_ref) {
     htmlFor: name,
     className: labelClass
   }, /*#__PURE__*/_react.default.createElement(_index.Icon, {
-    name: "upload"
+    name: "image"
   }), "\xA0", label, required ? /*#__PURE__*/_react.default.createElement("span", {
     className: "required"
   }, "\xA0*") : ''), /*#__PURE__*/_react.default.createElement("span", {

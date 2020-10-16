@@ -62,7 +62,9 @@ var Radio = function Radio(_ref) {
     onChange: function onChange(event) {
       setRadioChecked(event.target.checked);
 
-      _onChange(event);
+      if (_onChange) {
+        _onChange(event);
+      }
     },
     checked: radioChecked
   }, props)), label ? /*#__PURE__*/_react.default.createElement(_Label.default, {
