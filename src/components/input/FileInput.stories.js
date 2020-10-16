@@ -13,6 +13,4 @@ Default.args = {
     name: "file",
     label: "upload file",
     required: true,
-    progress: 50,
-
 };

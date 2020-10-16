@@ -922,8 +922,8 @@ exports[`Storyshots Input/File Input Default 1`] = `
   <input
     className="muncher-file-input"
     id="file"
+    multiple={false}
     onChange={[Function]}
-    progress={50}
     required={true}
     type="file"
   />

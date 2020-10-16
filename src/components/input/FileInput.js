@@ -3,7 +3,7 @@ import "./assets/FileInput.scss";
 import PropTypes from "prop-types";
 import {Icon} from "../index";
 
-export default function FileInput({name, label, variant, size, required, active, onChange, value, ...props}) {
+export default function FileInput({name, label, variant, size, required, active, onChange, multiple, ...props}) {
     const [fileName, setFileName] = useState();
     const labelClass = 'muncher-button' +
         (variant ? ' muncher-button--' + variant : '') +
@@ -11,7 +11,12 @@ export default function FileInput({name, label, variant, size, required, active,
         (active ? ' muncher-button--active' : '');
 
     const handleOnChange = (event) => {
-        setFileName(event.target.files[0].name);
+        if (multiple) {
+            setFileName(Array.from(event.currentTarget.files).map(file => file.name).join(", "));
+        } else {
+            setFileName(event.currentTarget.files[0].name);
+        }
+
         if (onChange)
             onChange(event);
     }
@@ -22,7 +27,7 @@ export default function FileInput({name, label, variant, size, required, active,
             </label>
             <span className="span-file-name">{fileName}</span>
             <input id={name} type="file" className="muncher-file-input" required={required} onChange={handleOnChange}
-                   {...props}/>
+                   multiple={multiple} {...props}/>
         </div>
 
     );
@@ -35,10 +40,11 @@ FileInput.propTypes = {
     required: PropTypes.bool,
     active: PropTypes.bool,
     onChange: PropTypes.func,
-    value: PropTypes.any
+    multiple: PropTypes.bool
 };
 
 FileInput.defaultProps = {
     size: "large",
-    variant: "secondary"
+    variant: "secondary",
+    multiple: false
 };

@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './components/assets/App.scss';
-import DropdownButton from "./components/button/DropdownButton";
-import {Button, Checkbox, Input} from "./components";
+import {Button, Checkbox, FileInput, Input} from "./components";
 import TextInputDropdown from "./components/input/TextInputDropdown";
 import Icon from "./components/icon/Icon";
 import RangeSlider from "./components/slider/RangeSlider";
@@ -32,7 +31,7 @@ function App() {
                         <Icon name="muncher" size="large"/>
                     </Button>
                     <Input name="what"/>
-                    <DropdownNavButton element={<p>Test</p>} >
+                    <DropdownNavButton element={<p>Test</p>}>
                         <div>
                             <p onClick={onClick}>First</p>
                             <p onClick={onClick}>Second</p>
@@ -67,10 +66,10 @@ function App() {
             </div>
 
             <div className="container">
-
+                <FileInput name="file" label="upload files" multiple={true}/>
                 <Input icon="map" label="Address" name="address" list="address-list" required/>
                 <datalist id="address-list">
-                    <option value="What" />
+                    <option value="What"/>
                     <option value="When"/>
                     <option value="Where"/>
                     <option value="How"/>
