@@ -14,7 +14,10 @@ import RangeSlider from "./slider/RangeSlider";
 import Spinner from "./spinner/Spinner";
 import Star from "./star/Star";
 import Textarea from "./input/Textarea";
-
+import FileInput from "./input/FileInput";
+import Label from "./input/Label";
+export {Label};
+export {FileInput};
 export {Textarea};
 export {Backdrop};
 export {Badge};
