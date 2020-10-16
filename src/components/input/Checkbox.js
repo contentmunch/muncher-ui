@@ -14,7 +14,9 @@ const Checkbox = ({name, required, onChange, checked, label, ...props}) => {
                        name={name}
                        onChange={event => {
                            setCheckboxChecked(event.target.checked);
-                           onChange(event);
+                           if (onChange) {
+                               onChange(event);
+                           }
                        }}
                        checked={checkboxChecked}
                        required={required}

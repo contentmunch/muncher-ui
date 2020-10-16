@@ -17,7 +17,7 @@ export default function FileInput({name, label, variant, size, required, active,
     return (
         <div className="muncher-file-input--div">
             <label htmlFor={name} className={labelClass}>
-                <Icon name="upload"/>&nbsp;{label}{required ? <span className="required">&nbsp;*</span> : ''}
+                <Icon name="image"/>&nbsp;{label}{required ? <span className="required">&nbsp;*</span> : ''}
             </label>
             <span className="span-file-name">{fileName}</span>
             <input id={name} type="file" className="muncher-file-input" required={required} onChange={handleOnChange}

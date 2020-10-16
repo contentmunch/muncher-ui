@@ -13,7 +13,9 @@ const Radio = ({name, required, onChange, checked, label, ...props}) => {
                     name={name}
                     onChange={event => {
                         setRadioChecked(event.target.checked);
-                        onChange(event);
+                        if (onChange) {
+                            onChange(event);
+                        }
                     }}
                     checked={radioChecked}
                     {...props}
