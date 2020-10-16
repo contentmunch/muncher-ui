@@ -99,6 +99,18 @@ Object.defineProperty(exports, "Textarea", {
     return _Textarea.default;
   }
 });
+Object.defineProperty(exports, "FileInput", {
+  enumerable: true,
+  get: function get() {
+    return _FileInput.default;
+  }
+});
+Object.defineProperty(exports, "Label", {
+  enumerable: true,
+  get: function get() {
+    return _Label.default;
+  }
+});
 
 var _Backdrop = _interopRequireDefault(require("./backdrop/Backdrop"));
 
@@ -131,5 +143,9 @@ var _Spinner = _interopRequireDefault(require("./spinner/Spinner"));
 var _Star = _interopRequireDefault(require("./star/Star"));
 
 var _Textarea = _interopRequireDefault(require("./input/Textarea"));
+
+var _FileInput = _interopRequireDefault(require("./input/FileInput"));
+
+var _Label = _interopRequireDefault(require("./input/Label"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
