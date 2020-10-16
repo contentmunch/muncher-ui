@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Week = exports.Url = exports.Time = exports.Tel = exports.Search = exports.Range = exports.Password = exports.Number = exports.Month = exports.File = exports.Email = exports.DateTime = exports.Date = exports.Color = exports.TextWithLabel = exports.Default = exports.default = void 0;
+exports.Week = exports.Url = exports.Time = exports.Tel = exports.Search = exports.Range = exports.Password = exports.Number = exports.Month = exports.Email = exports.DateTime = exports.Date = exports.Color = exports.TextWithIcon = exports.TextWithLabel = exports.Default = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -40,6 +40,11 @@ TextWithLabel.args = _objectSpread(_objectSpread({}, Default.args), {}, {
   label: 'Search',
   required: true
 });
+var TextWithIcon = Template.bind({});
+exports.TextWithIcon = TextWithIcon;
+TextWithIcon.args = _objectSpread(_objectSpread({}, TextWithLabel.args), {}, {
+  withIcon: true
+});
 var Color = Template.bind({});
 exports.Color = Color;
 Color.args = _objectSpread(_objectSpread({}, Default.args), {}, {
@@ -59,12 +64,8 @@ var Email = Template.bind({});
 exports.Email = Email;
 Email.args = _objectSpread(_objectSpread({}, Default.args), {}, {
   type: 'email',
-  placeHolder: "Email"
-});
-var File = Template.bind({});
-exports.File = File;
-File.args = _objectSpread(_objectSpread({}, Default.args), {}, {
-  type: 'file'
+  placeHolder: "Email",
+  icon: "mail"
 });
 var Month = Template.bind({});
 exports.Month = Month;
@@ -75,7 +76,8 @@ var Number = Template.bind({});
 exports.Number = Number;
 Number.args = _objectSpread(_objectSpread({}, Default.args), {}, {
   type: 'number',
-  placeHolder: "Number"
+  placeHolder: "Phone number",
+  icon: "phone"
 });
 var Password = Template.bind({});
 exports.Password = Password;

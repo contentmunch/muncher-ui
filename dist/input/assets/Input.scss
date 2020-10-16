@@ -1,13 +1,26 @@
 @import "src/components/assets/variables";
 
 $input-focus-color: $secondary-color !default;
+$input-border-color: $secondary-background-color !default;
 $input-placeholder-color: $disabled-color !default;
 .muncher-input--div {
+  .muncher-input-element {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .muncher-icon {
+      background: $input-border-color;
+      padding: .57rem;
+    }
+  }
+
   .muncher-input {
     height: 2rem;
     font-size: .9rem;
     padding-left: .5rem;
-    border: 1px solid $secondary-background-color;
+    border: 1px solid $input-border-color;
     width: 100%;
   }
 
@@ -24,8 +37,9 @@ $input-placeholder-color: $disabled-color !default;
   }
 
   .muncher-textarea {
-    border: 1px solid $secondary-background-color;
+    border: 1px solid $input-border-color;
     width: 100%;
+
     + p {
       margin: 0;
       font-size: .8rem;
@@ -48,15 +62,5 @@ $input-placeholder-color: $disabled-color !default;
     input {
       margin-right: .1rem;
     }
-  }
-}
-
-label {
-  display: inline-block;
-  padding: .2rem;
-
-  .required {
-    padding-left: .1rem;
-    color: $danger-color;
   }
 }

@@ -583,6 +583,11 @@ var iconDrawings = {
   }), /*#__PURE__*/_react.default.createElement("path", {
     d: "M3 17H4H5L4 19C4.55 19 5 19.45 5 20C5 20.55 4.55 21 4 21H3"
   })),
+  'mail': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+  }), /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "22,6 12,13 2,6"
+  })),
   'phone': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("rect", {
     x: "5",
     y: "2",

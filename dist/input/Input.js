@@ -13,6 +13,10 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _Label = _interopRequireDefault(require("./Label"));
 
+var _index = require("../index");
+
+var _Icon = require("../icon/Icon");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -26,12 +30,13 @@ function Input(_ref) {
       label = _ref.label,
       required = _ref.required,
       readOnly = _ref.readOnly,
+      icon = _ref.icon,
       type = _ref.type,
       focus = _ref.focus,
       placeHolder = _ref.placeHolder,
       onChange = _ref.onChange,
       value = _ref.value,
-      props = _objectWithoutProperties(_ref, ["name", "label", "required", "readOnly", "type", "focus", "placeHolder", "onChange", "value"]);
+      props = _objectWithoutProperties(_ref, ["name", "label", "required", "readOnly", "icon", "type", "focus", "placeHolder", "onChange", "value"]);
 
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "muncher-input--div"
@@ -39,7 +44,11 @@ function Input(_ref) {
     label: label,
     required: required,
     name: name
-  }) : '', /*#__PURE__*/_react.default.createElement("input", _extends({
+  }) : '', /*#__PURE__*/_react.default.createElement("div", {
+    className: "muncher-input-element"
+  }, icon ? /*#__PURE__*/_react.default.createElement(_index.Icon, {
+    name: icon
+  }) : "", /*#__PURE__*/_react.default.createElement("input", _extends({
     className: "muncher-input",
     name: name,
     autoFocus: focus,
@@ -50,7 +59,7 @@ function Input(_ref) {
     onChange: onChange,
     required: required,
     readOnly: readOnly
-  }, props)));
+  }, props))));
 }
 
 Input.propTypes = {
@@ -58,7 +67,8 @@ Input.propTypes = {
   label: _propTypes.default.string,
   required: _propTypes.default.bool,
   readOnly: _propTypes.default.bool,
-  type: _propTypes.default.oneOf(['color', 'date', 'datetime-local', 'email', 'file', 'month', 'number', 'password', 'range', 'search', 'tel', 'text', 'time', 'url', 'week']),
+  icon: _propTypes.default.oneOf(_Icon.iconNames),
+  type: _propTypes.default.oneOf(['color', 'date', 'datetime-local', 'email', 'month', 'number', 'password', 'range', 'search', 'tel', 'text', 'time', 'url', 'week']),
   focus: _propTypes.default.bool,
   placeHolder: _propTypes.default.string,
   onChange: _propTypes.default.func,
