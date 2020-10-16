@@ -694,6 +694,14 @@ var iconDrawings = {
     x2: "16.65",
     y2: "16.65"
   })),
+  'send': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("line", {
+    x1: "22",
+    y1: "2",
+    x2: "11",
+    y2: "13"
+  }), /*#__PURE__*/_react.default.createElement("polygon", {
+    points: "22 2 15 22 11 13 2 9 22 2"
+  })),
   'map': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
     d: "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
   }), /*#__PURE__*/_react.default.createElement("circle", {
