@@ -394,6 +394,10 @@ export const iconDrawings = {
                 <line x1="21" y1="21" x2="16.65" y2="16.65"/>
             </Fragment>
         ,
+        'send': <Fragment>
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </Fragment>,
         'map':
             <Fragment>
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
