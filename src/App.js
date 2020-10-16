@@ -68,9 +68,9 @@ function App() {
 
             <div className="container">
 
-                <Input icon="home" label="Address" name="address" list="address-list" required/>
+                <Input icon="map" label="Address" name="address" list="address-list" required/>
                 <datalist id="address-list">
-                    <option value="What"/>
+                    <option value="What" />
                     <option value="When"/>
                     <option value="Where"/>
                     <option value="How"/>
