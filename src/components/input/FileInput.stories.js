@@ -13,4 +13,5 @@ Default.args = {
     name: "file",
     label: "upload file",
     required: true,
+    setFiles: ()=>{}
 };

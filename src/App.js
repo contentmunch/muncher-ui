@@ -66,7 +66,7 @@ function App() {
             </div>
 
             <div className="container">
-                <FileInput name="file" label="upload files" multiple={true}/>
+                <FileInput name="file" label="upload files" multiple={true} setFiles={()=>{}}/>
                 <Input icon="map" label="Address" name="address" list="address-list" required/>
                 <datalist id="address-list">
                     <option value="What"/>

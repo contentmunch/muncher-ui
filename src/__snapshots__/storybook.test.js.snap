@@ -877,56 +877,64 @@ exports[`Storyshots Input/File Input Default 1`] = `
 <div
   className="muncher-file-input--div"
 >
-  <label
-    className="muncher-button muncher-button--secondary muncher-button--large"
-    htmlFor="file"
+  <div
+    className="file-input-element"
   >
-    <svg
-      className="muncher-icon muncher-icon--small"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
+    <label
+      className="muncher-button muncher-button--secondary muncher-button--large"
+      htmlFor="file"
     >
-      <rect
-        height="18"
-        rx="2"
-        ry="2"
-        width="18"
-        x="3"
-        y="3"
-      />
-      <circle
-        cx="8.5"
-        cy="8.5"
-        r="1.5"
-      />
-      <polyline
-        points="21 15 16 10 5 21"
-      />
-    </svg>
-     
-    upload file
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="18"
+          rx="2"
+          ry="2"
+          width="18"
+          x="3"
+          y="3"
+        />
+        <circle
+          cx="8.5"
+          cy="8.5"
+          r="1.5"
+        />
+        <polyline
+          points="21 15 16 10 5 21"
+        />
+      </svg>
+       
+      upload file
+      <span
+        className="required"
+      >
+         *
+      </span>
+    </label>
     <span
-      className="required"
+      className="span-file-name"
     >
-       *
+      
     </span>
-  </label>
-  <span
-    className="span-file-name"
-  />
-  <input
-    className="muncher-file-input"
-    id="file"
-    multiple={false}
-    onChange={[Function]}
-    required={true}
-    type="file"
-  />
+    <input
+      accept="image/*"
+      className="muncher-file-input"
+      id="file"
+      multiple={false}
+      onChange={[Function]}
+      required={true}
+      type="file"
+    />
+  </div>
+  
 </div>
 `;
 
