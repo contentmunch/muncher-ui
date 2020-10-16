@@ -47,8 +47,8 @@ function FileInput(_ref) {
       required = _ref.required,
       active = _ref.active,
       onChange = _ref.onChange,
-      value = _ref.value,
-      props = _objectWithoutProperties(_ref, ["name", "label", "variant", "size", "required", "active", "onChange", "value"]);
+      multiple = _ref.multiple,
+      props = _objectWithoutProperties(_ref, ["name", "label", "variant", "size", "required", "active", "onChange", "multiple"]);
 
   var _useState = (0, _react.useState)(),
       _useState2 = _slicedToArray(_useState, 2),
@@ -58,7 +58,14 @@ function FileInput(_ref) {
   var labelClass = 'muncher-button' + (variant ? ' muncher-button--' + variant : '') + (size ? ' muncher-button--' + size : '') + (active ? ' muncher-button--active' : '');
 
   var handleOnChange = function handleOnChange(event) {
-    setFileName(event.target.files[0].name);
+    if (multiple) {
+      setFileName(Array.from(event.currentTarget.files).map(function (file) {
+        return file.name;
+      }).join(", "));
+    } else {
+      setFileName(event.currentTarget.files[0].name);
+    }
+
     if (onChange) onChange(event);
   };
 
@@ -78,7 +85,8 @@ function FileInput(_ref) {
     type: "file",
     className: "muncher-file-input",
     required: required,
-    onChange: handleOnChange
+    onChange: handleOnChange,
+    multiple: multiple
   }, props)));
 }
 
@@ -91,9 +99,10 @@ FileInput.propTypes = {
   required: _propTypes.default.bool,
   active: _propTypes.default.bool,
   onChange: _propTypes.default.func,
-  value: _propTypes.default.any
+  multiple: _propTypes.default.bool
 };
 FileInput.defaultProps = {
   size: "large",
-  variant: "secondary"
+  variant: "secondary",
+  multiple: false
 };

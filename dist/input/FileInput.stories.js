@@ -26,6 +26,5 @@ exports.Default = Default;
 Default.args = {
   name: "file",
   label: "upload file",
-  required: true,
-  progress: 50
+  required: true
 };
