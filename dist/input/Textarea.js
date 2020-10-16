@@ -59,7 +59,7 @@ function Textarea(_ref) {
 
   var handleTextareaChange = function handleTextareaChange(event) {
     setTextareaValue(event.target.value);
-    onChange(event);
+    if (onChange) onChange(event);
   };
 
   return /*#__PURE__*/_react.default.createElement("div", {

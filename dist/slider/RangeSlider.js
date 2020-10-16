@@ -58,7 +58,7 @@ function RangeSlider(_ref) {
   var onSliderChange = function onSliderChange(values) {
     setTo(values[0]);
     setFrom(values[1]);
-    handleChange(values);
+    if (handleChange) handleChange(values);
   };
 
   return /*#__PURE__*/_react.default.createElement("div", {

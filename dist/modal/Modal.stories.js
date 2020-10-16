@@ -33,5 +33,5 @@ var Default = Template.bind({});
 exports.Default = Default;
 Default.args = {
   show: true,
-  setshow: function setshow() {}
+  setShow: function setShow() {}
 };

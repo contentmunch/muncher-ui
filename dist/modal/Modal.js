@@ -59,8 +59,8 @@ var Modal = function Modal(_ref) {
 };
 
 Modal.propTypes = {
-  show: _propTypes.default.bool,
-  setShow: _propTypes.default.func,
+  show: _propTypes.default.bool.isRequired,
+  setShow: _propTypes.default.func.isRequired,
   children: _propTypes.default.any
 };
 Modal.defaultProps = {

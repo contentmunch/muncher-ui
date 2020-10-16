@@ -58,8 +58,8 @@ function FileInput(_ref) {
   var labelClass = 'muncher-button' + (variant ? ' muncher-button--' + variant : '') + (size ? ' muncher-button--' + size : '') + (active ? ' muncher-button--active' : '');
 
   var handleOnChange = function handleOnChange(event) {
-    console.log(event.target.files[0]);
     setFileName(event.target.files[0].name);
+    if (onChange) onChange(event);
   };
 
   return /*#__PURE__*/_react.default.createElement("div", {
