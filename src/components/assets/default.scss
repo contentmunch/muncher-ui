@@ -35,6 +35,15 @@ a:hover {
   display: none;
 }
 
+label {
+  display: inline-block;
+  padding: .2rem;
+
+  .required {
+    padding-left: .1rem;
+    color: $danger-color;
+  }
+}
 @media (min-width: $medium-size) {
   .mobile {
     display: none;

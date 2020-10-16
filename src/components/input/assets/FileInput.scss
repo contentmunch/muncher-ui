@@ -1,0 +1,18 @@
+@import "src/components/assets/variables";
+@import "../../button/assets/Button";
+
+$input-focus-color: $secondary-color !default;
+$input-border-color: $secondary-background-color !default;
+$input-placeholder-color: $disabled-color !default;
+.muncher-file-input--div {
+  display: inline-flex;
+  align-items: center;
+
+  .muncher-file-input {
+    display: none;
+  }
+
+  .span-file-name {
+    padding-left: 1rem;
+  }
+}

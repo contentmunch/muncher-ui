@@ -27,6 +27,7 @@ Medium.args = {
     ...Default.args,
     size: 'medium'
 };
+
 export const Large = Template.bind({});
 Large.args = {
     ...Default.args,

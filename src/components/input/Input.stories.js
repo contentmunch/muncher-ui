@@ -21,6 +21,11 @@ TextWithLabel.args = {
     label: 'Search',
     required: true,
 };
+export const TextWithIcon = Template.bind({});
+TextWithIcon.args = {
+    ...TextWithLabel.args,
+    withIcon: true
+};
 export const Color = Template.bind({});
 Color.args = {
     ...Default.args,
@@ -40,12 +45,8 @@ export const Email = Template.bind({});
 Email.args = {
     ...Default.args,
     type: 'email',
-    placeHolder: "Email"
-};
-export const File = Template.bind({});
-File.args = {
-    ...Default.args,
-    type: 'file',
+    placeHolder: "Email",
+    icon: "mail"
 };
 export const Month = Template.bind({});
 Month.args = {
@@ -56,7 +57,8 @@ export const Number = Template.bind({});
 Number.args = {
     ...Default.args,
     type: 'number',
-    placeHolder: "Number"
+    placeHolder: "Phone number",
+    icon: "phone"
 };
 export const Password = Template.bind({});
 Password.args = {
@@ -88,7 +90,7 @@ export const Url = Template.bind({});
 Url.args = {
     ...Default.args,
     type: 'url',
-    placeHolder:'type url'
+    placeHolder: 'type url'
 };
 export const Week = Template.bind({});
 Week.args = {

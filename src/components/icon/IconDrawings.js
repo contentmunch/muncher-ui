@@ -277,6 +277,11 @@ export const iconDrawings = {
                 <polyline points="3 3 4 3 4 6"/>
                 <path d="M3 17H4H5L4 19C4.55 19 5 19.45 5 20C5 20.55 4.55 21 4 21H3"/>
             </Fragment>,
+        'mail':
+            <Fragment>
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+            </Fragment>,
         'phone':
             <Fragment>
                 <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
