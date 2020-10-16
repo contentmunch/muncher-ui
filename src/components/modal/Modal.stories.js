@@ -14,6 +14,6 @@ const Template = (args) => <Modal {...args}><h2>Modal title</h2>
 export const Default = Template.bind({});
 Default.args = {
     show: true,
-    setshow: () => {
+    setShow: () => {
     }
 }

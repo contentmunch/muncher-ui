@@ -7,7 +7,8 @@ export default function Textarea({name, label, required, readOnly, rows, maxLeng
     const [textareaValue, setTextareaValue] = useState(value);
     const handleTextareaChange = (event) => {
         setTextareaValue(event.target.value);
-        onChange(event);
+        if (onChange)
+            onChange(event);
     }
     return (
         <div className="muncher-input--div">

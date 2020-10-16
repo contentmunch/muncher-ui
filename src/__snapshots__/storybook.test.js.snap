@@ -832,7 +832,6 @@ exports[`Storyshots Feedback/Modal Default 1`] = `
   />
   <div
     className="muncher-modal"
-    setshow={[Function]}
     style={
       Object {
         "opacity": "1",

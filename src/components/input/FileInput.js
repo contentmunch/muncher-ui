@@ -11,8 +11,9 @@ export default function FileInput({name, label, variant, size, required, active,
         (active ? ' muncher-button--active' : '');
 
     const handleOnChange = (event) => {
-        console.log(event.target.files[0]);
         setFileName(event.target.files[0].name);
+        if (onChange)
+            onChange(event);
     }
     return (
         <div className="muncher-file-input--div">

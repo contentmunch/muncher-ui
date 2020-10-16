@@ -12,7 +12,8 @@ export default function RangeSlider({min, max, sign, handleChange, children}) {
     const onSliderChange = (values) => {
         setTo(values[0]);
         setFrom(values[1]);
-        handleChange(values);
+        if (handleChange)
+            handleChange(values);
     }
     return (
         <div className="muncher-slider">
