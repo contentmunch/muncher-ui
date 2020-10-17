@@ -31,7 +31,7 @@ export const iconNames =
         'type', 'inbox', 'undo', 'unlink', 'unordered-list', 'youtube', 'volume', 'fast-forward', 'pause', 'play', 'power',
         'repeat', 'rewind', 'shuffle', 'skip-back', 'skip-forward', 'alert', 'arrow-down', 'arrow-up', 'check', 'help', 'info',
         'archive', 'external-link', 'filter', 'github', 'grid', 'log-in', 'log-out', 'more', 'share', 'thumbs-down', 'thumbs-up',
-        'trash', 'user', 'lock', 'unlock', 'rss', 'save', 'upload', 'mail', 'map'
+        'trash', 'user', 'lock', 'unlock', 'rss', 'save', 'upload', 'mail', 'map','360'
     ];
 Icon.propTypes = {
     color: PropTypes.string,
