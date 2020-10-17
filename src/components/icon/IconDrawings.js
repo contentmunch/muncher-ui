@@ -54,6 +54,14 @@ export const iconDrawings = {
             <Fragment>
                 <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
             </Fragment>,
+        'chevron-left':
+            <Fragment>
+                <polyline points="15 18 9 12 15 6"/>
+            </Fragment>,
+        'chevron-right':
+            <Fragment>
+                <polyline points="9 18 15 12 9 6"/>
+            </Fragment>,
         'fast-forward':
             <Fragment>
                 <polygon points="13 19 22 12 13 5 13 19"/>
