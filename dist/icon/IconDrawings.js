@@ -848,6 +848,16 @@ var iconDrawings = {
   })),
   'volume': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polygon", {
     points: "11 5 6 9 2 9 2 15 6 15 11 19 11 5"
-  }))
+  })),
+  '360': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "23 4 23 10 17 10"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M20.49 15a9 9 0 1 1-2.12-9.36L23 10"
+  }), /*#__PURE__*/_react.default.createElement("text", {
+    x: "6",
+    y: "14",
+    "font-size": "6",
+    "font-family": "'Lucida Grande', sans-serif"
+  }, "360"))
 };
 exports.iconDrawings = iconDrawings;
