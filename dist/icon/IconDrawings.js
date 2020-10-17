@@ -139,6 +139,12 @@ var iconDrawings = {
   'bookmark': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
     d: "M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"
   })),
+  'chevron-left': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "15 18 9 12 15 6"
+  })),
+  'chevron-right': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polyline", {
+    points: "9 18 15 12 9 6"
+  })),
   'fast-forward': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polygon", {
     points: "13 19 22 12 13 5 13 19"
   }), /*#__PURE__*/_react.default.createElement("polygon", {
