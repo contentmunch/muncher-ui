@@ -856,8 +856,8 @@ var iconDrawings = {
   }), /*#__PURE__*/_react.default.createElement("text", {
     x: "6",
     y: "14",
-    "font-size": "6",
-    "font-family": "'Lucida Grande', sans-serif"
+    fontSize: "6",
+    fontFamily: "'Lucida Grande', sans-serif"
   }, "360"))
 };
 exports.iconDrawings = iconDrawings;
