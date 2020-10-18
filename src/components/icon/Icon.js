@@ -27,12 +27,12 @@ export default function Icon({color, name, size, weight, onClick, ...props}) {
 export const iconNames =
     [
         "360", "alert", "align-center", "align-justify", "align-left", "align-right", "archive", "arrow-down",
-        "arrow-left", "arrow-right", "arrow-up", "at", "award", "bookmark","bulb", "calendar", "check", "chevron-left",
+        "arrow-left", "arrow-right", "arrow-up", "at", "award", "bookmark", "bulb", "calendar", "check", "chevron-left",
         "chevron-right", "close", "code", "edit", "external-link", "fast-forward", "filter", "github", "grid",
         "hamburger", "help", "image", "inbox", "info", "link", "loading", "lock", "log-in", "log-out", "mail",
         "map", "minus", "more", "muncher", "mute", "ordered-list", "pause", "phone", "play", "plus", "power",
         "redo", "repeat", "rewind", "rss", "save", "search", "send", "settings", "share", "shuffle", "skip-back",
-        "skip-forward", "smile","sort-asc","sort-desc","table", "thumbs-down", "thumbs-up", "toggle-left", "toggle-right", "trash", "type", "undo",
+        "skip-forward", "smile", "sort-asc", "sort-desc", "star", "table", "thumbs-down", "thumbs-up", "toggle-left", "toggle-right", "trash", "type", "undo",
         "unlink", "unlock", "unordered-list", "upload", "user", "video", "video-off", "volume", "youtube"
     ];
 Icon.propTypes = {

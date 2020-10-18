@@ -56,9 +56,10 @@ export const iconDrawings = {
             </Fragment>,
         'bulb':
             <Fragment>
-                    <line x1="9" y1="18" x2="15" y2="18" />
-                    <line x1="10" y1="22" x2="14" y2="22" />
-                    <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8 6 6 0 006 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 018.91 14" />
+                <line x1="9" y1="18" x2="15" y2="18"/>
+                <line x1="10" y1="22" x2="14" y2="22"/>
+                <path
+                    d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8 6 6 0 006 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 018.91 14"/>
             </Fragment>,
         'chevron-left':
             <Fragment>
@@ -434,6 +435,11 @@ export const iconDrawings = {
                 <path d="M11 13h4"/>
                 <path d="M3 17l3 3 3-3"/>
                 <path d="M6 18V4"/>
+            </Fragment>,
+        'star':
+            <Fragment>
+                <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
             </Fragment>,
         'table':
             <Fragment>
