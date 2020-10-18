@@ -485,15 +485,26 @@ export const iconDrawings = {
                 <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
             </Fragment>
         ,
+        'video':
+            <Fragment>
+                <polygon points="23 7 16 12 23 17 23 7"/>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+            </Fragment>,
+        'video-off':
+            <Fragment>
+                <path
+                    d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10"/>
+                <line x1="1" y1="1" x2="23" y2="23"/>
+            </Fragment>,
         'volume':
             <Fragment>
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
             </Fragment>,
         '360':
             <Fragment>
-                    <polyline points="23 4 23 10 17 10"/>
-                    <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
-                    <text x="6" y="14" fontSize="6" fontFamily="'Lucida Grande', sans-serif">360</text>
+                <polyline points="23 4 23 10 17 10"/>
+                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                <text x="6" y="14" fontSize="6" fontFamily="'Lucida Grande', sans-serif">360</text>
             </Fragment>
     }
 ;

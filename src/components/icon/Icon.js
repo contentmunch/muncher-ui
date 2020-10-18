@@ -25,13 +25,15 @@ export default function Icon({color, name, size, weight, onClick, ...props}) {
     );
 }
 export const iconNames =
-    ['align-center', 'align-justify', 'align-left', 'align-right', 'arrow-left',
-        'arrow-right', 'at', 'award', 'bookmark', 'calendar', 'close', 'code', 'chevron-left', 'chevron-right', 'edit', 'hamburger', 'image', 'link', 'loading', 'minus', 'muncher',
-        'mute', 'ordered-list', 'phone', 'plus', 'redo', 'search', 'send', 'settings', 'smile', 'toggle-left', 'toggle-right',
-        'type', 'inbox', 'undo', 'unlink', 'unordered-list', 'youtube', 'volume', 'fast-forward', 'pause', 'play', 'power',
-        'repeat', 'rewind', 'shuffle', 'skip-back', 'skip-forward', 'alert', 'arrow-down', 'arrow-up', 'check', 'help', 'info',
-        'archive', 'external-link', 'filter', 'github', 'grid', 'log-in', 'log-out', 'more', 'share', 'thumbs-down', 'thumbs-up',
-        'trash', 'user', 'lock', 'unlock', 'rss', 'save', 'upload', 'mail', 'map','360'
+    [
+        "360", "alert", "align-center", "align-justify", "align-left", "align-right", "archive", "arrow-down",
+        "arrow-left", "arrow-right", "arrow-up", "at", "award", "bookmark", "calendar", "check", "chevron-left",
+        "chevron-right", "close", "code", "edit", "external-link", "fast-forward", "filter", "github", "grid",
+        "hamburger", "help", "image", "inbox", "info", "link", "loading", "lock", "log-in", "log-out", "mail",
+        "map", "minus", "more", "muncher", "mute", "ordered-list", "pause", "phone", "play", "plus", "power",
+        "redo", "repeat", "rewind", "rss", "save", "search", "send", "settings", "share", "shuffle", "skip-back",
+        "skip-forward", "smile", "thumbs-down", "thumbs-up", "toggle-left", "toggle-right", "trash", "type", "undo",
+        "unlink", "unlock", "unordered-list", "upload", "user", "video", "video-off", "volume", "youtube"
     ];
 Icon.propTypes = {
     color: PropTypes.string,
