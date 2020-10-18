@@ -846,6 +846,24 @@ var iconDrawings = {
   }), /*#__PURE__*/_react.default.createElement("polygon", {
     points: "9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
   })),
+  'video': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polygon", {
+    points: "23 7 16 12 23 17 23 7"
+  }), /*#__PURE__*/_react.default.createElement("rect", {
+    x: "1",
+    y: "5",
+    width: "15",
+    height: "14",
+    rx: "2",
+    ry: "2"
+  })),
+  'video-off': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m5.66 0H14a2 2 0 0 1 2 2v3.34l1 1L23 7v10"
+  }), /*#__PURE__*/_react.default.createElement("line", {
+    x1: "1",
+    y1: "1",
+    x2: "23",
+    y2: "23"
+  })),
   'volume': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polygon", {
     points: "11 5 6 9 2 9 2 15 6 15 11 19 11 5"
   })),
