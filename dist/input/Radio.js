@@ -79,7 +79,7 @@ Radio.propTypes = {
   label: _propTypes.default.string,
   required: _propTypes.default.bool,
   onChange: _propTypes.default.func,
-  checked: _propTypes.default.bool
+  checked: _propTypes.default.any
 };
 Radio.defaultProps = {
   required: false,
