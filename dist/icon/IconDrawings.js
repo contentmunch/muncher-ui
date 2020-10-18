@@ -139,6 +139,19 @@ var iconDrawings = {
   'bookmark': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
     d: "M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"
   })),
+  'bulb': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("line", {
+    x1: "9",
+    y1: "18",
+    x2: "15",
+    y2: "18"
+  }), /*#__PURE__*/_react.default.createElement("line", {
+    x1: "10",
+    y1: "22",
+    x2: "14",
+    y2: "22"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8 6 6 0 006 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 018.91 14"
+  })),
   'chevron-left': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polyline", {
     points: "15 18 9 12 15 6"
   })),
@@ -712,6 +725,51 @@ var iconDrawings = {
     y2: "13"
   }), /*#__PURE__*/_react.default.createElement("polygon", {
     points: "22 2 15 22 11 13 2 9 22 2"
+  })),
+  'sort-asc': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M11 5h4"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M11 9h7"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M11 13h10"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M3 17l3 3 3-3"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M6 18V4"
+  })),
+  'sort-desc': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
+    d: "M11 5h10"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M11 9h7"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M11 13h4"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M3 17l3 3 3-3"
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    d: "M6 18V4"
+  })),
+  'table': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("rect", {
+    x: "3",
+    y: "3",
+    width: "18",
+    height: "18",
+    rx: "2",
+    ry: "2"
+  }), /*#__PURE__*/_react.default.createElement("line", {
+    x1: "3",
+    y1: "9",
+    x2: "21",
+    y2: "9"
+  }), /*#__PURE__*/_react.default.createElement("line", {
+    x1: "3",
+    y1: "15",
+    x2: "21",
+    y2: "15"
+  }), /*#__PURE__*/_react.default.createElement("line", {
+    x1: "12",
+    y1: "3",
+    x2: "12",
+    y2: "21"
   })),
   'map': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("path", {
     d: "M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
