@@ -54,6 +54,12 @@ export const iconDrawings = {
             <Fragment>
                 <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
             </Fragment>,
+        'bulb':
+            <Fragment>
+                    <line x1="9" y1="18" x2="15" y2="18" />
+                    <line x1="10" y1="22" x2="14" y2="22" />
+                    <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8 6 6 0 006 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 018.91 14" />
+            </Fragment>,
         'chevron-left':
             <Fragment>
                 <polyline points="15 18 9 12 15 6"/>
@@ -412,6 +418,30 @@ export const iconDrawings = {
             <line x1="22" y1="2" x2="11" y2="13"/>
             <polygon points="22 2 15 22 11 13 2 9 22 2"/>
         </Fragment>,
+        'sort-asc':
+            <Fragment>
+                <path d="M11 5h4"/>
+                <path d="M11 9h7"/>
+                <path d="M11 13h10"/>
+                <path d="M3 17l3 3 3-3"/>
+                <path d="M6 18V4"/>
+
+            </Fragment>,
+        'sort-desc':
+            <Fragment>
+                <path d="M11 5h10"/>
+                <path d="M11 9h7"/>
+                <path d="M11 13h4"/>
+                <path d="M3 17l3 3 3-3"/>
+                <path d="M6 18V4"/>
+            </Fragment>,
+        'table':
+            <Fragment>
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <line x1="3" y1="9" x2="21" y2="9"/>
+                <line x1="3" y1="15" x2="21" y2="15"/>
+                <line x1="12" y1="3" x2="12" y2="21"/>
+            </Fragment>,
         'map':
             <Fragment>
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
