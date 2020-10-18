@@ -493,7 +493,7 @@ export const iconDrawings = {
             <Fragment>
                     <polyline points="23 4 23 10 17 10"/>
                     <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
-                    <text x="6" y="14" font-size="6" font-family="'Lucida Grande', sans-serif">360</text>
+                    <text x="6" y="14" fontSize="6" fontFamily="'Lucida Grande', sans-serif">360</text>
             </Fragment>
     }
 ;
