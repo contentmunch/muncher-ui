@@ -10,15 +10,6 @@ html {
   background: $tertiary-background-color;
 }
 
-a {
-  text-decoration: underline;
-  color: $link-color;
-}
-
-a:hover {
-  color: $link-hover-color;
-}
-
 .text-danger {
   color: $danger-color;
 }
