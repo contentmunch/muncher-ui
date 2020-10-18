@@ -748,6 +748,9 @@ var iconDrawings = {
   }), /*#__PURE__*/_react.default.createElement("path", {
     d: "M6 18V4"
   })),
+  'star': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("polygon", {
+    points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+  })),
   'table': /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement("rect", {
     x: "3",
     y: "3",
