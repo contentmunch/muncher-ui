@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/contentmunch/muncher-component.git"
+    "url": "https://github.com/contentmunch/muncher-ui.git"
   },
   "scripts": {
     "start": "npm run storybook",
