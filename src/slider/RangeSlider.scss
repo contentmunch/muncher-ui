@@ -1,0 +1,20 @@
+@import "src/assets/variables";
+
+$slider-color: $primary-color !default;
+.muncher-slider {
+  padding: .5rem;
+
+  .muncher-slider-content {
+    text-align: center;
+    font-size: .8rem;
+  }
+
+  .rc-slider-track {
+    background-color: $slider-color;
+    margin: 0;
+  }
+
+  .rc-slider-handle {
+    border: solid 2px $slider-color;
+  }
+}

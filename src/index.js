@@ -1,16 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+export {default as Label} from "./input/Label";
+export {default as FileInput} from "./input/FileInput";
+export {default as Textarea} from "./input/Textarea";
+export {default as Backdrop} from "./backdrop/Backdrop";
+export {default as Badge} from "./badge/Badge";
+export {default as Button} from "./button/Button";
+export {default as DropdownButton} from "./button/DropdownButton";
+export {default as DropdownNavButton} from "./button/DropdownNavButton";
+export {default as Icon} from "./icon/Icon";
+export {default as Checkbox} from "./input/Checkbox";
+export {default as Input} from "./input/Input";
+export {default as Radio} from "./input/Radio";
+export {default as TextInputDropdown} from "./input/TextInputDropdown";
+export {default as Modal} from "./modal/Modal";
+export {default as Pill} from "./pill/Pill";
+export {default as RangeSlider} from "./slider/RangeSlider";
+export {default as Spinner} from "./spinner/Spinner";
+export {default as Star} from "./star/Star";
