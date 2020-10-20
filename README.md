@@ -1,6 +1,6 @@
-![Release and publish](https://github.com/contentmunch/muncher-ui/workflows/Release%20and%20publish/badge.svg)  ![Tests](https://github.com/contentmunch/muncher-ui/workflows/Test/badge.svg)
+![Test release and publish](https://github.com/contentmunch/muncher-ui/workflows/Test%20release%20and%20publish/badge.svg) 
 # Muncher-UI
-An html5 and scss based [UI component library](https://www.chromatic.com/library?appId=5f715bd96ec1620022e8e2d9).
+A html5 and scss based UI component library
 
 ## Using Muncher-UI
 To use this component library:
@@ -21,8 +21,6 @@ To use this component library:
     ```
     $ npm install @contentmunch/muncher-ui
     ```
-* Story book url: https://www.chromatic.com/library?appId=5f715bd96ec1620022e8e2d9
-  
 
 ## Coding rules
 We use [GitHub Flow](https://guides.github.com/introduction/flow/) for our project workflow.
@@ -65,13 +63,7 @@ fixes/closes #<github issue number>
 In the project directory, you can run:
 
 ### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### `npm run storybook`
-
-Launches the component explorer on port 9009
+Launches the component explorer on port 6006
 
 ### `npm test`
 
