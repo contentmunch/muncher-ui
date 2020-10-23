@@ -1,319 +1,220 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Buttons/Button Active 1`] = `
-<div
-  style={
-    Object {
-      "background": "#f5f5f5",
-      "padding": "2rem",
-    }
-  }
+<button
+  className="muncher-button muncher-button--medium muncher-button--active"
+  data-title="Active Button"
+  disabled={false}
+  type="button"
 >
-  <button
-    className="muncher-button muncher-button--medium muncher-button--active"
-    data-title="Active Button"
-    disabled={false}
-    type="button"
-  >
-    Button
-  </button>
-</div>
+  Button
+</button>
 `;
 
 exports[`Storyshots Buttons/Button Default 1`] = `
-<div
-  style={
-    Object {
-      "background": "#f5f5f5",
-      "padding": "2rem",
-    }
-  }
+<button
+  className="muncher-button muncher-button--medium"
+  data-title="Default Button"
+  disabled={false}
+  type="button"
 >
-  <button
-    className="muncher-button muncher-button--medium"
-    data-title="Default Button"
-    disabled={false}
-    type="button"
-  >
-    Button
-  </button>
-</div>
+  Button
+</button>
 `;
 
 exports[`Storyshots Buttons/Button Disabled 1`] = `
-<div
-  style={
-    Object {
-      "background": "#f5f5f5",
-      "padding": "2rem",
-    }
-  }
+<button
+  className="muncher-button muncher-button--medium"
+  data-title="Disabled Button"
+  disabled={true}
+  type="button"
 >
-  <button
-    className="muncher-button muncher-button--medium"
-    data-title="Disabled Button"
-    disabled={true}
-    type="button"
-  >
-    Button
-  </button>
-</div>
+  Button
+</button>
 `;
 
 exports[`Storyshots Buttons/Button Icon Button 1`] = `
-<div
-  style={
-    Object {
-      "background": "#f5f5f5",
-      "padding": "2rem",
-    }
-  }
+<button
+  className="muncher-button muncher-button--small"
+  data-title="Icon Button"
+  disabled={false}
+  type="button"
 >
-  <button
-    className="muncher-button muncher-button--small"
-    data-title="Icon Button"
-    disabled={false}
-    type="button"
+  <svg
+    className="muncher-icon muncher-icon--small"
+    fill="none"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <svg
-      className="muncher-icon muncher-icon--small"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        height="18"
-        rx="2"
-        ry="2"
-        width="18"
-        x="3"
-        y="4"
-      />
-      <line
-        x1="16"
-        x2="16"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="8"
-        x2="8"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="10"
-        y2="10"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="14"
-        y2="14"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="18"
-        y2="18"
-      />
-    </svg>
-  </button>
-</div>
+    <rect
+      height="18"
+      rx="2"
+      ry="2"
+      width="18"
+      x="3"
+      y="4"
+    />
+    <line
+      x1="16"
+      x2="16"
+      y1="2"
+      y2="6"
+    />
+    <line
+      x1="8"
+      x2="8"
+      y1="2"
+      y2="6"
+    />
+    <line
+      x1="7"
+      x2="17"
+      y1="10"
+      y2="10"
+    />
+    <line
+      x1="7"
+      x2="17"
+      y1="14"
+      y2="14"
+    />
+    <line
+      x1="7"
+      x2="17"
+      y1="18"
+      y2="18"
+    />
+  </svg>
+</button>
 `;
 
 exports[`Storyshots Buttons/Button Large 1`] = `
-<div
-  style={
-    Object {
-      "background": "#f5f5f5",
-      "padding": "2rem",
-    }
-  }
+<button
+  className="muncher-button muncher-button--large"
+  data-title="Large Button"
+  disabled={false}
+  type="button"
 >
-  <button
-    className="muncher-button muncher-button--large"
-    data-title="Large Button"
-    disabled={false}
-    type="button"
-  >
-    Button
-  </button>
-</div>
+  Button
+</button>
 `;
 
 exports[`Storyshots Buttons/Button Nav Button 1`] = `
-<div
-  style={
-    Object {
-      "background": "#f5f5f5",
-      "padding": "2rem",
-    }
-  }
+<button
+  className="muncher-button muncher-button--nav muncher-button--medium"
+  data-title="Nav Button"
+  disabled={false}
+  type="button"
 >
-  <button
-    className="muncher-button muncher-button--nav muncher-button--medium"
-    data-title="Nav Button"
-    disabled={false}
-    type="button"
-  >
-    Button
-  </button>
-</div>
+  Button
+</button>
 `;
 
 exports[`Storyshots Buttons/Button Rounded Button 1`] = `
-<div
-  style={
-    Object {
-      "background": "#f5f5f5",
-      "padding": "2rem",
-    }
-  }
+<button
+  className="muncher-button muncher-button--secondary muncher-button--small muncher-button--rounded"
+  data-title="Rounded Button"
+  disabled={false}
+  type="button"
 >
-  <button
-    className="muncher-button muncher-button--secondary muncher-button--small muncher-button--rounded"
-    data-title="Rounded Button"
-    disabled={false}
-    type="button"
+  <svg
+    className="muncher-icon muncher-icon--small"
+    fill="none"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <svg
-      className="muncher-icon muncher-icon--small"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        height="18"
-        rx="2"
-        ry="2"
-        width="18"
-        x="3"
-        y="4"
-      />
-      <line
-        x1="16"
-        x2="16"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="8"
-        x2="8"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="10"
-        y2="10"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="14"
-        y2="14"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="18"
-        y2="18"
-      />
-    </svg>
-  </button>
-</div>
+    <rect
+      height="18"
+      rx="2"
+      ry="2"
+      width="18"
+      x="3"
+      y="4"
+    />
+    <line
+      x1="16"
+      x2="16"
+      y1="2"
+      y2="6"
+    />
+    <line
+      x1="8"
+      x2="8"
+      y1="2"
+      y2="6"
+    />
+    <line
+      x1="7"
+      x2="17"
+      y1="10"
+      y2="10"
+    />
+    <line
+      x1="7"
+      x2="17"
+      y1="14"
+      y2="14"
+    />
+    <line
+      x1="7"
+      x2="17"
+      y1="18"
+      y2="18"
+    />
+  </svg>
+</button>
 `;
 
 exports[`Storyshots Buttons/Button Secondary 1`] = `
-<div
-  style={
-    Object {
-      "background": "#f5f5f5",
-      "padding": "2rem",
-    }
-  }
+<button
+  className="muncher-button muncher-button--secondary muncher-button--medium"
+  data-title="Secondary Button"
+  disabled={false}
+  type="button"
 >
-  <button
-    className="muncher-button muncher-button--secondary muncher-button--medium"
-    data-title="Secondary Button"
-    disabled={false}
-    type="button"
-  >
-    Button
-  </button>
-</div>
+  Button
+</button>
 `;
 
 exports[`Storyshots Buttons/Button Small 1`] = `
-<div
-  style={
-    Object {
-      "background": "#f5f5f5",
-      "padding": "2rem",
-    }
-  }
+<button
+  className="muncher-button muncher-button--small"
+  data-title="Small Button"
+  disabled={false}
+  type="button"
 >
-  <button
-    className="muncher-button muncher-button--small"
-    data-title="Small Button"
-    disabled={false}
-    type="button"
-  >
-    Button
-  </button>
-</div>
+  Button
+</button>
 `;
 
 exports[`Storyshots Buttons/Button Submit 1`] = `
-<div
-  style={
-    Object {
-      "background": "#f5f5f5",
-      "padding": "2rem",
-    }
-  }
+<button
+  className="muncher-button muncher-button--medium"
+  data-title="Submit Button"
+  disabled={false}
+  type="submit"
 >
-  <button
-    className="muncher-button muncher-button--medium"
-    data-title="Submit Button"
-    disabled={false}
-    type="submit"
-  >
-    Button
-  </button>
-</div>
+  Button
+</button>
 `;
 
 exports[`Storyshots Buttons/Button Tertiary 1`] = `
-<div
-  style={
-    Object {
-      "background": "#f5f5f5",
-      "padding": "2rem",
-    }
-  }
+<button
+  className="muncher-button muncher-button--tertiary muncher-button--medium"
+  data-title="Tertiary Button"
+  disabled={false}
+  type="button"
 >
-  <button
-    className="muncher-button muncher-button--tertiary muncher-button--medium"
-    data-title="Tertiary Button"
-    disabled={false}
-    type="button"
-  >
-    Button
-  </button>
-</div>
+  Button
+</button>
 `;
 
 exports[`Storyshots Buttons/Dropdown Button Active 1`] = `
@@ -700,67 +601,9 @@ exports[`Storyshots Buttons/Dropdown Nav Button Default 1`] = `
 
 exports[`Storyshots Data Display/Badge Default 1`] = `
 <div
-  style={
-    Object {
-      "maxWidth": "7rem",
-      "padding": "2rem",
-    }
-  }
+  className="muncher-badge"
 >
-  <div
-    className="muncher-badge"
-  >
-    Muncher  
-    <svg
-      className="muncher-icon muncher-icon--small"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        height="18"
-        rx="2"
-        ry="2"
-        width="18"
-        x="3"
-        y="4"
-      />
-      <line
-        x1="16"
-        x2="16"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="8"
-        x2="8"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="10"
-        y2="10"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="14"
-        y2="14"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="18"
-        y2="18"
-      />
-    </svg>
-  </div>
+  Muncher  
 </div>
 `;
 
@@ -1226,7 +1069,55 @@ exports[`Storyshots Input/Input Text With Icon 1`] = `
   <div
     className="muncher-input-element"
   >
-    
+    <svg
+      className="muncher-icon muncher-icon--small"
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        height="18"
+        rx="2"
+        ry="2"
+        width="18"
+        x="3"
+        y="4"
+      />
+      <line
+        x1="16"
+        x2="16"
+        y1="2"
+        y2="6"
+      />
+      <line
+        x1="8"
+        x2="8"
+        y1="2"
+        y2="6"
+      />
+      <line
+        x1="7"
+        x2="17"
+        y1="10"
+        y2="10"
+      />
+      <line
+        x1="7"
+        x2="17"
+        y1="14"
+        y2="14"
+      />
+      <line
+        x1="7"
+        x2="17"
+        y1="18"
+        y2="18"
+      />
+    </svg>
     <input
       autoComplete="off"
       autoFocus={false}
@@ -1235,7 +1126,6 @@ exports[`Storyshots Input/Input Text With Icon 1`] = `
       placeholder="Type your query"
       required={true}
       type="text"
-      withIcon={true}
     />
   </div>
 </div>
