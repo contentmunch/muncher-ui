@@ -1,6 +1,5 @@
 import React from 'react';
 import './assets/Button.scss';
-import {Size, Variant} from '../MuncherTypes';
 
 export const Button: React.FC<ButtonProps> =
     ({
@@ -68,3 +67,6 @@ export interface ButtonProps extends AllButtonProps {
     onMouseDown?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 
 }
+
+export type Variant = 'primary' | 'secondary' | 'tertiary';
+export type Size = 'small' | 'medium' | 'large';

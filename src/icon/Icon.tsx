@@ -1,7 +1,7 @@
 import React from "react";
 import {drawings, IconName} from "./Drawings";
 import './assets/Icon.scss';
-import {Size} from "../MuncherTypes";
+import {Size} from "../button/Button";
 
 
 export const Icon: React.FC<IconProps> =
