@@ -1,16 +1,16 @@
 {
-  "ignore": [
-    "src/**/*.test.js",
-    "src/**/*.stories.js",
-    "src/setupTests.js"
-  ],
   "presets": [
     "@babel/preset-env",
-    "@babel/preset-react",
-    {
-      "plugins": [
-        "@babel/plugin-proposal-class-properties"
-      ]
-    }
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ],
+  "ignore": [
+    "src/react-app-env.d.ts",
+    "src/setupTests.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.stories.tsx"
   ]
 }
