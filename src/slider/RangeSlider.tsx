@@ -1,41 +1,55 @@
-import React, {useState} from 'react';
-import 'rc-slider/assets/index.css';
-import Slider from "rc-slider";
-import './assets/RangeSlider.scss';
+import React from "react";
+import "./assets/Slider.scss";
 
 export const RangeSlider: React.FC<RangeSliderProps> = (
-    {min, max, sign, handleChange, children}
-) => {
-    const [to, setTo] = useState(min);
-    const [from, setFrom] = useState(max);
-    const createSliderWithTooltip = Slider.createSliderWithTooltip;
-    const Range = createSliderWithTooltip(Slider.Range);
-    const onSliderChange = (values: React.SetStateAction<number>[]) => {
-        setTo(values[0]);
-        setFrom(values[1]);
-        if (handleChange)
-            handleChange(values);
+    {
+        min, max, minValue, maxValue,
+        setMinValue, setMaxValue, numberFormatter
+    }) => {
+
+
+    const handleMinChange = (event: any) => {
+        const currentValue = +event.target.value;
+        setMinValue(currentValue < maxValue - 1 ? currentValue : minValue);
+    };
+    const handleMaxChange = (event: any) => {
+        const currentValue = +event.target.value;
+        setMaxValue(currentValue > minValue + 1 ? currentValue : maxValue);
+    };
+
+    const formatNumber = (num: number) => {
+        if (numberFormatter) {
+            return numberFormatter(num);
+        } else {
+            return num;
+        }
     }
     return (
         <div className="muncher-slider">
-            <Range min={min} max={max} defaultValue={[to, from]}
-                   tipFormatter={value => `${sign ? sign + value : '$' + value}`} onAfterChange={onSliderChange}/>
-            <div className="muncher-slider-content">
-                {children}
+            <input className="muncher-range" type="range" min={min} max={max} value={minValue}
+                   onChange={handleMinChange}/>
+            <input className="muncher-range" type="range" min={min} max={max} value={maxValue}
+                   onChange={handleMaxChange}/>
+            <div className="slider-values">
+                <div className="slider-min">{formatNumber(min)}</div>
+                <div className="slider-max">{formatNumber(max)}</div>
             </div>
+            <div className="slider-footer"><p>{formatNumber(minValue) + " - " + formatNumber(maxValue)}</p></div>
         </div>
-
     );
-};
+}
 
 export interface RangeSliderProps {
     min: number;
     max: number;
-    sign?: string;
-    handleChange: (values:React.SetStateAction<number>[]) => void;
-    children?: any;
+    minValue: number;
+    maxValue: number;
+    setMinValue: (minValue: number) => void;
+    setMaxValue: (maxValue: number) => void;
+    numberFormatter?: (num: number) => string;
 }
 
 RangeSlider.defaultProps = {
-    sign: "$"
-};
+    numberFormatter: (num) =>
+        new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(num)
+}

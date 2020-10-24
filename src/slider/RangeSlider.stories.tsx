@@ -1,21 +1,27 @@
-import React from "react";
-import {RangeSlider, RangeSliderProps} from "./RangeSlider";
+import React, {useState} from "react";
 import {Meta, Story} from "@storybook/react/types-6-0";
+import {RangeSlider, RangeSliderProps} from "./RangeSlider";
 
 export default {
     title: 'Input/Range Slider',
-    component: RangeSlider,
+    component: RangeSlider
 } as Meta;
 
-const Template: Story<RangeSliderProps> = (args) => <RangeSlider {...args}>This is a range slider</RangeSlider>
-
+const Template: Story<RangeSliderProps> = () => {
+    const [minValue, setMinValue] = useState(40);
+    const [maxValue, setMaxValue] = useState(600);
+    return (
+        <RangeSlider min={1} max={1000}
+                     setMaxValue={setMaxValue}
+                     setMinValue={setMinValue}
+                     minValue={minValue}
+                     maxValue={maxValue}
+                     numberFormatter={num => new Intl.NumberFormat('en-UK', {
+                         style: 'currency',
+                         currency: 'GBP'
+                     }).format(num)}
+        />
+    );
+}
 export const Default = Template.bind({});
 
-Default.args = {
-    min: 10,
-    max: 1100,
-    sign: '$',
-    handleChange: (values: React.SetStateAction<number>[]) => {
-        console.log("lowerValue : " + values[0] + " upperValue : " + values[1]);
-    }
-}

@@ -13,6 +13,8 @@ export {Radio} from "./input/Radio";
 export {TextInputDropdown} from "./input/TextInputDropdown";
 export {Modal} from "./modal/Modal";
 export {Pill} from "./pill/Pill";
+export {Progress} from "./progress/Progress";
+export {Slider} from "./slider/Slider";
 export {RangeSlider} from "./slider/RangeSlider";
 export {Spinner} from "./spinner/Spinner";
 export {Star} from "./star/Star";

@@ -752,6 +752,25 @@ exports[`Storyshots Feedback/Modal Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Feedback/Progress Default 1`] = `
+<div
+  className="muncher-progress"
+>
+  <label
+    htmlFor="progress"
+  >
+    Progress:  30%
+  </label>
+  <progress
+    id="progress"
+    max={100}
+    value={30}
+  >
+    Progress:  30%
+  </progress>
+</div>
+`;
+
 exports[`Storyshots Input/Checkbox Default 1`] = `
 <div
   className="muncher-input--div"
@@ -1312,82 +1331,78 @@ exports[`Storyshots Input/Range Slider Default 1`] = `
 <div
   className="muncher-slider"
 >
+  <input
+    className="muncher-range"
+    max={1000}
+    min={1}
+    onChange={[Function]}
+    type="range"
+    value={40}
+  />
+  <input
+    className="muncher-range"
+    max={1000}
+    min={1}
+    onChange={[Function]}
+    type="range"
+    value={600}
+  />
   <div
-    className="rc-slider"
-    onBlur={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onMouseDown={[Function]}
-    onMouseUp={[Function]}
-    onTouchStart={[Function]}
+    className="slider-values"
   >
     <div
-      className="rc-slider-rail"
-      style={Object {}}
-    />
+      className="slider-min"
+    >
+      £1.00
+    </div>
     <div
-      className="rc-slider-track rc-slider-track-1"
-      style={
-        Object {
-          "left": "0%",
-          "right": "auto",
-          "width": "100%",
-        }
-      }
-    />
-    <div
-      className="rc-slider-step"
-    />
-    <div
-      aria-disabled={false}
-      aria-valuemax={1100}
-      aria-valuemin={10}
-      aria-valuenow={10}
-      className="rc-slider-handle rc-slider-handle-1"
-      onBlur={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      role="slider"
-      style={
-        Object {
-          "left": "0%",
-          "right": "auto",
-          "transform": "translateX(-50%)",
-        }
-      }
-      tabIndex={0}
-    />
-    <div
-      aria-disabled={false}
-      aria-valuemax={1100}
-      aria-valuemin={10}
-      aria-valuenow={1100}
-      className="rc-slider-handle rc-slider-handle-2"
-      onBlur={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      role="slider"
-      style={
-        Object {
-          "left": "100%",
-          "right": "auto",
-          "transform": "translateX(-50%)",
-        }
-      }
-      tabIndex={0}
-    />
-    <div
-      className="rc-slider-mark"
-    />
+      className="slider-max"
+    >
+      £1,000.00
+    </div>
   </div>
   <div
-    className="muncher-slider-content"
+    className="slider-footer"
   >
-    This is a range slider
+    <p>
+      £40.00 - £600.00
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input/Slider Default 1`] = `
+<div
+  className="muncher-slider"
+>
+  <input
+    className="muncher-range"
+    max={1000}
+    min={1}
+    onChange={[Function]}
+    type="range"
+    value={400}
+  />
+  <div
+    className="slider-values"
+  >
+    <div
+      className="slider-min"
+    >
+      ￥1
+    </div>
+    <div
+      className="slider-max"
+    >
+      ￥1,000
+    </div>
+  </div>
+  <div
+    className="slider-footer"
+  >
+    <p>
+      ￥400
+    </p>
   </div>
 </div>
 `;
