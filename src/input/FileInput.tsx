@@ -18,6 +18,7 @@ export const FileInput: React.FC<FileInputProps> = (
         (active ? ' muncher-button--active' : '');
 
     const handleOnChange = (event:any) => {
+
         if (multiple) {
             let files:Array<File> = Array.from(event.currentTarget.files);
             if (files.length > max) {
@@ -26,6 +27,7 @@ export const FileInput: React.FC<FileInputProps> = (
             }
             setFiles(files);
             setFileNames(files.map(file => file.name).join(", "));
+
         } else {
             setFiles(Array.from(event.currentTarget.files[0]));
             setFileNames(event.currentTarget.files[0].name);
@@ -56,7 +58,6 @@ export interface FileInputProps {
     size?: 'small' | 'medium' | 'large';
     required?: boolean;
     active?: boolean;
-    onChange?: () => void;
     multiple?: boolean;
     maxFiles?: number;
     setFiles: (files:any) => void;
@@ -66,5 +67,4 @@ FileInput.defaultProps = {
     size: "large",
     variant: "secondary",
     multiple: false,
-
 };

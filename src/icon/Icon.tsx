@@ -5,7 +5,7 @@ import {Size} from "../button/Button";
 
 
 export const Icon: React.FC<IconProps> =
-    ({color, name, size, weight, onClick, ...props}) => {
+    ({color, name, size, weight, onClick, iconString, ...props}) => {
         const iconClass = size ? 'muncher-icon muncher-icon--' + size : 'muncher-icon muncher-icon--small';
 
         return (
@@ -22,7 +22,9 @@ export const Icon: React.FC<IconProps> =
                 onClick={onClick}
                 {...props}
             >
-                {drawings[name]}
+                {
+                    name ? drawings[name] : iconString ? Object(drawings)[iconString] : ""
+                }
             </svg>
         );
     };
@@ -41,12 +43,12 @@ export interface IconProps {
      */
     onClick?: () => void;
 
-    name: IconName;
+    name?: IconName;
+    iconString?: string;
 }
 
 
 Icon.defaultProps = {
-    name: "muncher",
     weight: 2,
     size: "small"
 };

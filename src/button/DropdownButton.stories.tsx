@@ -1,26 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {DropdownButton, DropdownButtonProps} from "./DropdownButton";
 import {Meta, Story} from '@storybook/react/types-6-0';
-import {Icon} from "../icon/Icon";
-
+import {Icon} from "..";
+import "./assets/DropdownButtonStory.scss";
 
 export default {
     title: 'Buttons/Dropdown Button',
     component: DropdownButton,
     decorators: [(story: () => React.ReactNode) => <div
         style={{padding: '2rem', background: '#f5f5f5'}}>{story()}</div>],
+    args: {element: <p>drop down&nbsp;<span className="small">&#9660;</span></p>}
 } as Meta;
 
-const Template:Story<DropdownButtonProps> = (args) => <DropdownButton {...args} ><p>Drop down content</p></DropdownButton>;
+const Template: Story<DropdownButtonProps> = (args) => {
+    const [showContent, setShowContent] = useState(false);
+    return (
+        <div className="muncher-dropdown-story">
+            <DropdownButton {...args} showContent={showContent} setShowContent={setShowContent}>
+                <p>Drop down content</p>
+            </DropdownButton>
+        </div>
+    )
+};
 
 export const Default = Template.bind({});
-Default.args = {
-    title: 'Default Dropdown',
-    element: <p>drop down</p>,
-    showContent: false,
-    setShowContent: () => {
-    }
-};
+Default.args = {};
 
 export const IconDropdown = Template.bind({});
 IconDropdown.args = {
@@ -33,16 +37,10 @@ export const RoundedDropdown = Template.bind({});
 RoundedDropdown.args = {
     ...IconDropdown.args,
     title: 'Rounded dropdown',
-    size: 'large',
+    size: 'small',
     rounded: true,
     variant: 'secondary',
-    element: <Icon name='muncher' size='large' weight={1}/>
-};
-export const WithText = Template.bind({});
-WithText.args = {
-    ...Default.args,
-    title: 'DropDown with text',
-    element: <p>Text drop down</p>
+    element: <Icon name='muncher' size='small' weight={1}/>
 };
 
 export const Secondary = Template.bind({});

@@ -1,17 +1,17 @@
 import React from 'react';
 import './assets/DropdownNavButton.scss';
-import {AllButtonProps, Button} from "./Button";
+import {Button} from "./Button";
 
 export const DropdownNavButton: React.FC<DropdownNavButtonProps> = (
     {
-        variant, size, title, active, disabled, element, rounded,
+        title, active, disabled, element, rounded,
         children, ...props
     }) => {
 
     return (
         <div className="muncher-dropdown-nav">
             <Button type="nav" title={title} disabled={disabled} rounded={rounded}
-                    active={active} variant={variant} size={size} {...props}>
+                    active={active} {...props}>
                 {element}
             </Button>
             <div className="muncher-dropdown-nav--content">
@@ -21,10 +21,18 @@ export const DropdownNavButton: React.FC<DropdownNavButtonProps> = (
     );
 }
 
-DropdownNavButton.defaultProps = {
-    size: 'medium',
-};
+export interface DropdownNavButtonProps {
+    /**
+     *  button title, corresponds to title on hover
+     */
+    title?: string;
+    active?: boolean;
+    disabled?: boolean;
+    /**
+     * if true, the button edges are rounded
+     */
+    rounded?: boolean;
 
-export interface DropdownNavButtonProps extends AllButtonProps {
+    children?: React.ReactNode;
     element: React.ReactNode;
 }
