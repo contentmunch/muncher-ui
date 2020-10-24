@@ -1,7 +1,6 @@
 import React, {useCallback, useEffect, useRef} from 'react';
 import './assets/DropdownButton.scss';
-import {Button} from "./Button";
-import {DropdownNavButtonProps} from "./DropdownNavButton";
+import {AllButtonProps, Button} from "./Button";
 
 
 export const DropdownButton: React.FC<DropdownButtonProps> = (
@@ -79,7 +78,7 @@ DropdownButton.defaultProps = {
     size: 'medium',
 };
 
-export interface DropdownButtonProps extends DropdownNavButtonProps {
+export interface DropdownButtonProps extends AllButtonProps {
     /**
      * base on drop value, it will either drop left or right
      */
@@ -101,5 +100,6 @@ export interface DropdownButtonProps extends DropdownNavButtonProps {
      * button mouse down handler
      */
     onClose?: () => void;
+    element: React.ReactNode;
 
 }
