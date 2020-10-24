@@ -14,6 +14,7 @@ Default.args = {
     name: "file",
     label: "upload file",
     required: true,
+    multiple: true,
     setFiles: () => {
     }
 };
