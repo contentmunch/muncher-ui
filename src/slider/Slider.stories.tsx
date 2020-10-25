@@ -13,9 +13,9 @@ const Template: Story<SliderProps> = () => {
         <Slider min={1} max={1000}
                 setValue={setValue}
                 value={value}
-                numberFormatter={num => new Intl.NumberFormat('de-DE', {
+                numberFormatter={num => new Intl.NumberFormat('en-US', {
                     style: 'currency',
-                    currency: 'EUR'
+                    currency: 'USD'
                 }).format(num)}
         />
     );

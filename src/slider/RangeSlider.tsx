@@ -48,8 +48,3 @@ export interface RangeSliderProps {
     setMaxValue: (maxValue: number) => void;
     numberFormatter?: (num: number) => string;
 }
-
-RangeSlider.defaultProps = {
-    numberFormatter: (num) =>
-        new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(num)
-}

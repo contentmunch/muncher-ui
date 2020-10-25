@@ -34,8 +34,3 @@ export interface SliderProps {
     setValue: (value: number) => void;
     numberFormatter?: (num: number) => string;
 }
-
-Slider.defaultProps = {
-    numberFormatter: (num) =>
-        new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD'}).format(num)
-}

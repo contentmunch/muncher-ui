@@ -1389,19 +1389,19 @@ exports[`Storyshots Input/Slider Default 1`] = `
     <div
       className="slider-min"
     >
-      1,00 €
+      $1.00
     </div>
     <div
       className="slider-max"
     >
-      1.000,00 €
+      $1,000.00
     </div>
   </div>
   <div
     className="slider-footer"
   >
     <p>
-      400,00 €
+      $400.00
     </p>
   </div>
 </div>
