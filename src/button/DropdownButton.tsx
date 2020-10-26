@@ -1,6 +1,6 @@
 import React, {useCallback, useEffect, useRef} from 'react';
 import './assets/DropdownButton.scss';
-import {AllButtonProps, Button, ButtonProps} from "./Button";
+import {Button, ButtonProps} from "./Button";
 
 
 export const DropdownButton: React.FC<DropdownButtonProps> = (
