@@ -51,7 +51,7 @@ export interface InputProps {
     type?: InputType;
     focus?: boolean;
     placeHolder?: string;
-    onChange?: (value: any) => void;
+    onChange?: (value: React.ChangeEvent<HTMLInputElement>) => void;
     value?: any;
 }
 

@@ -59,12 +59,12 @@ export interface ButtonProps extends AllButtonProps {
     /**
      * button click handler
      */
-    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 
     /**
      * button mouse down handler
      */
-    onMouseDown?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    onMouseDown?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 
 }
 

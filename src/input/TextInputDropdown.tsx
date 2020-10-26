@@ -9,7 +9,7 @@ export const TextInputDropdown: React.FC<TextInputDropdownProps> = (
     }) => {
     const ref = useRef(null);
 
-    const handleQueryChange = (e: any) => {
+    const handleQueryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setShowContent(false);
         handleInputChange(e.target.value);
     };
@@ -61,7 +61,7 @@ export interface TextInputDropdownProps {
 
     focus?: boolean;
     inputPlaceHolder?: string;
-    handleInputChange: (value: any) => void;
+    handleInputChange: (value: string) => void;
     showContent: boolean;
     setShowContent: (b: boolean) => void;
     readOnly?: boolean;

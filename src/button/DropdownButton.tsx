@@ -1,6 +1,6 @@
 import React, {useCallback, useEffect, useRef} from 'react';
 import './assets/DropdownButton.scss';
-import {AllButtonProps, Button} from "./Button";
+import {AllButtonProps, Button, ButtonProps} from "./Button";
 
 
 export const DropdownButton: React.FC<DropdownButtonProps> = (
@@ -15,7 +15,7 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
     const buttonOnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         if (onClick) {
-            onClick();
+            onClick(e);
         }
         if (setShowContent) {
             setShowContent(true);
@@ -78,7 +78,7 @@ DropdownButton.defaultProps = {
     size: 'medium',
 };
 
-export interface DropdownButtonProps extends AllButtonProps {
+export interface DropdownButtonProps extends ButtonProps {
     /**
      * base on drop value, it will either drop left or right
      */
@@ -91,10 +91,6 @@ export interface DropdownButtonProps extends AllButtonProps {
      * event to set show content value
      */
     setShowContent: (show: boolean) => void;
-    /**
-     * button click handler
-     */
-    onClick?: () => void;
 
     /**
      * button mouse down handler

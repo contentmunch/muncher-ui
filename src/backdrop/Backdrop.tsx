@@ -27,5 +27,5 @@ export interface BackdropProps {
     /**
      * backdrop click handler
      */
-    backdropClickHandler?: () => void;
+    backdropClickHandler?: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }

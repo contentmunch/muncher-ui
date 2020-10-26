@@ -46,7 +46,7 @@ export interface TextareaProps {
     maxLength?: number;
     focus?: boolean;
     placeHolder?: string;
-    onChange?: (event: any) => void;
+    onChange?: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
     value?: any;
 }
 

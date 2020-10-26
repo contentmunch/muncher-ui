@@ -41,7 +41,7 @@ export interface IconProps {
     /**
      * icon click handler
      */
-    onClick?: () => void;
+    onClick?: (e: React.MouseEvent<SVGSVGElement, MouseEvent>) => void;
 
     name?: IconName;
     iconString?: string;
