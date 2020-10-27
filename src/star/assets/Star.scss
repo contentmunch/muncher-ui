@@ -1,4 +1,5 @@
 @import "src/assets/variables";
+
 //need to escape hash to work with svg
 $star-yellow: '%23ffe234' !default;
 $star-orange: '%23ffa534' !default;
@@ -6,28 +7,27 @@ $star-red: '%23ff4545' !default;
 $star-green: '%2357e32c' !default;
 $star-color: $star-orange !default;
 $star-background: 'white' !default;
+
+$star-small: 20px !default;
+$star-medium: 30px !default;
+$star-large: 45px !default;
+
+@mixin star-outline-color($color) {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 80 80"><path fill="#{$star-background}" stroke="#{$color}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
+}
+
+@mixin star-color($color) {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="-40 -40 80 80"><path fill="#{$color}" stroke="#{$color}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
+}
+
 .muncher-star {
-  width: calc(45px * 5);
-  height: 45px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="#{$star-background}" stroke="#{$star-color}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
+  width: calc(#{$star-large} * 5);
+  height: $star-large;
+  background-size: $star-large $star-large;
   position: relative;
   display: inline-block;
-}
+  @include star-outline-color($star-color);
 
-.star-yellow {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="#{$star-background}" stroke="#{$star-yellow}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
-}
-
-.star-orange {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="#{$star-background}" stroke="#{$star-orange}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
-}
-
-.star-red {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="#{$star-background}" stroke="#{$star-red}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
-}
-
-.star-green {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="#{$star-background}" stroke="#{$star-green}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
 }
 
 .muncher-star:before {
@@ -36,22 +36,62 @@ $star-background: 'white' !default;
   top: 0;
   bottom: 0;
   left: 0;
-  width: calc(45px * var(--r, 1));
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="#{$star-color}" stroke="#{$star-color}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
+  width: calc(#{$star-large} * var(--r, 1));
+  background-size: $star-large $star-large;
+  @include star-color($star-color);
+
+}
+
+.star-small {
+  width: calc(#{$star-small} * 5);
+  height: $star-small;
+  background-size: $star-small $star-small;
+}
+
+.star-small:before {
+  width: calc(#{$star-small} * var(--r, 1));
+  background-size: $star-small $star-small;
+}
+
+.star-medium {
+  width: calc(#{$star-medium} * 5);
+  height: $star-medium;
+  background-size: $star-medium $star-medium;
+}
+
+.star-medium:before {
+  width: calc(#{$star-medium} * var(--r, 1));
+  background-size: $star-medium $star-medium;
+}
+
+.star-yellow {
+  @include star-outline-color($star-yellow);
+}
+
+.star-orange {
+  @include star-outline-color($star-orange);
+}
+
+.star-red {
+  @include star-outline-color($star-red);
+}
+
+.star-green {
+  @include star-outline-color($star-green);
 }
 
 .star-yellow:before {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="#{$star-yellow}" stroke="#{$star-yellow}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
+  @include star-color($star-yellow);
 }
 
 .star-orange:before {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="#{$star-orange}" stroke="#{$star-orange}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
+  @include star-color($star-orange);
 }
 
 .star-red:before {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="#{$star-red}" stroke="#{$star-red}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
+  @include star-color($star-red);
 }
 
 .star-green:before {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="-40 -40 80 80"><path fill="#{$star-green}" stroke="#{$star-green}" stroke-width="2"  d="M 0.000 20.000 L 23.511 32.361 L 19.021 6.180 L 38.042 -12.361 L 11.756 -16.180 L 0.000 -40.000 L -11.756 -16.180 L -38.042 -12.361 L -19.021 6.180 L -23.511 32.361 L 0.000 20.000 "/></svg>');
+  @include star-color($star-green);
 }
