@@ -1,24 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 import "./assets/Slider.scss";
 
 export const RangeSlider: React.FC<RangeSliderProps> = (
     {
-        min, max, minValue, maxValue,
-        setMinValue, setMaxValue, numberFormatter
+        min, max, defaultMin, defaultMax,
+        numberFormatter, handleChange
     }) => {
+    const [minValue, setMinValue] = useState<number>(defaultMin ? defaultMin : min);
+    const [maxValue, setMaxValue] = useState<number>(defaultMax ? defaultMax : max);
 
-
-    const handleMinChange = (event: any) => {
+    const handleMinChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const currentValue = +event.target.value;
-        setMinValue(currentValue < maxValue - 1 ? currentValue : minValue);
+        const currentMinValue = currentValue < maxValue - 1 ? currentValue : minValue
+        handleChange({min: currentMinValue, max: maxValue});
+        setMinValue(currentMinValue);
     };
-    const handleMaxChange = (event: any) => {
+    const handleMaxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const currentValue = +event.target.value;
-        setMaxValue(currentValue > minValue + 1 ? currentValue : maxValue);
+        const currentMaxValue = currentValue > minValue + 1 ? currentValue : maxValue;
+        handleChange({min: minValue, max: currentMaxValue});
+        setMaxValue(currentMaxValue);
     };
 
-    const formatNumber = (num: number) => {
-        if (numberFormatter) {
+    const formatNumber = (num?: number) => {
+        if (numberFormatter && num) {
             return numberFormatter(num);
         } else {
             return num;
@@ -39,12 +44,21 @@ export const RangeSlider: React.FC<RangeSliderProps> = (
     );
 }
 
-export interface RangeSliderProps {
+export interface Range {
     min: number;
     max: number;
-    minValue: number;
-    maxValue: number;
-    setMinValue: (minValue: number) => void;
-    setMaxValue: (maxValue: number) => void;
+}
+
+export interface RangeSliderProps extends Range {
+    defaultMin?: number;
+    defaultMax?: number;
     numberFormatter?: (num: number) => string;
+    handleChange: (range: Range) => void;
+}
+
+RangeSlider.defaultProps = {
+    numberFormatter: (num => new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+    }).format(num))
 }

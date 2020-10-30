@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {Meta, Story} from "@storybook/react/types-6-0";
 import {Slider, SliderProps} from "./Slider";
 
@@ -7,18 +7,18 @@ export default {
     component: Slider
 } as Meta;
 
-const Template: Story<SliderProps> = () => {
-    const [value, setValue] = useState(400);
+export const Default: Story<SliderProps> = (args) => {
+
     return (
-        <Slider min={1} max={1000}
-                setValue={setValue}
-                value={value}
-                numberFormatter={num => new Intl.NumberFormat('en-US', {
-                    style: 'currency',
-                    currency: 'USD'
-                }).format(num)}
+        <Slider  {...args} min={1} max={1000}
+                 numberFormatter={num => new Intl.NumberFormat('en-US', {
+                     style: 'currency',
+                     currency: 'USD'
+                 }).format(num)}
+                 handleChange={(value => {
+                     console.log(value)
+                 })}
         />
     );
 }
-export const Default = Template.bind({});
 
