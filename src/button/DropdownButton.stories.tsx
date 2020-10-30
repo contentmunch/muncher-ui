@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {DropdownButton, DropdownButtonProps} from "./DropdownButton";
-import {Meta, Story} from '@storybook/react/types-6-0';
+import {Meta, Story} from '@storybook/react';
 import {Icon} from "..";
 import "./assets/DropdownButtonStory.scss";
 

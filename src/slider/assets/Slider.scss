@@ -3,13 +3,11 @@
 $slider-color: $primary-color !default;
 $slider-thumb-color: $secondary-color !default;
 .muncher-slider {
-  margin: 1rem;
+  margin: 5%;
   position: relative;
   display: inline-block;
-  width: 60vw;
-  height: 4rem;
+  width: 90%;
   font-size: .8rem;
-
   .muncher-range {
     position: absolute;
     width: 100%;

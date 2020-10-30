@@ -60,7 +60,7 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
 
     return (
         <div className="muncher-dropdown" ref={ref}>
-            <Button onMouseDown={buttonOnClick} title={title}
+            <Button onClick={buttonOnClick} title={title}
                     disabled={disabled} rounded={rounded}
                     active={active} variant={variant} size={size} {...props}
             >{element}</Button>
