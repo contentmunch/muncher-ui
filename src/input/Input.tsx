@@ -9,7 +9,7 @@ export const Input: React.FC<InputProps> = (
     {
         name, label, required,
         readOnly, icon,
-        type,
+        type, list,
         focus, placeholder, onChange,
         value, ...props
     }
@@ -31,6 +31,7 @@ export const Input: React.FC<InputProps> = (
                     onChange={onChange}
                     required={required}
                     readOnly={readOnly}
+                    list={list}
                     {...props}
                 />
             </div>
@@ -51,6 +52,7 @@ export interface InputProps {
     type?: InputType;
     focus?: boolean;
     placeholder?: string;
+    list?: string;
     onChange?: (value: React.ChangeEvent<HTMLInputElement>) => void;
     value?: any;
 }
