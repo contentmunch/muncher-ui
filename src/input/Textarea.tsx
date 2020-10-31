@@ -6,7 +6,7 @@ export const Textarea: React.FC<TextareaProps> = (
     {
         name, label, required, readOnly,
         rows, maxLength, focus,
-        placeHolder, onChange, value, ...props
+        placeholder, onChange, value, ...props
     }
 ) => {
     const [textareaValue, setTextareaValue] = useState(value);
@@ -25,7 +25,7 @@ export const Textarea: React.FC<TextareaProps> = (
                 name={name}
                 autoFocus={focus}
                 value={value}
-                placeholder={placeHolder}
+                placeholder={placeholder}
                 onChange={handleTextareaChange}
                 required={required}
                 readOnly={readOnly}
@@ -45,7 +45,7 @@ export interface TextareaProps {
     rows?: number;
     maxLength?: number;
     focus?: boolean;
-    placeHolder?: string;
+    placeholder?: string;
     onChange?: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
     value?: any;
 }

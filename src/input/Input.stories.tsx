@@ -13,7 +13,7 @@ export const Default = Template.bind({});
 Default.args = {
     name: "query",
     type: "text",
-    placeHolder: "Type your query"
+    placeholder: "Type your query"
 
 };
 export const TextWithLabel = Template.bind({});
@@ -46,7 +46,7 @@ export const Email = Template.bind({});
 Email.args = {
     ...Default.args,
     type: 'email',
-    placeHolder: "Email",
+    placeholder: "Email",
     icon: "mail"
 };
 export const Month = Template.bind({});
@@ -58,14 +58,14 @@ export const Number = Template.bind({});
 Number.args = {
     ...Default.args,
     type: 'number',
-    placeHolder: "Phone number",
+    placeholder: "Phone number",
     icon: "phone"
 };
 export const Password = Template.bind({});
 Password.args = {
     ...Default.args,
     type: 'password',
-    placeHolder: "Type password"
+    placeholder: "Type password"
 };
 export const Range = Template.bind({});
 Range.args = {
@@ -91,7 +91,7 @@ export const Url = Template.bind({});
 Url.args = {
     ...Default.args,
     type: 'url',
-    placeHolder: 'type url'
+    placeholder: 'type url'
 };
 export const Week = Template.bind({});
 Week.args = {

@@ -10,7 +10,7 @@ export const Input: React.FC<InputProps> = (
         name, label, required,
         readOnly, icon,
         type,
-        focus, placeHolder, onChange,
+        focus, placeholder, onChange,
         value, ...props
     }
 ) => {
@@ -27,7 +27,7 @@ export const Input: React.FC<InputProps> = (
                     value={value}
                     type={type ? type : 'text'}
                     autoComplete="off"
-                    placeholder={placeHolder}
+                    placeholder={placeholder}
                     onChange={onChange}
                     required={required}
                     readOnly={readOnly}
@@ -50,7 +50,7 @@ export interface InputProps {
     icon?: IconName;
     type?: InputType;
     focus?: boolean;
-    placeHolder?: string;
+    placeholder?: string;
     onChange?: (value: React.ChangeEvent<HTMLInputElement>) => void;
     value?: any;
 }

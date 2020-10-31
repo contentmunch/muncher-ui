@@ -12,5 +12,5 @@ const Template: Story<TextareaProps> = (args) => <Textarea {...args} />;
 export const Default = Template.bind({});
 Default.args = {
     name: "question",
-    placeHolder: "Type your question"
+    placeholder: "Type your question"
 };

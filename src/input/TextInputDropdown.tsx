@@ -42,7 +42,7 @@ export const TextInputDropdown: React.FC<TextInputDropdownProps> = (
     }, [escFunction, onContentClose]);
     return (
         <div className="muncher-input-drop-down" ref={ref}>
-            <Input focus={focus} placeHolder={inputPlaceHolder} name="query" onChange={e => handleQueryChange(e)}
+            <Input focus={focus} placeholder={inputPlaceHolder} name="query" onChange={e => handleQueryChange(e)}
                    readOnly={readOnly}/>
 
             {
