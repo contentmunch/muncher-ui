@@ -24,6 +24,7 @@
     "build:types": "cp tsconfig-tsc.json tsconfig.json && tsc --emitDeclarationOnly",
     "postbuild:types": "rimraf lib/**/*.test.d.ts lib/**/*.stories.d.ts lib/setupTests.d.ts",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "postbuild:js": "rimraf  lib/**/*.tsx",
     "prepublishOnly": "npm run build",
     "pretest": "cp tsconfig-test.json tsconfig.json",
     "test": "react-scripts test",
