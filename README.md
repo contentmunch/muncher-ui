@@ -1,6 +1,6 @@
 ![Test release and publish](https://github.com/contentmunch/muncher-ui/workflows/Test%20release%20and%20publish/badge.svg) 
 # Muncher-UI
-A html5 and scss based UI component library
+A html5 and scss based [UI component library](https://contentmunch.github.io/muncher-ui/)
 
 ## Using Muncher-UI
 To use this component library:
