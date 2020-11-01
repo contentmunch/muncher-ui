@@ -44,6 +44,10 @@ $dropdown-content-background-color: $secondary-background-color !default;
     left: 0;
   }
 
+  .drop-middle {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
 
 @media (min-width: $large-size) {

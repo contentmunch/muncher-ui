@@ -17,7 +17,7 @@ const Template: Story<DropdownButtonProps> = (args) => {
     return (
         <div className="muncher-dropdown-story">
             <DropdownButton {...args} showContent={showContent} setShowContent={setShowContent}>
-                <p>Drop down content</p>
+                <p>Drop down content little longer</p>
             </DropdownButton>
         </div>
     )
