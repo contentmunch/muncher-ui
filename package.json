@@ -28,8 +28,8 @@
     "pretest": "cp tsconfig-test.json tsconfig.json",
     "test": "react-scripts test",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "deploy-storybook": "storybook-to-ghpages"
+    "prebuild-storybook": "rimraf s",
+    "build-storybook": "build-storybook -s public -o docs"
   },
   "eslintConfig": {
     "extends": "react-app"
