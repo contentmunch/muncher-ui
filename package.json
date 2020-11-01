@@ -16,15 +16,15 @@
     "type": "git",
     "url": "https://github.com/contentmunch/muncher-ui.git"
   },
+
   "scripts": {
     "start": "npm run storybook",
     "prebuild": "rimraf lib",
     "build": "npm run build:types && npm run build:js ",
-    "postbuild": "rsync -avz --exclude={\"*.ts\",\"*.tsx\",\"__snapshots__\",\"*.js\",\"*.mdx\"} src/ lib/",
+    "postbuild": "rimraf lib/**/*.tsx lib/*.tsx lib/**/*.stories.* lib/*.stories.* lib/**/*.test.* lib/*.test.* lib/react-app-env.d.ts lib/setupTests.* lib/__snapshots__/",
     "build:types": "cp tsconfig-tsc.json tsconfig.json && tsc --emitDeclarationOnly",
-    "postbuild:types": "rimraf lib/**/*.test.d.ts lib/**/*.stories.d.ts lib/setupTests.d.ts",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
-    "postbuild:js": "rimraf  lib/**/*.tsx",
+    "postbuild:js": "rsync -avz src/ lib/",
     "prepublishOnly": "npm run build",
     "pretest": "cp tsconfig-test.json tsconfig.json",
     "test": "react-scripts test",
