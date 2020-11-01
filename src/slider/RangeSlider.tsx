@@ -31,6 +31,7 @@ export const RangeSlider: React.FC<RangeSliderProps> = (
     }
     return (
         <div className="muncher-slider">
+            <div className="slider-header"><p>{formatNumber(minValue) + " - " + formatNumber(maxValue)}</p></div>
             <input className="muncher-range" type="range" min={min} max={max} value={minValue}
                    onChange={handleMinChange}/>
             <input className="muncher-range" type="range" min={min} max={max} value={maxValue}
@@ -39,7 +40,6 @@ export const RangeSlider: React.FC<RangeSliderProps> = (
                 <div className="slider-min">{formatNumber(min)}</div>
                 <div className="slider-max">{formatNumber(max)}</div>
             </div>
-            <div className="slider-footer"><p>{formatNumber(minValue) + " - " + formatNumber(maxValue)}</p></div>
         </div>
     );
 }
