@@ -16,5 +16,6 @@ export {Pill} from "./pill/Pill";
 export {Progress} from "./progress/Progress";
 export {Slider} from "./slider/Slider";
 export {RangeSlider} from "./slider/RangeSlider";
+export type {Range} from "./slider/RangeSlider";
 export {Spinner} from "./spinner/Spinner";
 export {Star} from "./star/Star";
