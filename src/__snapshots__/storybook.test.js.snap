@@ -1331,6 +1331,13 @@ exports[`Storyshots Input/Range Slider Default 1`] = `
 <div
   className="muncher-slider"
 >
+  <div
+    className="slider-header"
+  >
+    <p>
+      £1.00 - £1,000.00
+    </p>
+  </div>
   <input
     className="muncher-range"
     max={1000}
@@ -1360,13 +1367,6 @@ exports[`Storyshots Input/Range Slider Default 1`] = `
     >
       £1,000.00
     </div>
-  </div>
-  <div
-    className="slider-footer"
-  >
-    <p>
-      £1.00 - £1,000.00
-    </p>
   </div>
 </div>
 `;
