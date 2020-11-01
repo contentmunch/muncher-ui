@@ -21,6 +21,20 @@ To use this component library:
     ```
     $ npm install @contentmunch/muncher-ui
     ```
+## Installation guide
+In the project directory, you can run:
+
+### `npm start`
+Launches the component explorer on port 6006
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the package library.
 
 ## Coding rules
 We use [GitHub Flow](https://guides.github.com/introduction/flow/) for our project workflow.
@@ -59,18 +73,5 @@ fixes/closes #<github issue number>
     * test: adding missing tests
     * chore: changes to the build process or auxiliary tools and libraries such as documentation generation
 
-## Installation guide
-In the project directory, you can run:
 
-### `npm start`
-Launches the component explorer on port 6006
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the package library.
 
