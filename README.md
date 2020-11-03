@@ -5,18 +5,6 @@ A html5 and scss based [UI component library](https://contentmunch.github.io/mun
 ## Using Muncher-UI
 To use this component library:
 
-* First create a [github personal access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token), if you do not already have one.
-* Add it as an environment variable:
-    ```
-    #github personal access token
-    export PACKAGES_AUTH_TOKEN=<personal access token>
-    
-    ``` 
-* Create a `.npmrc` file at the root level of your project
-    ```
-    @contentmunch:registry=https://npm.pkg.github.com/
-    //npm.pkg.github.com/:_authToken=${PACKAGES_AUTH_TOKEN}
-    ```
 * Add the npm package to your project
     ```
     $ npm install @contentmunch/muncher-ui
