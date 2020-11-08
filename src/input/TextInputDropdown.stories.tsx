@@ -16,7 +16,7 @@ const Template: Story<TextInputDropdownProps> = (args) => {
                                showContent={showContent}
                                setShowContent={setShowContent}
                                handleInputChange={() => {
-                                   setShowContent(true);
+                                   console.log("text input in");
                                }}>
                 <p>Drop down content</p>
                 <p>Drop down content</p>
