@@ -21,7 +21,7 @@ export const Input: React.FC<InputProps> = (
             <div className="muncher-input-element">
                 {icon ? <Icon name={icon}/> : ""}
                 <input
-                    className="muncher-input"
+                    className={icon ? "muncher-input muncher-input-icon" : "muncher-input"}
                     name={name}
                     autoFocus={focus}
                     value={value}
