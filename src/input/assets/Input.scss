@@ -5,6 +5,7 @@ $input-border-color: $secondary-background-color !default;
 $input-placeholder-color: $disabled-color !default;
 $input-icon-color: $primary-color !default;
 .muncher-input--div {
+  display: inline-block;
   .muncher-input-element {
     display: inline-flex;
     justify-content: center;
