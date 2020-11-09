@@ -1,6 +1,6 @@
 import React from 'react';
 import {DropdownNavButton, DropdownNavButtonProps} from "./DropdownNavButton";
-import {Meta, Story} from '@storybook/react/types-6-0';
+import {Meta, Story} from '@storybook/react';
 
 export default {
     title: 'Buttons/Dropdown Nav Button',

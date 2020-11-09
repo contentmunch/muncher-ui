@@ -1,6 +1,6 @@
 import React from "react";
 import {Radio, RadioProps} from "./Radio";
-import {Meta, Story} from "@storybook/react/types-6-0";
+import {Meta, Story} from "@storybook/react";
 
 export default {
     title: "Input/Radio",

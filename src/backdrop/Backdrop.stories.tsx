@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Backdrop, BackdropProps} from "./Backdrop";
-import {Meta, Story} from '@storybook/react/types-6-0';
+import {Meta, Story} from '@storybook/react';
 import {Button} from "..";
 
 export default {

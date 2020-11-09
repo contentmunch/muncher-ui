@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Icon, IconProps} from "./Icon";
-import {Meta, Story} from '@storybook/react/types-6-0';
+import {Meta, Story} from '@storybook/react';
 import './assets/IconStories.scss';
 import {Button, Input} from "..";
 import {drawings} from "./Drawings";

@@ -1,6 +1,6 @@
 import React from "react";
 import {Badge, BadgeProps} from "./Badge";
-import {Meta, Story} from '@storybook/react/types-6-0';
+import {Meta, Story} from '@storybook/react';
 
 export default {
     title: 'Data Display/Badge',

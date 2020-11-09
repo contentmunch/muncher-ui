@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Modal, ModalProps} from "./Modal";
-import {Meta, Story} from "@storybook/react/types-6-0";
+import {Meta, Story} from "@storybook/react";
 import {Button} from "..";
 import "./assets/ModalStory.scss";
 export default {
