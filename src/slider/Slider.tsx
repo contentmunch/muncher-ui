@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 import "./assets/Slider.scss";
 
 export const Slider: React.FC<SliderProps> = (
     {
-        min, max, defaultValue, handleChange, numberFormatter
+        min, max, value, setValue, numberFormatter
     }) => {
-    const [value, setValue] = useState<number>(defaultValue ? defaultValue : max);
+
     const formatNumber = (num: number) => {
         if (numberFormatter) {
             return numberFormatter(num);
@@ -16,7 +16,6 @@ export const Slider: React.FC<SliderProps> = (
     const handleValueChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const currentValue = +e.target.value;
         setValue(currentValue);
-        handleChange(currentValue);
     }
     return (
         <div className="muncher-slider">
@@ -34,9 +33,10 @@ export const Slider: React.FC<SliderProps> = (
 export interface SliderProps {
     min: number;
     max: number;
-    defaultValue?: number;
+    value: number;
+    setValue: (num: number) => void;
     numberFormatter?: (num: number) => string;
-    handleChange: (value: number) => void;
+
 }
 
 Slider.defaultProps = {

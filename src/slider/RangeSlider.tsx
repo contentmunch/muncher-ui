@@ -1,24 +1,21 @@
-import React, {useState} from "react";
+import React from "react";
 import "./assets/Slider.scss";
 
 export const RangeSlider: React.FC<RangeSliderProps> = (
     {
-        min, max, defaultMin, defaultMax,
-        numberFormatter, handleChange
+        min, max, minValue, maxValue, setMinValue, setMaxValue,
+        numberFormatter
     }) => {
-    const [minValue, setMinValue] = useState<number>(defaultMin ? defaultMin : min);
-    const [maxValue, setMaxValue] = useState<number>(defaultMax ? defaultMax : max);
+
 
     const handleMinChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const currentValue = +event.target.value;
         const currentMinValue = currentValue < maxValue - 1 ? currentValue : minValue
-        handleChange({min: currentMinValue, max: maxValue});
         setMinValue(currentMinValue);
     };
     const handleMaxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const currentValue = +event.target.value;
         const currentMaxValue = currentValue > minValue + 1 ? currentValue : maxValue;
-        handleChange({min: minValue, max: currentMaxValue});
         setMaxValue(currentMaxValue);
     };
 
@@ -50,10 +47,11 @@ export interface Range {
 }
 
 export interface RangeSliderProps extends Range {
-    defaultMin?: number;
-    defaultMax?: number;
+    minValue: number;
+    maxValue: number;
+    setMinValue: (num: number) => void;
+    setMaxValue: (num: number) => void;
     numberFormatter?: (num: number) => string;
-    handleChange: (range: Range) => void;
 }
 
 RangeSlider.defaultProps = {
