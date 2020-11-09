@@ -992,7 +992,7 @@ exports[`Storyshots Input/Input Email 1`] = `
     <input
       autoComplete="off"
       autoFocus={false}
-      className="muncher-input"
+      className="muncher-input muncher-input-icon"
       name="query"
       placeholder="Email"
       type="email"
@@ -1058,7 +1058,7 @@ exports[`Storyshots Input/Input Number 1`] = `
     <input
       autoComplete="off"
       autoFocus={false}
-      className="muncher-input"
+      className="muncher-input muncher-input-icon"
       name="query"
       placeholder="Phone number"
       type="number"
@@ -1220,7 +1220,7 @@ exports[`Storyshots Input/Input Text With Icon 1`] = `
     <input
       autoComplete="off"
       autoFocus={false}
-      className="muncher-input"
+      className="muncher-input muncher-input-icon"
       name="query"
       placeholder="Type your query"
       required={true}
@@ -1758,7 +1758,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
       <input
         autoComplete="off"
         autoFocus={false}
-        className="muncher-input"
+        className="muncher-input muncher-input-icon"
         name=""
         onChange={[Function]}
         type="text"
