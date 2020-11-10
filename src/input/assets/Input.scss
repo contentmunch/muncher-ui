@@ -5,14 +5,9 @@ $input-border-color: $secondary-background-color !default;
 $input-placeholder-color: $disabled-color !default;
 $input-icon-color: $primary-color !default;
 .muncher-input--div {
-  display: inline-block;
-
   .muncher-input-element {
-
-    width: 100%;
-
     .muncher-icon {
-      background: $input-border-color;
+      //background: $input-border-color;
       color: $input-icon-color;
       position: absolute;
       padding: .57rem;
@@ -28,7 +23,7 @@ $input-icon-color: $primary-color !default;
   }
 
   .muncher-input-icon {
-    padding-left: 2.5rem;
+    padding-left: 2rem;
   }
 
   ::-webkit-input-placeholder { /* Edge */
