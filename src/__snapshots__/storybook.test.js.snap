@@ -882,444 +882,508 @@ exports[`Storyshots Input/File Input Default 1`] = `
 
 exports[`Storyshots Input/Input Color 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
     
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input"
-      name="query"
-      placeholder="Type your query"
-      type="color"
-    />
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        name="query"
+        placeholder="Type your query"
+        type="color"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Date 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
     
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input"
-      name="query"
-      placeholder="Type your query"
-      type="date"
-    />
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        name="query"
+        placeholder="Type your query"
+        type="date"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Date Time 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
     
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input"
-      name="query"
-      placeholder="Type your query"
-      type="datetime-local"
-    />
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        name="query"
+        placeholder="Type your query"
+        type="datetime-local"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Default 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
     
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input"
-      name="query"
-      placeholder="Type your query"
-      type="text"
-    />
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        name="query"
+        placeholder="Type your query"
+        type="text"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Email 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
-    <svg
-      className="muncher-icon muncher-icon--small"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
+    
+    <div
+      className="muncher-input-element"
     >
-      <path
-        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+        />
+        <polyline
+          points="22,6 12,13 2,6"
+        />
+      </svg>
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input muncher-input-icon"
+        name="query"
+        placeholder="Email"
+        type="email"
       />
-      <polyline
-        points="22,6 12,13 2,6"
-      />
-    </svg>
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input muncher-input-icon"
-      name="query"
-      placeholder="Email"
-      type="email"
-    />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Month 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
     
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input"
-      name="query"
-      placeholder="Type your query"
-      type="month"
-    />
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        name="query"
+        placeholder="Type your query"
+        type="month"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Number 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
-    <svg
-      className="muncher-icon muncher-icon--small"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
+    
+    <div
+      className="muncher-input-element"
     >
-      <rect
-        height="20"
-        rx="2"
-        ry="2"
-        width="14"
-        x="5"
-        y="2"
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="20"
+          rx="2"
+          ry="2"
+          width="14"
+          x="5"
+          y="2"
+        />
+        <line
+          x1="12"
+          x2="12.01"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input muncher-input-icon"
+        name="query"
+        placeholder="Phone number"
+        type="number"
       />
-      <line
-        x1="12"
-        x2="12.01"
-        y1="18"
-        y2="18"
-      />
-    </svg>
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input muncher-input-icon"
-      name="query"
-      placeholder="Phone number"
-      type="number"
-    />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Password 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
     
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input"
-      name="query"
-      placeholder="Type password"
-      type="password"
-    />
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        name="query"
+        placeholder="Type password"
+        type="password"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Range 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
     
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input"
-      name="query"
-      placeholder="Type your query"
-      type="range"
-    />
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        name="query"
+        placeholder="Type your query"
+        type="range"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Search 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
     
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input"
-      name="query"
-      placeholder="Type your query"
-      type="search"
-    />
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        name="query"
+        placeholder="Type your query"
+        type="search"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Tel 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
     
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input"
-      name="query"
-      placeholder="Type your query"
-      type="tel"
-    />
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        name="query"
+        placeholder="Type your query"
+        type="tel"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Text With Icon 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  <label
-    htmlFor="query"
-  >
-    Search
-    <span
-      className="required"
-    >
-      *
-    </span>
-  </label>
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
-    <svg
-      className="muncher-icon muncher-icon--small"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
+    <label
+      htmlFor="query"
     >
-      <rect
-        height="18"
-        rx="2"
-        ry="2"
-        width="18"
-        x="3"
-        y="4"
+      Search
+      <span
+        className="required"
+      >
+        *
+      </span>
+    </label>
+    <div
+      className="muncher-input-element"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="18"
+          rx="2"
+          ry="2"
+          width="18"
+          x="3"
+          y="4"
+        />
+        <line
+          x1="16"
+          x2="16"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="8"
+          x2="8"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="10"
+          y2="10"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="14"
+          y2="14"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input muncher-input-icon"
+        name="query"
+        placeholder="Type your query"
+        required={true}
+        type="text"
       />
-      <line
-        x1="16"
-        x2="16"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="8"
-        x2="8"
-        y1="2"
-        y2="6"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="10"
-        y2="10"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="14"
-        y2="14"
-      />
-      <line
-        x1="7"
-        x2="17"
-        y1="18"
-        y2="18"
-      />
-    </svg>
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input muncher-input-icon"
-      name="query"
-      placeholder="Type your query"
-      required={true}
-      type="text"
-    />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Text With Label 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  <label
-    htmlFor="query"
-  >
-    Search
-    <span
-      className="required"
-    >
-      *
-    </span>
-  </label>
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
-    
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input"
-      name="query"
-      placeholder="Type your query"
-      required={true}
-      type="text"
-    />
+    <label
+      htmlFor="query"
+    >
+      Search
+      <span
+        className="required"
+      >
+        *
+      </span>
+    </label>
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        name="query"
+        placeholder="Type your query"
+        required={true}
+        type="text"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Time 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
     
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input"
-      name="query"
-      placeholder="Type your query"
-      type="time"
-    />
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        name="query"
+        placeholder="Type your query"
+        type="time"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Url 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
     
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input"
-      name="query"
-      placeholder="type url"
-      type="url"
-    />
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        name="query"
+        placeholder="type url"
+        type="url"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Input/Input Week 1`] = `
 <div
-  className="muncher-input--div"
+  className="div-input-stories"
 >
-  
   <div
-    className="muncher-input-element"
+    className="muncher-input--div"
   >
     
-    <input
-      autoComplete="off"
-      autoFocus={false}
-      className="muncher-input"
-      name="query"
-      placeholder="Type your query"
-      type="week"
-    />
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        name="query"
+        placeholder="Type your query"
+        type="week"
+      />
+    </div>
   </div>
 </div>
 `;
