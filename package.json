@@ -23,7 +23,7 @@
     "postbuild:js": "rsync -avz src/ lib/",
     "prepublishOnly": "npm run build",
     "pretest": "cp tsconfig-test.json tsconfig.json",
-    "test": "react-scripts test",
+    "test": "react-scripts test -u",
     "deploy": "npm run build-storybook",
     "postdeploy": "cp public/CNAME docs/CNAME",
     "storybook": "start-storybook -p 6008 -s public",
