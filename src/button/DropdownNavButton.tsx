@@ -33,6 +33,5 @@ export interface DropdownNavButtonProps {
      */
     rounded?: boolean;
 
-    children?: React.ReactNode;
     element: React.ReactNode;
 }

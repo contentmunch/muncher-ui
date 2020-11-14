@@ -49,8 +49,6 @@ export interface AllButtonProps {
      * if true, the button edges are rounded
      */
     rounded?: boolean;
-
-    children?: React.ReactNode;
 }
 
 export interface ButtonProps extends AllButtonProps {
