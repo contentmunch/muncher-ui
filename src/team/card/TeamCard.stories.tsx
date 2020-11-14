@@ -11,7 +11,9 @@ export default {
 export const Default: Story<TeamCardProps> = () => {
     const member: TeamMember = {
         name: "John Cena",
-        jobTitle: "Wrestler"
+        jobTitle: "Wrestler",
+        blogUrl: "https://myblog.com",
+        emailAddress: "johncena@gmail.com"
     } as TeamMember;
     return (
         <TeamCard member={member}/>

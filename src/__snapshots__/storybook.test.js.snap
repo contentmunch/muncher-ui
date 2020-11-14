@@ -634,13 +634,43 @@ exports[`Storyshots Buttons/Dropdown Nav Button Default 1`] = `
 
 exports[`Storyshots Card/Team Card Default 1`] = `
 <div
-  className="team-member"
+  className="team-card"
 >
-  <img
-    alt="John Cena"
-    className="team-image"
-    src="default-avatar.png"
-  />
+  <div
+    className="div-team-image"
+  >
+    <img
+      alt="John Cena"
+      className="team-image"
+      src="default-avatar.png"
+    />
+    <div
+      className="team-image-info"
+    >
+      <div
+        className="team-image-info-content"
+      >
+        <p>
+          <a
+            href="mailto:johncena@gmail.com"
+          >
+            <i>
+              johncena@gmail.com
+            </i>
+          </a>
+          <br />
+          <br />
+          <a
+            href="https://myblog.com"
+          >
+            <b>
+              MORE ABOUT ME
+            </b>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
   <h4>
     John Cena
   </h4>
@@ -652,7 +682,7 @@ exports[`Storyshots Card/Team Card Default 1`] = `
 
 exports[`Storyshots Card/Team Card Skeleton Default 1`] = `
 <div
-  className="team-member"
+  className="team-card"
 >
   <span>
     <span
@@ -4664,7 +4694,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
     className="members"
   >
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -4710,7 +4740,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -4756,7 +4786,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -4802,7 +4832,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -4848,7 +4878,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -4894,7 +4924,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -4940,7 +4970,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -4986,7 +5016,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5032,7 +5062,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5078,7 +5108,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5124,7 +5154,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5170,7 +5200,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5216,7 +5246,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5262,7 +5292,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5308,7 +5338,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5354,7 +5384,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5400,7 +5430,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5446,7 +5476,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5492,7 +5522,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5538,7 +5568,7 @@ exports[`Storyshots Section/Team All Members 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5604,7 +5634,7 @@ exports[`Storyshots Section/Team Default 1`] = `
     className="members"
   >
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5650,7 +5680,7 @@ exports[`Storyshots Section/Team Default 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
@@ -5696,7 +5726,7 @@ exports[`Storyshots Section/Team Default 1`] = `
       </p>
     </div>
     <div
-      className="team-member"
+      className="team-card"
     >
       <span>
         <span
