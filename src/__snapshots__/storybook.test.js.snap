@@ -1413,43 +1413,47 @@ exports[`Storyshots Input/Radio Default 1`] = `
 
 exports[`Storyshots Input/Range Slider Default 1`] = `
 <div
-  className="muncher-slider"
+  className="slider-story"
 >
   <div
-    className="slider-header"
-  >
-    <p>
-      £20.00 - £600.00
-    </p>
-  </div>
-  <input
-    className="muncher-range"
-    max={1000}
-    min={1}
-    onChange={[Function]}
-    type="range"
-    value={20}
-  />
-  <input
-    className="muncher-range"
-    max={1000}
-    min={1}
-    onChange={[Function]}
-    type="range"
-    value={600}
-  />
-  <div
-    className="slider-values"
+    className="muncher-slider"
   >
     <div
-      className="slider-min"
+      className="slider-header"
     >
-      £1.00
+      <p>
+        £20.00 - £600.00
+      </p>
     </div>
+    <input
+      className="muncher-range"
+      max={1000}
+      min={1}
+      onChange={[Function]}
+      type="range"
+      value={20}
+    />
+    <input
+      className="muncher-range"
+      max={1000}
+      min={1}
+      onChange={[Function]}
+      type="range"
+      value={600}
+    />
     <div
-      className="slider-max"
+      className="slider-values"
     >
-      £1,000.00
+      <div
+        className="slider-min"
+      >
+        £1.00
+      </div>
+      <div
+        className="slider-max"
+      >
+        £1,000.00
+      </div>
     </div>
   </div>
 </div>
@@ -1457,36 +1461,40 @@ exports[`Storyshots Input/Range Slider Default 1`] = `
 
 exports[`Storyshots Input/Slider Default 1`] = `
 <div
-  className="muncher-slider"
+  className="slider-story"
 >
-  <input
-    className="muncher-range"
-    max={1000}
-    min={1}
-    onChange={[Function]}
-    type="range"
-    value={50}
-  />
   <div
-    className="slider-values"
+    className="muncher-slider"
   >
     <div
-      className="slider-min"
+      className="slider-header"
     >
-      $1.00
+      <p>
+        $200.00
+      </p>
     </div>
+    <input
+      className="muncher-range"
+      max={1000}
+      min={1}
+      onChange={[Function]}
+      type="range"
+      value={200}
+    />
     <div
-      className="slider-max"
+      className="slider-values"
     >
-      $1,000.00
+      <div
+        className="slider-min"
+      >
+        $1.00
+      </div>
+      <div
+        className="slider-max"
+      >
+        $1,000.00
+      </div>
     </div>
-  </div>
-  <div
-    className="slider-footer"
-  >
-    <p>
-      $50.00
-    </p>
   </div>
 </div>
 `;

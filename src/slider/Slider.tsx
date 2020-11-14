@@ -19,13 +19,13 @@ export const Slider: React.FC<SliderProps> = (
     }
     return (
         <div className="muncher-slider">
+            <div className="slider-header"><p>{formatNumber(value)}</p></div>
             <input className="muncher-range" type="range" min={min} max={max} value={value}
                    onChange={handleValueChange}/>
             <div className="slider-values">
                 <div className="slider-min">{formatNumber(min)}</div>
                 <div className="slider-max">{formatNumber(max)}</div>
             </div>
-            <div className="slider-footer"><p>{formatNumber(value)}</p></div>
         </div>
     );
 }
