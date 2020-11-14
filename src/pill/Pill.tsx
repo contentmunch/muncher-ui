@@ -13,5 +13,4 @@ export const Pill: React.FC<PillProps> = ({pillCloseHandler, children, ...props}
 
 export interface PillProps {
     pillCloseHandler?: () => void;
-    children?: any;
 }

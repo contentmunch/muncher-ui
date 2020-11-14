@@ -65,7 +65,6 @@ export interface TextInputDropdownProps {
     showContent: boolean;
     setShowContent: (b: boolean) => void;
     readOnly?: boolean;
-    children?: any;
 
 }
 

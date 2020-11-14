@@ -35,7 +35,6 @@ export const Modal: React.FC<ModalProps> = ({show, setShow, children, ...props})
 export interface ModalProps {
     show: boolean;
     setShow: (b: boolean) => void;
-    children?: any;
 }
 
 Modal.defaultProps = {
