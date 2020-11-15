@@ -2,12 +2,11 @@
 
 .section-team {
   text-align: center;
-  @media (min-width: $medium-size) {
-    .members {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
 
-    }
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
   }
 }

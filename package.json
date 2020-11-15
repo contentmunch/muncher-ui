@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/renaissance-rentals/renaissance-component.git"
+    "url": "https://github.com/renaissancerentals/renaissance-component.git"
   },
   "scripts": {
     "start": "npm run storybook",
