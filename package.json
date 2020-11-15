@@ -74,13 +74,10 @@
     "react-is": "^17.0.1",
     "react-scripts": "4.0.0",
     "react-test-renderer": "^17.0.1",
-    "rimraf": "^3.0.2",
-    "node-sass": "^4.14.1"
-  },
-  "peerDependencies": {
-    "node-sass": "^4.14.1"
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
+    "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
     "axios": "^0.20.0",
     "react-google-recaptcha": "^2.1.0",
