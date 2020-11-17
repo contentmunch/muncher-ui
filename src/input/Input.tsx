@@ -10,6 +10,7 @@ export const Input: React.FC<InputProps> = (
         name, label, required,
         readOnly, icon,
         type, list,
+        onKeyDown,
         focus, placeholder, onChange,
         value, ...props
     }
@@ -32,6 +33,7 @@ export const Input: React.FC<InputProps> = (
                     required={required}
                     readOnly={readOnly}
                     list={list}
+                    onKeyDown={onKeyDown}
                     {...props}
                 />
             </div>
@@ -54,6 +56,7 @@ export interface InputProps {
     placeholder?: string;
     list?: string;
     onChange?: (value: React.ChangeEvent<HTMLInputElement>) => void;
+    onKeyDown?: (event: React.KeyboardEvent<HTMLInputElement>) => void;
     value?: any;
 }
 
