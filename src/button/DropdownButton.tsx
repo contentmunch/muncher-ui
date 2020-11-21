@@ -2,7 +2,6 @@ import React, {useCallback, useEffect, useRef} from 'react';
 import './assets/DropdownButton.scss';
 import {Button, ButtonProps} from "./Button";
 
-
 export const DropdownButton: React.FC<DropdownButtonProps> = (
     {
         variant, size, title, active,
@@ -14,24 +13,18 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
     const ref = useRef<HTMLDivElement>(null);
     const buttonOnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
-        if (onClick) {
-            onClick(e);
-        }
-        if (setShowContent) {
-            setShowContent(true);
-        }
+        if (onClick) onClick(e);
+        if (setShowContent) setShowContent(true);
+
     }
 
     const onContentClose = useCallback(() => {
         setShowContent(false);
-        if (onClose) {
-            onClose();
-        }
+        if (onClose) onClose();
+
     }, [onClose, setShowContent]);
     const escFunction = useCallback((event) => {
-        if (event.keyCode === 27) {
-            onContentClose();
-        }
+        if (event.keyCode === 27) onContentClose();
     }, [onContentClose]);
 
 
@@ -50,10 +43,11 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
         };
     }, [escFunction, onContentClose]);
     const dropdownClass = () => {
-        let offsetLeft = ref.current?.offsetLeft;
-
-        if (offsetLeft && offsetLeft < 100) {
-            return "muncher-dropdown--content";
+        const offsetLeft = ref.current?.offsetLeft;
+        const windowWidth = window.innerWidth;
+        if (offsetLeft) {
+            if (offsetLeft < 100) return "muncher-dropdown--content";
+            if (windowWidth - offsetLeft < 200) return "muncher-dropdown--content drop-left";
         }
         switch (drop) {
             case "left":

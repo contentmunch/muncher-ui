@@ -229,6 +229,9 @@ exports[`Storyshots Buttons/Dropdown Button Active 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
@@ -266,6 +269,9 @@ exports[`Storyshots Buttons/Dropdown Button Default 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
@@ -302,6 +308,9 @@ exports[`Storyshots Buttons/Dropdown Button Disabled 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
@@ -309,6 +318,45 @@ exports[`Storyshots Buttons/Dropdown Button Disabled 1`] = `
         className="muncher-button muncher-button--medium"
         data-title="Disabled DropDown"
         disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <p>
+          drop down 
+          <span
+            className="small"
+          >
+            ▼
+          </span>
+        </p>
+      </button>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Buttons/Dropdown Button Drop Right 1`] = `
+<div
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="muncher-dropdown-story"
+  >
+    <span>
+      a long text 
+    </span>
+    <div
+      className="muncher-dropdown"
+    >
+      <button
+        className="muncher-button muncher-button--medium"
+        disabled={false}
         onClick={[Function]}
         type="button"
       >
@@ -339,6 +387,9 @@ exports[`Storyshots Buttons/Dropdown Button Icon Dropdown 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
@@ -417,6 +468,9 @@ exports[`Storyshots Buttons/Dropdown Button Large 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
@@ -454,6 +508,9 @@ exports[`Storyshots Buttons/Dropdown Button Rounded Dropdown 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
@@ -532,6 +589,9 @@ exports[`Storyshots Buttons/Dropdown Button Secondary 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
@@ -569,6 +629,9 @@ exports[`Storyshots Buttons/Dropdown Button Small 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >

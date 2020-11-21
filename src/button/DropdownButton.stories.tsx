@@ -16,7 +16,7 @@ const Template: Story<DropdownButtonProps> = (args) => {
     const [showContent, setShowContent] = useState(false);
     return (
         <div className="muncher-dropdown-story">
-
+            <span>a long text&nbsp;</span>
             <DropdownButton {...args} showContent={showContent} setShowContent={setShowContent}>
                 <p>Drop down content little longer</p>
             </DropdownButton>
@@ -26,7 +26,12 @@ const Template: Story<DropdownButtonProps> = (args) => {
 
 export const Default = Template.bind({});
 Default.args = {
-    drop:"middle"
+    drop: "middle"
+};
+
+export const DropRight = Template.bind({});
+Default.args = {
+    drop: "right"
 };
 
 export const IconDropdown = Template.bind({});
