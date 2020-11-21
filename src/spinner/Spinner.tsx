@@ -1,6 +1,5 @@
 import React from 'react';
 import './assets/Spinner.scss';
-import {Size} from "../button/Button";
 
 export const Spinner: React.FC<SpinnerProps> = ({size, ...props}) =>
     <div
@@ -8,5 +7,6 @@ export const Spinner: React.FC<SpinnerProps> = ({size, ...props}) =>
     />
 
 export interface SpinnerProps {
-    size?: Size
+    size?: SpinnerSize
 }
+export type SpinnerSize = 'tiny'|'small' | 'medium' | 'large';
