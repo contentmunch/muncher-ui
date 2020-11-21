@@ -47,7 +47,9 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
         const windowWidth = window.innerWidth;
         if (offsetLeft) {
             if (offsetLeft < 100) return "muncher-dropdown--content";
-            if (windowWidth - offsetLeft < 200) return "muncher-dropdown--content drop-left";
+            if (windowWidth - offsetLeft < 100) return "muncher-dropdown--content drop-left";
+            const offsetPercent = Math.round(offsetLeft / windowWidth * 100);
+            if (offsetPercent > 40 || offsetPercent < 60) return "muncher-dropdown--content drop-middle";
         }
         switch (drop) {
             case "left":
