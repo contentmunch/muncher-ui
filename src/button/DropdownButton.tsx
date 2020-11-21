@@ -50,6 +50,11 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
         };
     }, [escFunction, onContentClose]);
     const dropdownClass = () => {
+        let offsetLeft = ref.current?.offsetLeft;
+
+        if (offsetLeft && offsetLeft < 100) {
+            return "muncher-dropdown--content";
+        }
         switch (drop) {
             case "left":
                 return "muncher-dropdown--content drop-left";
@@ -84,7 +89,7 @@ export interface DropdownButtonProps extends ButtonProps {
     /**
      * base on drop value, it will either drop left or right
      */
-    drop?: 'left' | 'right'|'middle';
+    drop?: 'left' | 'right' | 'middle';
     /**
      * shows or hides drop down content
      */
