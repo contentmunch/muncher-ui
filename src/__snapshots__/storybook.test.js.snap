@@ -239,7 +239,7 @@ exports[`Storyshots Buttons/Dropdown Button Active 1`] = `
         className="muncher-button muncher-button--medium muncher-button--active"
         data-title="Active DropDown"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
         type="button"
       >
         <p>
@@ -278,7 +278,7 @@ exports[`Storyshots Buttons/Dropdown Button Default 1`] = `
       <button
         className="muncher-button muncher-button--medium"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
         type="button"
       >
         <p>
@@ -318,7 +318,7 @@ exports[`Storyshots Buttons/Dropdown Button Disabled 1`] = `
         className="muncher-button muncher-button--medium"
         data-title="Disabled DropDown"
         disabled={true}
-        onClick={[Function]}
+        onMouseDown={[Function]}
         type="button"
       >
         <p>
@@ -357,7 +357,7 @@ exports[`Storyshots Buttons/Dropdown Button Drop Right 1`] = `
       <button
         className="muncher-button muncher-button--medium"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
         type="button"
       >
         <p>
@@ -397,7 +397,7 @@ exports[`Storyshots Buttons/Dropdown Button Icon Dropdown 1`] = `
         className="muncher-button muncher-button--small"
         data-title="Icon dropdown text"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
         type="button"
       >
         <svg
@@ -478,7 +478,7 @@ exports[`Storyshots Buttons/Dropdown Button Large 1`] = `
         className="muncher-button muncher-button--large"
         data-title="Large DropDown"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
         type="button"
       >
         <p>
@@ -518,7 +518,7 @@ exports[`Storyshots Buttons/Dropdown Button Rounded Dropdown 1`] = `
         className="muncher-button muncher-button--secondary muncher-button--small muncher-button--rounded"
         data-title="Rounded dropdown"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
         type="button"
       >
         <svg
@@ -599,7 +599,7 @@ exports[`Storyshots Buttons/Dropdown Button Secondary 1`] = `
         className="muncher-button muncher-button--secondary muncher-button--medium"
         data-title="Secondary DropDown"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
         type="button"
       >
         <p>
@@ -639,7 +639,7 @@ exports[`Storyshots Buttons/Dropdown Button Small 1`] = `
         className="muncher-button muncher-button--small"
         data-title="Small DropDown"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
         type="button"
       >
         <p>
@@ -868,7 +868,7 @@ exports[`Storyshots Input/Dropdown Range Slider Default 1`] = `
     <button
       className="muncher-button muncher-button--medium"
       disabled={false}
-      onClick={[Function]}
+      onMouseDown={[Function]}
       type="button"
     >
       slider(min: 20 max: 600)

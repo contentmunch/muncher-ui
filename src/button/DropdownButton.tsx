@@ -5,34 +5,34 @@ import {Button, ButtonProps} from "./Button";
 export const DropdownButton: React.FC<DropdownButtonProps> = (
     {
         variant, size, title, active,
-        disabled, element,
+        disabled, element, onMouseDown,
         rounded, drop, onClick, onClose,
         showContent, setShowContent, children, ...props
     }) => {
 
     const ref = useRef<HTMLDivElement>(null);
-    const buttonOnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const handleMouseDown = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         if (onClick) onClick(e);
         if (setShowContent) setShowContent(true);
 
     }
 
-    const onContentClose = useCallback(() => {
+    const handleContentClose = useCallback(() => {
         setShowContent(false);
         if (onClose) onClose();
 
     }, [onClose, setShowContent]);
     const escFunction = useCallback((event) => {
-        if (event.keyCode === 27) onContentClose();
-    }, [onContentClose]);
+        if (event.keyCode === 27) handleContentClose();
+    }, [handleContentClose]);
 
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (ref && ref.current) {
                 if (event.target instanceof HTMLElement && !ref.current.contains(event.target)) {
-                    onContentClose();
+                    handleContentClose();
                 }
             }
         };
@@ -41,7 +41,7 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
         return () => {
             document.removeEventListener("keydown", escFunction, false);
         };
-    }, [escFunction, onContentClose]);
+    }, [escFunction, handleContentClose]);
     const dropdownClass = () => {
         const offsetLeft = ref.current?.offsetLeft;
         const windowWidth = window.innerWidth;
@@ -52,7 +52,6 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
                 const offsetPercent = Math.round(offsetLeft / windowWidth * 100);
                 if (offsetPercent > 40 || offsetPercent < 60) return "muncher-dropdown--content drop-middle";
             }
-
         }
         switch (drop) {
             case "left":
@@ -66,7 +65,7 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
 
     return (
         <div className="muncher-dropdown" ref={ref}>
-            <Button onClick={buttonOnClick} title={title}
+            <Button onMouseDown={handleMouseDown} title={title}
                     disabled={disabled} rounded={rounded}
                     active={active} variant={variant} size={size} {...props}
             >{element}</Button>
@@ -75,7 +74,6 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
                     {children}
                 </div> : ""
             }
-
         </div>
     );
 };

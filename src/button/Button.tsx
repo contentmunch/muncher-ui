@@ -21,7 +21,6 @@ export const Button: React.FC<ButtonProps> =
                 data-title={title}
                 onClick={onClick}
                 onMouseDown={onMouseDown}
-
                 {...props}
             >
                 {children}
