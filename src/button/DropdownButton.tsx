@@ -10,7 +10,7 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
         showContent, setShowContent, children, ...props
     }) => {
 
-    const ref = useRef<HTMLDivElement>(null);
+    const dropDownRef = useRef<HTMLDivElement>(null);
     const handleMouseDown = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         if (onClick) onClick(e);
@@ -30,8 +30,8 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
-            if (ref && ref.current) {
-                if (event.target instanceof HTMLElement && !ref.current.contains(event.target)) {
+            if (dropDownRef && dropDownRef.current) {
+                if (event.target instanceof HTMLElement && !dropDownRef.current.contains(event.target)) {
                     handleContentClose();
                 }
             }
@@ -43,13 +43,14 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
         };
     }, [escFunction, handleContentClose]);
     const dropdownClass = () => {
-        const offsetLeft = ref.current?.offsetLeft;
+        const offsetLeft = dropDownRef.current?.offsetLeft;
         const windowWidth = window.innerWidth;
+
         if (offsetLeft) {
             if (offsetLeft < 100) return "muncher-dropdown--content";
-            if (windowWidth - offsetLeft < 100) return "muncher-dropdown--content drop-left";
-            if (windowWidth - offsetLeft < 200) {
-                const offsetPercent = Math.round(offsetLeft / windowWidth * 100);
+            if (windowWidth - offsetLeft < 150) return "muncher-dropdown--content drop-left";
+            if (windowWidth - offsetLeft < 250) {
+                const offsetPercent = Math.round((windowWidth - offsetLeft) / windowWidth * 100);
                 if (offsetPercent > 40 || offsetPercent < 60) return "muncher-dropdown--content drop-middle";
             }
         }
@@ -64,7 +65,7 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
     };
 
     return (
-        <div className="muncher-dropdown" ref={ref}>
+        <div className="muncher-dropdown" ref={dropDownRef}>
             <Button onMouseDown={handleMouseDown} title={title}
                     disabled={disabled} rounded={rounded}
                     active={active} variant={variant} size={size} {...props}
