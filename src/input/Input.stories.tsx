@@ -27,6 +27,12 @@ TextWithIcon.args = {
     ...TextWithLabel.args,
     icon: "muncher"
 };
+export const WithError = Template.bind({});
+WithError.args = {
+    ...TextWithIcon.args,
+    error: "Provide value for Search"
+};
+
 export const Color = Template.bind({});
 Color.args = {
     ...Default.args,

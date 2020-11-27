@@ -1551,6 +1551,7 @@ exports[`Storyshots Input/Input Color 1`] = `
         type="color"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1576,6 +1577,7 @@ exports[`Storyshots Input/Input Date 1`] = `
         type="date"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1601,6 +1603,7 @@ exports[`Storyshots Input/Input Date Time 1`] = `
         type="datetime-local"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1626,6 +1629,7 @@ exports[`Storyshots Input/Input Default 1`] = `
         type="text"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1667,6 +1671,7 @@ exports[`Storyshots Input/Input Email 1`] = `
         type="email"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1692,6 +1697,7 @@ exports[`Storyshots Input/Input Month 1`] = `
         type="month"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1741,6 +1747,7 @@ exports[`Storyshots Input/Input Number 1`] = `
         type="number"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1766,6 +1773,7 @@ exports[`Storyshots Input/Input Password 1`] = `
         type="password"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1791,6 +1799,7 @@ exports[`Storyshots Input/Input Range 1`] = `
         type="range"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1816,6 +1825,7 @@ exports[`Storyshots Input/Input Search 1`] = `
         type="search"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1841,6 +1851,7 @@ exports[`Storyshots Input/Input Tel 1`] = `
         type="tel"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1924,6 +1935,7 @@ exports[`Storyshots Input/Input Text With Icon 1`] = `
         type="text"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1959,6 +1971,7 @@ exports[`Storyshots Input/Input Text With Label 1`] = `
         type="text"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1984,6 +1997,7 @@ exports[`Storyshots Input/Input Time 1`] = `
         type="time"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -2009,6 +2023,7 @@ exports[`Storyshots Input/Input Url 1`] = `
         type="url"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -2034,6 +2049,124 @@ exports[`Storyshots Input/Input Week 1`] = `
         type="week"
       />
     </div>
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input/Input With Error 1`] = `
+<div
+  className="div-input-stories"
+>
+  <div
+    className="muncher-input--div"
+  >
+    <label
+      htmlFor="query"
+    >
+      Search
+      <span
+        className="required"
+      >
+        *
+      </span>
+    </label>
+    <div
+      className="muncher-input-element"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="18"
+          rx="2"
+          ry="2"
+          width="18"
+          x="3"
+          y="4"
+        />
+        <line
+          x1="16"
+          x2="16"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="8"
+          x2="8"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="10"
+          y2="10"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="14"
+          y2="14"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input muncher-input-icon muncher-input-error"
+        name="query"
+        placeholder="Type your query"
+        required={true}
+        type="text"
+      />
+    </div>
+    <p
+      className="muncher-input-error-message"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <line
+          x1="12"
+          x2="12"
+          y1="8"
+          y2="12"
+        />
+        <line
+          x1="12"
+          x2="12.01"
+          y1="16"
+          y2="16"
+        />
+      </svg>
+       
+      Provide value for Search
+    </p>
   </div>
 </div>
 `;
@@ -2174,6 +2307,7 @@ exports[`Storyshots Input/Text Input Dropdown Default 1`] = `
           type="text"
         />
       </div>
+      
     </div>
     
   </div>
@@ -2486,6 +2620,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
         type="text"
       />
     </div>
+    
   </div>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
