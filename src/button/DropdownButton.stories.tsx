@@ -41,6 +41,12 @@ IconDropdown.args = {
     title: 'Icon dropdown text',
     element: <Icon name='muncher'/>
 };
+export const TransparentDropdown = Template.bind({});
+TransparentDropdown.args = {
+    ...IconDropdown.args,
+    title: 'Transparent dropdown text',
+    variant: "transparent"
+};
 export const RoundedDropdown = Template.bind({});
 RoundedDropdown.args = {
     ...IconDropdown.args,

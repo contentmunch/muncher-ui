@@ -19,6 +19,12 @@ IconButton.args = {
     title: 'Icon Button',
     size: 'small'
 };
+export const TransparentButton = IconTemplate.bind({});
+TransparentButton.args = {
+    title: 'Transparent Button',
+    size: 'small',
+    variant:"transparent",
+};
 export const RoundedButton = IconTemplate.bind({});
 RoundedButton.args = {
     ...IconButton.args,
