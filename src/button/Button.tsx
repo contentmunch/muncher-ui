@@ -18,7 +18,7 @@ export const Button: React.FC<ButtonProps> =
                 type={type ? type !== 'nav' ? type : 'button' : 'button'}
                 className={className}
                 disabled={!!disabled}
-                data-title={title}
+                title={title}
                 onClick={onClick}
                 onMouseDown={onMouseDown}
                 {...props}
