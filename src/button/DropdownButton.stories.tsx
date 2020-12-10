@@ -16,6 +16,7 @@ const Template: Story<DropdownButtonProps> = (args) => {
     const [showContent, setShowContent] = useState(false);
     return (
         <div className="muncher-dropdown-story">
+            <span>a long text&nbsp;</span>
             <DropdownButton {...args} showContent={showContent} setShowContent={setShowContent}>
                 <p>Drop down content little longer</p>
             </DropdownButton>
@@ -24,7 +25,14 @@ const Template: Story<DropdownButtonProps> = (args) => {
 };
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+    drop: "middle"
+};
+
+export const DropRight = Template.bind({});
+Default.args = {
+    drop: "right"
+};
 
 export const IconDropdown = Template.bind({});
 IconDropdown.args = {
@@ -32,6 +40,12 @@ IconDropdown.args = {
     size: 'small',
     title: 'Icon dropdown text',
     element: <Icon name='muncher'/>
+};
+export const TransparentDropdown = Template.bind({});
+TransparentDropdown.args = {
+    ...IconDropdown.args,
+    title: 'Transparent dropdown text',
+    variant: "transparent"
 };
 export const RoundedDropdown = Template.bind({});
 RoundedDropdown.args = {

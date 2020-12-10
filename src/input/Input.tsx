@@ -1,7 +1,7 @@
 import React from "react";
 import "./assets/Input.scss";
 import {Label} from "./Label";
-import {Icon} from "../icon/Icon";
+import {Icon} from "..";
 import {IconName} from "../icon/Drawings";
 
 
@@ -10,18 +10,26 @@ export const Input: React.FC<InputProps> = (
         name, label, required,
         readOnly, icon,
         type, list,
+        onKeyDown, error,
         focus, placeholder, onChange,
         value, ...props
     }
 ) => {
 
+    const hasError = () => error && error !== "";
+    const className = () => {
+        let inputClass = "muncher-input";
+        if (icon) inputClass += " muncher-input-icon";
+        if (hasError()) inputClass += " muncher-input-error";
+        return inputClass;
+    };
     return (
         <div className="muncher-input--div">
             {label ? <Label label={label} required={required} name={name}/> : ''}
             <div className="muncher-input-element">
                 {icon ? <Icon name={icon}/> : ""}
                 <input
-                    className={icon ? "muncher-input muncher-input-icon" : "muncher-input"}
+                    className={className()}
                     name={name}
                     autoFocus={focus}
                     value={value}
@@ -32,9 +40,11 @@ export const Input: React.FC<InputProps> = (
                     required={required}
                     readOnly={readOnly}
                     list={list}
+                    onKeyDown={onKeyDown}
                     {...props}
                 />
             </div>
+            {hasError() ? <p className="muncher-input-error-message"><Icon name="alert"/>&nbsp;{error}</p> : ""}
         </div>
 
     );
@@ -54,7 +64,9 @@ export interface InputProps {
     placeholder?: string;
     list?: string;
     onChange?: (value: React.ChangeEvent<HTMLInputElement>) => void;
+    onKeyDown?: (event: React.KeyboardEvent<HTMLInputElement>) => void;
     value?: any;
+    error?: string;
 }
 
 Input.defaultProps = {

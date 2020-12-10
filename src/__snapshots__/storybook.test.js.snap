@@ -3,8 +3,8 @@
 exports[`Storyshots Buttons/Button Active 1`] = `
 <button
   className="muncher-button muncher-button--medium muncher-button--active"
-  data-title="Active Button"
   disabled={false}
+  title="Active Button"
   type="button"
 >
   Button
@@ -14,8 +14,8 @@ exports[`Storyshots Buttons/Button Active 1`] = `
 exports[`Storyshots Buttons/Button Default 1`] = `
 <button
   className="muncher-button muncher-button--medium"
-  data-title="Default Button"
   disabled={false}
+  title="Default Button"
   type="button"
 >
   Button
@@ -25,8 +25,8 @@ exports[`Storyshots Buttons/Button Default 1`] = `
 exports[`Storyshots Buttons/Button Disabled 1`] = `
 <button
   className="muncher-button muncher-button--medium"
-  data-title="Disabled Button"
   disabled={true}
+  title="Disabled Button"
   type="button"
 >
   Button
@@ -36,8 +36,8 @@ exports[`Storyshots Buttons/Button Disabled 1`] = `
 exports[`Storyshots Buttons/Button Icon Button 1`] = `
 <button
   className="muncher-button muncher-button--small"
-  data-title="Icon Button"
   disabled={false}
+  title="Icon Button"
   type="button"
 >
   <svg
@@ -95,8 +95,8 @@ exports[`Storyshots Buttons/Button Icon Button 1`] = `
 exports[`Storyshots Buttons/Button Large 1`] = `
 <button
   className="muncher-button muncher-button--large"
-  data-title="Large Button"
   disabled={false}
+  title="Large Button"
   type="button"
 >
   Button
@@ -106,8 +106,8 @@ exports[`Storyshots Buttons/Button Large 1`] = `
 exports[`Storyshots Buttons/Button Nav Button 1`] = `
 <button
   className="muncher-button muncher-button--nav muncher-button--medium"
-  data-title="Nav Button"
   disabled={false}
+  title="Nav Button"
   type="button"
 >
   Button
@@ -117,8 +117,8 @@ exports[`Storyshots Buttons/Button Nav Button 1`] = `
 exports[`Storyshots Buttons/Button Rounded Button 1`] = `
 <button
   className="muncher-button muncher-button--secondary muncher-button--small muncher-button--rounded"
-  data-title="Rounded Button"
   disabled={false}
+  title="Rounded Button"
   type="button"
 >
   <svg
@@ -176,8 +176,8 @@ exports[`Storyshots Buttons/Button Rounded Button 1`] = `
 exports[`Storyshots Buttons/Button Secondary 1`] = `
 <button
   className="muncher-button muncher-button--secondary muncher-button--medium"
-  data-title="Secondary Button"
   disabled={false}
+  title="Secondary Button"
   type="button"
 >
   Button
@@ -187,8 +187,8 @@ exports[`Storyshots Buttons/Button Secondary 1`] = `
 exports[`Storyshots Buttons/Button Small 1`] = `
 <button
   className="muncher-button muncher-button--small"
-  data-title="Small Button"
   disabled={false}
+  title="Small Button"
   type="button"
 >
   Button
@@ -198,8 +198,8 @@ exports[`Storyshots Buttons/Button Small 1`] = `
 exports[`Storyshots Buttons/Button Submit 1`] = `
 <button
   className="muncher-button muncher-button--medium"
-  data-title="Submit Button"
   disabled={false}
+  title="Submit Button"
   type="submit"
 >
   Button
@@ -209,11 +209,70 @@ exports[`Storyshots Buttons/Button Submit 1`] = `
 exports[`Storyshots Buttons/Button Tertiary 1`] = `
 <button
   className="muncher-button muncher-button--tertiary muncher-button--medium"
-  data-title="Tertiary Button"
   disabled={false}
+  title="Tertiary Button"
   type="button"
 >
   Button
+</button>
+`;
+
+exports[`Storyshots Buttons/Button Transparent Button 1`] = `
+<button
+  className="muncher-button muncher-button--transparent muncher-button--small"
+  disabled={false}
+  title="Transparent Button"
+  type="button"
+>
+  <svg
+    className="muncher-icon muncher-icon--small"
+    fill="none"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      height="18"
+      rx="2"
+      ry="2"
+      width="18"
+      x="3"
+      y="4"
+    />
+    <line
+      x1="16"
+      x2="16"
+      y1="2"
+      y2="6"
+    />
+    <line
+      x1="8"
+      x2="8"
+      y1="2"
+      y2="6"
+    />
+    <line
+      x1="7"
+      x2="17"
+      y1="10"
+      y2="10"
+    />
+    <line
+      x1="7"
+      x2="17"
+      y1="14"
+      y2="14"
+    />
+    <line
+      x1="7"
+      x2="17"
+      y1="18"
+      y2="18"
+    />
+  </svg>
 </button>
 `;
 
@@ -229,14 +288,17 @@ exports[`Storyshots Buttons/Dropdown Button Active 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
       <button
         className="muncher-button muncher-button--medium muncher-button--active"
-        data-title="Active DropDown"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
+        title="Active DropDown"
         type="button"
       >
         <p>
@@ -266,13 +328,16 @@ exports[`Storyshots Buttons/Dropdown Button Default 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
       <button
         className="muncher-button muncher-button--medium"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
         type="button"
       >
         <p>
@@ -302,14 +367,56 @@ exports[`Storyshots Buttons/Dropdown Button Disabled 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
       <button
         className="muncher-button muncher-button--medium"
-        data-title="Disabled DropDown"
         disabled={true}
-        onClick={[Function]}
+        onMouseDown={[Function]}
+        title="Disabled DropDown"
+        type="button"
+      >
+        <p>
+          drop down 
+          <span
+            className="small"
+          >
+            ▼
+          </span>
+        </p>
+      </button>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Buttons/Dropdown Button Drop Right 1`] = `
+<div
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="muncher-dropdown-story"
+  >
+    <span>
+      a long text 
+    </span>
+    <div
+      className="muncher-dropdown"
+    >
+      <button
+        className="muncher-button muncher-button--medium"
+        disabled={false}
+        onMouseDown={[Function]}
         type="button"
       >
         <p>
@@ -339,14 +446,17 @@ exports[`Storyshots Buttons/Dropdown Button Icon Dropdown 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
       <button
         className="muncher-button muncher-button--small"
-        data-title="Icon dropdown text"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
+        title="Icon dropdown text"
         type="button"
       >
         <svg
@@ -417,14 +527,17 @@ exports[`Storyshots Buttons/Dropdown Button Large 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
       <button
         className="muncher-button muncher-button--large"
-        data-title="Large DropDown"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
+        title="Large DropDown"
         type="button"
       >
         <p>
@@ -454,14 +567,17 @@ exports[`Storyshots Buttons/Dropdown Button Rounded Dropdown 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
       <button
         className="muncher-button muncher-button--secondary muncher-button--small muncher-button--rounded"
-        data-title="Rounded dropdown"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
+        title="Rounded dropdown"
         type="button"
       >
         <svg
@@ -532,14 +648,17 @@ exports[`Storyshots Buttons/Dropdown Button Secondary 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
       <button
         className="muncher-button muncher-button--secondary muncher-button--medium"
-        data-title="Secondary DropDown"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
+        title="Secondary DropDown"
         type="button"
       >
         <p>
@@ -569,14 +688,17 @@ exports[`Storyshots Buttons/Dropdown Button Small 1`] = `
   <div
     className="muncher-dropdown-story"
   >
+    <span>
+      a long text 
+    </span>
     <div
       className="muncher-dropdown"
     >
       <button
         className="muncher-button muncher-button--small"
-        data-title="Small DropDown"
         disabled={false}
-        onClick={[Function]}
+        onMouseDown={[Function]}
+        title="Small DropDown"
         type="button"
       >
         <p>
@@ -587,6 +709,534 @@ exports[`Storyshots Buttons/Dropdown Button Small 1`] = `
             ▼
           </span>
         </p>
+      </button>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
+<div
+  className="muncher-toolbar"
+>
+  <div
+    className="muncher-dropdown"
+  >
+    <button
+      className="muncher-button muncher-button--small"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="16 18 22 12 16 6"
+        />
+        <polyline
+          points="8 6 2 12 8 18"
+        />
+      </svg>
+    </button>
+    
+  </div>
+  <div
+    className="muncher-dropdown"
+  >
+    <button
+      className="muncher-button muncher-button--small"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="2 10 2 16 8 16"
+        />
+        <path
+          d="m22 16c-1.8136-6.5424-9.5593-9.4823-15.36-4.36l-4.64 4.36"
+        />
+      </svg>
+    </button>
+    
+  </div>
+  <div
+    className="muncher-dropdown"
+  >
+    <button
+      className="muncher-button muncher-button--small"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="22 10 22 16 16 16"
+        />
+        <path
+          d="m1.9935 16c1.8136-6.5424 9.5593-9.4823 15.36-4.36l4.64 4.36"
+        />
+      </svg>
+    </button>
+    
+  </div>
+  <div
+    className="muncher-dropdown"
+  >
+    <button
+      className="muncher-button muncher-button--small"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="9"
+          x2="21"
+          y1="5"
+          y2="5"
+        />
+        <line
+          x1="9"
+          x2="21"
+          y1="12"
+          y2="12"
+        />
+        <line
+          x1="9"
+          x2="21"
+          y1="19"
+          y2="19"
+        />
+        <polyline
+          points="3 10 5 10 3 13 5 13"
+        />
+        <polyline
+          points="3 3 4 3 4 6"
+        />
+        <path
+          d="M3 17H4H5L4 19C4.55 19 5 19.45 5 20C5 20.55 4.55 21 4 21H3"
+        />
+      </svg>
+    </button>
+    
+  </div>
+  <div
+    className="muncher-dropdown"
+  >
+    <button
+      className="muncher-button muncher-button--small"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="9"
+          x2="21"
+          y1="5"
+          y2="5"
+        />
+        <line
+          x1="9"
+          x2="21"
+          y1="12"
+          y2="12"
+        />
+        <line
+          x1="9"
+          x2="21"
+          y1="19"
+          y2="19"
+        />
+        <circle
+          cx="4"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="4"
+          cy="5"
+          r="1"
+        />
+        <circle
+          cx="4"
+          cy="19"
+          r="1"
+        />
+      </svg>
+    </button>
+    
+  </div>
+  <div
+    className="muncher-dropdown"
+  >
+    <button
+      className="muncher-button muncher-button--small"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="18"
+          x2="6"
+          y1="10"
+          y2="10"
+        />
+        <line
+          x1="21"
+          x2="3"
+          y1="6"
+          y2="6"
+        />
+        <line
+          x1="21"
+          x2="3"
+          y1="14"
+          y2="14"
+        />
+        <line
+          x1="18"
+          x2="6"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+    </button>
+    
+  </div>
+  <div
+    className="muncher-dropdown"
+  >
+    <button
+      className="muncher-button muncher-button--small"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="18"
+          x2="6"
+          y1="10"
+          y2="10"
+        />
+        <line
+          x1="21"
+          x2="3"
+          y1="6"
+          y2="6"
+        />
+        <line
+          x1="21"
+          x2="3"
+          y1="14"
+          y2="14"
+        />
+        <line
+          x1="18"
+          x2="6"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+    </button>
+    
+  </div>
+  <div
+    className="muncher-dropdown"
+  >
+    <button
+      className="muncher-button muncher-button--small"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <line
+          x1="12"
+          x2="12"
+          y1="8"
+          y2="12"
+        />
+        <line
+          x1="12"
+          x2="12.01"
+          y1="16"
+          y2="16"
+        />
+      </svg>
+    </button>
+    
+  </div>
+  <div
+    className="muncher-dropdown"
+  >
+    <button
+      className="muncher-button muncher-button--small"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="7"
+          width="7"
+          x="3"
+          y="3"
+        />
+        <rect
+          height="7"
+          width="7"
+          x="14"
+          y="3"
+        />
+        <rect
+          height="7"
+          width="7"
+          x="14"
+          y="14"
+        />
+        <rect
+          height="7"
+          width="7"
+          x="3"
+          y="14"
+        />
+      </svg>
+    </button>
+    
+  </div>
+  <div
+    className="muncher-dropdown"
+  >
+    <button
+      className="muncher-button muncher-button--small"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="6 9 6 2 18 2 18 9"
+        />
+        <path
+          d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+        />
+        <rect
+          height="8"
+          width="12"
+          x="6"
+          y="14"
+        />
+      </svg>
+    </button>
+    
+  </div>
+  <div
+    className="muncher-dropdown"
+  >
+    <button
+      className="muncher-button muncher-button--small"
+      disabled={false}
+      onMouseDown={[Function]}
+      type="button"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="3"
+        />
+        <path
+          d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+        />
+      </svg>
+    </button>
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Buttons/Dropdown Button Transparent Dropdown 1`] = `
+<div
+  style={
+    Object {
+      "background": "#f5f5f5",
+      "padding": "2rem",
+    }
+  }
+>
+  <div
+    className="muncher-dropdown-story"
+  >
+    <span>
+      a long text 
+    </span>
+    <div
+      className="muncher-dropdown"
+    >
+      <button
+        className="muncher-button muncher-button--transparent muncher-button--small"
+        disabled={false}
+        onMouseDown={[Function]}
+        title="Transparent dropdown text"
+        type="button"
+      >
+        <svg
+          className="muncher-icon muncher-icon--small"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="18"
+            rx="2"
+            ry="2"
+            width="18"
+            x="3"
+            y="4"
+          />
+          <line
+            x1="16"
+            x2="16"
+            y1="2"
+            y2="6"
+          />
+          <line
+            x1="8"
+            x2="8"
+            y1="2"
+            y2="6"
+          />
+          <line
+            x1="7"
+            x2="17"
+            y1="10"
+            y2="10"
+          />
+          <line
+            x1="7"
+            x2="17"
+            y1="14"
+            y2="14"
+          />
+          <line
+            x1="7"
+            x2="17"
+            y1="18"
+            y2="18"
+          />
+        </svg>
       </button>
       
     </div>
@@ -608,8 +1258,8 @@ exports[`Storyshots Buttons/Dropdown Nav Button Default 1`] = `
   >
     <button
       className="muncher-button muncher-button--nav muncher-button--medium"
-      data-title="Default Nav Dropdown"
       disabled={false}
+      title="Default Nav Dropdown"
       type="button"
     >
       <p>
@@ -1114,7 +1764,7 @@ exports[`Storyshots Input/Dropdown Range Slider Default 1`] = `
     <button
       className="muncher-button muncher-button--medium"
       disabled={false}
-      onClick={[Function]}
+      onMouseDown={[Function]}
       type="button"
     >
       slider(min: 20 max: 600)
@@ -1210,6 +1860,7 @@ exports[`Storyshots Input/Input Color 1`] = `
         type="color"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1235,6 +1886,7 @@ exports[`Storyshots Input/Input Date 1`] = `
         type="date"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1260,6 +1912,7 @@ exports[`Storyshots Input/Input Date Time 1`] = `
         type="datetime-local"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1285,6 +1938,7 @@ exports[`Storyshots Input/Input Default 1`] = `
         type="text"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1326,6 +1980,7 @@ exports[`Storyshots Input/Input Email 1`] = `
         type="email"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1351,6 +2006,7 @@ exports[`Storyshots Input/Input Month 1`] = `
         type="month"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1400,6 +2056,7 @@ exports[`Storyshots Input/Input Number 1`] = `
         type="number"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1425,6 +2082,7 @@ exports[`Storyshots Input/Input Password 1`] = `
         type="password"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1450,6 +2108,7 @@ exports[`Storyshots Input/Input Range 1`] = `
         type="range"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1475,6 +2134,7 @@ exports[`Storyshots Input/Input Search 1`] = `
         type="search"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1500,6 +2160,7 @@ exports[`Storyshots Input/Input Tel 1`] = `
         type="tel"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1583,6 +2244,7 @@ exports[`Storyshots Input/Input Text With Icon 1`] = `
         type="text"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1618,6 +2280,7 @@ exports[`Storyshots Input/Input Text With Label 1`] = `
         type="text"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1643,6 +2306,7 @@ exports[`Storyshots Input/Input Time 1`] = `
         type="time"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1668,6 +2332,7 @@ exports[`Storyshots Input/Input Url 1`] = `
         type="url"
       />
     </div>
+    
   </div>
 </div>
 `;
@@ -1693,6 +2358,124 @@ exports[`Storyshots Input/Input Week 1`] = `
         type="week"
       />
     </div>
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input/Input With Error 1`] = `
+<div
+  className="div-input-stories"
+>
+  <div
+    className="muncher-input--div"
+  >
+    <label
+      htmlFor="query"
+    >
+      Search
+      <span
+        className="required"
+      >
+        *
+      </span>
+    </label>
+    <div
+      className="muncher-input-element"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="18"
+          rx="2"
+          ry="2"
+          width="18"
+          x="3"
+          y="4"
+        />
+        <line
+          x1="16"
+          x2="16"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="8"
+          x2="8"
+          y1="2"
+          y2="6"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="10"
+          y2="10"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="14"
+          y2="14"
+        />
+        <line
+          x1="7"
+          x2="17"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input muncher-input-icon muncher-input-error"
+        name="query"
+        placeholder="Type your query"
+        required={true}
+        type="text"
+      />
+    </div>
+    <p
+      className="muncher-input-error-message"
+    >
+      <svg
+        className="muncher-icon muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <line
+          x1="12"
+          x2="12"
+          y1="8"
+          y2="12"
+        />
+        <line
+          x1="12"
+          x2="12.01"
+          y1="16"
+          y2="16"
+        />
+      </svg>
+       
+      Provide value for Search
+    </p>
   </div>
 </div>
 `;
@@ -1833,6 +2616,7 @@ exports[`Storyshots Input/Text Input Dropdown Default 1`] = `
           type="text"
         />
       </div>
+      
     </div>
     
   </div>
@@ -8115,11 +8899,12 @@ exports[`Storyshots Visual/Icons Search 1`] = `
         type="text"
       />
     </div>
+    
   </div>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="360"
     disabled={false}
+    title="360"
     type="button"
   >
     <svg
@@ -8150,8 +8935,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="align-center"
     disabled={false}
+    title="align-center"
     type="button"
   >
     <svg
@@ -8192,8 +8977,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="align-justify"
     disabled={false}
+    title="align-justify"
     type="button"
   >
     <svg
@@ -8234,8 +9019,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="align-left"
     disabled={false}
+    title="align-left"
     type="button"
   >
     <svg
@@ -8276,8 +9061,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="align-right"
     disabled={false}
+    title="align-right"
     type="button"
   >
     <svg
@@ -8318,8 +9103,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="type"
     disabled={false}
+    title="type"
     type="button"
   >
     <svg
@@ -8351,8 +9136,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="ordered-list"
     disabled={false}
+    title="ordered-list"
     type="button"
   >
     <svg
@@ -8396,8 +9181,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="unordered-list"
     disabled={false}
+    title="unordered-list"
     type="button"
   >
     <svg
@@ -8447,8 +9232,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="table"
     disabled={false}
+    title="table"
     type="button"
   >
     <svg
@@ -8491,8 +9276,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="undo"
     disabled={false}
+    title="undo"
     type="button"
   >
     <svg
@@ -8515,8 +9300,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="redo"
     disabled={false}
+    title="redo"
     type="button"
   >
     <svg
@@ -8539,8 +9324,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="link"
     disabled={false}
+    title="link"
     type="button"
   >
     <svg
@@ -8563,8 +9348,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="unlink"
     disabled={false}
+    title="unlink"
     type="button"
   >
     <svg
@@ -8611,8 +9396,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="arrow-left"
     disabled={false}
+    title="arrow-left"
     type="button"
   >
     <svg
@@ -8643,8 +9428,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="arrow-right"
     disabled={false}
+    title="arrow-right"
     type="button"
   >
     <svg
@@ -8675,8 +9460,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="arrow-down"
     disabled={false}
+    title="arrow-down"
     type="button"
   >
     <svg
@@ -8707,8 +9492,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="arrow-up"
     disabled={false}
+    title="arrow-up"
     type="button"
   >
     <svg
@@ -8739,8 +9524,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="hamburger"
     disabled={false}
+    title="hamburger"
     type="button"
   >
     <svg
@@ -8775,8 +9560,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="chevron-left"
     disabled={false}
+    title="chevron-left"
     type="button"
   >
     <svg
@@ -8796,8 +9581,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="chevron-right"
     disabled={false}
+    title="chevron-right"
     type="button"
   >
     <svg
@@ -8817,8 +9602,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="fast-forward"
     disabled={false}
+    title="fast-forward"
     type="button"
   >
     <svg
@@ -8841,8 +9626,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="pause"
     disabled={false}
+    title="pause"
     type="button"
   >
     <svg
@@ -8871,8 +9656,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="play"
     disabled={false}
+    title="play"
     type="button"
   >
     <svg
@@ -8892,8 +9677,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="power"
     disabled={false}
+    title="power"
     type="button"
   >
     <svg
@@ -8919,8 +9704,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="repeat"
     disabled={false}
+    title="repeat"
     type="button"
   >
     <svg
@@ -8949,8 +9734,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="rewind"
     disabled={false}
+    title="rewind"
     type="button"
   >
     <svg
@@ -8973,8 +9758,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="shuffle"
     disabled={false}
+    title="shuffle"
     type="button"
   >
     <svg
@@ -9015,8 +9800,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="skip-back"
     disabled={false}
+    title="skip-back"
     type="button"
   >
     <svg
@@ -9042,8 +9827,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="skip-forward"
     disabled={false}
+    title="skip-forward"
     type="button"
   >
     <svg
@@ -9069,8 +9854,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="youtube"
     disabled={false}
+    title="youtube"
     type="button"
   >
     <svg
@@ -9093,8 +9878,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="video"
     disabled={false}
+    title="video"
     type="button"
   >
     <svg
@@ -9122,8 +9907,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="video-off"
     disabled={false}
+    title="video-off"
     type="button"
   >
     <svg
@@ -9149,8 +9934,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="maximize"
     disabled={false}
+    title="maximize"
     type="button"
   >
     <svg
@@ -9170,8 +9955,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="minimize"
     disabled={false}
+    title="minimize"
     type="button"
   >
     <svg
@@ -9191,8 +9976,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="zoom-in"
     disabled={false}
+    title="zoom-in"
     type="button"
   >
     <svg
@@ -9232,8 +10017,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="zoom-out"
     disabled={false}
+    title="zoom-out"
     type="button"
   >
     <svg
@@ -9267,8 +10052,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="move"
     disabled={false}
+    title="move"
     type="button"
   >
     <svg
@@ -9309,8 +10094,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="mixer"
     disabled={false}
+    title="mixer"
     type="button"
   >
     <svg
@@ -9381,8 +10166,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="volume"
     disabled={false}
+    title="volume"
     type="button"
   >
     <svg
@@ -9402,8 +10187,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="mute"
     disabled={false}
+    title="mute"
     type="button"
   >
     <svg
@@ -9435,8 +10220,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="alert"
     disabled={false}
+    title="alert"
     type="button"
   >
     <svg
@@ -9470,8 +10255,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="check"
     disabled={false}
+    title="check"
     type="button"
   >
     <svg
@@ -9494,8 +10279,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="help"
     disabled={false}
+    title="help"
     type="button"
   >
     <svg
@@ -9526,8 +10311,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="info"
     disabled={false}
+    title="info"
     type="button"
   >
     <svg
@@ -9561,8 +10346,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="close"
     disabled={false}
+    title="close"
     type="button"
   >
     <svg
@@ -9596,8 +10381,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="code"
     disabled={false}
+    title="code"
     type="button"
   >
     <svg
@@ -9620,8 +10405,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="database"
     disabled={false}
+    title="database"
     type="button"
   >
     <svg
@@ -9650,8 +10435,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="terminal"
     disabled={false}
+    title="terminal"
     type="button"
   >
     <svg
@@ -9677,8 +10462,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="edit"
     disabled={false}
+    title="edit"
     type="button"
   >
     <svg
@@ -9701,8 +10486,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="image"
     disabled={false}
+    title="image"
     type="button"
   >
     <svg
@@ -9735,8 +10520,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="print"
     disabled={false}
+    title="print"
     type="button"
   >
     <svg
@@ -9765,8 +10550,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="loading"
     disabled={false}
+    title="loading"
     type="button"
   >
     <svg
@@ -9831,8 +10616,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="sun"
     disabled={false}
+    title="sun"
     type="button"
   >
     <svg
@@ -9902,8 +10687,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="plus"
     disabled={false}
+    title="plus"
     type="button"
   >
     <svg
@@ -9937,8 +10722,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="minus"
     disabled={false}
+    title="minus"
     type="button"
   >
     <svg
@@ -9966,8 +10751,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="external-link"
     disabled={false}
+    title="external-link"
     type="button"
   >
     <svg
@@ -9996,8 +10781,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="search"
     disabled={false}
+    title="search"
     type="button"
   >
     <svg
@@ -10025,8 +10810,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="filter"
     disabled={false}
+    title="filter"
     type="button"
   >
     <svg
@@ -10046,8 +10831,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="sort-asc"
     disabled={false}
+    title="sort-asc"
     type="button"
   >
     <svg
@@ -10079,8 +10864,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="sort-desc"
     disabled={false}
+    title="sort-desc"
     type="button"
   >
     <svg
@@ -10112,8 +10897,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="github"
     disabled={false}
+    title="github"
     type="button"
   >
     <svg
@@ -10133,8 +10918,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="code-pen"
     disabled={false}
+    title="code-pen"
     type="button"
   >
     <svg
@@ -10172,8 +10957,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="instagram"
     disabled={false}
+    title="instagram"
     type="button"
   >
     <svg
@@ -10207,8 +10992,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="linkedin"
     disabled={false}
+    title="linkedin"
     type="button"
   >
     <svg
@@ -10239,8 +11024,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="slack"
     disabled={false}
+    title="slack"
     type="button"
   >
     <svg
@@ -10281,8 +11066,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="twitter"
     disabled={false}
+    title="twitter"
     type="button"
   >
     <svg
@@ -10302,8 +11087,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="grid"
     disabled={false}
+    title="grid"
     type="button"
   >
     <svg
@@ -10344,8 +11129,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="user"
     disabled={false}
+    title="user"
     type="button"
   >
     <svg
@@ -10370,8 +11155,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="log-in"
     disabled={false}
+    title="log-in"
     type="button"
   >
     <svg
@@ -10400,8 +11185,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="log-out"
     disabled={false}
+    title="log-out"
     type="button"
   >
     <svg
@@ -10430,8 +11215,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="home"
     disabled={false}
+    title="home"
     type="button"
   >
     <svg
@@ -10454,8 +11239,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="more"
     disabled={false}
+    title="more"
     type="button"
   >
     <svg
@@ -10487,8 +11272,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="share"
     disabled={false}
+    title="share"
     type="button"
   >
     <svg
@@ -10517,8 +11302,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="trash"
     disabled={false}
+    title="trash"
     type="button"
   >
     <svg
@@ -10541,8 +11326,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="muncher"
     disabled={false}
+    title="muncher"
     type="button"
   >
     <svg
@@ -10597,8 +11382,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="save"
     disabled={false}
+    title="save"
     type="button"
   >
     <svg
@@ -10624,8 +11409,66 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="bookmark"
     disabled={false}
+    title="copy"
+    type="button"
+  >
+    <svg
+      className="muncher-icon muncher-icon--small"
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        height="13"
+        rx="2"
+        ry="2"
+        width="13"
+        x="9"
+        y="9"
+      />
+      <path
+        d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+      />
+    </svg>
+  </button>
+  <button
+    className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
+    disabled={false}
+    title="clipboard"
+    type="button"
+  >
+    <svg
+      className="muncher-icon muncher-icon--small"
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+      />
+      <rect
+        height="4"
+        rx="1"
+        ry="1"
+        width="8"
+        x="8"
+        y="2"
+      />
+    </svg>
+  </button>
+  <button
+    className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
+    disabled={false}
+    title="bookmark"
     type="button"
   >
     <svg
@@ -10645,8 +11488,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="rss"
     disabled={false}
+    title="rss"
     type="button"
   >
     <svg
@@ -10674,8 +11517,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="calendar"
     disabled={false}
+    title="calendar"
     type="button"
   >
     <svg
@@ -10718,8 +11561,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="mail"
     disabled={false}
+    title="mail"
     type="button"
   >
     <svg
@@ -10742,8 +11585,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="phone"
     disabled={false}
+    title="phone"
     type="button"
   >
     <svg
@@ -10774,8 +11617,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="inbox"
     disabled={false}
+    title="inbox"
     type="button"
   >
     <svg
@@ -10798,8 +11641,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="upload"
     disabled={false}
+    title="upload"
     type="button"
   >
     <svg
@@ -10828,8 +11671,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="download"
     disabled={false}
+    title="download"
     type="button"
   >
     <svg
@@ -10858,8 +11701,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="send"
     disabled={false}
+    title="send"
     type="button"
   >
     <svg
@@ -10885,8 +11728,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="archive"
     disabled={false}
+    title="archive"
     type="button"
   >
     <svg
@@ -10918,8 +11761,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="lock"
     disabled={false}
+    title="lock"
     type="button"
   >
     <svg
@@ -10947,8 +11790,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="unlock"
     disabled={false}
+    title="unlock"
     type="button"
   >
     <svg
@@ -10976,8 +11819,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="bell"
     disabled={false}
+    title="bell"
     type="button"
   >
     <svg
@@ -11000,8 +11843,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="bell-off"
     disabled={false}
+    title="bell-off"
     type="button"
   >
     <svg
@@ -11036,8 +11879,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="star"
     disabled={false}
+    title="star"
     type="button"
   >
     <svg
@@ -11057,8 +11900,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="thumbs-down"
     disabled={false}
+    title="thumbs-down"
     type="button"
   >
     <svg
@@ -11078,8 +11921,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="thumbs-up"
     disabled={false}
+    title="thumbs-up"
     type="button"
   >
     <svg
@@ -11099,8 +11942,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="flag"
     disabled={false}
+    title="flag"
     type="button"
   >
     <svg
@@ -11126,8 +11969,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="tag"
     disabled={false}
+    title="tag"
     type="button"
   >
     <svg
@@ -11153,8 +11996,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="heart"
     disabled={false}
+    title="heart"
     type="button"
   >
     <svg
@@ -11174,8 +12017,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="map"
     disabled={false}
+    title="map"
     type="button"
   >
     <svg
@@ -11200,8 +12043,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="settings"
     disabled={false}
+    title="settings"
     type="button"
   >
     <svg
@@ -11226,8 +12069,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="tool"
     disabled={false}
+    title="tool"
     type="button"
   >
     <svg
@@ -11247,8 +12090,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="toggle-left"
     disabled={false}
+    title="toggle-left"
     type="button"
   >
     <svg
@@ -11279,8 +12122,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="toggle-right"
     disabled={false}
+    title="toggle-right"
     type="button"
   >
     <svg
@@ -11311,8 +12154,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="smile"
     disabled={false}
+    title="smile"
     type="button"
   >
     <svg
@@ -11349,8 +12192,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="frown"
     disabled={false}
+    title="frown"
     type="button"
   >
     <svg
@@ -11387,8 +12230,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="meh"
     disabled={false}
+    title="meh"
     type="button"
   >
     <svg
@@ -11428,8 +12271,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="at"
     disabled={false}
+    title="at"
     type="button"
   >
     <svg
@@ -11454,8 +12297,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="award"
     disabled={false}
+    title="award"
     type="button"
   >
     <svg
@@ -11480,8 +12323,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="shopping-cart"
     disabled={false}
+    title="shopping-cart"
     type="button"
   >
     <svg
@@ -11511,8 +12354,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="pie-chart"
     disabled={false}
+    title="pie-chart"
     type="button"
   >
     <svg
@@ -11535,8 +12378,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="gift"
     disabled={false}
+    title="gift"
     type="button"
   >
     <svg
@@ -11574,8 +12417,8 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   </button>
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
-    data-title="bulb"
     disabled={false}
+    title="bulb"
     type="button"
   >
     <svg

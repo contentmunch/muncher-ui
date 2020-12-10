@@ -18,10 +18,9 @@ export const Button: React.FC<ButtonProps> =
                 type={type ? type !== 'nav' ? type : 'button' : 'button'}
                 className={className}
                 disabled={!!disabled}
-                data-title={title}
+                title={title}
                 onClick={onClick}
                 onMouseDown={onMouseDown}
-
                 {...props}
             >
                 {children}
@@ -66,5 +65,5 @@ export interface ButtonProps extends AllButtonProps {
 
 }
 
-export type Variant = 'primary' | 'secondary' | 'tertiary';
+export type Variant = 'primary' | 'secondary' | 'tertiary' | 'transparent';
 export type Size = 'small' | 'medium' | 'large';
