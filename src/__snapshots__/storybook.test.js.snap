@@ -2924,6 +2924,7 @@ exports[`Storyshots Section/Contact Default 1`] = `
                 type="text"
               />
             </div>
+            
           </div>
         </div>
       </div>
@@ -2975,6 +2976,7 @@ exports[`Storyshots Section/Contact Default 1`] = `
                 type="email"
               />
             </div>
+            
           </div>
         </div>
       </div>
@@ -3034,6 +3036,7 @@ exports[`Storyshots Section/Contact Default 1`] = `
                 type="number"
               />
             </div>
+            
           </div>
         </div>
       </div>
@@ -4866,6 +4869,7 @@ exports[`Storyshots Section/Maintenance Default 1`] = `
               type="text"
             />
           </div>
+          
         </div>
       </div>
       <div
@@ -4913,6 +4917,7 @@ exports[`Storyshots Section/Maintenance Default 1`] = `
               type="email"
             />
           </div>
+          
         </div>
       </div>
       <div
@@ -4963,6 +4968,7 @@ exports[`Storyshots Section/Maintenance Default 1`] = `
               type="text"
             />
           </div>
+          
         </div>
         <datalist
           id="address-list"
@@ -5021,6 +5027,7 @@ exports[`Storyshots Section/Maintenance Default 1`] = `
               type="number"
             />
           </div>
+          
         </div>
       </div>
       <div
