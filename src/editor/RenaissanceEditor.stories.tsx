@@ -4,7 +4,7 @@ import {EditorSkeleton} from "./skeleton/EditorSkeleton";
 import {EditorProps, RenaissanceEditor} from "./RenaissanceEditor";
 
 export default {
-    title: "Editor",
+    title: "Input/Editor",
     component: RenaissanceEditor
 } as Meta;
 
