@@ -24,3 +24,4 @@ yarn-error.log*
 /.idea/
 /lib/
 /build-storybook.log
+/docs/
