@@ -1,19 +1,20 @@
-![Test release and publish](https://github.com/contentmunch/muncher-ui/workflows/Test%20release%20and%20publish/badge.svg) 
-# Muncher-UI
-A html5 and scss based [UI component library](https://muncher-ui.contentmunch.com/)
+![Test release and publish](https://github.com/renaissance-rentals/renaissance-component/workflows/Test%20release%20and%20publish/badge.svg) 
+# Renaissance-component  
+Front-end [component library](https://renaissancerentals.github.io/renaissance-component/) for renaissancerentals, forked from [muncher-ui](https://github.com/contentmunch/muncher-ui)
 
-## Using Muncher-UI
+## Using the component
 To use this component library:
 
-* Add the npm package to your project
+* add the npm package to your project
     ```
-    $ npm install @contentmunch/muncher-ui
+    $ npm i @renaissance-rentals/renaissance-component
     ```
+  
 ## Installation guide
 In the project directory, you can run:
 
 ### `npm start`
-Launches the component explorer on port 6006
+Launches the component explorer on port 6007
 
 ### `npm test`
 
