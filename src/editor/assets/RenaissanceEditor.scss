@@ -40,11 +40,11 @@ $editor-border-color: $tertiary-background-color !default;
     border-bottom: 1px solid $editor-border-color;
   }
 
-  .DraftEditor-root, .muncher-code {
-    font-size: 90%;
+  .DraftEditor-root{
+    font-size: 85%;
     padding: 1rem;
     cursor: text;
-    min-height: 40vh;
+    min-height: 20vh;
   }
 
   .muncher-separator {
