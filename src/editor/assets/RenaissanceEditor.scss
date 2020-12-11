@@ -1,0 +1,118 @@
+@import "src/assets/variables";
+
+.muncher {
+  a {
+    color: $link-color;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: $link-hover-color;
+  }
+
+  .muncher-main {
+    background: $primary-background-color;
+    border: .01rem solid $border-color;
+    font-family: $sans-serif-font;
+    font-size: 1rem;
+    padding: .2rem .5rem;
+  }
+
+  .muncher-toolbar {
+    font-family: $sans-serif-font;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    button + button {
+      margin: 0;
+    }
+
+    .muncher-toolbar--left {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      flex-wrap: wrap;
+    }
+
+    border-bottom: 1px solid $border-color;
+  }
+
+  .DraftEditor-root, .muncher-code {
+    padding: 1rem;
+    cursor: text;
+    height: 60vh;
+    overflow: scroll;
+  }
+
+  .muncher-code {
+    .CodeMirror {
+      height: 60vh;
+      overflow: scroll;
+    }
+  }
+
+  .muncher-separator {
+    color: $border-color;
+  }
+
+  .muncher--small {
+    font-size: 8px;
+  }
+
+  .muncher-structure {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: $primary-background-color;
+  }
+
+  .muncher-footer {
+    border-top: 1px solid $border-color;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    font-size: .9rem;
+
+    .left, .right {
+      display: inline-flex;
+      align-items: flex-end;
+
+      .muncher-icon {
+        margin-right: .5rem;
+      }
+      .muncher-icon:hover{
+        opacity: .8;
+      }
+    }
+  }
+  .row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  .col {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.text-align--left .public-DraftStyleDefault-ltr {
+  text-align: left;
+}
+
+.text-align--center .public-DraftStyleDefault-ltr {
+  text-align: center;
+}
+
+.text-align--right .public-DraftStyleDefault-ltr {
+  text-align: right;
+}
+
+.text-align--justify .public-DraftStyleDefault-ltr {
+  text-align: justify;
+}
+
