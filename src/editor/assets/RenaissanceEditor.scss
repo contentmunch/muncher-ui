@@ -1,6 +1,7 @@
 @import "src/assets/variables";
-
+$editor-border-color: $tertiary-background-color !default;
 .muncher {
+
   a {
     color: $link-color;
     cursor: pointer;
@@ -12,7 +13,7 @@
 
   .muncher-main {
     background: $primary-background-color;
-    border: .01rem solid $border-color;
+    border: .01rem solid $editor-border-color;
     font-family: $sans-serif-font;
     font-size: 1rem;
     padding: .2rem .5rem;
@@ -36,25 +37,18 @@
       flex-wrap: wrap;
     }
 
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $editor-border-color;
   }
 
   .DraftEditor-root, .muncher-code {
+    font-size: 90%;
     padding: 1rem;
     cursor: text;
-    height: 60vh;
-    overflow: scroll;
-  }
-
-  .muncher-code {
-    .CodeMirror {
-      height: 60vh;
-      overflow: scroll;
-    }
+    min-height: 40vh;
   }
 
   .muncher-separator {
-    color: $border-color;
+    color: $editor-border-color;
   }
 
   .muncher--small {
@@ -68,13 +62,13 @@
   }
 
   .muncher-footer {
-    border-top: 1px solid $border-color;
+    border-top: 1px solid $editor-border-color;
     padding: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 300;
-    font-size: .9rem;
+    font-weight: 400;
+    font-size: .7rem;
 
     .left, .right {
       display: inline-flex;
