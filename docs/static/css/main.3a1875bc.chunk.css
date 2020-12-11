@@ -17,7 +17,7 @@
 
 .muncher-dropdown-nav{position:relative}.muncher-dropdown-nav>*{text-align:left}.muncher-dropdown-nav a{text-decoration:none}.muncher-dropdown-nav .small{font-size:.5rem}.muncher-dropdown-nav .muncher-dropdown-nav--content{display:block;white-space:nowrap;background:#e9eeeb;color:#13294b;min-width:5rem;padding-left:1.5rem;z-index:10}@media (min-width: 62rem){.muncher-dropdown-nav .muncher-dropdown-nav--content{box-shadow:0.5rem 0.5rem 0.6rem rgba(0,0,0,0.2);display:none;position:absolute}.muncher-dropdown-nav .muncher-dropdown-nav--content>*{text-align:left;margin:.7rem 1rem .7rem .3rem}.muncher-dropdown-nav:hover .muncher-dropdown-nav--content{display:block}}
 
-.paper{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);transition:0.3s;margin:.5rem;padding:1rem}
+.muncher-paper{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);transition:0.3s;margin:.5rem;padding:1rem}
 
 .muncher-input-drop-down{position:relative}.muncher-input-drop-down .muncher-input-drop-down--content{width:100%;display:block;position:absolute;white-space:nowrap;background:#e9eeeb;box-shadow:0 0.25rem 1rem 0 rgba(0,0,0,0.2);z-index:10;padding:.25rem;color:#13294b;font-size:.8rem;overflow:scroll;max-height:10rem}
 
