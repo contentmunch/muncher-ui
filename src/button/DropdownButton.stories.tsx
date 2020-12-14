@@ -9,7 +9,7 @@ export default {
     component: DropdownButton,
     decorators: [(story: () => React.ReactNode) => <div
         style={{padding: '2rem', background: '#f5f5f5'}}>{story()}</div>],
-    args: {element: <p>drop down&nbsp;<span className="small">&#9660;</span></p>}
+    args: {element: <p>drop down</p>}
 } as Meta;
 
 const Template: Story<DropdownButtonProps> = (args) => {
