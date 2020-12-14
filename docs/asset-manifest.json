@@ -1,20 +1,28 @@
 {
   "files": {
-    "main.css": "./static/css/main.9e0b0fb8.chunk.css",
-    "main.js": "./main.979a3f1cb8ecf0185f0a.bundle.js",
-    "main.css.map": "./static/css/main.9e0b0fb8.chunk.css.map",
-    "main.js.map": "./main.979a3f1cb8ecf0185f0a.bundle.js.map",
-    "runtime~main.js": "./runtime~main.979a3f1cb8ecf0185f0a.bundle.js",
-    "runtime~main.js.map": "./runtime~main.979a3f1cb8ecf0185f0a.bundle.js.map",
-    "vendors~main.js": "./vendors~main.979a3f1cb8ecf0185f0a.bundle.js",
-    "vendors~main.js.map": "./vendors~main.979a3f1cb8ecf0185f0a.bundle.js.map",
+    "main.css": "./static/css/main.8e26ef3d.chunk.css",
+    "main.js": "./main.90bf8fc20a2d1f4569ec.bundle.js",
+    "main.css.map": "./static/css/main.8e26ef3d.chunk.css.map",
+    "main.js.map": "./main.90bf8fc20a2d1f4569ec.bundle.js.map",
+    "runtime~main.js": "./runtime~main.90bf8fc20a2d1f4569ec.bundle.js",
+    "runtime~main.js.map": "./runtime~main.90bf8fc20a2d1f4569ec.bundle.js.map",
+    "vendors~main.css": "./static/css/vendors~main.e426f036.chunk.css",
+    "vendors~main.js": "./vendors~main.90bf8fc20a2d1f4569ec.bundle.js",
+    "vendors~main.css.map": "./static/css/vendors~main.e426f036.chunk.css.map",
+    "vendors~main.js.map": "./vendors~main.90bf8fc20a2d1f4569ec.bundle.js.map",
     "iframe.html": "./iframe.html",
-    "vendors~main.979a3f1cb8ecf0185f0a.bundle.js.LICENSE.txt": "./vendors~main.979a3f1cb8ecf0185f0a.bundle.js.LICENSE.txt"
+    "static/media/360-icon.e31c23fb.png": "./static/media/360-icon.e31c23fb.png",
+    "static/media/accessibility-logo.f9924fab.png": "./static/media/accessibility-logo.f9924fab.png",
+    "static/media/chamber-logo.4f13f222.png": "./static/media/chamber-logo.4f13f222.png",
+    "static/media/renren-logo.d12db254.png": "./static/media/renren-logo.d12db254.png",
+    "static/media/renren-mobile-logo.4ace3872.png": "./static/media/renren-mobile-logo.4ace3872.png",
+    "vendors~main.90bf8fc20a2d1f4569ec.bundle.js.LICENSE.txt": "./vendors~main.90bf8fc20a2d1f4569ec.bundle.js.LICENSE.txt"
   },
   "entrypoints": [
-    "runtime~main.979a3f1cb8ecf0185f0a.bundle.js",
-    "vendors~main.979a3f1cb8ecf0185f0a.bundle.js",
-    "static/css/main.9e0b0fb8.chunk.css",
-    "main.979a3f1cb8ecf0185f0a.bundle.js"
+    "runtime~main.90bf8fc20a2d1f4569ec.bundle.js",
+    "static/css/vendors~main.e426f036.chunk.css",
+    "vendors~main.90bf8fc20a2d1f4569ec.bundle.js",
+    "static/css/main.8e26ef3d.chunk.css",
+    "main.90bf8fc20a2d1f4569ec.bundle.js"
   ]
 }
