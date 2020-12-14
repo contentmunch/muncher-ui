@@ -484,6 +484,10 @@ export const drawings = {
                 <circle cx="12" cy="5" r="1"/>
                 <circle cx="12" cy="19" r="1"/>
             </Fragment>,
+        'dot':
+            <Fragment>
+                <circle cx="12" cy="12" r="1"/>
+            </Fragment>,
         'share':
             <Fragment>
                 <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
