@@ -302,13 +302,9 @@ exports[`Storyshots Buttons/Dropdown Button Active 1`] = `
         type="button"
       >
         <p>
-          drop down 
-          <span
-            className="small"
-          >
-            ▼
-          </span>
+          drop down
         </p>
+        
       </button>
       
     </div>
@@ -341,13 +337,9 @@ exports[`Storyshots Buttons/Dropdown Button Default 1`] = `
         type="button"
       >
         <p>
-          drop down 
-          <span
-            className="small"
-          >
-            ▼
-          </span>
+          drop down
         </p>
+        
       </button>
       
     </div>
@@ -381,13 +373,9 @@ exports[`Storyshots Buttons/Dropdown Button Disabled 1`] = `
         type="button"
       >
         <p>
-          drop down 
-          <span
-            className="small"
-          >
-            ▼
-          </span>
+          drop down
         </p>
+        
       </button>
       
     </div>
@@ -420,13 +408,9 @@ exports[`Storyshots Buttons/Dropdown Button Drop Right 1`] = `
         type="button"
       >
         <p>
-          drop down 
-          <span
-            className="small"
-          >
-            ▼
-          </span>
+          drop down
         </p>
+        
       </button>
       
     </div>
@@ -508,6 +492,7 @@ exports[`Storyshots Buttons/Dropdown Button Icon Dropdown 1`] = `
             y2="18"
           />
         </svg>
+        
       </button>
       
     </div>
@@ -541,13 +526,9 @@ exports[`Storyshots Buttons/Dropdown Button Large 1`] = `
         type="button"
       >
         <p>
-          drop down 
-          <span
-            className="small"
-          >
-            ▼
-          </span>
+          drop down
         </p>
+        
       </button>
       
     </div>
@@ -629,6 +610,7 @@ exports[`Storyshots Buttons/Dropdown Button Rounded Dropdown 1`] = `
             y2="18"
           />
         </svg>
+        
       </button>
       
     </div>
@@ -662,13 +644,9 @@ exports[`Storyshots Buttons/Dropdown Button Secondary 1`] = `
         type="button"
       >
         <p>
-          drop down 
-          <span
-            className="small"
-          >
-            ▼
-          </span>
+          drop down
         </p>
+        
       </button>
       
     </div>
@@ -702,13 +680,9 @@ exports[`Storyshots Buttons/Dropdown Button Small 1`] = `
         type="button"
       >
         <p>
-          drop down 
-          <span
-            className="small"
-          >
-            ▼
-          </span>
+          drop down
         </p>
+        
       </button>
       
     </div>
@@ -746,6 +720,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
           points="8 6 2 12 8 18"
         />
       </svg>
+      
     </button>
     
   </div>
@@ -775,6 +750,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
           d="m22 16c-1.8136-6.5424-9.5593-9.4823-15.36-4.36l-4.64 4.36"
         />
       </svg>
+      
     </button>
     
   </div>
@@ -804,6 +780,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
           d="m1.9935 16c1.8136-6.5424 9.5593-9.4823 15.36-4.36l4.64 4.36"
         />
       </svg>
+      
     </button>
     
   </div>
@@ -854,6 +831,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
           d="M3 17H4H5L4 19C4.55 19 5 19.45 5 20C5 20.55 4.55 21 4 21H3"
         />
       </svg>
+      
     </button>
     
   </div>
@@ -910,6 +888,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
           r="1"
         />
       </svg>
+      
     </button>
     
   </div>
@@ -957,6 +936,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
           y2="18"
         />
       </svg>
+      
     </button>
     
   </div>
@@ -1004,6 +984,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
           y2="18"
         />
       </svg>
+      
     </button>
     
   </div>
@@ -1044,6 +1025,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
           y2="16"
         />
       </svg>
+      
     </button>
     
   </div>
@@ -1091,6 +1073,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
           y="14"
         />
       </svg>
+      
     </button>
     
   </div>
@@ -1126,6 +1109,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
           y="14"
         />
       </svg>
+      
     </button>
     
   </div>
@@ -1157,6 +1141,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
           d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
         />
       </svg>
+      
     </button>
     
   </div>
@@ -1237,6 +1222,7 @@ exports[`Storyshots Buttons/Dropdown Button Transparent Dropdown 1`] = `
             y2="18"
           />
         </svg>
+        
       </button>
       
     </div>
@@ -1785,6 +1771,7 @@ exports[`Storyshots Input/Dropdown Range Slider Default 1`] = `
       type="button"
     >
       slider(min: 20 max: 600)
+      
     </button>
     
   </div>
@@ -12090,6 +12077,29 @@ exports[`Storyshots Visual/Icons Search 1`] = `
       <circle
         cx="12"
         cy="19"
+        r="1"
+      />
+    </svg>
+  </button>
+  <button
+    className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
+    disabled={false}
+    title="dot"
+    type="button"
+  >
+    <svg
+      className="muncher-icon muncher-icon--small"
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="12"
+        cy="12"
         r="1"
       />
     </svg>

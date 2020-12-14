@@ -7,7 +7,7 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
         variant, size, title, active,
         disabled, element, onMouseDown,
         rounded, drop, onClick, onClose,
-        showContent, setShowContent, children, ...props
+        showContent, setShowContent, withDropIcon, children, ...props
     }) => {
 
     const dropDownRef = useRef<HTMLDivElement>(null);
@@ -69,7 +69,8 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
             <Button onMouseDown={handleMouseDown} title={title}
                     disabled={disabled} rounded={rounded}
                     active={active} variant={variant} size={size} {...props}
-            >{element}</Button>
+            >{element}{withDropIcon ? <span
+                className="small">▼</span> : ""}</Button>
             {
                 showContent ? <div className={dropdownClass()}>
                     {children}
@@ -102,5 +103,6 @@ export interface DropdownButtonProps extends ButtonProps {
      */
     onClose?: () => void;
     element: React.ReactNode;
+    withDropIcon?: boolean;
 
 }
