@@ -58,7 +58,10 @@ export type {GalleryImage} from "./gallery/data/GalleryImage";
 export type {TeamMember} from "./team/data/TeamMember";
 export type {Unit} from "./unit/data/Unit";
 export type {Domain} from "./community/data/Domain";
+export type {UnitFilters, SortField, CurrentFilters, SortBy} from "./unit/data/UnitFilters";
 
 export {sortBedrooms} from "./unit/section/filter/Bedroom";
+export {fullMonths} from "./unit/data/Calendar";
+
 export {sortAvailability} from "./unit/section/filter/Availability";
 export {filtersFrom, getUnits, sortUnits} from "./unit/service/UnitService";
