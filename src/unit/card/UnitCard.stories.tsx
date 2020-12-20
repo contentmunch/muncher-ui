@@ -12,7 +12,7 @@ export const Default: Story<UnitCardProps> = () => {
     const unit: Unit = {
         availability: ["April", "May"],
         community: "summer house",
-        coverImg:"https://s3.amazonaws.com/launch-pad-production/photos/12953/small_original/IMG_9237.jpg?1590698919",
+        coverImg: "https://s3.amazonaws.com/launch-pad-production/photos/12953/small_original/IMG_9237.jpg?1590698919",
         bathrooms: 2,
         bedrooms: 2,
         featured: true,
@@ -20,6 +20,8 @@ export const Default: Story<UnitCardProps> = () => {
         minRate: 2000,
         rate: "$2000 - $2300",
         squareFoot: 1500,
+        description: "description",
+        metaDescription: "meta description",
         style: "apartment",
         title: " my unit",
         url: "https://apartments.summerhouseatindiana.com/units/346/mccormick",

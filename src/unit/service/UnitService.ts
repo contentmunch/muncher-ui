@@ -29,6 +29,8 @@ export const getUnits = (domain: string, filterBy?: (unit: Unit) => boolean): Pr
         coverImg: convertToHttps(data.cover_photo),
         url: convertToHttps(data.unit_url),
         title: data.title,
+        description: data.description,
+        metaDescription: data.meta_description,
         featured: data.featured,
         community: data.property,
         virtualTour: data.virtual_tour_link,
