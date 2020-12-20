@@ -11,6 +11,8 @@ export default {
 export const Default: Story<UnitCardProps> = () => {
     const unit: Unit = {
         availability: ["April", "May"],
+        community: "summer house",
+        coverImg:"https://s3.amazonaws.com/launch-pad-production/photos/12953/small_original/IMG_9237.jpg?1590698919",
         bathrooms: 2,
         bedrooms: 2,
         featured: true,
