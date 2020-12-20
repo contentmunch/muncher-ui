@@ -26,9 +26,11 @@ export const getUnits = (domain: string, filterBy?: (unit: Unit) => boolean): Pr
 
     return Api.get("units/" + domain).then(response => response.data.map((data: any) => ({
         img: convertToHttps(data.thumb_photo),
+        coverImg: convertToHttps(data.cover_photo),
         url: convertToHttps(data.unit_url),
         title: data.title,
         featured: data.featured,
+        community: data.property,
         virtualTour: data.virtual_tour_link,
         video: data.videos !== undefined && data.videos.length > 0 ? data.videos[0].url : null,
         rate: data.display_rate,
