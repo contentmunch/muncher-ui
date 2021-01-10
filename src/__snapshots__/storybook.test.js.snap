@@ -2229,6 +2229,169 @@ exports[`Storyshots Input/Range Slider Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Input/Select Default 1`] = `
+<div
+  className="muncher-input--div"
+>
+  <label
+    htmlFor="select"
+  >
+    select what
+    <span
+      className="required"
+    >
+      *
+    </span>
+  </label>
+  <div
+    className="muncher-input-element"
+  >
+    <select
+      className="muncher-input"
+      name="select"
+      required={true}
+    >
+      <option
+        value="Option1"
+      >
+        Option1
+      </option>
+      <option
+        value="Option2"
+      >
+        Option2
+      </option>
+      <option
+        value="Option3"
+      >
+        Option3
+      </option>
+    </select>
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots Input/Select With Error 1`] = `
+<div
+  className="muncher-input--div"
+>
+  <label
+    htmlFor="select"
+  >
+    select what
+    <span
+      className="required"
+    >
+      *
+    </span>
+  </label>
+  <div
+    className="muncher-input-element"
+  >
+    <select
+      className="muncher-input muncher-input-error"
+      name="select"
+      required={true}
+    >
+      <option
+        value="Option1"
+      >
+        Option1
+      </option>
+      <option
+        value="Option2"
+      >
+        Option2
+      </option>
+      <option
+        value="Option3"
+      >
+        Option3
+      </option>
+    </select>
+  </div>
+  <p
+    className="muncher-input-error-message"
+  >
+    <svg
+      className="muncher-icon muncher-icon--small"
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+      />
+      <line
+        x1="12"
+        x2="12"
+        y1="8"
+        y2="12"
+      />
+      <line
+        x1="12"
+        x2="12.01"
+        y1="16"
+        y2="16"
+      />
+    </svg>
+     
+    Provide value for select
+  </p>
+</div>
+`;
+
+exports[`Storyshots Input/Select With Value 1`] = `
+<div
+  className="muncher-input--div"
+>
+  <label
+    htmlFor="select"
+  >
+    select what
+    <span
+      className="required"
+    >
+      *
+    </span>
+  </label>
+  <div
+    className="muncher-input-element"
+  >
+    <select
+      className="muncher-input"
+      name="select"
+      required={true}
+      value="Option2"
+    >
+      <option
+        value="Option1"
+      >
+        Option1
+      </option>
+      <option
+        value="Option2"
+      >
+        Option2
+      </option>
+      <option
+        value="Option3"
+      >
+        Option3
+      </option>
+    </select>
+  </div>
+  
+</div>
+`;
+
 exports[`Storyshots Input/Slider Default 1`] = `
 <div
   className="slider-story"
