@@ -9,6 +9,7 @@ export {DropdownNavButton} from "./button/DropdownNavButton";
 export {Icon} from "./icon/Icon";
 export {Checkbox} from "./input/Checkbox";
 export {Input} from "./input/Input";
+export {Select} from "./input/Select";
 export {Paper} from "./paper/Paper";
 export {Radio} from "./input/Radio";
 export {TextInputDropdown} from "./input/TextInputDropdown";
