@@ -15,9 +15,16 @@ Default.args = {
     name: "select",
     label: "select what",
     required: true,
-    options: ["Option1", "Option2", "Option3"]
+    options: ["Option1", "Option2", "Option3"],
+    onChange: (e) => {
+        console.log(e.target.selectedOptions);
+    }
 };
-
+export const Multiple = Template.bind({});
+Multiple.args = {
+    ...Default.args,
+    multiple: true
+}
 export const WithError = Template.bind({});
 WithError.args = {
     ...Default.args,

@@ -5,7 +5,7 @@ import "./assets/Input.scss";
 
 export const Select: React.FC<SelectProps> = (
     {
-        name, options, label, required,
+        name, options, label, required, multiple,
         error, onChange, value, ...props
     }
 ) => {
@@ -26,6 +26,7 @@ export const Select: React.FC<SelectProps> = (
                     value={value}
                     onChange={onChange}
                     required={required}
+                    multiple={multiple}
                     {...props}
                 >
                     <option/>
@@ -44,6 +45,7 @@ export interface SelectProps {
     options: string[];
     label?: string;
     required?: boolean;
+    multiple?: boolean;
     onChange?: (value: React.ChangeEvent<HTMLSelectElement>) => void;
     value?: any;
     error?: string;
