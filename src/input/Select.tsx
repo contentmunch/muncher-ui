@@ -29,7 +29,7 @@ export const Select: React.FC<SelectProps> = (
                     multiple={multiple}
                     {...props}
                 >
-                    <option/>
+                    {multiple ? "" : <option/>}
                     {options.map((option, i) =>
                         <option key={i} value={option}>{option}</option>
                     )}
