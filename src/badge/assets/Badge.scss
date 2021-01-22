@@ -23,7 +23,9 @@ $badge-tertiary-background-color: $tertiary-background-color !default;
 .muncher-badge--secondary {
   background: $badge-secondary-background-color;
 }
-
+.muncher-badge--transparent {
+  background: none;
+}
 .muncher-badge--tertiary {
   background: $badge-tertiary-background-color;
 }

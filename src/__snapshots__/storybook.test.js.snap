@@ -1276,6 +1276,53 @@ exports[`Storyshots Data Display/Badge Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Data Display/Icon Badge Default 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "center",
+    }
+  }
+>
+  <button
+    className="muncher-button muncher-button--medium"
+    disabled={false}
+    type="button"
+  >
+    Button
+  </button>
+  <div
+    className="muncher-icon-badge"
+    onClick={[Function]}
+  >
+    <svg
+      className="muncher-icon muncher-icon--small"
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
+      />
+      <path
+        d="M13.73 21a2 2 0 0 1-3.46 0"
+      />
+    </svg>
+    <div
+      className="muncher-badge muncher-badge--primary"
+    >
+      12
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Data Display/Pill Default 1`] = `
 <div
   className="muncher-pill-story"
@@ -2249,8 +2296,56 @@ exports[`Storyshots Input/Select Default 1`] = `
     <select
       className="muncher-input"
       name="select"
+      onChange={[Function]}
       required={true}
     >
+      <option />
+      <option
+        value="Option1"
+      >
+        Option1
+      </option>
+      <option
+        value="Option2"
+      >
+        Option2
+      </option>
+      <option
+        value="Option3"
+      >
+        Option3
+      </option>
+    </select>
+  </div>
+  
+</div>
+`;
+
+exports[`Storyshots Input/Select Multiple 1`] = `
+<div
+  className="muncher-input--div"
+>
+  <label
+    htmlFor="select"
+  >
+    select what
+    <span
+      className="required"
+    >
+      *
+    </span>
+  </label>
+  <div
+    className="muncher-input-element"
+  >
+    <select
+      className="muncher-input"
+      multiple={true}
+      name="select"
+      onChange={[Function]}
+      required={true}
+    >
+      
       <option
         value="Option1"
       >
@@ -2292,8 +2387,10 @@ exports[`Storyshots Input/Select With Error 1`] = `
     <select
       className="muncher-input muncher-input-error"
       name="select"
+      onChange={[Function]}
       required={true}
     >
+      <option />
       <option
         value="Option1"
       >
@@ -2368,9 +2465,11 @@ exports[`Storyshots Input/Select With Value 1`] = `
     <select
       className="muncher-input"
       name="select"
+      onChange={[Function]}
       required={true}
       value="Option2"
     >
+      <option />
       <option
         value="Option1"
       >
