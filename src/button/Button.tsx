@@ -5,7 +5,7 @@ export const Button: React.FC<ButtonProps> =
     ({
          type, variant, size, title,
          active, disabled, rounded,
-         onClick, onMouseDown, children, ...props
+         onClick, onMouseDown, onMouseEnter, onMouseLeave, children, ...props
      }) => {
         const className = 'muncher-button' +
             (type && type === 'nav' ? ' muncher-button--nav' : '') +
@@ -21,6 +21,8 @@ export const Button: React.FC<ButtonProps> =
                 title={title}
                 onClick={onClick}
                 onMouseDown={onMouseDown}
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
                 {...props}
             >
                 {children}
@@ -62,6 +64,9 @@ export interface ButtonProps extends AllButtonProps {
      * button mouse down handler
      */
     onMouseDown?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+
+    onMouseEnter?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+    onMouseLeave?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 
 }
 
