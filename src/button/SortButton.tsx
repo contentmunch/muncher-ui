@@ -9,7 +9,13 @@ export const SortButton: React.FC<SortButtonProps> = (
     }) => {
 
     const [isHoveringOver, setIsHoveringOver] = useState(false);
-    const SortIcon: React.FC = () => sortAsc ? <Icon name="sort-asc"/> : <Icon name="sort-desc"/>
+    const SortIcon: React.FC = () => {
+        if (!active || (active && !isHoveringOver)) {
+            return sortAsc ? <Icon name="sort-asc"/> : <Icon name="sort-desc"/>
+        } else {
+            return sortAsc ? <Icon name="sort-desc"/> : <Icon name="sort-asc"/>
+        }
+    }
 
     return (
         <Button variant={variant} size={size} title={title} rounded={rounded}
@@ -21,7 +27,8 @@ export const SortButton: React.FC<SortButtonProps> = (
                 }}
                 onClick={onClick}
         >
-            {children}{active || isHoveringOver ? <SortIcon/> : ""}
+            {children}
+            {active || isHoveringOver ? <SortIcon/> : ""}
         </Button>
     );
 };
