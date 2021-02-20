@@ -387,6 +387,22 @@ export const drawings = {
             <Fragment>
                 <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
             </Fragment>,
+        'reset':
+            <Fragment>
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+                <line x1="8" y1="2" x2="18" y2="23"/>
+            </Fragment>,
+        'refresh':
+            <Fragment>
+                <polyline points="23 4 23 10 17 10"/>
+                <polyline points="1 20 1 14 7 14"/>
+                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+            </Fragment>,
+        'rotate':
+            <Fragment>
+                <polyline points="23 4 23 10 17 10"/>
+                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+            </Fragment>,
         'sort-asc':
             <Fragment>
                 <path d="M11 5h4"/>
@@ -398,11 +414,11 @@ export const drawings = {
             </Fragment>,
         'sort-desc':
             <Fragment>
-                    <path d="M11 8h10"></path>
-                    <path d="M11 12h7"></path>
-                    <path d="M11 16h4"></path>
-                    <path d="M6 18V4"></path>
-                    <polyline  points="10 5 6 2 2 5"/>
+                <path d="M11 8h10"/>
+                <path d="M11 12h7"/>
+                <path d="M11 16h4"/>
+                <path d="M6 18V4"/>
+                <polyline points="10 5 6 2 2 5"/>
             </Fragment>,
         'github':
             <Fragment>
