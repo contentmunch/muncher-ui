@@ -15,6 +15,13 @@ export const Modal: React.FC<ModalProps> = ({show, setShow, children, ...props})
             document.removeEventListener("keydown", escFunction, false);
         };
     }, [escFunction]);
+    useEffect(() => {
+        if (show) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [show]);
     return (
         <React.Fragment>
             <Backdrop show={show} backdropClickHandler={() => setShow(false)}/>
