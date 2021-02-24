@@ -18,7 +18,7 @@ export const IconBadge: React.FC<IconBadgeProps> = (
         <div
             className="muncher-icon-badge" onClick={onClick} {...props}>
             <Icon name={icon}/>
-            <Badge variant={variant}>{text}</Badge>
+            {text===""?"":<Badge variant={variant}>{text}</Badge>}
         </div>
     );
 };
