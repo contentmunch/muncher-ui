@@ -49,7 +49,7 @@ export const TextRight = TextTemplate.bind({});
 TextRight.args = {
     name: 'muncher',
     size: 'small',
-    orientation:'right'
+    orientation:'left'
 };
 const SearchTemplate: Story<IconProps> = () => {
 
