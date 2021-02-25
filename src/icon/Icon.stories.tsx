@@ -39,7 +39,18 @@ Dark.args = {
     ...Medium.args,
     weight: 2
 };
-
+const TextTemplate: Story<IconProps> = (args) => <Icon {...args} ><p>Text</p></Icon>;
+export const IconWithText = TextTemplate.bind({});
+IconWithText.args = {
+    name: 'muncher',
+    size: 'small'
+};
+export const TextRight = TextTemplate.bind({});
+TextRight.args = {
+    name: 'muncher',
+    size: 'small',
+    orientation:'right'
+};
 const SearchTemplate: Story<IconProps> = () => {
 
     const [query, setQuery] = useState("");

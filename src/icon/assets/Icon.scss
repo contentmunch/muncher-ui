@@ -1,7 +1,8 @@
 @import "src/assets/variables";
 
 .muncher-icon {
-
+  display: inline-flex;
+  align-items: center;
 }
 
 .muncher-icon--small {
