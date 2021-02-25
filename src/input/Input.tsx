@@ -44,7 +44,7 @@ export const Input: React.FC<InputProps> = (
                     {...props}
                 />
             </div>
-            {hasError() ? <p className="muncher-input-error-message"><Icon name="alert"/>&nbsp;{error}</p> : ""}
+            {hasError() ? <div className="muncher-input-error-message"><Icon name="alert">{error}</Icon></div> : ""}
         </div>
 
     );

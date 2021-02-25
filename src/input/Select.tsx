@@ -36,7 +36,7 @@ export const Select: React.FC<SelectProps> = (
                     }
                 </select>
             </div>
-            {hasError() ? <p className="muncher-input-error-message"><Icon name="alert"/>&nbsp;{error}</p> : ""}
+            {hasError() ? <div className="muncher-input-error-message"><Icon name="alert">{error}</Icon></div> : ""}
         </div>
     );
 };
