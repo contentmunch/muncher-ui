@@ -45,11 +45,11 @@ IconWithText.args = {
     name: 'muncher',
     size: 'small'
 };
-export const TextRight = TextTemplate.bind({});
-TextRight.args = {
+export const OrientationRight = TextTemplate.bind({});
+OrientationRight.args = {
     name: 'muncher',
     size: 'small',
-    orientation:'left'
+    orientation:'right'
 };
 const SearchTemplate: Story<IconProps> = () => {
 

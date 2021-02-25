@@ -6,11 +6,12 @@ import {Size} from "../button/Button";
 
 export const Icon: React.FC<IconProps> =
     ({color, name, size, weight, onClick, iconString, orientation, children}) => {
-        const iconClass = size ? 'muncher-icon--' + size : 'Zmuncher-icon--small';
+        const iconClass = size ? 'muncher-icon--' + size : 'muncher-icon--small';
 
         return (
             <div className="muncher-icon">
-                {(!orientation || orientation === "right") ? children : ""}
+                {(children && orientation && orientation === "right") ?
+                    <div className="content-left">{children}</div> : ""}
                 <svg
                     className={iconClass}
                     stroke={color ? color : 'currentColor'}
@@ -26,7 +27,8 @@ export const Icon: React.FC<IconProps> =
                         name ? drawings[name] : iconString ? Object(drawings)[iconString] : ""
                     }
                 </svg>
-                {(orientation && orientation === "left") ? children : ""}
+                {(children && (!orientation || orientation === "left")) ?
+                    <div className="content-right">{children}</div> : ""}
             </div>
         );
     };

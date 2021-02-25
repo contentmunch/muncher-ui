@@ -3,6 +3,14 @@
 .muncher-icon {
   display: inline-flex;
   align-items: center;
+
+  .content-right {
+    padding-left: .3rem;
+  }
+
+  .content-left {
+    padding-right: .3rem;
+  }
 }
 
 .muncher-icon--small {
