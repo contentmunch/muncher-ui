@@ -2,6 +2,7 @@ import React from 'react';
 import {Input, InputProps} from "./Input";
 import {Meta, Story} from "@storybook/react";
 import "./assets/InputStory.scss";
+
 export default {
     title: 'Input/Input',
     component: Input,
@@ -66,6 +67,14 @@ Number.args = {
     type: 'number',
     placeholder: "Phone number",
     icon: "phone"
+};
+export const Float = Template.bind({});
+Float.args = {
+    ...Default.args,
+    type: 'number',
+    step: 0.5,
+    placeholder: "Floating point number",
+
 };
 export const Password = Template.bind({});
 Password.args = {

@@ -8,11 +8,9 @@ import {IconName} from "../icon/Drawings";
 export const Input: React.FC<InputProps> = (
     {
         name, label, required,
-        readOnly, icon,
-        type, list,
-        onKeyDown, error,
-        focus, placeholder, onChange,
-        value, ...props
+        readOnly, icon, type, list,
+        onKeyDown, error, focus, placeholder,
+        onChange, step, value, ...props
     }
 ) => {
 
@@ -41,6 +39,7 @@ export const Input: React.FC<InputProps> = (
                     readOnly={readOnly}
                     list={list}
                     onKeyDown={onKeyDown}
+                    step={step}
                     {...props}
                 />
             </div>
@@ -67,6 +66,8 @@ export interface InputProps {
     onKeyDown?: (event: React.KeyboardEvent<HTMLInputElement>) => void;
     value?: any;
     error?: string;
+    step?: number;
+
 }
 
 Input.defaultProps = {
