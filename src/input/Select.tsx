@@ -31,8 +31,8 @@ export const Select: React.FC<SelectProps> = (
                 >
                     {required ? <option/> : ""}
                     {
-                        options.map((option) =>
-                            <option key={option.value} value={option.value}>{option.label}</option>)
+                        options.map((option, i) =>
+                            <option key={"select-option-" + i} value={option}>{option}</option>)
                     }
                 </select>
             </div>
@@ -43,16 +43,11 @@ export const Select: React.FC<SelectProps> = (
 
 export interface SelectProps {
     name: string;
-    options: Option[];
+    options: string[];
     label?: string;
     required?: boolean;
     multiple?: boolean;
     onChange?: (value: React.ChangeEvent<HTMLSelectElement>) => void;
     value?: any;
     error?: string;
-}
-
-export interface Option {
-    value: string;
-    label: string;
 }
