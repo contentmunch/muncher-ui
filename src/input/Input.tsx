@@ -40,7 +40,7 @@ export const Input: React.FC<InputProps> = (
                     list={list}
                     onKeyDown={onKeyDown}
                     step={step}
-                    maxLength={maxLength}
+                    maxLength={maxLength ? maxLength : 255}
                     {...props}
                 />
             </div>
