@@ -43,6 +43,7 @@ exports[`Storyshots Buttons/Button Icon Button 1`] = `
   <div
     className="muncher-icon"
   >
+    
     <svg
       className="muncher-icon--small"
       fill="none"
@@ -129,6 +130,7 @@ exports[`Storyshots Buttons/Button Rounded Button 1`] = `
   <div
     className="muncher-icon"
   >
+    
     <svg
       className="muncher-icon--small"
       fill="none"
@@ -237,6 +239,7 @@ exports[`Storyshots Buttons/Button Transparent Button 1`] = `
   <div
     className="muncher-icon"
   >
+    
     <svg
       className="muncher-icon--small"
       fill="none"
@@ -461,6 +464,7 @@ exports[`Storyshots Buttons/Dropdown Button Icon Dropdown 1`] = `
         <div
           className="muncher-icon"
         >
+          
           <svg
             className="muncher-icon--small"
             fill="none"
@@ -584,6 +588,7 @@ exports[`Storyshots Buttons/Dropdown Button Rounded Dropdown 1`] = `
         <div
           className="muncher-icon"
         >
+          
           <svg
             className="muncher-icon--small"
             fill="none"
@@ -731,6 +736,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -766,6 +772,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -801,6 +808,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -836,6 +844,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -892,6 +901,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -954,6 +964,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -1007,6 +1018,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -1060,6 +1072,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -1106,6 +1119,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -1159,6 +1173,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -1200,6 +1215,7 @@ exports[`Storyshots Buttons/Dropdown Button Toolbar Default 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -1256,6 +1272,7 @@ exports[`Storyshots Buttons/Dropdown Button Transparent Dropdown 1`] = `
         <div
           className="muncher-icon"
         >
+          
           <svg
             className="muncher-icon--small"
             fill="none"
@@ -1366,6 +1383,7 @@ exports[`Storyshots Buttons/Sort Button Active 1`] = `
   <div
     className="muncher-icon"
   >
+    
     <svg
       className="muncher-icon--small"
       fill="none"
@@ -1443,6 +1461,7 @@ exports[`Storyshots Data Display/Icon Badge Default 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -1495,6 +1514,7 @@ exports[`Storyshots Data Display/Pill Default 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -1678,6 +1698,7 @@ exports[`Storyshots Input/File Input Default 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -1750,6 +1771,7 @@ exports[`Storyshots Input/Input Color 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input"
+        maxLength={255}
         name="query"
         placeholder="Type your query"
         type="color"
@@ -1776,6 +1798,7 @@ exports[`Storyshots Input/Input Date 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input"
+        maxLength={255}
         name="query"
         placeholder="Type your query"
         type="date"
@@ -1802,6 +1825,7 @@ exports[`Storyshots Input/Input Date Time 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input"
+        maxLength={255}
         name="query"
         placeholder="Type your query"
         type="datetime-local"
@@ -1828,6 +1852,7 @@ exports[`Storyshots Input/Input Default 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input"
+        maxLength={255}
         name="query"
         placeholder="Type your query"
         type="text"
@@ -1852,6 +1877,7 @@ exports[`Storyshots Input/Input Email 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -1875,9 +1901,38 @@ exports[`Storyshots Input/Input Email 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input muncher-input-icon"
+        maxLength={255}
         name="query"
         placeholder="Email"
         type="email"
+      />
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input/Input Float 1`] = `
+<div
+  className="div-input-stories"
+>
+  <div
+    className="muncher-input--div"
+  >
+    
+    <div
+      className="muncher-input-element"
+    >
+      
+      <input
+        autoComplete="off"
+        autoFocus={false}
+        className="muncher-input"
+        maxLength={255}
+        name="query"
+        placeholder="Floating point number"
+        step={0.5}
+        type="number"
       />
     </div>
     
@@ -1901,6 +1956,7 @@ exports[`Storyshots Input/Input Month 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input"
+        maxLength={255}
         name="query"
         placeholder="Type your query"
         type="month"
@@ -1925,6 +1981,7 @@ exports[`Storyshots Input/Input Number 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -1956,6 +2013,7 @@ exports[`Storyshots Input/Input Number 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input muncher-input-icon"
+        maxLength={255}
         name="query"
         placeholder="Phone number"
         type="number"
@@ -1982,6 +2040,7 @@ exports[`Storyshots Input/Input Password 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input"
+        maxLength={255}
         name="query"
         placeholder="Type password"
         type="password"
@@ -2008,6 +2067,7 @@ exports[`Storyshots Input/Input Range 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input"
+        maxLength={255}
         name="query"
         placeholder="Type your query"
         type="range"
@@ -2034,6 +2094,7 @@ exports[`Storyshots Input/Input Search 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input"
+        maxLength={255}
         name="query"
         placeholder="Type your query"
         type="search"
@@ -2060,6 +2121,7 @@ exports[`Storyshots Input/Input Tel 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input"
+        maxLength={255}
         name="query"
         placeholder="Type your query"
         type="tel"
@@ -2093,6 +2155,7 @@ exports[`Storyshots Input/Input Text With Icon 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -2148,6 +2211,7 @@ exports[`Storyshots Input/Input Text With Icon 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input muncher-input-icon"
+        maxLength={255}
         name="query"
         placeholder="Type your query"
         required={true}
@@ -2184,6 +2248,7 @@ exports[`Storyshots Input/Input Text With Label 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input"
+        maxLength={255}
         name="query"
         placeholder="Type your query"
         required={true}
@@ -2211,6 +2276,7 @@ exports[`Storyshots Input/Input Time 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input"
+        maxLength={255}
         name="query"
         placeholder="Type your query"
         type="time"
@@ -2237,6 +2303,7 @@ exports[`Storyshots Input/Input Url 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input"
+        maxLength={255}
         name="query"
         placeholder="type url"
         type="url"
@@ -2263,6 +2330,7 @@ exports[`Storyshots Input/Input Week 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input"
+        maxLength={255}
         name="query"
         placeholder="Type your query"
         type="week"
@@ -2296,6 +2364,7 @@ exports[`Storyshots Input/Input With Error 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -2351,18 +2420,20 @@ exports[`Storyshots Input/Input With Error 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input muncher-input-icon muncher-input-error"
+        maxLength={255}
         name="query"
         placeholder="Type your query"
         required={true}
         type="text"
       />
     </div>
-    <p
+    <div
       className="muncher-input-error-message"
     >
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -2391,11 +2462,13 @@ exports[`Storyshots Input/Input With Error 1`] = `
             y2="16"
           />
         </svg>
-        
+        <div
+          className="content-right"
+        >
+          Provide value for Search
+        </div>
       </div>
-       
-      Provide value for Search
-    </p>
+    </div>
   </div>
 </div>
 `;
@@ -2603,12 +2676,13 @@ exports[`Storyshots Input/Select With Error 1`] = `
       </option>
     </select>
   </div>
-  <p
+  <div
     className="muncher-input-error-message"
   >
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -2637,11 +2711,13 @@ exports[`Storyshots Input/Select With Error 1`] = `
           y2="16"
         />
       </svg>
-      
+      <div
+        className="content-right"
+      >
+        Provide value for select
+      </div>
     </div>
-     
-    Provide value for select
-  </p>
+  </div>
 </div>
 `;
 
@@ -2750,6 +2826,7 @@ exports[`Storyshots Input/Text Input Dropdown Default 1`] = `
           autoComplete="off"
           autoFocus={true}
           className="muncher-input"
+          maxLength={255}
           name="query"
           onChange={[Function]}
           placeholder="Start typing.."
@@ -2816,6 +2893,7 @@ exports[`Storyshots Visual/Icons Dark 1`] = `
   <div
     className="muncher-icon"
   >
+    
     <svg
       className="muncher-icon--medium"
       fill="none"
@@ -2875,6 +2953,7 @@ exports[`Storyshots Visual/Icons Default 1`] = `
   <div
     className="muncher-icon"
   >
+    
     <svg
       className="muncher-icon--small"
       fill="none"
@@ -2933,9 +3012,7 @@ exports[`Storyshots Visual/Icons Icon With Text 1`] = `
 <div
   className="muncher-icon"
 >
-  <p>
-    Text
-  </p>
+  
   <svg
     className="muncher-icon--small"
     fill="none"
@@ -2985,7 +3062,13 @@ exports[`Storyshots Visual/Icons Icon With Text 1`] = `
       y2="18"
     />
   </svg>
-  
+  <div
+    className="content-right"
+  >
+    <p>
+      Text
+    </p>
+  </div>
 </div>
 `;
 
@@ -2994,6 +3077,7 @@ exports[`Storyshots Visual/Icons Large 1`] = `
   <div
     className="muncher-icon"
   >
+    
     <svg
       className="muncher-icon--large"
       fill="none"
@@ -3053,6 +3137,7 @@ exports[`Storyshots Visual/Icons Medium 1`] = `
   <div
     className="muncher-icon"
   >
+    
     <svg
       className="muncher-icon--medium"
       fill="none"
@@ -3107,6 +3192,70 @@ exports[`Storyshots Visual/Icons Medium 1`] = `
 </div>
 `;
 
+exports[`Storyshots Visual/Icons Orientation Right 1`] = `
+<div
+  className="muncher-icon"
+>
+  <div
+    className="content-left"
+  >
+    <p>
+      Text
+    </p>
+  </div>
+  <svg
+    className="muncher-icon--small"
+    fill="none"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      height="18"
+      rx="2"
+      ry="2"
+      width="18"
+      x="3"
+      y="4"
+    />
+    <line
+      x1="16"
+      x2="16"
+      y1="2"
+      y2="6"
+    />
+    <line
+      x1="8"
+      x2="8"
+      y1="2"
+      y2="6"
+    />
+    <line
+      x1="7"
+      x2="17"
+      y1="10"
+      y2="10"
+    />
+    <line
+      x1="7"
+      x2="17"
+      y1="14"
+      y2="14"
+    />
+    <line
+      x1="7"
+      x2="17"
+      y1="18"
+      y2="18"
+    />
+  </svg>
+  
+</div>
+`;
+
 exports[`Storyshots Visual/Icons Search 1`] = `
 <div
   className="icon-search-story"
@@ -3121,6 +3270,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
       <div
         className="muncher-icon"
       >
+        
         <svg
           className="muncher-icon--small"
           fill="none"
@@ -3149,6 +3299,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
         autoComplete="off"
         autoFocus={false}
         className="muncher-input muncher-input-icon"
+        maxLength={255}
         name=""
         onChange={[Function]}
         type="text"
@@ -3165,6 +3316,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3202,6 +3354,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3249,6 +3402,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3296,6 +3450,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3343,6 +3498,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3390,6 +3546,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3428,6 +3585,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3478,6 +3636,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3534,6 +3693,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3583,6 +3743,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3612,6 +3773,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3641,6 +3803,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3670,6 +3833,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3723,6 +3887,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3760,6 +3925,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3797,6 +3963,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3834,6 +4001,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3871,6 +4039,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3912,6 +4081,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3938,6 +4108,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3964,6 +4135,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -3993,6 +4165,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4028,6 +4201,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4054,6 +4228,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4086,6 +4261,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4121,6 +4297,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4150,6 +4327,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4197,6 +4375,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4229,6 +4408,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4261,6 +4441,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4290,6 +4471,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4321,6 +4503,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4352,6 +4535,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4384,6 +4568,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4418,6 +4603,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4450,6 +4636,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4484,6 +4671,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4526,6 +4714,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4552,6 +4741,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4578,6 +4768,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4604,6 +4795,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4650,6 +4842,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4690,6 +4883,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4737,6 +4931,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4814,6 +5009,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4840,6 +5036,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4878,6 +5075,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4918,6 +5116,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4947,6 +5146,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -4984,6 +5184,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5024,6 +5225,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5064,6 +5266,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5093,6 +5296,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5128,6 +5332,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5160,6 +5365,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5189,6 +5395,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5228,6 +5435,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5263,6 +5471,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5334,6 +5543,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5410,6 +5620,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5450,6 +5661,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5484,6 +5696,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5519,6 +5732,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5553,6 +5767,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5579,6 +5794,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5611,6 +5827,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5643,6 +5860,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5672,6 +5890,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5710,6 +5929,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5742,12 +5962,309 @@ exports[`Storyshots Visual/Icons Search 1`] = `
   <button
     className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
     disabled={false}
+    title="scissor"
+    type="button"
+  >
+    <div
+      className="muncher-icon"
+    >
+      
+      <svg
+        className="muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="6"
+          cy="6"
+          r="3"
+        />
+        <circle
+          cx="6"
+          cy="18"
+          r="3"
+        />
+        <line
+          x1="20"
+          x2="8.12"
+          y1="4"
+          y2="15.88"
+        />
+        <line
+          x1="14.47"
+          x2="20"
+          y1="14.48"
+          y2="20"
+        />
+        <line
+          x1="8.12"
+          x2="12"
+          y1="8.12"
+          y2="12"
+        />
+      </svg>
+      
+    </div>
+  </button>
+  <button
+    className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
+    disabled={false}
+    title="slash"
+    type="button"
+  >
+    <div
+      className="muncher-icon"
+    >
+      
+      <svg
+        className="muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <line
+          x1="4.93"
+          x2="19.07"
+          y1="4.93"
+          y2="19.07"
+        />
+      </svg>
+      
+    </div>
+  </button>
+  <button
+    className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
+    disabled={false}
+    title="sidebar"
+    type="button"
+  >
+    <div
+      className="muncher-icon"
+    >
+      
+      <svg
+        className="muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="18"
+          rx="2"
+          ry="2"
+          width="18"
+          x="3"
+          y="3"
+        />
+        <line
+          x1="9"
+          x2="9"
+          y1="3"
+          y2="21"
+        />
+      </svg>
+      
+    </div>
+  </button>
+  <button
+    className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
+    disabled={false}
+    title="dollar"
+    type="button"
+  >
+    <div
+      className="muncher-icon"
+    >
+      
+      <svg
+        className="muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="12"
+          x2="12"
+          y1="1"
+          y2="23"
+        />
+        <path
+          d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+        />
+      </svg>
+      
+    </div>
+  </button>
+  <button
+    className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
+    disabled={false}
+    title="box"
+    type="button"
+  >
+    <div
+      className="muncher-icon"
+    >
+      
+      <svg
+        className="muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+        />
+        <polyline
+          points="3.27 6.96 12 12.01 20.73 6.96"
+        />
+        <line
+          x1="12"
+          x2="12"
+          y1="22.08"
+          y2="12"
+        />
+      </svg>
+      
+    </div>
+  </button>
+  <button
+    className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
+    disabled={false}
+    title="key"
+    type="button"
+  >
+    <div
+      className="muncher-icon"
+    >
+      
+      <svg
+        className="muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"
+        />
+      </svg>
+      
+    </div>
+  </button>
+  <button
+    className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
+    disabled={false}
+    title="layers"
+    type="button"
+  >
+    <div
+      className="muncher-icon"
+    >
+      
+      <svg
+        className="muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polygon
+          points="12 2 2 7 12 12 22 7 12 2"
+        />
+        <polyline
+          points="2 17 12 22 22 17"
+        />
+        <polyline
+          points="2 12 12 17 22 12"
+        />
+      </svg>
+      
+    </div>
+  </button>
+  <button
+    className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
+    disabled={false}
+    title="max"
+    type="button"
+  >
+    <div
+      className="muncher-icon"
+    >
+      
+      <svg
+        className="muncher-icon--small"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="15 3 21 3 21 9"
+        />
+        <polyline
+          points="9 21 3 21 3 15"
+        />
+        <line
+          x1="21"
+          x2="14"
+          y1="3"
+          y2="10"
+        />
+        <line
+          x1="3"
+          x2="10"
+          y1="21"
+          y2="14"
+        />
+      </svg>
+      
+    </div>
+  </button>
+  <button
+    className="muncher-button muncher-button--tertiary muncher-button--small muncher-button--rounded"
+    disabled={false}
     title="github"
     type="button"
   >
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5774,6 +6291,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5818,6 +6336,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5858,6 +6377,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5895,6 +6415,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5942,6 +6463,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -5968,6 +6490,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6015,6 +6538,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6046,6 +6570,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6081,6 +6606,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6116,6 +6642,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6145,6 +6672,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6183,6 +6711,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6211,6 +6740,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6246,6 +6776,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6287,6 +6818,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6348,6 +6880,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6380,6 +6913,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6414,6 +6948,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6448,6 +6983,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6474,6 +7010,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6508,6 +7045,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6557,6 +7095,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6586,6 +7125,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6623,6 +7163,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6652,6 +7193,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6687,6 +7229,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6722,6 +7265,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6754,6 +7298,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6792,6 +7337,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6826,6 +7372,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6860,6 +7407,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6889,6 +7437,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6930,6 +7479,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6956,6 +7506,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -6982,6 +7533,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7008,6 +7560,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7040,6 +7593,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7072,6 +7626,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7098,6 +7653,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7129,6 +7685,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7160,6 +7717,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7186,6 +7744,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7223,6 +7782,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7260,6 +7820,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7303,6 +7864,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7346,6 +7908,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7392,6 +7955,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7423,6 +7987,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7454,6 +8019,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7490,6 +8056,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7519,6 +8086,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7563,6 +8131,7 @@ exports[`Storyshots Visual/Icons Search 1`] = `
     <div
       className="muncher-icon"
     >
+      
       <svg
         className="muncher-icon--small"
         fill="none"
@@ -7592,66 +8161,6 @@ exports[`Storyshots Visual/Icons Search 1`] = `
       
     </div>
   </button>
-</div>
-`;
-
-exports[`Storyshots Visual/Icons Text Right 1`] = `
-<div
-  className="muncher-icon"
->
-  
-  <svg
-    className="muncher-icon--small"
-    fill="none"
-    stroke="currentColor"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    strokeWidth={2}
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <rect
-      height="18"
-      rx="2"
-      ry="2"
-      width="18"
-      x="3"
-      y="4"
-    />
-    <line
-      x1="16"
-      x2="16"
-      y1="2"
-      y2="6"
-    />
-    <line
-      x1="8"
-      x2="8"
-      y1="2"
-      y2="6"
-    />
-    <line
-      x1="7"
-      x2="17"
-      y1="10"
-      y2="10"
-    />
-    <line
-      x1="7"
-      x2="17"
-      y1="14"
-      y2="14"
-    />
-    <line
-      x1="7"
-      x2="17"
-      y1="18"
-      y2="18"
-    />
-  </svg>
-  <p>
-    Text
-  </p>
 </div>
 `;
 
