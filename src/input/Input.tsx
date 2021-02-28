@@ -10,7 +10,7 @@ export const Input: React.FC<InputProps> = (
         name, label, required,
         readOnly, icon, type, list,
         onKeyDown, error, focus, placeholder,
-        onChange, step, value, ...props
+        onChange, step, value, max, ...props
     }
 ) => {
 
@@ -40,6 +40,7 @@ export const Input: React.FC<InputProps> = (
                     list={list}
                     onKeyDown={onKeyDown}
                     step={step}
+                    max={max}
                     {...props}
                 />
             </div>
@@ -67,6 +68,7 @@ export interface InputProps {
     value?: any;
     error?: string;
     step?: number;
+    max?: number;
 
 }
 
