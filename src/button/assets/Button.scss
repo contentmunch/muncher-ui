@@ -40,8 +40,14 @@ $button-tertiary-background-color: $tertiary-background-color !default;
 .muncher-button--tertiary {
   background: $button-tertiary-background-color;
 }
+
 .muncher-button--transparent {
   background: none;
+}
+
+.muncher-button--danger {
+  color: $button-background-color;
+  background: $danger-color;
 }
 
 .muncher-button--active {

@@ -70,5 +70,5 @@ export interface ButtonProps extends AllButtonProps {
 
 }
 
-export type Variant = 'primary' | 'secondary' | 'tertiary' | 'transparent';
+export type Variant = 'primary' | 'secondary' | 'tertiary' | 'transparent' | 'danger';
 export type Size = 'small' | 'medium' | 'large';
