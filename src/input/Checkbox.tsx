@@ -19,7 +19,7 @@ export const Checkbox: React.FC<CheckboxProps> = (
                        onChange={event => {
                            setCheckboxChecked(event.target.checked);
                            if (onChange) {
-                               onChange(event);
+                               onChange();
                            }
                        }}
                        checked={checkboxChecked}
@@ -27,7 +27,12 @@ export const Checkbox: React.FC<CheckboxProps> = (
                        {...props}
                 />
                 {label ? <Label label={label} required={required} name={name}
-                                onClick={() => setCheckboxChecked(!checkboxChecked)}/> : ''}
+                                onClick={() => {
+                                    setCheckboxChecked(!checkboxChecked);
+                                    if (onChange) {
+                                        onChange();
+                                    }
+                                }}/> : ''}
             </div>
         </div>
     )
@@ -35,7 +40,7 @@ export const Checkbox: React.FC<CheckboxProps> = (
 
 export interface CheckboxProps {
     name?: string;
-    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange?: () => void;
     required?: boolean;
     checked?: any;
     label?: string;

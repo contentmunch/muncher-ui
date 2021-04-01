@@ -13,14 +13,19 @@ export const Radio: React.FC<RadioProps> = ({name, required, onChange, checked, 
                     onChange={event => {
                         setRadioChecked(event.target.checked);
                         if (onChange) {
-                            onChange(event);
+                            onChange();
                         }
                     }}
                     checked={radioChecked}
                     {...props}
                 />
                 {label ? <Label label={label} required={required} name={name}
-                                onClick={() => setRadioChecked(!radioChecked)}/> : ''}
+                                onClick={() => {
+                                    setRadioChecked(!radioChecked);
+                                    if (onChange) {
+                                        onChange();
+                                    }
+                                }}/> : ''}
             </div>
         </div>
     )
@@ -30,7 +35,7 @@ export interface RadioProps {
     name?: string;
     required?: boolean;
     label?: string;
-    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange?: () => void;
     checked?: any;
 }
 
