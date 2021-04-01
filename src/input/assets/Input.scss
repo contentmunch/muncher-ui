@@ -15,7 +15,6 @@ $input-icon-color: $primary-color !default;
   }
 
 
-
   .muncher-input {
     height: 2rem;
     font-size: .9rem;
@@ -67,7 +66,16 @@ $input-icon-color: $primary-color !default;
     input {
       margin-right: .1rem;
     }
+
+    label {
+      cursor: pointer;
+    }
+
+    label:hover {
+      opacity: .8;
+    }
   }
+
   .muncher-input-error {
     border: 1px solid $danger-color;
   }

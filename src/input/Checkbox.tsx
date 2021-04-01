@@ -26,7 +26,8 @@ export const Checkbox: React.FC<CheckboxProps> = (
                        required={required}
                        {...props}
                 />
-                {label ? <Label label={label} required={required} name={name}/> : ''}
+                {label ? <Label label={label} required={required} name={name}
+                                onClick={() => setCheckboxChecked(!checkboxChecked)}/> : ''}
             </div>
         </div>
     )

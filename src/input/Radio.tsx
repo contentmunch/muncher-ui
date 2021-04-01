@@ -19,7 +19,8 @@ export const Radio: React.FC<RadioProps> = ({name, required, onChange, checked, 
                     checked={radioChecked}
                     {...props}
                 />
-                {label ? <Label label={label} required={required} name={name}/> : ''}
+                {label ? <Label label={label} required={required} name={name}
+                                onClick={() => setRadioChecked(!radioChecked)}/> : ''}
             </div>
         </div>
     )

@@ -326,6 +326,11 @@ export const drawings = {
                 <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
                 <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
             </Fragment>,
+        'pencil':
+            <Fragment>
+                <line x1="18" y1="2" x2="22" y2="6"/>
+                <path d="M7.5 20.5L19 9l-4-4L3.5 16.5 2 22l5.5-1.5z"/>
+            </Fragment>,
         'image':
             <Fragment>
                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
