@@ -8,7 +8,8 @@ import {IconName} from "../icon/Drawings";
 export const Input: React.FC<InputProps> = (
     {
         name, label, required,
-        readOnly, icon, type, list,
+        readOnly, icon, hoverIcon, onHoverIconClick,
+        type, list,
         onKeyDown, error, focus, placeholder,
         onChange, step, value, maxLength, ...props
     }
@@ -17,7 +18,7 @@ export const Input: React.FC<InputProps> = (
     const hasError = () => error && error !== "";
     const className = () => {
         let inputClass = "muncher-input";
-        if (icon) inputClass += " muncher-input-icon";
+        if (icon || hoverIcon) inputClass += " muncher-input-icon";
         if (hasError()) inputClass += " muncher-input-error";
         return inputClass;
     };
@@ -26,6 +27,8 @@ export const Input: React.FC<InputProps> = (
             {label ? <Label label={label} required={required} name={name}/> : ''}
             <div className="muncher-input-element">
                 {icon ? <Icon name={icon}/> : ""}
+                {hoverIcon ? <span className="muncher-icon-hover"><Icon name={hoverIcon}
+                                                                        onClick={onHoverIconClick}/> </span> : ""}
                 <input
                     className={className()}
                     name={name}
@@ -59,10 +62,12 @@ export interface InputProps {
     required?: boolean;
     readOnly?: boolean;
     icon?: IconName;
+    hoverIcon?: IconName;
     type?: InputType;
     focus?: boolean;
     placeholder?: string;
     list?: string;
+    onHoverIconClick?: () => void;
     onChange?: (value: React.ChangeEvent<HTMLInputElement>) => void;
     onKeyDown?: (event: React.KeyboardEvent<HTMLInputElement>) => void;
     value?: any;

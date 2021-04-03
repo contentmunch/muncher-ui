@@ -28,6 +28,14 @@ TextWithIcon.args = {
     ...TextWithLabel.args,
     icon: "muncher"
 };
+export const TextWithHoverIcon = Template.bind({});
+TextWithHoverIcon.args = {
+    ...TextWithLabel.args,
+    hoverIcon: "muncher",
+    onHoverIconClick: () => {
+        console.log("hover icon clicked");
+    }
+};
 export const WithError = Template.bind({});
 WithError.args = {
     ...TextWithIcon.args,

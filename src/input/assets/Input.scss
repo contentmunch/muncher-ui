@@ -28,6 +28,14 @@ $input-icon-color: $primary-color !default;
     width: 90%;
   }
 
+  .muncher-icon-hover {
+    cursor: pointer;
+  }
+
+  .muncher-icon-hover:hover {
+    opacity: .8;
+  }
+
   ::-webkit-input-placeholder { /* Edge */
     color: $input-placeholder-color;
   }
