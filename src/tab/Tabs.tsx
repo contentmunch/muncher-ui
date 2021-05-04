@@ -15,6 +15,8 @@ export const Tabs: React.FC<TabsProps> = ({children}) => {
                         <>
                             <Button key={"muncher-tab-header" + index} variant="transparent"
                                     active={currentIndex === index}
+                                    size="small"
+                                    title={tab.headerTitle}
                                     onClick={() => {
                                         setCurrentIndex(index);
                                     }}>
@@ -39,6 +41,7 @@ export interface TabsProps {
     children: {
         tabs: {
             header: string,
+            headerTitle?: string,
             body: ReactNode
         }[]
     }
