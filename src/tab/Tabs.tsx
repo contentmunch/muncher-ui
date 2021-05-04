@@ -12,8 +12,8 @@ export const Tabs: React.FC<TabsProps> = ({children}) => {
             <Paper>
                 <header>
                     {tabs.map((tab, index) =>
-                        <>
-                            <Button key={"muncher-tab-header" + index} variant="transparent"
+                        <div key={"muncher-tab-header" + index} className="muncher-tab-header--item" >
+                            <Button variant="transparent"
                                     active={currentIndex === index}
                                     size="small"
                                     title={tab.headerTitle}
@@ -23,7 +23,7 @@ export const Tabs: React.FC<TabsProps> = ({children}) => {
                                 {tab.header}
                             </Button>
                             {index !== tabs.length - 1 ? <span className="spacer">|</span> : ""}
-                        </>
+                        </div>
                     )}
                 </header>
                 {tabs.map((tab, index) =>
