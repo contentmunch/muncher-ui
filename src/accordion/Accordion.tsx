@@ -55,9 +55,16 @@ export const Accordion: React.FC<AccordionProps> = ({variant, children}) => {
 }
 
 export interface AccordionProps {
+
     children: {
+        /**
+         * Folds for accordion
+         */
         folds: Fold[]
     };
+    /**
+     * Variant for fold button
+     */
     variant?: Variant;
 }
 

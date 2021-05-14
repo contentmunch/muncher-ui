@@ -16,7 +16,10 @@ export {Select} from "./input/Select";
 export {Paper} from "./paper/Paper";
 export {Tabs} from "./tab/Tabs";
 export {Accordion} from "./accordion/Accordion";
+export type {Fold} from "./accordion/Accordion";
 export {Table} from "./table/Table";
+export type {Page, Sort, Head, Col} from "./table/Table";
+
 export {Radio} from "./input/Radio";
 export {TextInputDropdown} from "./input/TextInputDropdown";
 export {Modal} from "./modal/Modal";
