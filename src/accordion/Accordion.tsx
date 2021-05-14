@@ -57,7 +57,7 @@ export const Accordion: React.FC<AccordionProps> = ({variant, children}) => {
 export interface AccordionProps {
     children: {
         folds: Fold[]
-    },
+    };
     variant?: Variant;
 }
 

@@ -1,7 +1,6 @@
 import React, {ReactNode, useState} from "react";
 
 import "./assets/Tabs.scss";
-import {Paper} from "../paper/Paper";
 import {Button} from "../button/Button";
 
 export const Tabs: React.FC<TabsProps> = ({children}) => {
@@ -9,30 +8,28 @@ export const Tabs: React.FC<TabsProps> = ({children}) => {
     const {tabs} = children;
     return (
         <section className="muncher-tabs">
-            <Paper>
-                <header>
-                    {tabs.map((tab, index) =>
-                        <div key={"muncher-tab-header" + index} className="muncher-tab-header--item" >
-                            <Button variant="transparent"
-                                    active={currentIndex === index}
-                                    size="small"
-                                    title={tab.headerTitle}
-                                    onClick={() => {
-                                        setCurrentIndex(index);
-                                    }}>
-                                {tab.header}
-                            </Button>
-                            {index !== tabs.length - 1 ? <span className="spacer">|</span> : ""}
-                        </div>
-                    )}
-                </header>
+            <header>
                 {tabs.map((tab, index) =>
-                    <section key={"muncher-tab-" + index}
-                             className={currentIndex === index ? "muncher-tab muncher-tab--active" : "muncher-tab"}>
-                        {tab.body}
-                    </section>
+                    <div key={"muncher-tab-header" + index} className="muncher-tab-header--item">
+                        <Button variant="transparent"
+                                active={currentIndex === index}
+                                size="small"
+                                title={tab.headerTitle}
+                                onClick={() => {
+                                    setCurrentIndex(index);
+                                }}>
+                            {tab.header}
+                        </Button>
+                        {index !== tabs.length - 1 ? <span className="spacer">|</span> : ""}
+                    </div>
                 )}
-            </Paper>
+            </header>
+            {tabs.map((tab, index) =>
+                <section key={"muncher-tab-" + index}
+                         className={currentIndex === index ? "muncher-tab muncher-tab--active" : "muncher-tab"}>
+                    {tab.body}
+                </section>
+            )}
         </section>
     );
 }
