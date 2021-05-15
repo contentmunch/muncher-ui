@@ -1,6 +1,6 @@
 import React from "react";
 import {Meta, Story} from "@storybook/react";
-import {Table} from "./Table";
+import {Col, Table} from "./Table";
 import "./assets/Table.stories.scss";
 
 export default {
@@ -22,7 +22,10 @@ const Template: Story = () =>
                 [
                     {value: "1", content: <a href="google.com">1</a>},
                     {value: "James Dean", content: "James Dean"},
-                    {value: "jamesdean@gmail.com", content: <a href="mailto:jamesdean@gmail.com">jamesdean@gmail.com</a>},
+                    {
+                        value: "jamesdean@gmail.com",
+                        content: <a href="mailto:jamesdean@gmail.com">jamesdean@gmail.com</a>
+                    },
                     {value: "123456", content: <a href="test:123456">123-456</a>},
                     {value: "false", content: "No"},
                 ],
@@ -57,7 +60,47 @@ const Template: Story = () =>
             ]
         }}</Table>
     </div>
-    ;
+;
 
 export const Default = Template.bind({});
 Default.args = {};
+
+const genratePhone = (): Col => {
+    const num = Math.floor(100000 + Math.random() * 900000).toString();
+    return {value: num, content: <a href={"tel:" + num}>{num}</a>};
+};
+const PageTemplate: Story = () => {
+    const names = ["Lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit", "Ut", "at", "libero", "eu", "risus", "blandit", "semper", "Duis", "euismod", "aliquam", "lectus", "id", "rhoncus", "Cras", "eget", "nisi", "quis", "mi", "feugiat", "viverra", "Nunc", "vehicula", "eu", "dolor", "nec", "laoreet", "Integer", "ut", "felis", "sit", "amet", "libero", "feugiat", "sagittis", "In", "hac", "habitasse", "platea", "dictumst", "Nam", "viverra", "lectus", "pulvinar", "feugiat", "iaculis", "In", "non"];
+    const rows = (): Col[][] => {
+        const data: Col[][] = [];
+        names.forEach((name, index) => {
+            data.push([
+                {value: index.toString(), content: <a href="google.com">{index.toString()}</a>},
+                {value: name, content: name},
+                {
+                    value: name + "@gmail.com",
+                    content: <a href={"mailto:" + name + "@gmail.com"}>{name + "@gmail.com"}</a>
+                },
+                genratePhone()
+            ]);
+        });
+        return data;
+    };
+    return (<
+        div
+        className="story-table">
+        <Table>{{
+            header: [
+                {name: "Id", title: "Id", sort: (a, b) => +a - +b},
+                {name: "Name", title: "First name and Last name"},
+                {name: "Email", title: "Email Address", visibility: "large-screen"},
+                {name: "Phone", title: "Phone Number", visibility: "large-screen"}
+
+            ], rows: rows()
+        }
+        }</Table>
+    </div>)
+};
+
+export const Pageable = PageTemplate.bind({});
+Pageable.args = {};

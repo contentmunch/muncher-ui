@@ -8,10 +8,10 @@ import {Icon} from "../icon/Icon";
 
 
 export const Table: React.FC<TableProps> = (
-    {fileName, skeleton, sortBy, children}) => {
+    {fileName, defaultPageSize, skeleton, sortBy, children}) => {
     const {header, rows} = children;
     const [sort, setSort] = useState<Sort>(sortBy ? sortBy : {index: 0});
-    const [page, setPage] = useState<Page>({num: 0, size: 50});
+    const [page, setPage] = useState<Page>({num: 0, size: defaultPageSize ? defaultPageSize : 50});
     const handleSortClicked = (index: number) => {
         if (sort.index === index)
             setSort({...sort, desc: !sort.desc});
@@ -51,7 +51,7 @@ export const Table: React.FC<TableProps> = (
             </div>
             {
                 skeleton ? skeleton :
-                    sortRows().map((cols, rowIndex) =>
+                    sortRows().slice(page.num * page.size, pageEndIndex() - 1).map((cols, rowIndex) =>
                         <div className="row" key={"row-" + rowIndex}>{
                             cols.map((col, colIndex) =>
                                 <div key={"row-col" + rowIndex + colIndex}
@@ -114,6 +114,7 @@ export interface TableProps {
     skeleton?: ReactNode;
     sortBy?: Sort;
     fileName?: string;
+    defaultPageSize?: number;
 }
 
 export interface Page {
