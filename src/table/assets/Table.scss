@@ -1,15 +1,8 @@
 @import "src/assets/variables";
 
-$table-light-background-color: $tertiary-background-color !default;
 $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
 
 .muncher-table {
-  width: 100vw;
-
-  > :nth-child(odd) {
-    background: $table-light-background-color;
-  }
-
   > :nth-child(even) {
     background: $table-dark-background-color;
   }
@@ -26,6 +19,7 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
 
     .col {
       padding: 0 .2rem;
+
       .muncher-button {
         font-size: .9rem;
         text-transform: none;
@@ -34,6 +28,7 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
       }
     }
   }
+
   .head {
     .muncher-button {
       padding-left: 0;
@@ -46,6 +41,7 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
       }
     }
   }
+
   .row-footer {
     font-family: $sans-serif-font;
     font-size: .8rem;
