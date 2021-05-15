@@ -9,7 +9,7 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
 
   .row {
     font-family: $sans-serif-font;
-    font-size: .9rem;
+    font-size: .8rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
     min-height: 3rem;
@@ -21,7 +21,6 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
       padding: 0 .2rem;
 
       .muncher-button {
-        font-size: .9rem;
         text-transform: none;
         white-space: normal;
         text-align: left;
@@ -44,7 +43,6 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
 
   .row-footer {
     font-family: $sans-serif-font;
-    font-size: .8rem;
     display: flex;
     flex-direction: column-reverse;
     @media(min-width: $medium-size) {
@@ -68,10 +66,6 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
 
       .muncher-input--div {
         margin: 0 .5rem;
-
-        .muncher-input {
-          font-size: .8rem;
-        }
       }
     }
   }
