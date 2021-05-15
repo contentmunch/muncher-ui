@@ -39,14 +39,16 @@ export const Table: React.FC<TableProps> = (
                          title={head.title}
                          className={head.visibility ? "col main" : "col"}>
                         {typeof head.name === 'string' ?
-                            <SortButton
-                                onClick={() => {
-                                    handleSortClicked(index)
-                                }}
-                                active={sort.index === index}
-                                sortAsc={!sort.desc}>
-                                {head.name}
-                            </SortButton> : head.name
+                            <div className="sort-button">
+                                <SortButton
+                                    onClick={() => {
+                                        handleSortClicked(index)
+                                    }}
+                                    active={sort.index === index}
+                                    sortAsc={!sort.desc}>
+                                    {head.name}
+                                </SortButton>
+                            </div> : head.name
                         }
                     </div>
                 )}

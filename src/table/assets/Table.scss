@@ -6,7 +6,9 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
   > :nth-child(even) {
     background: $table-dark-background-color;
   }
+
   font-size: .8rem;
+
   .row {
     font-family: $sans-serif-font;
 
@@ -29,7 +31,7 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
   }
 
   .head {
-    .muncher-button {
+    .sort-button {
       padding-left: 0;
       font-weight: bold;
 

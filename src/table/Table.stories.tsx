@@ -18,7 +18,7 @@ const Template: Story = () =>
                 {name: "Email", title: "Email Address", visibility: "large-screen"},
                 {name: "Phone", title: "Phone Number", visibility: "large-screen"},
                 {name: "Eligibility", title: "Eligibility"},
-                {name: <Icon name="plus">Add</Icon>}
+                {name: <Icon name="plus"/>}
 
             ], rows: [
                 [
@@ -30,7 +30,7 @@ const Template: Story = () =>
                     },
                     {value: "123456", content: <a href="test:123456">123-456</a>},
                     {value: "false", content: "No"},
-                    {value: "1", content: <Icon name="plus">Add</Icon>},
+                    {value: "1", content: <Icon name="plus"/>},
                 ],
                 [
                     {value: "2", content: <a href="google.com">2</a>},
@@ -38,7 +38,7 @@ const Template: Story = () =>
                     {value: "dean@gmail.com", content: <a href="mailto:dean@gmail.com">dean@gmail.com</a>},
                     {value: "111456", content: <a href="test:111456">111-456</a>},
                     {value: "true", content: "Yes"},
-                    {value: "1", content: <Icon name="plus">Add</Icon>},
+                    {value: "1", content: <Icon name="plus"/>},
                 ],
                 [
                     {value: "3", content: <a href="google.com">3</a>},
@@ -46,7 +46,7 @@ const Template: Story = () =>
                     {value: "james@gmail.com", content: <a href="mailto:james@gmail.com">james@gmail.com</a>},
                     {value: "123777", content: <a href="test:123777">123-777</a>},
                     {value: "true", content: "Yes"},
-                    {value: "1", content: <Icon name="plus">Add</Icon>},
+                    {value: "1", content: <Icon name="plus"/>},
                 ],
                 [
                     {value: "4", content: <a href="google.com">4</a>},
@@ -54,7 +54,7 @@ const Template: Story = () =>
                     {value: "muller@gmail.com", content: <a href="mailto:muller@gmail.com">muller@gmail.com</a>},
                     {value: "112576", content: <a href="test:112576">112-576</a>},
                     {value: "true", content: "Yes"},
-                    {value: "1", content: <Icon name="plus">Add</Icon>},
+                    {value: "1", content: <Icon name="plus"/>},
                 ],
                 [
                     {value: "5", content: <a href="google.com">5</a>},
@@ -62,7 +62,7 @@ const Template: Story = () =>
                     {value: "millern@gmail.com", content: <a href="mailto:millern@gmail.com">millern@gmail.com</a>},
                     {value: "116754", content: <a href="test:116754">116-754</a>},
                     {value: "false", content: "No"},
-                    {value: "1", content: <Icon name="plus">Add</Icon>},
+                    {value: "1", content: <Icon name="plus"/>},
                 ],
             ]
         }}</Table>
