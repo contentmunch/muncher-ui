@@ -1,4 +1,4 @@
-import React, {ReactNode, useState} from "react";
+import React, {ReactElement, ReactNode, useState} from "react";
 import "./assets/Table.scss";
 import {SortButton} from "../button/SortButton";
 import {CsvButton} from "../button/CsvButton";
@@ -38,14 +38,16 @@ export const Table: React.FC<TableProps> = (
                     <div key={"row-head-" + head.name}
                          title={head.title}
                          className={head.visibility ? "col main" : "col"}>
-                        <SortButton
-                            onClick={() => {
-                                handleSortClicked(index)
-                            }}
-                            active={sort.index === index}
-                            sortAsc={!sort.desc}>
-                            {head.name}
-                        </SortButton>
+                        {typeof head.name === 'string' ?
+                            <SortButton
+                                onClick={() => {
+                                    handleSortClicked(index)
+                                }}
+                                active={sort.index === index}
+                                sortAsc={!sort.desc}>
+                                {head.name}
+                            </SortButton> : head.name
+                        }
                     </div>
                 )}
             </div>
@@ -64,7 +66,7 @@ export const Table: React.FC<TableProps> = (
                 <CsvButton filename={fileName ? fileName : "download"}
                            variant="secondary"
                            title="Download"
-                           header={header.map(value => value.name)}
+                           header={header.map(value => typeof value.name === 'string' ? value.name : "")}
                            data={rows.map(value => value.map(col => col.value))}
                 />
                 {rows.length <= 50 ? "" :
@@ -128,8 +130,8 @@ export interface Sort {
 }
 
 export interface Head {
-    name: string;
-    title: string;
+    name: ReactElement | string;
+    title?: string;
     visibility?: "large-screen";
     sort?: (a: Col[], b: Col[]) => number;
 }
