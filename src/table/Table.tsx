@@ -25,7 +25,9 @@ export const Table: React.FC<TableProps> = (
         }
 
         return rows.sort((a: Col[], b: Col[]): number => {
-                let result = a[sort.index]?.value?.localeCompare(b[sort.index]?.value);
+                if (a[sort.index]?.value === null || b[sort.index]?.value === null)
+                    return 0;
+                let result = a[sort.index]?.value?.toLowerCase().localeCompare(b[sort.index]?.value?.toLowerCase());
                 return sort.desc ? -result : result;
             }
         );
