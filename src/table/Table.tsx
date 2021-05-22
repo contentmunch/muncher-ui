@@ -73,7 +73,7 @@ export const Table: React.FC<TableProps> = (
                            variant="secondary"
                            title="Download"
                            header={header.map(value => typeof value.name === 'string' ? value.name : "")}
-                           data={rows.map(value => value.map(col => col.value))}
+                           data={rows.map(value => value.map(col => col.csv ? col.csv : col.value))}
                 />
                 {rows.length <= 50 ? "" :
                     <div className="pagination">
@@ -107,8 +107,6 @@ export const Table: React.FC<TableProps> = (
                         </div>
                     </div>
                 }
-
-
             </div>
         </section>
     );
@@ -145,4 +143,5 @@ export interface Head {
 export interface Col {
     value: string;
     content: ReactNode;
+    csv?: string;
 }
