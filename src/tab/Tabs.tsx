@@ -3,9 +3,14 @@ import React, {ReactNode, useState} from "react";
 import "./assets/Tabs.scss";
 import {Button} from "../button/Button";
 
-export const Tabs: React.FC<TabsProps> = ({children}) => {
+export const Tabs: React.FC<TabsProps> = ({handleTabSelected, children}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const {tabs} = children;
+    const handleIndexChange = (index: number) => {
+        setCurrentIndex(index);
+        if (handleTabSelected)
+            handleTabSelected(tabs[index].header);
+    };
     return (
         <section className="muncher-tabs">
             <header>
@@ -16,7 +21,7 @@ export const Tabs: React.FC<TabsProps> = ({children}) => {
                                 size="small"
                                 title={tab.headerTitle}
                                 onClick={() => {
-                                    setCurrentIndex(index);
+                                    handleIndexChange(index);
                                 }}>
                             {tab.header}
                         </Button>
@@ -41,5 +46,6 @@ export interface TabsProps {
             headerTitle?: string,
             body: ReactNode
         }[]
-    }
+    },
+    handleTabSelected?: (header: string) => void
 }
