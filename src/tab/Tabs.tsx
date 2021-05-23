@@ -9,7 +9,7 @@ export const Tabs: React.FC<TabsProps> = ({handleTabSelected, children}) => {
     const handleIndexChange = (index: number) => {
         setCurrentIndex(index);
         if (handleTabSelected)
-            handleTabSelected(tabs[index].header);
+            handleTabSelected(index);
     };
     return (
         <section className="muncher-tabs">
@@ -47,5 +47,5 @@ export interface TabsProps {
             body: ReactNode
         }[]
     },
-    handleTabSelected?: (header: string) => void
+    handleTabSelected?: (index: number) => void
 }
