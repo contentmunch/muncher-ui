@@ -33,7 +33,10 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
   .head {
     .sort-button {
       padding-left: 0;
-      font-weight: bold;
+
+      .muncher-button {
+        font-weight: bold;
+      }
 
       .muncher-icon {
         width: 1rem;
@@ -47,10 +50,17 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
     font-family: $sans-serif-font;
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     @media(min-width: $medium-size) {
       flex-direction: row;
-      align-items: flex-start;
+      align-items: center;
       justify-content: space-between;
+    }
+
+    .muncher-csv {
+      padding: .5rem 0;
     }
 
     .pagination {

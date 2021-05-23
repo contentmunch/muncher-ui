@@ -77,17 +77,18 @@ export const Table: React.FC<TableProps> = (
                 />
                 {rows.length <= 50 ? "" :
                     <div className="pagination">
-                        <div className="left">Rows per page: <Select name="pageSize" options={["50", "100", "500"]}
-                                                                     value={page.size}
-                                                                     onChange={e => {
-                                                                         setPage({
-                                                                             ...page,
-                                                                             size: parseInt(e.target.value)
-                                                                         })
-                                                                     }}/>
+                        <div className="left">Rows: <Select name="pageSize" options={["50", "100", "500"]}
+                                                            value={page.size}
+                                                            onChange={e => {
+                                                                setPage({
+                                                                    ...page,
+                                                                    size: parseInt(e.target.value)
+                                                                })
+                                                            }}/>
                         </div>
-                        <div
-                            className="center">{page.num * page.size + 1} - {pageEndIndex() < rows.length ? pageEndIndex() : rows.length} of {rows.length}</div>
+                        <div className="center">
+                            {page.num * page.size + 1} - {pageEndIndex() < rows.length ? pageEndIndex() : rows.length} of {rows.length}
+                        </div>
                         <div className="right">
                             <Button variant="transparent" disabled={page.num === 0} size="small"
                                     onClick={() => {
