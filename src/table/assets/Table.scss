@@ -16,6 +16,7 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
     grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
     min-height: 3rem;
     align-items: center;
+    justify-content: flex-start;
     padding-left: .5rem;
     padding-right: .5rem;
 
@@ -36,6 +37,7 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
 
       .muncher-button {
         font-weight: bold;
+        padding: 0;
       }
 
       .muncher-icon {
