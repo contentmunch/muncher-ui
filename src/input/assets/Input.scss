@@ -51,6 +51,7 @@ $input-icon-color: $primary-color !default;
   .muncher-textarea {
     border: 1px solid $input-border-color;
     width: 100%;
+    padding: .5rem;
 
     + p {
       margin: 0;
