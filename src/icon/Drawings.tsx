@@ -316,6 +316,11 @@ export const drawings = {
                 <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
                 <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
             </Fragment>,
+        'file':
+            <Fragment>
+                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
+                <polyline points="13 2 13 9 20 9"/>
+            </Fragment>,
         'terminal':
             <Fragment>
                 <polyline points="4 17 10 11 4 5"/>
