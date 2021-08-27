@@ -4,12 +4,11 @@ import {Label} from "./Label";
 import {Icon} from "..";
 import {IconName} from "../icon/Drawings";
 
-
 export const Input: React.FC<InputProps> = (
     {
         name, label, required,
         readOnly, icon, hoverIcon, onHoverIconClick,
-        type, list,
+        type, list, onBlur,
         onKeyDown, error, focus, placeholder,
         onChange, step, value, maxLength, ...props
     }
@@ -42,6 +41,7 @@ export const Input: React.FC<InputProps> = (
                     readOnly={readOnly}
                     list={list}
                     onKeyDown={onKeyDown}
+                    onBlur={onBlur}
                     step={step}
                     maxLength={maxLength}
                     {...props}
@@ -70,6 +70,7 @@ export interface InputProps {
     onHoverIconClick?: () => void;
     onChange?: (value: React.ChangeEvent<HTMLInputElement>) => void;
     onKeyDown?: (event: React.KeyboardEvent<HTMLInputElement>) => void;
+    onBlur?: () => void;
     value?: any;
     error?: string;
     step?: number;

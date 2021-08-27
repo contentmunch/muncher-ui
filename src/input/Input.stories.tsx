@@ -14,7 +14,7 @@ export const Default = Template.bind({});
 Default.args = {
     name: "query",
     type: "text",
-    placeholder: "Type your query"
+    placeholder: "Type your query",
 
 };
 export const TextWithLabel = Template.bind({});
@@ -27,6 +27,7 @@ export const TextWithIcon = Template.bind({});
 TextWithIcon.args = {
     ...TextWithLabel.args,
     icon: "muncher"
+
 };
 export const TextWithHoverIcon = Template.bind({});
 TextWithHoverIcon.args = {
