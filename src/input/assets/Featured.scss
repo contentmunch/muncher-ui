@@ -34,25 +34,25 @@ $star-size: 20px !default;
     display: inline-block;
     @include star-outline-color($star-color);
   }
-
-  .featured-star:hover {
-    width: calc(#{$star-size});
-    height: $star-size;
-    background-size: $star-size $star-size;
-    position: relative;
-    display: inline-block;
-    @include star-outline-color($star-color);
-
-  }
-
-  .un-featured-star:hover {
-    width: calc(#{$star-size});
-    height: $star-size;
-    background-size: $star-size $star-size;
-    position: relative;
-    display: inline-block;
-    @include star-outline-color($star-color);
-    @include star-color($star-color);
-  }
+  //
+  //.featured-star:hover {
+  //  width: calc(#{$star-size});
+  //  height: $star-size;
+  //  background-size: $star-size $star-size;
+  //  position: relative;
+  //  display: inline-block;
+  //  @include star-outline-color($star-color);
+  //
+  //}
+  //
+  //.un-featured-star:hover {
+  //  width: calc(#{$star-size});
+  //  height: $star-size;
+  //  background-size: $star-size $star-size;
+  //  position: relative;
+  //  display: inline-block;
+  //  @include star-outline-color($star-color);
+  //  @include star-color($star-color);
+  //}
 
 }
