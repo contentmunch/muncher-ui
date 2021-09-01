@@ -23,6 +23,6 @@ export const Star: React.FC<StarProps> = ({rating, color, size, ...props}) => {
 
 export interface StarProps {
     rating: number;
-    color?: 'green' | 'yellow' | 'orange' | 'red';
+    color?: 'green' | 'yellow' | 'orange' | 'red' |'blue';
     size?: 'small' | 'medium' | 'large';
 }

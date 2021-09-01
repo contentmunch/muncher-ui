@@ -4,6 +4,7 @@
 $star-yellow: '%23ffe234' !default;
 $star-orange: '%23ffa534' !default;
 $star-red: '%23ff4545' !default;
+$star-blue: '%2340606f' !default;
 $star-green: '%2357e32c' !default;
 $star-color: $star-orange !default;
 $star-background: 'white' !default;
@@ -78,6 +79,14 @@ $star-large: 45px !default;
 
 .star-green {
   @include star-outline-color($star-green);
+}
+
+.star-blue {
+  @include star-outline-color($star-blue);
+}
+
+.star-blue:before {
+  @include star-color($star-blue);
 }
 
 .star-yellow:before {
