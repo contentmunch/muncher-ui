@@ -43,6 +43,43 @@ $star-large: 45px !default;
 
 }
 
+
+.featured-star {
+  width: calc(#{$star-large});
+  height: $star-large;
+  background-size: $star-large $star-large;
+  position: relative;
+  display: inline-block;
+  @include star-outline-color($star-color);
+  @include star-color($star-color);
+}
+.un-featured-star {
+  width: calc(#{$star-large});
+  height: $star-large;
+  background-size: $star-large $star-large;
+  position: relative;
+  display: inline-block;
+  @include star-outline-color($star-color);
+}
+.featured-star:hover {
+  width: calc(#{$star-large});
+  height: $star-large;
+  background-size: $star-large $star-large;
+  position: relative;
+  display: inline-block;
+  @include star-outline-color($star-color);
+
+}
+.un-featured-star:hover {
+  width: calc(#{$star-large});
+  height: $star-large;
+  background-size: $star-large $star-large;
+  position: relative;
+  display: inline-block;
+  @include star-outline-color($star-color);
+  @include star-color($star-color);
+}
+
 .star-small {
   width: calc(#{$star-small} * 5);
   height: $star-small;

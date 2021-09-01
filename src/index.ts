@@ -31,3 +31,4 @@ export type {Range} from "./slider/RangeSlider";
 export {Spinner} from "./spinner/Spinner";
 export type {SpinnerSize} from "./spinner/Spinner";
 export {Star} from "./star/Star";
+export {Featured} from "./input/Featured";
