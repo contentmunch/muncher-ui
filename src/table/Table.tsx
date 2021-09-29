@@ -8,7 +8,10 @@ import {Icon} from "../icon/Icon";
 
 
 export const Table: React.FC<TableProps> = (
-    {fileName, defaultPageSize, skeleton, sortBy, children}) => {
+    {
+        fileName, defaultPageSize, skeleton,
+        sortBy, excludeDownload, children
+    }) => {
     const {header, rows} = children;
     const [sort, setSort] = useState<Sort>(sortBy ? sortBy : {index: 0});
     const [page, setPage] = useState<Page>({num: 0, size: defaultPageSize ? defaultPageSize : 50});
@@ -69,12 +72,13 @@ export const Table: React.FC<TableProps> = (
                         </div>
                     )}
             <div className="row-footer">
-                <CsvButton filename={fileName ? fileName : "download"}
-                           variant="secondary"
-                           title="Download"
-                           header={header.map(value => typeof value.name === 'string' ? value.name : "")}
-                           data={rows.map(value => value.map(col => col.csv ? col.csv : col.value))}
-                />
+                {excludeDownload ? "" : <CsvButton filename={fileName ? fileName : "download"}
+                                                   variant="secondary"
+                                                   title="Download"
+                                                   header={header.map(value => typeof value.name === 'string' ? value.name : "")}
+                                                   data={rows.map(value => value.map(col => col.csv ? col.csv : col.value))}
+                />}
+
                 {rows.length <= 50 ? "" :
                     <div className="pagination">
                         <div className="left">Rows: <Select name="pageSize" options={["50", "100", "500"]}
@@ -122,6 +126,7 @@ export interface TableProps {
     sortBy?: Sort;
     fileName?: string;
     defaultPageSize?: number;
+    excludeDownload?: true;
 }
 
 export interface Page {
