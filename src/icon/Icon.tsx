@@ -9,9 +9,9 @@ export const Icon: React.FC<IconProps> =
         const iconClass = size ? 'muncher-icon--' + size : 'muncher-icon--small';
 
         return (
-            <div className="muncher-icon">
+            <span className="muncher-icon">
                 {(children && orientation && orientation === "right") ?
-                    <div className="content-left">{children}</div> : ""}
+                    <span className="content-left">{children}</span> : ""}
                 <svg
                     className={iconClass}
                     stroke={color ? color : 'currentColor'}
@@ -28,8 +28,8 @@ export const Icon: React.FC<IconProps> =
                     }
                 </svg>
                 {(children && (!orientation || orientation === "left")) ?
-                    <div className="content-right">{children}</div> : ""}
-            </div>
+                    <span className="content-right">{children}</span> : ""}
+            </span>
         );
     };
 
