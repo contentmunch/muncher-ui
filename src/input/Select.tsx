@@ -2,7 +2,6 @@ import React from "react";
 import {Label} from "./Label";
 import {Icon} from "../icon/Icon";
 import "./assets/Input.scss";
-import {generateId} from "../utils/NewId";
 
 export const Select: React.FC<SelectProps> = (
     {
@@ -10,7 +9,6 @@ export const Select: React.FC<SelectProps> = (
         error, onChange, value, ...props
     }
 ) => {
-    const id = generateId(name);
     const hasError = () => error && error !== "";
     const className = () => {
         let inputClass = "muncher-input";
@@ -19,10 +17,10 @@ export const Select: React.FC<SelectProps> = (
     };
     return (
         <div className="muncher-input--div">
-            {label ? <Label label={label} required={required} id={id}/> : ''}
+            {label ? <Label label={label} required={required} id={name}/> : ''}
             <div className="muncher-input-element">
                 <select
-                    id={id}
+                    id={name}
                     className={className()}
                     name={name}
                     value={value}

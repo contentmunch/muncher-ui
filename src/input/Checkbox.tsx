@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './assets/Input.scss';
 import {Label} from "./Label";
-import {generateId} from "../utils/NewId";
 
 export const Checkbox: React.FC<CheckboxProps> = (
     {
@@ -11,12 +10,12 @@ export const Checkbox: React.FC<CheckboxProps> = (
     }) => {
 
     const [checkboxChecked, setCheckboxChecked] = useState(checked ? checked : false);
-    const id = name ? generateId(name) : generateId("muncher-checkbox");
+
     return (
         <div className="muncher-input--div">
             <div className="muncher-checkbox">
                 <input type="checkbox"
-                       id={id}
+                       id={name}
                        name={name}
                        onChange={event => {
                            setCheckboxChecked(event.target.checked);
@@ -28,8 +27,9 @@ export const Checkbox: React.FC<CheckboxProps> = (
                        required={required}
                        {...props}
                 />
-                {label ? <Label label={label} required={required} id={id}
-                                onClick={() => {
+                {label ? <Label label={label} required={required} id={name}
+                                onClick={(e) => {
+                                    e.preventDefault();
                                     setCheckboxChecked(!checkboxChecked);
                                     if (onChange) {
                                         onChange();

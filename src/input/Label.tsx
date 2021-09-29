@@ -13,7 +13,7 @@ export interface LabelProps {
     required?: boolean;
 
     label?: string;
-    onClick?: () => void;
+    onClick?: (e: any) => void;
 }
 
 Label.defaultProps = {

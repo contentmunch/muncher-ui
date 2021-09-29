@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import "./assets/FileInput.scss";
 import {Icon} from "../icon/Icon";
-import {generateId} from "../utils/NewId";
 
 export const FileInput: React.FC<FileInputProps> = (
     {
@@ -10,7 +9,6 @@ export const FileInput: React.FC<FileInputProps> = (
         multiple, maxFiles, ...props
     }
 ) => {
-    const id = generateId(name);
     const [fileNames, setFileNames] = useState("");
     const [fileInputWarning, setFileInputWaring] = useState("");
     const max = maxFiles ? maxFiles : 3;
@@ -39,11 +37,11 @@ export const FileInput: React.FC<FileInputProps> = (
     return (
         <div className="muncher-file-input--div">
             <div className="file-input-element">
-                <label htmlFor={id} className={labelClass}>
+                <label htmlFor={name} className={labelClass}>
                     <Icon name="image"/>&nbsp;{label}{required ? <span className="required">&nbsp;*</span> : ''}
                 </label>
                 <span className="span-file-name">{fileNames}</span>
-                <input id={id} type="file" className="muncher-file-input" required={required}
+                <input id={name} type="file" className="muncher-file-input" required={required}
 
                        onChange={handleOnChange}
                        multiple={multiple} accept="image/*" {...props}/>
