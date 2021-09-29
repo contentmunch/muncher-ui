@@ -4,11 +4,11 @@ import "./assets/Featured.scss";
 export const Featured: React.FC<FeaturedProps> = ({isFeatured, onClick}) => {
 
     return (
-        <div className="div-featured">
+        <span className="span-featured">
             <span className={isFeatured ? "featured-star" : "un-featured-star"} onClick={onClick}>
 
             </span>
-        </div>
+        </span>
     );
 }
 

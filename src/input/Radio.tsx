@@ -1,13 +1,16 @@
 import React, {useState} from 'react';
 import './assets/Input.scss';
 import {Label} from './Label';
+import {generateId} from "../utils/NewId";
 
 export const Radio: React.FC<RadioProps> = ({name, required, onChange, checked, label, ...props}) => {
     const [radioChecked, setRadioChecked] = useState(checked ? checked : false);
+    const id = name ? generateId(name) : generateId("muncher-radio");
     return (
         <div className="muncher-input--div">
             <div className="muncher-radio">
                 <input
+                    id={id}
                     type="radio"
                     name={name}
                     onChange={event => {
@@ -19,7 +22,7 @@ export const Radio: React.FC<RadioProps> = ({name, required, onChange, checked, 
                     checked={radioChecked}
                     {...props}
                 />
-                {label ? <Label label={label} required={required} name={name}
+                {label ? <Label label={label} required={required} id={id}
                                 onClick={() => {
                                     setRadioChecked(!radioChecked);
                                     if (onChange) {

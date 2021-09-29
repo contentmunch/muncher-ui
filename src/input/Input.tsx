@@ -3,6 +3,7 @@ import "./assets/Input.scss";
 import {Label} from "./Label";
 import {Icon} from "..";
 import {IconName} from "../icon/Drawings";
+import {generateId} from "../utils/NewId";
 
 export const Input: React.FC<InputProps> = (
     {
@@ -13,7 +14,8 @@ export const Input: React.FC<InputProps> = (
         onChange, step, value, maxLength, ...props
     }
 ) => {
-
+    const id = generateId(name);
+    const errorId = generateId(name + "-error");
     const hasError = () => error && error !== "";
     const className = () => {
         let inputClass = "muncher-input";
@@ -23,12 +25,13 @@ export const Input: React.FC<InputProps> = (
     };
     return (
         <div className="muncher-input--div">
-            {label ? <Label label={label} required={required} name={name}/> : ''}
+            {label ? <Label label={label} required={required} id={id}/> : ''}
             <div className="muncher-input-element">
                 {icon ? <Icon name={icon}/> : ""}
                 {hoverIcon ? <span className="muncher-icon-hover"><Icon name={hoverIcon}
                                                                         onClick={onHoverIconClick}/> </span> : ""}
                 <input
+                    id={id}
                     className={className()}
                     name={name}
                     autoFocus={focus}
@@ -47,7 +50,8 @@ export const Input: React.FC<InputProps> = (
                     {...props}
                 />
             </div>
-            {hasError() ? <div className="muncher-input-error-message"><Icon name="alert">{error}</Icon></div> : ""}
+            {hasError() ?
+                <div id={errorId} className="muncher-input-error-message"><Icon name="alert">{error}</Icon></div> : ""}
         </div>
 
     );

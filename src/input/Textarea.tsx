@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import "./assets/Input.scss";
 import {Label} from './Label';
+import {generateId} from "../utils/NewId";
 
 export const Textarea: React.FC<TextareaProps> = (
     {
@@ -9,6 +10,7 @@ export const Textarea: React.FC<TextareaProps> = (
         placeholder, onChange, value, ...props
     }
 ) => {
+    const id = generateId(name);
     const [textareaValue, setTextareaValue] = useState(value);
     const handleTextareaChange = (event: any) => {
         setTextareaValue(event.target.value);
@@ -17,8 +19,9 @@ export const Textarea: React.FC<TextareaProps> = (
     }
     return (
         <div className="muncher-input--div">
-            {label ? <Label label={label} required={required} name={name}/> : ''}
+            {label ? <Label label={label} required={required} id={id}/> : ''}
             <textarea
+                id={id}
                 className="muncher-textarea"
                 rows={rows}
                 maxLength={maxLength}
