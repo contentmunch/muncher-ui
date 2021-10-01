@@ -10,8 +10,10 @@ import {CsvInput} from "../input/CsvInput";
 
 export const Table: React.FC<TableProps> = (
     {
-        fileName, defaultPageSize, skeleton, handleOnUpload,
-        sortBy, excludeDownload, includeUpload, isUploading, children
+        fileName, defaultPageSize, skeleton,
+        handleOnUpload, sortBy, excludeDownload,
+        includeUpload, isUploading, uploadWarningMessage, uploadSuccessMessage,
+        children
     }) => {
     const {header, rows} = children;
     const [sort, setSort] = useState<Sort>(sortBy ? sortBy : {index: 0});
@@ -81,7 +83,9 @@ export const Table: React.FC<TableProps> = (
                                                        data={rows.map(value => value.map(col => col.csv ? col.csv : col.value))}
                     />}
                     {includeUpload ?
-                        <CsvInput name="csv-input-file" handleOnChange={handleOnUpload} isUploading={isUploading}/> : ""}
+                        <CsvInput name="csv-input-file" handleOnChange={handleOnUpload}
+                                  isUploading={isUploading} warningMessage={uploadWarningMessage}
+                                  successMessage={uploadSuccessMessage}/> : ""}
                 </div>
 
                 {rows.length <= 50 ? "" :
@@ -135,6 +139,8 @@ export interface TableProps {
     includeUpload?: true;
     isUploading?: boolean;
     handleOnUpload?: (file: File) => void;
+    uploadWarningMessage?: string;
+    uploadSuccessMessage?: string;
 }
 
 export interface Page {

@@ -116,6 +116,7 @@ Pageable.args = {};
 const WithUploadTemplate: Story = () => {
     const names = ["Lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit", "Ut", "at", "libero", "eu", "risus", "blandit", "semper", "Duis", "euismod", "aliquam", "lectus", "id", "rhoncus", "Cras", "eget", "nisi", "quis", "mi", "feugiat", "viverra", "Nunc", "vehicula", "eu", "dolor", "nec", "laoreet", "Integer", "ut", "felis", "sit", "amet", "libero", "feugiat", "sagittis", "In", "hac", "habitasse", "platea", "dictumst", "Nam", "viverra", "lectus", "pulvinar", "feugiat", "iaculis", "In", "non"];
     const [isUploading, setIsUploading] = useState(false);
+    const [uploadSuccessMessage, setUploadSuccessMessage] = useState("");
     const rows = (): Col[][] => {
         const data: Col[][] = [];
         names.forEach((name, index) => {
@@ -136,7 +137,11 @@ const WithUploadTemplate: Story = () => {
         className="story-table">
         <Table includeUpload={true} handleOnUpload={file => {
             setIsUploading(true);
-        }} isUploading={isUploading}>{{
+            setTimeout(() => {
+                setIsUploading(false);
+                setUploadSuccessMessage("Upload Successful");
+            }, 1000);
+        }} isUploading={isUploading} uploadSuccessMessage={uploadSuccessMessage}>{{
             header: [
                 {name: "Id", title: "Id", sort: (a, b) => +a - +b},
                 {name: "Name", title: "First name and Last name"},

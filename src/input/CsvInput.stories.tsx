@@ -1,5 +1,4 @@
 import React from 'react';
-import {ImageInput, ImageInputProps} from "./ImageInput";
 import {Meta, Story} from "@storybook/react";
 import {CsvInput, CsvInputProps} from "./CsvInput";
 
@@ -15,7 +14,7 @@ Default.args = {
     name: "file",
     required: true,
     isUploading: true,
-    handleOnChange: (file:File) => {
+    handleOnChange: (file: File) => {
 
     }
 };

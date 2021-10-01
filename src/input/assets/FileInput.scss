@@ -8,6 +8,9 @@ $input-placeholder-color: $disabled-color !default;
   .file-input-element{
     display: inline-flex;
     align-items: center;
+    p {
+      margin-left: .5rem;
+    }
   }
 
 

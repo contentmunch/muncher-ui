@@ -6,8 +6,8 @@ import {Spinner} from "../spinner/Spinner";
 export const CsvInput: React.FC<CsvInputProps> = (
     {
         name, label, variant, size,
-        required, active, isUploading, handleOnChange,
-        ...props
+        required, active, isUploading,
+        handleOnChange, warningMessage, successMessage, ...props
     }
 ) => {
     const labelClass = 'muncher-button' +
@@ -30,7 +30,10 @@ export const CsvInput: React.FC<CsvInputProps> = (
                 <input id={name} type="file" className="muncher-file-input" required={required}
                        onChange={onChange}
                        accept="text/csv" {...props}/>
+                {warningMessage && warningMessage !== "" ? <p className="text-danger">{warningMessage}</p> : ""}
+                {successMessage && successMessage !== "" ? <p className="text-success">{successMessage}</p> : ""}
             </div>
+
         </div>
 
     );
@@ -45,6 +48,8 @@ export interface CsvInputProps {
     active?: boolean;
     handleOnChange?: (file: File) => void;
     isUploading?: boolean;
+    warningMessage?: string;
+    successMessage?: string;
 };
 
 CsvInput.defaultProps = {
