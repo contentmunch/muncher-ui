@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {Meta, Story} from "@storybook/react";
 import {Col, Table} from "./Table";
 import "./assets/Table.stories.scss";
@@ -111,3 +111,41 @@ const PageTemplate: Story = () => {
 
 export const Pageable = PageTemplate.bind({});
 Pageable.args = {};
+
+
+const WithUploadTemplate: Story = () => {
+    const names = ["Lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit", "Ut", "at", "libero", "eu", "risus", "blandit", "semper", "Duis", "euismod", "aliquam", "lectus", "id", "rhoncus", "Cras", "eget", "nisi", "quis", "mi", "feugiat", "viverra", "Nunc", "vehicula", "eu", "dolor", "nec", "laoreet", "Integer", "ut", "felis", "sit", "amet", "libero", "feugiat", "sagittis", "In", "hac", "habitasse", "platea", "dictumst", "Nam", "viverra", "lectus", "pulvinar", "feugiat", "iaculis", "In", "non"];
+    const [isUploading, setIsUploading] = useState(false);
+    const rows = (): Col[][] => {
+        const data: Col[][] = [];
+        names.forEach((name, index) => {
+            data.push([
+                {value: index.toString(), content: <a href="google.com">{index.toString()}</a>},
+                {value: name, content: name},
+                {
+                    value: name + "@gmail.com",
+                    content: <a href={"mailto:" + name + "@gmail.com"}>{name + "@gmail.com"}</a>
+                },
+                genratePhone()
+            ]);
+        });
+        return data;
+    };
+    return (<
+        div
+        className="story-table">
+        <Table includeUpload={true} handleOnUpload={file => {
+            setIsUploading(true);
+        }} isUploading={isUploading}>{{
+            header: [
+                {name: "Id", title: "Id", sort: (a, b) => +a - +b},
+                {name: "Name", title: "First name and Last name"},
+                {name: "Email", title: "Email Address", visibility: "large-screen"},
+                {name: "Phone", title: "Phone Number", visibility: "large-screen"}
+
+            ], rows: rows()
+        }
+        }</Table>
+    </div>)
+};
+export const WithUpload = WithUploadTemplate.bind({});

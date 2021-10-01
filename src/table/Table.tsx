@@ -5,12 +5,13 @@ import {CsvButton} from "../button/CsvButton";
 import {Select} from "../input/Select";
 import {Button} from "../button/Button";
 import {Icon} from "../icon/Icon";
+import {CsvInput} from "../input/CsvInput";
 
 
 export const Table: React.FC<TableProps> = (
     {
-        fileName, defaultPageSize, skeleton,
-        sortBy, excludeDownload, children
+        fileName, defaultPageSize, skeleton, handleOnUpload,
+        sortBy, excludeDownload, includeUpload, isUploading, children
     }) => {
     const {header, rows} = children;
     const [sort, setSort] = useState<Sort>(sortBy ? sortBy : {index: 0});
@@ -72,12 +73,16 @@ export const Table: React.FC<TableProps> = (
                         </div>
                     )}
             <div className="row-footer">
-                {excludeDownload ? "" : <CsvButton filename={fileName ? fileName : "download"}
-                                                   variant="secondary"
-                                                   title="Download"
-                                                   header={header.map(value => typeof value.name === 'string' ? value.name : "")}
-                                                   data={rows.map(value => value.map(col => col.csv ? col.csv : col.value))}
-                />}
+                <div className="row-footer-buttons">
+                    {excludeDownload ? "" : <CsvButton filename={fileName ? fileName : "download"}
+                                                       variant="secondary"
+                                                       title="Download"
+                                                       header={header.map(value => typeof value.name === 'string' ? value.name : "")}
+                                                       data={rows.map(value => value.map(col => col.csv ? col.csv : col.value))}
+                    />}
+                    {includeUpload ?
+                        <CsvInput name="csv-input-file" handleOnChange={handleOnUpload} isUploading={isUploading}/> : ""}
+                </div>
 
                 {rows.length <= 50 ? "" :
                     <div className="pagination">
@@ -127,6 +132,9 @@ export interface TableProps {
     fileName?: string;
     defaultPageSize?: number;
     excludeDownload?: true;
+    includeUpload?: true;
+    isUploading?: boolean;
+    handleOnUpload?: (file: File) => void;
 }
 
 export interface Page {

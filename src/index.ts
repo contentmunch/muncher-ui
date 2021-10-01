@@ -1,5 +1,5 @@
 export {Label} from "./input/Label";
-export {FileInput} from "./input/FileInput";
+export {ImageInput} from "./input/ImageInput";
 export {Textarea} from "./input/Textarea";
 export {Backdrop} from "./backdrop/Backdrop";
 export {Badge} from "./badge/Badge";

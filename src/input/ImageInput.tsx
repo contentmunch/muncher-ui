@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "./assets/FileInput.scss";
 import {Icon} from "../icon/Icon";
 
-export const FileInput: React.FC<FileInputProps> = (
+export const ImageInput: React.FC<ImageInputProps> = (
     {
         name, label, variant, size,
         required, active, setFiles,
@@ -52,7 +52,7 @@ export const FileInput: React.FC<FileInputProps> = (
     );
 };
 
-export interface FileInputProps {
+export interface ImageInputProps {
     name: string;
     label?: string;
     variant?: 'primary' | 'secondary' | 'tertiary';
@@ -64,7 +64,7 @@ export interface FileInputProps {
     setFiles: (files: any) => void;
 };
 
-FileInput.defaultProps = {
+ImageInput.defaultProps = {
     size: "large",
     variant: "secondary",
     multiple: false,

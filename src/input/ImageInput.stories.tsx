@@ -1,18 +1,18 @@
 import React from 'react';
-import {FileInput, FileInputProps} from "./FileInput";
+import {ImageInput, ImageInputProps} from "./ImageInput";
 import {Meta, Story} from "@storybook/react";
 
 export default {
-    title: 'Input/File Input',
-    component: FileInput,
+    title: 'Input/Image Input',
+    component: ImageInput,
 } as Meta;
 
-const Template: Story<FileInputProps> = (args) => <FileInput {...args} />;
+const Template: Story<ImageInputProps> = (args) => <ImageInput {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
     name: "file",
-    label: "upload file",
+    label: "upload image",
     required: true,
     multiple: true,
     setFiles: () => {

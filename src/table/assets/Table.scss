@@ -61,8 +61,9 @@ $table-dark-background-color: rgba(234, 233, 227, 0.30) !default;
       justify-content: space-between;
     }
 
-    .muncher-csv {
-     // padding: .5rem 0;
+    .row-footer-buttons {
+      display: flex;
+      align-items: center;
     }
 
     .pagination {
