@@ -102,25 +102,25 @@ export const Table: React.FC<TableProps> = (
                     <div className="center">
                         {page.num * page.size + 1} - {pageEndIndex() < rows.length ? pageEndIndex() : rows.length} of {rows.length}
                     </div>
-                    {rows.length <= 50 ? "" :
-                        <div className="right">
-                            <Button variant="transparent" disabled={page.num === 0} size="small"
-                                    onClick={() => {
-                                        setPage({...page, num: page.num - 1});
-                                    }}
-                            >
-                                <Icon name="chevron-left"/>
-                            </Button>
-                            <Button variant="transparent"
-                                    disabled={(rows.length - (page.num * page.size)) <= page.size}
-                                    size="small"
-                                    onClick={() => {
-                                        setPage({...page, num: page.num + 1});
-                                    }}>
-                                <Icon name="chevron-right"/>
-                            </Button>
-                        </div>
-                    }
+
+                    <div className="right">
+                        <Button variant="transparent" disabled={page.num === 0} size="small"
+                                onClick={() => {
+                                    setPage({...page, num: page.num - 1});
+                                }}
+                        >
+                            <Icon name="chevron-left"/>
+                        </Button>
+                        <Button variant="transparent"
+                                disabled={(rows.length - (page.num * page.size)) <= page.size}
+                                size="small"
+                                onClick={() => {
+                                    setPage({...page, num: page.num + 1});
+                                }}>
+                            <Icon name="chevron-right"/>
+                        </Button>
+                    </div>
+
                 </div>
 
             </div>
