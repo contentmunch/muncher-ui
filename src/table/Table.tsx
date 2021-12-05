@@ -88,20 +88,21 @@ export const Table: React.FC<TableProps> = (
                                   successMessage={uploadSuccessMessage}/> : ""}
                 </div>
 
-                {rows.length <= 50 ? "" :
-                    <div className="pagination">
-                        <div className="left">Rows: <Select name="pageSize" options={["50", "100", "500"]}
-                                                            value={page.size}
-                                                            onChange={e => {
-                                                                setPage({
-                                                                    ...page,
-                                                                    size: parseInt(e.target.value)
-                                                                })
-                                                            }}/>
-                        </div>
-                        <div className="center">
-                            {page.num * page.size + 1} - {pageEndIndex() < rows.length ? pageEndIndex() : rows.length} of {rows.length}
-                        </div>
+
+                <div className="pagination">
+                    <div className="left">Rows: <Select name="pageSize" options={["50", "100", "500"]}
+                                                        value={page.size}
+                                                        onChange={e => {
+                                                            setPage({
+                                                                ...page,
+                                                                size: parseInt(e.target.value)
+                                                            })
+                                                        }}/>
+                    </div>
+                    <div className="center">
+                        {page.num * page.size + 1} - {pageEndIndex() < rows.length ? pageEndIndex() : rows.length} of {rows.length}
+                    </div>
+                    {rows.length <= 50 ? "" :
                         <div className="right">
                             <Button variant="transparent" disabled={page.num === 0} size="small"
                                     onClick={() => {
@@ -119,8 +120,9 @@ export const Table: React.FC<TableProps> = (
                                 <Icon name="chevron-right"/>
                             </Button>
                         </div>
-                    </div>
-                }
+                    }
+                </div>
+
             </div>
         </section>
     );
