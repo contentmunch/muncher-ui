@@ -1,4 +1,4 @@
-![Test release and publish](https://github.com/contentmunch/muncher-ui/workflows/Test%20release%20and%20publish/badge.svg) 
+![Build release and publish](https://github.com/contentmunch/muncher-ui/workflows/Build%20release%20and%20publish/badge.svg) 
 # Muncher-UI
 A React/Typescript [UI component library](https://ui.muncher.dev/) based on html5 and scss 
 

@@ -50,6 +50,7 @@ export interface AllButtonProps {
      * if true, the button edges are rounded
      */
     rounded?: boolean;
+    children?: any;
 }
 
 export interface ButtonProps extends AllButtonProps {

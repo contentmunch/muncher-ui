@@ -47,6 +47,7 @@ export interface SortButtonProps {
     active?: boolean;
     sortAsc?: boolean;
     onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+    children?:any;
 }
 
 SortButton.defaultProps = {

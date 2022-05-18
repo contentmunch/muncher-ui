@@ -23,7 +23,7 @@ export const DropdownButton: React.FC<DropdownButtonProps> = (
         if (onClose) onClose();
 
     }, [onClose, setShowContent]);
-    const escFunction = useCallback((event) => {
+    const escFunction = useCallback((event:any) => {
         if (event.keyCode === 27) handleContentClose();
     }, [handleContentClose]);
 

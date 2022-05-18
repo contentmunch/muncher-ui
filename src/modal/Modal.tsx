@@ -3,7 +3,7 @@ import './assets/Modal.scss';
 import {Backdrop} from '..';
 
 export const Modal: React.FC<ModalProps> = ({show, setShow, children, ...props}) => {
-    const escFunction = useCallback((event) => {
+    const escFunction = useCallback((event:any) => {
         if (event.keyCode === 27) {
             setShow(false);
         }
@@ -42,6 +42,7 @@ export const Modal: React.FC<ModalProps> = ({show, setShow, children, ...props})
 export interface ModalProps {
     show: boolean;
     setShow: (b: boolean) => void;
+    children?:any;
 }
 
 Modal.defaultProps = {

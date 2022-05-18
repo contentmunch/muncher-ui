@@ -50,6 +50,7 @@ export interface IconProps {
     name?: IconName;
     iconString?: string;
     orientation?: "left" | "right";
+    children?:any;
 }
 
 

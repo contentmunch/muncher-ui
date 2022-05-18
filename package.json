@@ -1,6 +1,6 @@
 {
   "name": "@contentmunch/muncher-ui",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Muncher UI components",
   "author": "asikpradhan",
   "license": "MIT",
@@ -49,37 +49,21 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.0",
-    "@babel/core": "^7.16.0",
-    "@babel/plugin-proposal-class-properties": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "@babel/preset-react": "^7.16.0",
-    "@babel/preset-typescript": "^7.16.0",
-    "@storybook/addon-a11y": "^6.3.12",
-    "@storybook/addon-actions": "^6.3.12",
-    "@storybook/addon-docs": "^6.3.12",
-    "@storybook/addon-essentials": "^6.3.12",
-    "@storybook/addon-links": "^6.3.12",
-    "@storybook/addon-storyshots": "^6.3.12",
-    "@storybook/node-logger": "^6.3.12",
-    "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.12",
-    "@testing-library/jest-dom": "^5.15.0",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "@types/jest": "^26.0.24",
-    "@types/node": "^12.20.37",
-    "@types/react": "^17.0.35",
-    "@types/react-dom": "^17.0.11",
-    "babel-loader": "^8.1.0",
-    "moment": "^2.29.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "react-test-renderer": "^17.0.2",
+    "@storybook/addon-a11y": "^6.5.0",
+    "@storybook/addon-actions": "^6.5.0",
+    "@storybook/addon-essentials": "^6.5.0",
+    "@storybook/addon-interactions": "^6.5.0",
+    "@storybook/addon-links": "^6.5.0",
+    "@storybook/builder-webpack5": "^6.5.0",
+    "@storybook/manager-webpack5": "^6.5.0",
+    "@storybook/node-logger": "^6.5.0",
+    "@storybook/preset-create-react-app": "^4.1.0",
+    "@storybook/react": "^6.5.0",
+    "@storybook/testing-library": "^0.0.11",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "prop-types": "^15.8.1",
     "rimraf": "^3.0.2",
-    "typescript": "^4.5.2",
-    "web-vitals": "^1.1.2"
+    "webpack": "^5.72.1"
   },
   "bugs": {
     "url": "https://github.com/contentmunch/muncher-ui/issues"
@@ -96,7 +80,20 @@
     "component driven"
   ],
   "dependencies": {
-    "node-sass": "^6.0.1",
-    "normalize.css": "^8.0.1"
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^16.11.36",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "moment": "^2.29.3",
+    "node-sass": "^7.0.1",
+    "normalize.css": "^8.0.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.6.4",
+    "web-vitals": "^2.1.4"
   }
 }

@@ -18,7 +18,7 @@ export const TextInputDropdown: React.FC<TextInputDropdownProps> = (
 
     }, [setShowContent]);
 
-    const escFunction = useCallback((event) => {
+    const escFunction = useCallback((event: any) => {
         if (event.keyCode === 27) {
             onContentClose();
         }
@@ -65,6 +65,7 @@ export interface TextInputDropdownProps {
     showContent: boolean;
     setShowContent: (b: boolean) => void;
     readOnly?: boolean;
+    children?: any;
 
 }
 
