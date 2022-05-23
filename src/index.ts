@@ -6,6 +6,7 @@ export {Badge} from "./badge/Badge";
 export {Button} from "./button/Button";
 export {DropdownButton} from "./button/DropdownButton";
 export {DropdownNavButton} from "./button/DropdownNavButton";
+export {ShareButton} from "./button/ShareButton";
 export {CsvButton} from "./button/CsvButton";
 export {SortButton} from "./button/SortButton";
 export {Icon} from "./icon/Icon";
