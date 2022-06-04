@@ -36,18 +36,13 @@ label {
   }
 }
 @media (min-width: $medium-size) {
-  .mobile {
-    display: none;
-  }
-  .main {
-    display: block;
-  }
+
   .container {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    margin-right: auto;
-    margin-left: auto;
-    width: 45rem;
+    //padding-right: 1rem;
+    //padding-left: 1rem;
+    //margin-right: auto;
+    //margin-left: auto;
+    //width: 45rem;
   }
   .main--content {
     min-height: 60vh;
@@ -59,7 +54,17 @@ label {
 }
 
 @media (min-width: $large-size) {
+  .mobile {
+    display: none;
+  }
+  .main {
+    display: block;
+  }
   .container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
     width: 54rem;
   }
 }
