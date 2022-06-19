@@ -10,26 +10,26 @@ export default {
 
 const Template: Story<TextInputDropdownProps> = (args) => {
     const [showContent, setShowContent] = useState(false);
+    const [value, setValue] = useState("");
     return (
         <div className="muncher-input-drop-down-story">
             <TextInputDropdown {...args}
                                showContent={showContent}
                                setShowContent={setShowContent}
-                               handleInputChange={() => {
-                                   console.log("text input in");
-                               }}>
+                               handleInputChange={(value) => {
+                                   setValue(value);
+
+                               }}
+                               value={value}
+            >
                 <p>Drop down content</p>
                 <p>Drop down content</p>
                 <p>Drop down content</p>
                 <p>Drop down content</p>
-                <p>Drop down content</p>
-                <p>Drop down content</p>
-                <p>Drop down content</p>
-                <p>Drop down content</p>
-                <p>Drop down content</p>
-                <p>Drop down content</p>
-                <p>Drop down content</p>
-                <p>Drop down content</p>
+                <p onClick={() => {
+                    setValue("Tese");
+                    setShowContent(false);
+                }}>Drop down content</p>
 
             </TextInputDropdown>
         </div>

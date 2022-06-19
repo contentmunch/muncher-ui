@@ -5,7 +5,7 @@ import {Input} from "./Input";
 export const TextInputDropdown: React.FC<TextInputDropdownProps> = (
     {
         focus, inputPlaceHolder, handleInputChange, showContent
-        , setShowContent, readOnly, children
+        , setShowContent, readOnly, value, children
     }) => {
     const ref = useRef(null);
 
@@ -43,7 +43,7 @@ export const TextInputDropdown: React.FC<TextInputDropdownProps> = (
     return (
         <div className="muncher-input-drop-down" ref={ref}>
             <Input focus={focus} placeholder={inputPlaceHolder} name="query" onChange={handleQueryChange}
-                   readOnly={readOnly}/>
+                   readOnly={readOnly} value={value}/>
 
             {
                 showContent ?
@@ -66,6 +66,7 @@ export interface TextInputDropdownProps {
     setShowContent: (b: boolean) => void;
     readOnly?: boolean;
     children?: any;
+    value?: any;
 
 }
 
