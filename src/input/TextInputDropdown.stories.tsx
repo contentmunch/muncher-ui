@@ -21,6 +21,9 @@ const Template: Story<TextInputDropdownProps> = (args) => {
 
                                }}
                                value={value}
+                               label="country"
+                               required={true}
+                               error={"This is an error"}
             >
                 <p>Drop down content</p>
                 <p>Drop down content</p>
