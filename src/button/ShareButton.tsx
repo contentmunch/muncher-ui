@@ -3,6 +3,7 @@ import './assets/ShareButton.scss';
 import {Button, Size, Variant} from "./Button";
 import {DropdownButton} from "./DropdownButton";
 import {Icon} from "../icon/Icon";
+import {CopyButton} from "./CopyButton";
 
 export const ShareButton: React.FC<ShareButtonProps> = (
     {
@@ -10,6 +11,7 @@ export const ShareButton: React.FC<ShareButtonProps> = (
         children, ...props
     }) => {
     const [showContent, setShowContent] = useState(false);
+
 
     return (
         <div className="muncher-share">
@@ -34,6 +36,7 @@ export const ShareButton: React.FC<ShareButtonProps> = (
                     <a href={"mailto:?subject=" + title + "&body=" + window.location.href}
                        target="_blank" title="share link by Email"><Icon name="mail"/></a>
                 </Button>
+                <CopyButton text={window.location.href}/>
 
             </DropdownButton>
         </div>
