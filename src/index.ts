@@ -10,6 +10,7 @@ export {ShareButton} from "./button/ShareButton";
 export {CsvButton} from "./button/CsvButton";
 export {SortButton} from "./button/SortButton";
 export {CopyButton} from "./button/CopyButton";
+export {NavigateButton} from "./button/NavigateButton";
 export {Icon} from "./icon/Icon";
 export {Checkbox} from "./input/Checkbox";
 export {Input} from "./input/Input";
