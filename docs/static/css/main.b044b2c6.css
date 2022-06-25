@@ -49,6 +49,8 @@
 
 .muncher-dropdown-story{display:flex}
 
+.muncher-button--navigate .muncher-button{background-color:rgba(223,226,197,0.21)}
+
 .icon-search-story .muncher-input--div{margin-bottom:1rem}.icon-search-story .muncher-input--div .muncher-input{width:50%}.icon-search-story .muncher-button{margin:1rem}
 
 .div-input-stories{width:16rem}@media (min-width: 40rem){.div-input-stories{width:40rem}}
@@ -65,4 +67,4 @@
 .story-table{width:95vw}
 
 
-/*# sourceMappingURL=main.db25b15b.css.map*/
+/*# sourceMappingURL=main.b044b2c6.css.map*/
