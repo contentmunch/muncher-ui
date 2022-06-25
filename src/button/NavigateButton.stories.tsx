@@ -20,3 +20,8 @@ export const Left = Template.bind({});
 Left.args = {
     direction: "left"
 }
+export const Disabled = Template.bind({});
+
+Disabled.args = {
+    ...Left.args, isDisabled: true
+}

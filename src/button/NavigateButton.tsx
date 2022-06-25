@@ -5,15 +5,15 @@ import {Icon} from "../icon/Icon";
 
 export const NavigateButton: React.FC<NavigateButtonProps> = (
     {
-        direction, size, onClick
+        direction, size, isDisabled, onClick
     }) => {
 
     return (
         <div className="muncher-button--navigate">
 
-            <Button size={size} onClick={onClick}
+            <Button size={size} onClick={onClick} disabled={isDisabled}
                     title={direction === "left" ? "Navigate Left" : "Navigate Right"}>
-                <Icon name={direction === "left" ? "chevron-left" : "chevron-right"} />
+                <Icon name={direction === "left" ? "chevron-left" : "chevron-right"}/>
             </Button>
         </div>
     );
@@ -21,7 +21,8 @@ export const NavigateButton: React.FC<NavigateButtonProps> = (
 
 export interface NavigateButtonProps {
     size?: Size;
-    direction: "left" | "right"
+    direction: "left" | "right";
+    isDisabled?: boolean;
     onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
