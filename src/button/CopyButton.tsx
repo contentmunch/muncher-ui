@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import './assets/ShareButton.scss';
 import {Button, Size, Variant} from "./Button";
 import {Icon} from "../icon/Icon";
 import {copyToClipboard} from "../utils/Utils";
