@@ -9,7 +9,9 @@ export const NavigateButton: React.FC<NavigateButtonProps> = (
     }) => {
 
     return (
-        <div className="muncher-button--navigate">
+        <div
+            className={direction === "left" ? "muncher-button--navigate muncher-button--navigate-left" :
+                "muncher-button--navigate muncher-button--navigate-right"}>
 
             <Button onClick={onClick} disabled={isDisabled} size="small"
                     title={direction === "left" ? "Navigate Left" : "Navigate Right"}>
