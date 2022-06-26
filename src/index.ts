@@ -36,5 +36,7 @@ export {Spinner} from "./spinner/Spinner";
 export type {SpinnerSize} from "./spinner/Spinner";
 export {Star} from "./star/Star";
 export {Featured} from "./input/Featured";
+export {Ul} from "./list/Ul";
+export {Li} from "./list/Li";
 
 export {copyToClipboard} from "./utils/Utils";
