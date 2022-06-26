@@ -1,0 +1,57 @@
+@import "src/assets/variables";
+
+.muncher-item-slider {
+  .slider-container {
+    position: relative;
+
+    .muncher-button--navigate {
+      position: absolute;
+      top: 40%;
+      z-index: 100;
+      .muncher-button {
+        color: $secondary-background-color;
+      }
+    }
+
+    .muncher-button--navigate-left {
+      left: .1rem;
+    }
+
+    .muncher-button--navigate-right {
+      right: .1rem;
+    }
+  }
+
+  .slider-item {
+    display: none;
+  }
+
+  .current {
+    display: block;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+}

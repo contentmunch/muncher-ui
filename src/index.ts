@@ -31,6 +31,7 @@ export {Progress} from "./progress/Progress";
 export {Slider} from "./slider/Slider";
 export {RangeSlider} from "./slider/RangeSlider";
 export type {Range} from "./slider/RangeSlider";
+export {ItemSlider} from "./slider/ItemSlider";
 export {Spinner} from "./spinner/Spinner";
 export type {SpinnerSize} from "./spinner/Spinner";
 export {Star} from "./star/Star";
