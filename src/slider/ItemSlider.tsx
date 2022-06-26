@@ -1,8 +1,10 @@
 import React, {ReactElement, useState} from "react";
 import "./assets/ItemSlider.scss";
 import {NavigateButton} from "../button/NavigateButton";
+import {Size} from "../button/Button";
 
-export const ItemSlider: React.FC<ItemSliderProps> = ({sliderItems}) => {
+export const ItemSlider: React.FC<ItemSliderProps> = (
+    {sliderItems, navButtonSize, navButtonWeight}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
 
@@ -28,7 +30,7 @@ export const ItemSlider: React.FC<ItemSliderProps> = ({sliderItems}) => {
                     </div>
                 )}
                 {sliderItems.length > 1 ?
-                    <NavigateButton direction="right" size="large" weight={2}
+                    <NavigateButton direction="right" size={navButtonSize} weight={navButtonWeight}
                                     onClick={() => {
                                         if (currentIndex === sliderItems.length - 1)
                                             setCurrentIndex(0);
@@ -42,5 +44,12 @@ export const ItemSlider: React.FC<ItemSliderProps> = ({sliderItems}) => {
 
 export interface ItemSliderProps {
     sliderItems: ReactElement[];
+    navButtonSize?: Size;
+    navButtonWeight?: 1 | 2 | 3;
 }
+
+ItemSlider.defaultProps = {
+    navButtonSize: 'large',
+    navButtonWeight: 2
+};
 
