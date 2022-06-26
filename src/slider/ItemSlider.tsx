@@ -6,38 +6,42 @@ import {Size} from "../button/Button";
 export const ItemSlider: React.FC<ItemSliderProps> = (
     {sliderItems, navButtonSize, navButtonWeight}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-
+    const style = (index: number) => {
+        return {transform: `translateX(${100 * (index - currentIndex)}%)`}
+    };
 
     return (
         <div className="muncher-item-slider">
-            <div className="slider-container">
-                {sliderItems.length > 1 ?
-                    <NavigateButton direction="left" size={navButtonSize} weight={navButtonWeight}
-                                    onClick={() => {
-                                        if (currentIndex === 0)
-                                            setCurrentIndex(sliderItems.length - 1);
-                                        else
-                                            setCurrentIndex(currentIndex - 1);
-                                    }}/> : ""
-                }
 
+            {sliderItems.length > 1 ?
+                <NavigateButton direction="left" size={navButtonSize} weight={navButtonWeight}
+                                onClick={() => {
+                                    if (currentIndex === 0)
+                                        setCurrentIndex(sliderItems.length - 1);
+                                    else
+                                        setCurrentIndex(currentIndex - 1);
+                                }}/> : ""
+            }
+            <div className="slider-container">
                 {sliderItems.map((sliderItem, index) =>
-                    <div className={index === currentIndex ? "slider-item current fade" : "slider-item fade"}
+                    <div className="slider-item"
+                         style={style(index)}
                          key={"slider-item" + index}>
                         {
                             sliderItem
                         }
                     </div>
                 )}
-                {sliderItems.length > 1 ?
-                    <NavigateButton direction="right" size={navButtonSize} weight={navButtonWeight}
-                                    onClick={() => {
-                                        if (currentIndex === sliderItems.length - 1)
-                                            setCurrentIndex(0);
-                                        else
-                                            setCurrentIndex(currentIndex + 1);
-                                    }}/> : ""}
             </div>
+            {sliderItems.length > 1 ?
+                <NavigateButton direction="right" size={navButtonSize} weight={navButtonWeight}
+                                onClick={() => {
+                                    if (currentIndex === sliderItems.length - 1)
+                                        setCurrentIndex(0);
+                                    else
+                                        setCurrentIndex(currentIndex + 1);
+                                }}/> : ""}
+
         </div>
     );
 };
