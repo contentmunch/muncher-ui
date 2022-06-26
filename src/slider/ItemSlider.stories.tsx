@@ -22,3 +22,9 @@ Default.args = {
 
     ]
 }
+
+export const SingleItem = Template.bind({});
+SingleItem.args = {
+    sliderItems: [<img src="https://www.renaissancerentals.com/api/asset/download/1n0NNoyBnzt-nfECziwiuPxz7k-InaMq_"
+                       className="slide" width="500" height="300"/>]
+}
