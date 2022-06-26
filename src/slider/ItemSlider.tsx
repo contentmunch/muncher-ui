@@ -12,7 +12,7 @@ export const ItemSlider: React.FC<ItemSliderProps> = (
         <div className="muncher-item-slider">
             <div className="slider-container">
                 {sliderItems.length > 1 ?
-                    <NavigateButton direction="left" size="large" weight={2}
+                    <NavigateButton direction="left" size={navButtonSize} weight={navButtonWeight}
                                     onClick={() => {
                                         if (currentIndex === 0)
                                             setCurrentIndex(sliderItems.length - 1);
