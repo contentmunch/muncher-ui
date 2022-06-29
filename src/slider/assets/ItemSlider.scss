@@ -1,7 +1,6 @@
 @import "src/assets/variables";
 
-$slider-width: 30rem !default;
-$slider-height: 20rem !default;
+$slider-min-height: 20rem !default;
 .muncher-item-slider {
   position: relative;
 
@@ -24,8 +23,8 @@ $slider-height: 20rem !default;
   }
 
   .slider-container {
-    width: $slider-width;
-    height: $slider-height;
+    width: 100%;
+    min-height: $slider-min-height;
     position: relative;
     overflow: hidden;
   }
