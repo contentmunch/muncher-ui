@@ -6,9 +6,8 @@ import {Size} from "../button/Button";
 export const ItemSlider: React.FC<ItemSliderProps> = (
     {sliderItems, navButtonSize, navButtonWeight}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const style = (index: number) => {
-        return {transform: `translateX(${100 * (index - currentIndex)}%)`}
-    };
+    const [translate, setTranslate] = useState(0);
+
 
     return (
         <div className="muncher-item-slider">
@@ -16,16 +15,17 @@ export const ItemSlider: React.FC<ItemSliderProps> = (
             {sliderItems.length > 1 && currentIndex > 0 ?
                 <NavigateButton direction="left" size={navButtonSize} weight={navButtonWeight}
                                 onClick={() => {
+                                    setTranslate(translate + 100);
                                     if (currentIndex === 0)
                                         setCurrentIndex(sliderItems.length - 1);
                                     else
                                         setCurrentIndex(currentIndex - 1);
                                 }}/> : ""
             }
-            <div className="slider-container">
+            <div className="slider-container" style={{width: `${100 * sliderItems.length}%`}}>
                 {sliderItems.map((sliderItem, index) =>
                     <div className="slider-item"
-                         style={style(index)}
+                         style={{transform: `translateX(${translate}%)`}}
                          key={"slider-item" + index}>
                         {
                             sliderItem
@@ -36,6 +36,8 @@ export const ItemSlider: React.FC<ItemSliderProps> = (
             {sliderItems.length > 1 && currentIndex < sliderItems.length - 1 ?
                 <NavigateButton direction="right" size={navButtonSize} weight={navButtonWeight}
                                 onClick={() => {
+
+                                    setTranslate(translate - 100);
                                     if (currentIndex === sliderItems.length - 1)
                                         setCurrentIndex(0);
                                     else

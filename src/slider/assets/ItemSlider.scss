@@ -1,12 +1,13 @@
 @import "src/assets/variables";
 
-$slider-min-height: 20rem !default;
 .muncher-item-slider {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 
   .muncher-button--navigate {
     position: absolute;
-    top: 40%;
+    top: 45%;
     z-index: 100;
 
     .muncher-button {
@@ -23,15 +24,17 @@ $slider-min-height: 20rem !default;
   }
 
   .slider-container {
-    width: 100%;
-    min-height: $slider-min-height;
-    position: relative;
-    overflow: hidden;
+    display: flex;
   }
 
   .slider-item {
-    position: absolute;
-    transition: all 0.5s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    transition: all 0.7s;
   }
 
 }
