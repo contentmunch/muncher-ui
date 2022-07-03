@@ -8,20 +8,42 @@ export default {
     component: ItemSlider
 } as ComponentMeta<typeof ItemSlider>;
 
-const Template: ComponentStory<typeof ItemSlider> = (args) => <div className="container"><div className="slider-story"><ItemSlider {...args}/></div> </div> ;
+const Template: ComponentStory<typeof ItemSlider> = (args) => <div className="container">
+    <div className="slider-story"><ItemSlider {...args}/></div>
+</div>;
 
 export const Default = Template.bind({});
 
 Default.args = {
-    sliderItems: [<div className="slider-story--item"><img src="https://www.renaissancerentals.com/api/asset/download/1s5-NPYxlB5NRsMMhX8MB-pDsN1bqEoZ_"
-                            className="slide" /></div>,
-        <div className="slider-story--item"><img src="https://www.renaissancerentals.com/api/asset/download/1n0NNoyBnzt-nfECziwiuPxz7k-InaMq_"
-                  className="slide" /></div>,
-        <div className="slider-story--item"><img src="https://www.renaissancerentals.com/api/asset/download/1rtcmnLUABimyLpQ6kWm2GD3kJLNMBjKB"
-                  className="slide"/></div>,
+    sliderItems: [<div className="slider-story--item"><img
+        src="https://www.renaissancerentals.com/api/asset/download/1s5-NPYxlB5NRsMMhX8MB-pDsN1bqEoZ_"
+        className="slide"/></div>,
+        <div className="slider-story--item"><img
+            src="https://www.renaissancerentals.com/api/asset/download/1n0NNoyBnzt-nfECziwiuPxz7k-InaMq_"
+            className="slide"/></div>,
+        <div className="slider-story--item"><img
+            src="https://www.renaissancerentals.com/api/asset/download/1rtcmnLUABimyLpQ6kWm2GD3kJLNMBjKB"
+            className="slide"/></div>,
 
 
     ]
+}
+
+export const WithArrowIcon = Template.bind({});
+
+WithArrowIcon.args = {
+    ...Default.args,
+    navIcon: "arrow"
+}
+
+
+export const Tranparent = Template.bind({});
+
+Tranparent.args = {
+    ...Default.args,
+    navIcon: "arrow",
+    navButtonWeight: 1,
+    variant: "transparent"
 }
 
 export const SingleItem = Template.bind({});
