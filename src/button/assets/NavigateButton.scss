@@ -1,8 +1,11 @@
 @import "src/assets/variables";
 
+$navigation-background-color: 25, 26, 26;
 .muncher-button--navigate {
   .muncher-button {
-    background-color: rgba(223, 226, 197, 0.21);
+
+   // background-color: rgba(var($navigation-background-color), 0.3);
+    background-color: rgba(10, 30, 37, 0.4);
   }
 
   .muncher-button--transparent {

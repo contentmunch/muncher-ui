@@ -11,7 +11,7 @@ export const ItemSlider: React.FC<ItemSliderProps> = (
 
     return (
         <div className="muncher-item-slider">
-            {sliderItems.length > 1 ?
+            {sliderItems.length > 1 && currentIndex > 0 ?
                 <NavigateButton direction="left" size={navButtonSize}
                                 variant={variant}
                                 navIcon={navIcon} weight={navButtonWeight}
@@ -38,7 +38,7 @@ export const ItemSlider: React.FC<ItemSliderProps> = (
                     </div>
                 )}
             </div>
-            {sliderItems.length > 1 ?
+            {sliderItems.length > 1 && currentIndex < sliderItems.length - 1 ?
                 <NavigateButton direction="right" size={navButtonSize} weight={navButtonWeight}
                                 navIcon={navIcon}
                                 variant={variant}
