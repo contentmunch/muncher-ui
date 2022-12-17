@@ -45,22 +45,23 @@ export const Table: React.FC<TableProps> = (
         <section className="muncher-table">
             <div className="row head">
                 {header.map((head, index) =>
-                    <div key={"row-head-" + head.name}
-                         title={head.title}
-                         className={head.visibility ? "col main" : "col"}>
-                        {typeof head.name === 'string' ?
-                            <div className="sort-button">
-                                <SortButton
-                                    onClick={() => {
-                                        handleSortClicked(index)
-                                    }}
-                                    active={sort.index === index}
-                                    sortAsc={!sort.desc}>
-                                    {head.name}
-                                </SortButton>
-                            </div> : head.name
-                        }
-                    </div>
+                    head.visibility === "hidden" ? "" :
+                        <div key={"row-head-" + head.name}
+                             title={head.title}
+                             className={head.visibility ? "col main" : "col"}>
+                            {typeof head.name === 'string' ?
+                                <div className="sort-button">
+                                    <SortButton
+                                        onClick={() => {
+                                            handleSortClicked(index)
+                                        }}
+                                        active={sort.index === index}
+                                        sortAsc={!sort.desc}>
+                                        {head.name}
+                                    </SortButton>
+                                </div> : head.name
+                            }
+                        </div>
                 )}
             </div>
             {
@@ -68,10 +69,11 @@ export const Table: React.FC<TableProps> = (
                     sortRows().slice(page.num * page.size, pageEndIndex() - 1).map((cols, rowIndex) =>
                         <div className="row" key={"row-" + rowIndex}>{
                             cols.map((col, colIndex) =>
-                                <div key={"row-col" + rowIndex + colIndex}
-                                     className={header[colIndex].visibility ? "col main" : "col"}>
-                                    {col.content}
-                                </div>)}
+                                header[colIndex].visibility === "hidden" ? "" :
+                                    <div key={"row-col" + rowIndex + colIndex}
+                                         className={header[colIndex].visibility ? "col main" : "col"}>
+                                        {col.content}
+                                    </div>)}
                         </div>
                     )}
             <div className="row-footer">
@@ -79,8 +81,11 @@ export const Table: React.FC<TableProps> = (
                     {excludeDownload ? "" : <CsvButton filename={fileName ? fileName : "download"}
                                                        variant="secondary"
                                                        title="Download"
-                                                       header={header.map(value => typeof value.name === 'string' ? value.name : "")}
-                                                       data={rows.map(value => value.map(col => col.csv ? col.csv : col.value))}
+                                                       header={header.filter(head => !head.csvExclude).map(value => typeof value.name === 'string' ? value.name : "")}
+                                                       data={rows.map(value => value
+                                                           .filter((col, colIndex) => !header[colIndex].csvExclude)
+                                                           .map(col => col.csv ? col.csv ? col.csv : "" : col.value ? col.value : "")
+                                                       )}
                     />}
                     {includeUpload ?
                         <CsvInput name="csv-input-file" handleOnChange={handleOnUpload}
@@ -158,7 +163,8 @@ export interface Sort {
 export interface Head {
     name: ReactElement | string;
     title?: string;
-    visibility?: "large-screen";
+    visibility?: "large-screen" | "hidden";
+    csvExclude?: boolean;
     sort?: (a: Col[], b: Col[]) => number;
 }
 
