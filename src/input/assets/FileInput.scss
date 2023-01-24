@@ -21,4 +21,10 @@ $input-placeholder-color: $disabled-color !default;
   .span-file-name {
     padding-left: 1rem;
   }
+
+  .muncher-input-error-message {
+    font-size: .8rem;
+    color: $danger-color;
+    margin: .4rem;
+  }
 }

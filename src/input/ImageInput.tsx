@@ -5,7 +5,7 @@ import {Icon} from "../icon/Icon";
 export const ImageInput: React.FC<ImageInputProps> = (
     {
         name, label, variant, size,
-        required, active, setFiles,
+        required, active, setFiles, error,
         multiple, maxFiles, ...props
     }
 ) => {
@@ -34,6 +34,7 @@ export const ImageInput: React.FC<ImageInputProps> = (
         }
 
     }
+    const hasError = () => error && error !== "";
     return (
         <div className="muncher-file-input--div">
             <div className="file-input-element">
@@ -42,11 +43,13 @@ export const ImageInput: React.FC<ImageInputProps> = (
                 </label>
                 <span className="span-file-name">{fileNames}</span>
                 <input id={name} type="file" className="muncher-file-input" required={required}
-
+                       name={name}
                        onChange={handleOnChange}
                        multiple={multiple} accept="image/*" {...props}/>
             </div>
             {fileInputWarning !== "" ? <p className="text-danger">{fileInputWarning}</p> : ""}
+            {hasError() ?
+                <div className="muncher-input-error-message"><Icon name="alert">{error}</Icon></div> : ""}
         </div>
 
     );
@@ -57,6 +60,7 @@ export interface ImageInputProps {
     label?: string;
     variant?: 'primary' | 'secondary' | 'tertiary';
     size?: 'small' | 'medium' | 'large';
+    error?: string;
     required?: boolean;
     active?: boolean;
     multiple?: boolean;
