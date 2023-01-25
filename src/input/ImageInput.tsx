@@ -42,7 +42,7 @@ export const ImageInput: React.FC<ImageInputProps> = (
                     <Icon name="image"/>&nbsp;{label}{required ? <span className="required">&nbsp;*</span> : ''}
                 </label>
                 <span className="span-file-name">{fileNames}</span>
-                <input id={name} type="file" className="muncher-file-input" required={required}
+                <input id={name} type="file" className="muncher-file-input"
                        name={name}
                        onChange={handleOnChange}
                        multiple={multiple} accept="image/*" {...props}/>
