@@ -18,6 +18,7 @@ export interface LiProps {
     bulletWeight?: 1 | 2 | 3;
     bulletSize?: Size;
     bulletIcon?: IconName;
+    children: any;
 }
 
 Li.defaultProps = {
