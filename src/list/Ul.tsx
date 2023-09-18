@@ -7,5 +7,5 @@ export const Ul: React.FC<UlProps> = ({children}) => {
 }
 
 export interface UlProps {
-    children: any
+    children?: any
 }

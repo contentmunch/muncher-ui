@@ -47,7 +47,7 @@ export interface ShareButtonProps {
     variant?: Variant;
     size?: Size;
     title: string;
-    children: any;
+    children?: any;
 }
 
 ShareButton.defaultProps = {
