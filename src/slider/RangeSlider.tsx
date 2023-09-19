@@ -52,6 +52,7 @@ export interface RangeSliderProps extends Range {
     setMinValue: (num: number) => void;
     setMaxValue: (num: number) => void;
     numberFormatter?: (num: number) => string;
+    children?: any;
 }
 
 RangeSlider.defaultProps = {
