@@ -1,0 +1,31 @@
+@import "src/components/assets/variables";
+
+$badge-color: $primary-color !default;
+$badge-background-color: $secondary-background-color !default;
+$badge-primary-background-color: $primary-color !default;
+$badge-secondary-background-color: $secondary-background-color !default;
+$badge-tertiary-background-color: $tertiary-background-color !default;
+.muncher-badge {
+  color: $badge-color;
+  background: $badge-background-color;
+  border-radius: .5rem;
+  padding: .5rem;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.muncher-badge--primary {
+  color: $badge-background-color;
+  background: $badge-primary-background-color;
+}
+
+.muncher-badge--secondary {
+  background: $badge-secondary-background-color;
+}
+.muncher-badge--transparent {
+  background: none;
+}
+.muncher-badge--tertiary {
+  background: $badge-tertiary-background-color;
+}
