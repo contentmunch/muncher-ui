@@ -1,2 +1,0 @@
-import{j as t}from"./jsx-runtime-6eef64cc.js";const a=({variant:e,children:r,...n})=>t.jsx("div",{className:e?"muncher-badge muncher-badge--"+e:"muncher-badge",...n,children:r});try{a.displayName="Badge",a.__docgenInfo={description:"",displayName:"Badge",props:{variant:{defaultValue:null,description:"",name:"variant",required:!1,type:{name:"enum",value:[{value:'"primary"'},{value:'"secondary"'},{value:'"tertiary"'},{value:'"transparent"'},{value:'"danger"'}]}}}}}catch{}export{a as B};
-//# sourceMappingURL=Badge-8c8fbc9d.js.map

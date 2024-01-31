@@ -1,6 +1,6 @@
-![Build release and publish](https://github.com/contentmunch/muncher-ui/workflows/Build%20release%20and%20publish/badge.svg)
+![Build release and publish](https://github.com/contentmunch/muncher-ui/workflows/Build%20release%20and%20publish/badge.svg) 
 # Muncher-UI
-A React/Typescript [UI component library](https://ui.muncher.dev/) based on html5 and scss
+A React/Typescript [UI component library](https://ui.muncher.dev/) based on html5 and scss 
 
 ## Using Muncher-UI
 To use this component library:
@@ -24,9 +24,6 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the package library.
 
-### `npm run deploy`
-
-Builds storybook and deploys it to `docs` folder
 ## Coding rules
 We use [GitHub Flow](https://guides.github.com/introduction/flow/) for our project workflow.
 To ensure consistency throughout the source code, keep these rules in mind as you are working:
