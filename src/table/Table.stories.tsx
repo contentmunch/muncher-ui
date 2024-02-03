@@ -17,7 +17,7 @@ const meta = {
 export default meta;
 type Story = StoryFn<typeof meta>;
 export const Default: Story = () =>
-    <Table>{{
+    <Table excludePagination={true} excludeDownload={true}>{{
         header: [
             {name: "Id", title: "Id"},
             {name: "Name", title: "First name and Last name"},

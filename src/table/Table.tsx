@@ -13,7 +13,7 @@ export const Table: React.FC<TableProps> = (
         fileName, defaultPageSize, skeleton,
         handleOnUpload, sortBy, excludeDownload,
         includeUpload, isUploading, uploadWarningMessage, uploadSuccessMessage,
-        children
+        excludePagination, footer, children
     }) => {
     const {header, rows} = children;
     const [sort, setSort] = useState<Sort>(sortBy ? sortBy : {index: 0});
@@ -76,6 +76,7 @@ export const Table: React.FC<TableProps> = (
                                     </div>)}
                         </div>
                     )}
+            {footer ? footer : ""}
             <div className="row-footer">
                 <div className="row-footer-buttons">
                     {excludeDownload ? "" : <CsvButton filename={fileName ? fileName : "download"}
@@ -93,41 +94,40 @@ export const Table: React.FC<TableProps> = (
                                   successMessage={uploadSuccessMessage}/> : ""}
                 </div>
 
+                {excludePagination ? "" :
+                    <div className="pagination">
+                        <div className="left">Rows: <Select name="pageSize" options={["50", "100", "500"]}
+                                                            value={page.size}
+                                                            onChange={e => {
+                                                                setPage({
+                                                                    ...page,
+                                                                    size: parseInt(e.target.value)
+                                                                })
+                                                            }}/>
+                        </div>
+                        <div className="center">
+                            {page.num * page.size + 1} - {pageEndIndex() < rows.length ? pageEndIndex() : rows.length} of {rows.length}
+                        </div>
 
-                <div className="pagination">
-                    <div className="left">Rows: <Select name="pageSize" options={["50", "100", "500"]}
-                                                        value={page.size}
-                                                        onChange={e => {
-                                                            setPage({
-                                                                ...page,
-                                                                size: parseInt(e.target.value)
-                                                            })
-                                                        }}/>
+                        <div className="right">
+                            <Button variant="transparent" disabled={page.num === 0} size="small"
+                                    onClick={() => {
+                                        setPage({...page, num: page.num - 1});
+                                    }}
+                            >
+                                <Icon name="chevron-left"/>
+                            </Button>
+                            <Button variant="transparent"
+                                    disabled={(rows.length - (page.num * page.size)) <= page.size}
+                                    size="small"
+                                    onClick={() => {
+                                        setPage({...page, num: page.num + 1});
+                                    }}>
+                                <Icon name="chevron-right"/>
+                            </Button>
+                        </div>
                     </div>
-                    <div className="center">
-                        {page.num * page.size + 1} - {pageEndIndex() < rows.length ? pageEndIndex() : rows.length} of {rows.length}
-                    </div>
-
-                    <div className="right">
-                        <Button variant="transparent" disabled={page.num === 0} size="small"
-                                onClick={() => {
-                                    setPage({...page, num: page.num - 1});
-                                }}
-                        >
-                            <Icon name="chevron-left"/>
-                        </Button>
-                        <Button variant="transparent"
-                                disabled={(rows.length - (page.num * page.size)) <= page.size}
-                                size="small"
-                                onClick={() => {
-                                    setPage({...page, num: page.num + 1});
-                                }}>
-                            <Icon name="chevron-right"/>
-                        </Button>
-                    </div>
-
-                </div>
-
+                }
             </div>
         </section>
     );
@@ -143,11 +143,13 @@ export interface TableProps {
     fileName?: string;
     defaultPageSize?: number;
     excludeDownload?: true;
+    excludePagination?: boolean;
     includeUpload?: true;
     isUploading?: boolean;
     handleOnUpload?: (file: File) => void;
     uploadWarningMessage?: string;
     uploadSuccessMessage?: string;
+    footer?: ReactNode;
 }
 
 export interface Page {
