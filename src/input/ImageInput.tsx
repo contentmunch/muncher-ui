@@ -66,7 +66,7 @@ export interface ImageInputProps {
     multiple?: boolean;
     maxFiles?: number;
     setFiles: (files: any) => void;
-};
+}
 
 ImageInput.defaultProps = {
     size: "large",

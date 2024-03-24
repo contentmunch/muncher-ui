@@ -31,6 +31,14 @@ export const TextWithLabel: Story = {
         required: true,
     }
 };
+export const TextWithLabelOnTheSide: Story = {
+    args: {
+        ...Default.args,
+        label: 'Search the string',
+        required: true,
+        labelPosition: 'side'
+    }
+};
 export const TextWithIcon: Story = {
     args: {
         ...TextWithLabel.args,

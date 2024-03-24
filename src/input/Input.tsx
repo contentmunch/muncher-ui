@@ -1,14 +1,14 @@
 import React from "react";
 import "./assets/Input.scss";
 import {Label} from "./Label";
-import {Icon} from "..";
 import {IconName} from "../icon/Drawings";
+import {Icon} from "../icon/Icon";
 
 export const Input: React.FC<InputProps> = (
     {
         name, label, required,
         readOnly, icon, hoverIcon, onHoverIconClick,
-        type, list, onBlur,
+        type, list, onBlur, labelPosition,
         onKeyDown, error, focus, placeholder,
         onChange, step, value, maxLength, ...props
     }
@@ -18,12 +18,17 @@ export const Input: React.FC<InputProps> = (
         let inputClass = "muncher-input";
         if (icon || hoverIcon) inputClass += " muncher-input-icon";
         if (hasError()) inputClass += " muncher-input-error";
+        if (labelPosition === 'side') inputClass += " muncher-label-side";
         return inputClass;
     };
+    const addLabel = () => {
+        return label ? <Label label={label} required={required} id={name}/> : '';
+    }
     return (
         <div className="muncher-input--div">
-            {label ? <Label label={label} required={required} id={name}/> : ''}
+            {labelPosition !== 'side' ? addLabel() : ''}
             <div className="muncher-input-element">
+                {labelPosition === 'side' ? addLabel() : ''}
                 {icon ? <Icon name={icon}/> : ""}
                 {hoverIcon ? <span className="muncher-icon-hover"><Icon name={hoverIcon}
                                                                         onClick={onHoverIconClick}/> </span> : ""}
@@ -76,11 +81,11 @@ export interface InputProps {
     error?: string;
     step?: number;
     maxLength?: number;
-
+    labelPosition?: 'top' | 'side';
 }
 
 Input.defaultProps = {
     type: 'text',
-    focus: false
-
+    focus: false,
+    labelPosition: 'top'
 };
