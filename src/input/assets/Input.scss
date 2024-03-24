@@ -6,10 +6,6 @@ $input-placeholder-color: $disabled-color !default;
 $input-icon-color: $primary-color !default;
 .muncher-input--div {
   .muncher-input-element {
-    label {
-      display: inline;
-    }
-
     .muncher-icon {
       //background: $input-border-color;
       color: $input-icon-color;
@@ -27,13 +23,9 @@ $input-icon-color: $primary-color !default;
     width: 100%;
   }
 
-  .muncher-label-side {
-    width: 70%;
-    margin-left: 1rem;
-  }
   .muncher-input-icon {
     padding-left: 2rem;
-    width: auto;
+    width: 90%;
   }
 
   .muncher-icon-hover {
