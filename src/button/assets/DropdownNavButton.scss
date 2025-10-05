@@ -2,12 +2,11 @@
 
 $dropdown-nav-content-color: $primary-color !default;
 $dropdown-nav-content-background-color: $secondary-background-color !default;
+
 .muncher-dropdown-nav {
   position: relative;
-
-  > * {
-    text-align: left;
-  }
+  display: inline-block; // 🔥 ensures the dropdown is anchored to its button, not full width
+  vertical-align: middle;
 
   a {
     text-decoration: none;
@@ -23,7 +22,6 @@ $dropdown-nav-content-background-color: $secondary-background-color !default;
     background: $dropdown-nav-content-background-color;
     color: $dropdown-nav-content-color;
     min-width: 5rem;
-    padding-left: 1.5rem;
     z-index: 10;
   }
 }
@@ -34,6 +32,10 @@ $dropdown-nav-content-background-color: $secondary-background-color !default;
       box-shadow: .5rem .5rem .6rem rgba(0, 0, 0, 0.2);
       display: none;
       position: absolute;
+      top: 100%;
+      left: 0; // default: dropdown starts from parent’s left edge and goes right
+      transform-origin: top left;
+      transition: all 0.2s ease-in-out;
 
       > * {
         text-align: left;
@@ -41,6 +43,20 @@ $dropdown-nav-content-background-color: $secondary-background-color !default;
       }
     }
 
+    // 👇 When we want dropdown to open from parent's right side and go left
+    &.drop-left {
+      .muncher-dropdown-nav--content {
+        left: auto;
+        right: 0;
+        transform-origin: top right;
+        text-align: right;
+
+        > * {
+          text-align: right;
+          margin: .7rem .3rem .7rem 1rem;
+        }
+      }
+    }
   }
 
   .muncher-dropdown-nav:hover .muncher-dropdown-nav--content {
