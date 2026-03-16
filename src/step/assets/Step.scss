@@ -1,5 +1,4 @@
 @import "src/assets/variables";
-@import "src/badge/assets/Badge";
 .muncher-step {
   display: flex;
   flex-direction: column;
@@ -26,7 +25,7 @@
     left: 100%; /* start after badge */
     width: 3rem; /* adjust spacing to next step */
     height: .1rem;
-    background-color: $badge-background-color;
+    background-color: $secondary-background-color;
     z-index: 0;
   }
 
