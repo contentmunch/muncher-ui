@@ -3,8 +3,8 @@
 $badge-color: $primary-color !default;
 $badge-background-color: $secondary-background-color !default;
 $badge-primary-background-color: $primary-color !default;
-$badge-secondary-background-color: $secondary-background-color !default;
-$badge-tertiary-background-color: $tertiary-background-color !default;
+$badge-secondary-background-color:  #91a9b3 !default;
+$badge-tertiary-background-color: #eae9e3 !default;
 .muncher-badge {
   color: $badge-color;
   background: $badge-background-color;
@@ -23,9 +23,26 @@ $badge-tertiary-background-color: $tertiary-background-color !default;
 .muncher-badge--secondary {
   background: $badge-secondary-background-color;
 }
+
 .muncher-badge--transparent {
   background: none;
 }
+
 .muncher-badge--tertiary {
   background: $badge-tertiary-background-color;
+}
+
+.muncher-badge--rounded {
+  border-radius: 50%;
+  width: 2rem; // fixed width & height for perfect circle
+  height: 2rem;
+  padding: 0; // remove padding since size is fixed
+  display: flex; // center content
+  align-items: center;
+  justify-content: center;
+}
+
+.muncher-badge--border {
+  border: .15rem solid $badge-secondary-background-color;
+  color: $badge-color;
 }

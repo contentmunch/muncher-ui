@@ -282,6 +282,10 @@ export const drawings = {
                 <line x1="12" y1="8" x2="12" y2="12"/>
                 <line x1="12" y1="16" x2="12.01" y2="16"/>
             </Fragment>,
+        'simple-check':
+            <Fragment>
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </Fragment>,
         'check':
             <Fragment>
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
@@ -558,44 +562,45 @@ export const drawings = {
             </Fragment>,
         'bed':
             <Fragment>
-                    <path d="M2 4v16" />
-                    <path d="M2 8h18a2 2 0 0 1 2 2v10" />
-                    <path d="M2 17h20" />
-                    <path d="M6 8v9" />
+                <path d="M2 4v16"/>
+                <path d="M2 8h18a2 2 0 0 1 2 2v10"/>
+                <path d="M2 17h20"/>
+                <path d="M6 8v9"/>
             </Fragment>,
         'bath':
             <Fragment>
-                    <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" />
-                    <line x1="10" y1="5" x2="8" y2="7" />
-                    <line x1="2" y1="12" x2="22" y2="12" />
-                    <line x1="7" y1="19" x2="7" y2="21" />
-                    <line x1="17" y1="19" x2="17" y2="21" />
+                <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/>
+                <line x1="10" y1="5" x2="8" y2="7"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <line x1="7" y1="19" x2="7" y2="21"/>
+                <line x1="17" y1="19" x2="17" y2="21"/>
             </Fragment>,
         'bike':
             <Fragment>
-                    <circle cx="5.5" cy="17.5" r="3.5" />
-                    <circle cx="18.5" cy="17.5" r="3.5" />
-                    <path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V14l-3-3 4-3 2 3h2" />
+                <circle cx="5.5" cy="17.5" r="3.5"/>
+                <circle cx="18.5" cy="17.5" r="3.5"/>
+                <path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V14l-3-3 4-3 2 3h2"/>
             </Fragment>,
         'building':
             <Fragment>
-                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
-                    <path d="M9 22v-4h6v4" />
-                    <path d="M8 6h.01" />
-                    <path d="M16 6h.01" />
-                    <path d="M12 6h.01" />
-                    <path d="M12 10h.01" />
-                    <path d="M12 14h.01" />
-                    <path d="M16 10h.01" />
-                    <path d="M16 14h.01" />
-                    <path d="M8 10h.01" />
-                    <path d="M8 14h.01" />
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                <path d="M9 22v-4h6v4"/>
+                <path d="M8 6h.01"/>
+                <path d="M16 6h.01"/>
+                <path d="M12 6h.01"/>
+                <path d="M12 10h.01"/>
+                <path d="M12 14h.01"/>
+                <path d="M16 10h.01"/>
+                <path d="M16 14h.01"/>
+                <path d="M8 10h.01"/>
+                <path d="M8 14h.01"/>
             </Fragment>,
         'car':
             <Fragment>
-                    <path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2" />
-                    <circle cx="6.5" cy="16.5" r="2.5" />
-                    <circle cx="16.5" cy="16.5" r="2.5" />
+                <path
+                    d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/>
+                <circle cx="6.5" cy="16.5" r="2.5"/>
+                <circle cx="16.5" cy="16.5" r="2.5"/>
             </Fragment>,
         'more':
             <Fragment>
